@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <div class="cacchuongtrinhtrangchu">
+    <div class="cacchuongtrinhtrangchu container 2">
         <div class="ct1">
             <div class="bn">
                 <img src="https://viod.1994.cloud/wp-content/uploads/2025/05/image_image_szoz.webp" alt="">

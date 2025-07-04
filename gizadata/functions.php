@@ -38,11 +38,17 @@ function viod_scripts() {
     $style_version = filemtime(get_stylesheet_directory() . '/style.css');
     $js_version = filemtime(get_stylesheet_directory() . '/js/navigation.js');
 
-    // Enqueue styles with version
-    wp_enqueue_style('viod-style', get_stylesheet_uri(), array(), $style_version);
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap-5.0.2-dist/css/bootstrap.min.css', array(), '5.0.2');
+    
+    // Enqueue styles with version (load after Bootstrap)
+    wp_enqueue_style('viod-style', get_stylesheet_uri(), array('bootstrap'), $style_version);
+    
+    // Enqueue Bootstrap JS (includes Popper.js)
+    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js', array(), '5.0.2', true);
     
     // Enqueue navigation script
-    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $js_version, true);
+    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array('bootstrap'), $js_version, true);
 }
 add_action('wp_enqueue_scripts', 'viod_scripts');
 
