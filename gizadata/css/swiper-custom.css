@@ -1,0 +1,199 @@
+/* === SWIPER CUSTOM STYLES === */
+
+.training-programs-swiper {
+  position: relative;
+  /* padding: 0 50px 50px 50px; */
+  /* overflow: hidden; */
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+.swiper-pagination-progressbar {
+  display: none !important;
+}
+
+.training-programs-swiper .swiper-wrapper {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: stretch;
+  /* overflow: hidden; */
+}
+
+.training-programs-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  align-items: end;
+}
+
+@media (min-width: 992px) {
+  .training-programs-swiper {
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+  }
+
+  .training-programs-swiper .swiper-wrapper {
+    /* overflow: hidden; */
+    width: 100% !important;
+    display: flex !important;
+  }
+
+  .training-programs-swiper .swiper-slide {
+  }
+
+  /* Slide active - 40% width */
+  .training-programs-swiper .swiper-slide-active {
+    /*
+    margin-left: 0 !important;
+    z-index: 3 !important;  */
+    /* width: 40% !important; */
+    width: calc(33% + 35px) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Tất cả slides không phải active - 30% width với overlap -16px */
+  .training-programs-swiper .swiper-slide:not(.swiper-slide-active) {
+    /* width: 30% !important; */
+  }
+
+  /* Shadow effect cho slides overlap */
+  .training-programs-swiper .swiper-slide:not(.swiper-slide-active) {
+    /* box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1) !important; */
+  }
+
+  /* Slide đầu tiên luôn không có margin */
+  .training-programs-swiper .swiper-slide:first-child {
+    /* margin-left: 0 !important; */
+  }
+}
+
+/* Tablet: 2 cột, 50% - 50% */
+@media (min-width: 768px) and (max-width: 991px) {
+  .training-programs-swiper .swiper-slide {
+    width: 50% !important;
+    flex-shrink: 0;
+  }
+}
+
+/* Mobile: 1 cột, 100% */
+@media (max-width: 767px) {
+  .training-programs-swiper .swiper-slide {
+    width: 100% !important;
+    flex-shrink: 0;
+  }
+}
+
+/* Navigation Buttons */
+.training-programs-swiper .swiper-button-next,
+.training-programs-swiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -25px;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.training-programs-swiper .swiper-button-next:after,
+.training-programs-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 900;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.training-programs-swiper .swiper-button-next:hover:after,
+.training-programs-swiper .swiper-button-prev:hover:after {
+  color: #fff;
+}
+
+.training-programs-swiper .swiper-button-next {
+  right: 10px;
+}
+
+.training-programs-swiper .swiper-button-prev {
+  left: 10px;
+}
+
+/* Pagination */
+.training-programs-swiper .swiper-pagination {
+  bottom: 10px;
+  position: absolute;
+}
+
+.training-programs-swiper .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  /* background: rgba(0, 123, 255, 0.3); */
+  opacity: 1;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+.training-programs-swiper .swiper-pagination-bullet-active {
+  /* background: #007bff; */
+  transform: scale(1.3);
+  /* box-shadow: 0 2px 8px rgba(0, 123, 255, 0.4); */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .training-programs-swiper {
+    padding: 0 20px 40px 20px;
+  }
+
+  .training-programs-swiper .swiper-button-next,
+  .training-programs-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+
+  .training-programs-swiper .swiper-button-next:after,
+  .training-programs-swiper .swiper-button-prev:after {
+    font-size: 16px;
+  }
+
+  .training-programs-swiper .swiper-button-next {
+    right: 5px;
+  }
+
+  .training-programs-swiper .swiper-button-prev {
+    left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-programs-swiper {
+    padding: 0 10px 30px 10px;
+  }
+
+  .training-programs-swiper .swiper-button-next,
+  .training-programs-swiper .swiper-button-prev {
+    display: none;
+  }
+
+  .training-programs-swiper .swiper-pagination {
+    bottom: 5px;
+  }
+}
+
+/* Special styling cho tất cả slides */
+@media (min-width: 992px) {
+  /* Active slide có image lớn hơn */
+  .training-programs-swiper .swiper-slide-active .bn img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Slides khác có image nhỏ hơn */
+  .training-programs-swiper .swiper-slide:not(.swiper-slide-active) .bn img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Mobile: Không có effects */

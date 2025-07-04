@@ -1,5 +1,5 @@
 <div class="conso-chuongtrinh consobg">
-    <div class="main">
+    <div class="">
         <div class="conso">
             <div class="tit">
                 <h2>NHỮNG CON SỐ NỔI BẬT</h2>

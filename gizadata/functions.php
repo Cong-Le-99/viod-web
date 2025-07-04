@@ -41,14 +41,27 @@ function viod_scripts() {
     // Enqueue Bootstrap CSS
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/bootstrap-5.0.2-dist/css/bootstrap.min.css', array(), '5.0.2');
     
-    // Enqueue styles with version (load after Bootstrap)
-    wp_enqueue_style('viod-style', get_stylesheet_uri(), array('bootstrap'), $style_version);
+    // Enqueue Swiper CSS
+    wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11.0.0');
+    
+    // Enqueue custom Swiper styles
+    $swiper_custom_version = file_exists(get_stylesheet_directory() . '/css/swiper-custom.css') 
+        ? filemtime(get_stylesheet_directory() . '/css/swiper-custom.css') 
+        : '1.0.0';
+    wp_enqueue_style('swiper-custom', get_template_directory_uri() . '/css/swiper-custom.css', array('swiper'), $swiper_custom_version);
+    wp_enqueue_style('card', get_template_directory_uri() . '/css/card.css', array(), '1.0.0');
+    
+    // Enqueue styles with version (load after Bootstrap and Swiper)
+    wp_enqueue_style('viod-style', get_stylesheet_uri(), array('bootstrap', 'swiper', 'swiper-custom'), $style_version);
     
     // Enqueue Bootstrap JS (includes Popper.js)
     wp_enqueue_script('bootstrap', get_template_directory_uri() . '/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js', array(), '5.0.2', true);
     
+    // Enqueue Swiper JS
+    wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.0', true);
+    
     // Enqueue navigation script
-    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array('bootstrap'), $js_version, true);
+    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array('bootstrap', 'swiper'), $js_version, true);
 }
 add_action('wp_enqueue_scripts', 'viod_scripts');
 
