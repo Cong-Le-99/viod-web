@@ -162,6 +162,94 @@ get_header();
         </div>
     </section>
 
+    <!-- Content Section team contact -->
+    <section class="team-contact px-custom px-md-0">
+        <div class="container">
+            <div class="team-header text-center">
+                <h2 class="title">Đội ngũ hướng dẫn</h2>
+                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+            </div>
+            
+            <div class="team-members">
+                <?php
+                $team_members = array(
+                    array(
+                        'gender' => 'female',
+                        'name' => 'Hà Thu Thanh',
+                        'position' => 'Chủ tịch HĐQT<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'image' => 'lecturer-1.png'
+                    ),
+                    array(
+                        'gender' => 'male',
+                        'name' => 'Phan Đức Hiếu',
+                        'position' => 'Uỷ viên chuyên trách Uỷ ban Kinh tế và Tài chính Quốc hội khóa XV',
+                        'image' => 'lecturer-2.png'
+                    ),
+                    array(
+                        'gender' => 'female',
+                        'name' => 'Nguyễn Linh Giang',
+                        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
+                        'image' => 'lecturer-3.png'
+                    ),
+                    array(
+                        'gender' => 'male',
+                        'name' => 'Lê Quang Phúc',
+                        'position' => 'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
+                        'image' => 'lecturer-4.png'
+                    ),
+                    array(
+                        'gender' => 'male',
+                        'name' => 'Nguyễn Anh Tuấn',
+                        'position' => 'Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)',
+                        'image' => 'lecturer-5.png'
+                    ),
+                    array(
+                        'gender' => 'female',
+                        'name' => 'Nguyễn Minh Hiền, FCCA',
+                        'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'image' => 'lecturer-6.png'
+                    ),
+                    array(
+                        'gender' => 'male',
+                        'name' => 'Phạm Việt Anh',
+                        'position' => 'Chủ tịch HĐQT<br>Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
+                        'image' => 'lecturer-7.png'
+                    ),
+                    array(
+                        'gender' => 'male',
+                        'name' => 'Đinh Toàn Trung',
+                        'position' => 'Thành viên Ban Cố vấn Chuyên môn VIOD',
+                        'image' => 'lecturer-8.png'
+                    )
+                );
+                ?>
+                
+                <div class="team-grid">
+                    <?php foreach ($team_members as $member): ?>
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                     alt="<?php echo $member['name']; ?>" 
+                                     class="member-photo">
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-title">
+                                    <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                </h4>
+                                <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                <p class="member-position"><?php echo $member['position']; ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                
+                <div class="team-button text-center">
+                    <a href="#" class="btn-view-more">Xem thêm giảng viên</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
 </div>
 <?php        

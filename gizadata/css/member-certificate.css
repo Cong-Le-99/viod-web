@@ -388,6 +388,98 @@
   border-radius: 12px;
 }
 
+/* Team Contact Section */
+.member-certificate .team-contact {
+  background-image: url("../images/team-contact-bg-mb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 68px 0;
+}
+
+.member-certificate .team-contact .title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0c3555;
+  margin-bottom: 24px;
+}
+
+.member-certificate .team-contact .description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #0c3555;
+  margin-bottom: 48px;
+}
+
+.member-certificate .team-header {
+  margin-bottom: 48px;
+}
+
+.member-certificate .team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.member-certificate .team-member {
+  text-align: center;
+}
+
+.member-certificate .member-photo {
+  width: 170px;
+  height: 194px;
+  object-fit: cover;
+}
+
+.member-certificate .member-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0c3555;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.member-certificate .member-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0c3555;
+  margin-bottom: 4px;
+}
+
+.member-certificate .member-position {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0c3555;
+  margin: 0;
+  /* line-height: 120%; */
+}
+
+.member-certificate .btn-view-more {
+  display: inline-block;
+  background-color: #3aa735;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.member-certificate .btn-view-more:hover {
+  background-color: #2e8a2e;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .member-certificate .content-section {
@@ -503,5 +595,56 @@
     font-size: 32px;
     text-align: left;
     margin-bottom: 0;
+  }
+
+  /* Team Contact Section Desktop */
+  .member-certificate .team-contact {
+    background-image: url("../images/team-contact-bg-dk.png");
+    padding: 80px 0;
+  }
+
+  .member-certificate .team-contact .title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .member-certificate .team-contact .description {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+
+  .member-certificate .team-header {
+    margin-bottom: 64px;
+  }
+
+  .member-certificate .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+
+  .member-certificate .member-photo {
+    width: 192px;
+    height: 220px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .member-certificate .member-title {
+    font-size: 16px;
+  }
+
+  .member-certificate .member-name {
+    font-size: 20px;
+  }
+
+  .member-certificate .member-position {
+    font-size: 16px;
+    /* line-height: 100%; */
+  }
+
+  .member-certificate .btn-view-more {
+    padding: 16px 32px;
+    font-size: 16px;
   }
 }
