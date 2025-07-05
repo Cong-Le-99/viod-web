@@ -68,6 +68,12 @@ function viod_scripts() {
     
     // Enqueue navigation script
     wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array('bootstrap', 'swiper'), $js_version, true);
+    
+    // Enqueue member-certificate script
+    $member_cert_js_version = file_exists(get_stylesheet_directory() . '/js/member-certificate.js') 
+        ? filemtime(get_stylesheet_directory() . '/js/member-certificate.js') 
+        : '1.0.0';
+    wp_enqueue_script('member-certificate', get_template_directory_uri() . '/js/member-certificate.js', array('jquery'), $member_cert_js_version, true);
 }
 add_action('wp_enqueue_scripts', 'viod_scripts');
 

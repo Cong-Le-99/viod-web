@@ -1,5 +1,10 @@
 /* Member Certificate Page Styles */
 
+/* Custom Container Width - Override BS5 */
+.container {
+  max-width: 1222px !important;
+}
+
 .member-certificate .breadcrumb {
   gap: 0px !important;
 }
@@ -99,5 +104,180 @@
 @media (min-width: 1200px) {
   .member-certificate .breadcrumb-nav {
     left: 40px;
+  }
+}
+
+/* Content Section Styles */
+.member-certificate .content-section {
+  background-color: #e0f5df;
+  padding: 68px 0;
+}
+
+/* Video Container */
+.member-certificate .video-container {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.member-certificate .video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play Button */
+.member-certificate .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.member-certificate .play-button:hover {
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styles */
+.member-certificate .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Mobile Title - shows above video */
+.member-certificate .mobile-title {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .member-certificate .mobile-title {
+    margin-bottom: 48px;
+  }
+}
+
+/* Desktop Title - shows in text column */
+.member-certificate .desktop-title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+/* Description Styles */
+.member-certificate .description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: justify;
+  color: #666;
+}
+
+.member-certificate .text-content p {
+  margin-bottom: 16px;
+}
+
+.member-certificate .text-content {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  position: relative;
+}
+
+.member-certificate .text-content.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Fade overlay when text is truncated */
+.member-certificate .text-content.has-read-more:not(.expanded)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(0deg, #e0f5df 0%, rgba(224, 245, 223, 0) 91.43%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.member-certificate .text-content.expanded::after {
+  opacity: 0;
+}
+
+/* Read More Button */
+.member-certificate .read-more-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #3aa735;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.member-certificate .read-more-btn:hover {
+  color: #2e8a2e;
+  text-decoration: none;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .member-certificate .content-section {
+    padding: 80px 0;
+  }
+
+  .member-certificate .content-section .row {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+
+  .member-certificate .content-section .row > [class*="col-"] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .member-certificate .video-container {
+    height: 333px;
+    margin-bottom: 0;
+  }
+
+  .member-certificate .title {
+    font-size: 40px;
+  }
+
+  .member-certificate .desktop-title {
+    margin-bottom: 32px;
+  }
+
+  .member-certificate .description {
+    font-size: 16px;
+  }
+
+  .member-certificate .read-more-btn {
+    font-size: 16px;
   }
 }
