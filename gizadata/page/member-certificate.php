@@ -17,7 +17,7 @@ get_header();
     </div>
     
     <!-- Content Section -->
-    <section class="content-section">
+    <section class="content-section px-custom px-md-0">
         <div class="container">
             <h2 class="title mobile-title d-block">TỔNG QUAN VỀ CHƯƠNG TRÌNH</h2>
             <div class="row">
@@ -50,7 +50,7 @@ get_header();
     </section>
 
      <!-- Content Section program value -->
-    <section class="program-value">
+    <section class="program-value px-custom px-md-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -71,7 +71,7 @@ get_header();
     </section>
 
     <!-- Content Section program goals - Desktop only -->
-    <section class="program-goals d-none d-md-block">
+    <section class="program-goals d-none d-md-block px-custom px-md-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -83,7 +83,54 @@ get_header();
             </div>
         </div>
     </section>
-    
+
+    <!-- Content Section attendees -->
+    <section class="attendees px-custom px-md-0">
+        <div class="container">
+            <!-- Mobile Layout -->
+            <div class="mobile-layout d-block d-md-none">
+                <h2 class="title">Đối tượng tham dự</h2>
+                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                
+                <div class="attendees-items">
+                    <div class="attendee-item">Thành viên HĐQT</div>
+                    <div class="attendee-item">Thành viên Ban Điều hành</div>
+                    <div class="attendee-item">Thư ký QTCT</div>
+                    <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái QTCT</div>
+                </div>
+                
+                <div class="attendees-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-mb.png" 
+                         alt="Attendees Mobile" 
+                         class="attendees-mobile-image">
+                </div>
+            </div>
+
+            <!-- Desktop Layout -->
+            <div class="d-none d-md-block">
+                <div class="desktop-layout">
+                <div class="attendees-desktop-row">
+                    <div class="attendees-content-col">
+                    <h2 class="title mt-md-3">Đối tượng tham dự</h2>
+                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty.</p>
+                        <div class="attendees-items">
+                            <div class="attendee-item">Thành viên Hội đồng Quản trị</div>
+                            <div class="attendee-item">Thành viên Ban Điều hành</div>
+                            <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái Quản trị Công ty</div>
+                            <div class="attendee-item">Thư ký Quản trị Công ty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="attendees-image-col">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png" 
+                             alt="Attendees Desktop" 
+                             class="attendees-desktop-image">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 <?php        
 get_footer();

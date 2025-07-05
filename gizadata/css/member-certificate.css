@@ -5,6 +5,21 @@
   max-width: 1222px !important;
 }
 
+/* Custom padding utilities for mobile sections */
+@media (max-width: 767.98px) {
+  .px-custom {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .px-md-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 .member-certificate .breadcrumb {
   gap: 0px !important;
 }
@@ -135,7 +150,6 @@
 
 /* Title Styles */
 .member-certificate .title {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -164,7 +178,6 @@
 
 /* Description Styles */
 .member-certificate .description {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 26px;
@@ -207,7 +220,6 @@
 
 /* Read More Button */
 .member-certificate .read-more-btn {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 26px;
@@ -263,6 +275,86 @@
   max-width: 100%;
 }
 
+/* Attendees Section */
+.member-certificate .attendees {
+  background-color: #082136;
+  padding: 68px 0;
+}
+
+.member-certificate .attendees .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.member-certificate .attendees .description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+/* Attendee Items */
+.member-certificate .attendees-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.member-certificate .attendee-item {
+  background-color: #e0f5df;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: left;
+}
+
+/* Mobile Image */
+.member-certificate .attendees-mobile-image {
+  width: 100%;
+  height: 234px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Desktop Layout */
+.member-certificate .desktop-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.member-certificate .attendees-desktop-row {
+  flex: 1;
+}
+
+.member-certificate .attendees-image-col {
+  flex: 0 0 462px;
+}
+
+.member-certificate .attendees-content-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-certificate .attendees-desktop-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .member-certificate .content-section {
@@ -307,5 +399,35 @@
   .member-certificate .program-value .title {
     text-align: center;
     margin-bottom: 48px;
+  }
+
+  .member-certificate .attendees {
+    padding: 80px 0;
+  }
+
+  .member-certificate .attendees .title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .member-certificate .attendees .description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .member-certificate .desktop-layout .attendees-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 0;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .member-certificate .desktop-layout .attendee-item {
+    padding: 24px 24px;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 }
