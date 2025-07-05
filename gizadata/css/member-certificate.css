@@ -123,34 +123,15 @@
   margin-bottom: 24px;
 }
 
-.member-certificate .video-container video {
+.member-certificate .video-container iframe {
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: 12px;
   object-fit: cover;
 }
 
-/* Play Button */
-.member-certificate .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.member-certificate .play-button:hover {
-  background-color: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
+/* YouTube iframe styling - no custom play button needed */
 
 /* Title Styles */
 .member-certificate .title {
@@ -256,6 +237,25 @@
 }
 
 .member-certificate .program-value-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Program Goals Section - Desktop only */
+.member-certificate .program-goals {
+  background-color: #e0f5df;
+  padding: 80px 0;
+}
+
+.member-certificate .program-goals .title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.member-certificate .program-goals-image {
   width: 100%;
   height: auto;
   display: block;

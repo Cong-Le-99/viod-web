@@ -1,35 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const video = document.getElementById("certificateVideo");
-  const playButton = document.getElementById("playButton");
-
-  if (video && playButton) {
-    // Play button click
-    playButton.addEventListener("click", function () {
-      if (video.paused) {
-        video.play();
-        playButton.style.display = "none";
-      }
-    });
-
-    video.addEventListener("click", function () {
-      if (!video.paused) {
-        video.pause();
-        playButton.style.display = "flex";
-      }
-    });
-
-    video.addEventListener("ended", function () {
-      playButton.style.display = "flex";
-    });
-
-    video.addEventListener("pause", function () {
-      playButton.style.display = "flex";
-    });
-
-    video.addEventListener("play", function () {
-      playButton.style.display = "none";
-    });
-  }
+  // YouTube iframe - no need for custom video controls
+  // YouTube handles play/pause controls automatically
 
   const readMoreBtn = document.getElementById("readMoreBtn");
   const textContent = document.getElementById("textContent");

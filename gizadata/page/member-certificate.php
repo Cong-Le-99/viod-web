@@ -23,15 +23,14 @@ get_header();
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="video-container">
-                        <video id="certificateVideo" poster="<?php echo get_template_directory_uri(); ?>/images/featured-courses-&-events.png">
-                            <source src="<?php echo get_template_directory_uri(); ?>/images/dcp-2025.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="play-button" id="playButton">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 5V19L19 12L8 5Z" fill="#3AA735"/>
-                            </svg>
-                        </div>
+                        <iframe id="certificateVideo" 
+                                src="https://www.youtube.com/embed/0eesDH_3wR0" 
+                                title="Director Certification Program (DCP)" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -66,6 +65,20 @@ get_header();
                     <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-dk.png" 
                          alt="Program Value Desktop" 
                          class="program-value-image d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section program goals - Desktop only -->
+    <section class="program-goals d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Mục tiêu tham dự chương trình</h2>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds.png" 
+                         alt="Program goals Desktop" 
+                         class="program-goals-image">
                 </div>
             </div>
         </div>
