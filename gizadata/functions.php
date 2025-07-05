@@ -51,6 +51,12 @@ function viod_scripts() {
     wp_enqueue_style('swiper-custom', get_template_directory_uri() . '/css/swiper-custom.css', array('swiper'), $swiper_custom_version);
     wp_enqueue_style('card', get_template_directory_uri() . '/css/card.css', array(), '1.0.0');
     
+    // Enqueue member-certificate styles
+    $member_cert_version = file_exists(get_stylesheet_directory() . '/css/member-certificate.css') 
+        ? filemtime(get_stylesheet_directory() . '/css/member-certificate.css') 
+        : '1.0.0';
+    wp_enqueue_style('member-certificate', get_template_directory_uri() . '/css/member-certificate.css', array('bootstrap'), $member_cert_version);
+    
     // Enqueue styles with version (load after Bootstrap and Swiper)
     wp_enqueue_style('viod-style', get_stylesheet_uri(), array('bootstrap', 'swiper', 'swiper-custom'), $style_version);
     
