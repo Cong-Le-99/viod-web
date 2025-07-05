@@ -131,6 +131,38 @@ get_header();
         </div>
     </section>
 
+    <!-- Content Section program organized -->
+    <section class="program-organized px-custom px-md-0">
+        <div class="container">
+            <!-- Mobile Layout -->
+            <div class="mobile-layout d-block d-md-none">
+                <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
+                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                
+                <div class="organized-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-mb.png" 
+                         alt="Program Organized Mobile" 
+                         class="organized-mobile-image">
+                </div>
+            </div>
+
+            <!-- Desktop Layout -->
+            <div class="desktop-layout d-none d-md-block">
+                <div class="organized-desktop-row">
+                    <div class="organized-content-col">
+                        <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
+                    </div>
+                    <div class="organized-image-col">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-dk.png" 
+                             alt="Program Organized Desktop" 
+                             class="organized-desktop-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 </div>
 <?php        
 get_footer();
