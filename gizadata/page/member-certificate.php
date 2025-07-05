@@ -17,11 +17,9 @@ get_header();
     </div>
     
     <!-- Content Section -->
-    <div class="content-section">
+    <section class="content-section">
         <div class="container">
-            <!-- Title for mobile - shows above video -->
             <h2 class="title mobile-title d-block">TỔNG QUAN VỀ CHƯƠNG TRÌNH</h2>
-            
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="video-container">
@@ -50,7 +48,29 @@ get_header();
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+     <!-- Content Section program value -->
+    <section class="program-value">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title mobile-title d-block">Giá trị chương trình</h2>
+                    
+                    <!-- Mobile Image -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-mb.png" 
+                         alt="Program Value Mobile" 
+                         class="program-value-image d-block d-md-none">
+                    
+                    <!-- Desktop Image -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-dk.png" 
+                         alt="Program Value Desktop" 
+                         class="program-value-image d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </div>
 <?php        
 get_footer();

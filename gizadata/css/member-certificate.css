@@ -244,6 +244,25 @@
   text-decoration: none;
 }
 
+/* Program Value Section */
+.member-certificate .program-value {
+  background-color: #fff;
+  padding: 68px 0;
+}
+
+.member-certificate .program-value .title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.member-certificate .program-value-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .member-certificate .content-section {
@@ -270,7 +289,7 @@
   }
 
   .member-certificate .desktop-title {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   .member-certificate .description {
@@ -279,5 +298,14 @@
 
   .member-certificate .read-more-btn {
     font-size: 16px;
+  }
+
+  .member-certificate .program-value {
+    padding: 80px 0;
+  }
+
+  .member-certificate .program-value .title {
+    text-align: center;
+    margin-bottom: 48px;
   }
 }
