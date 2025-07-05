@@ -147,8 +147,8 @@ $training_programs = [
         </div>
         
         <!-- Swiper Navigation -->
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         
         <!-- Swiper Pagination - HIDDEN -->
         <!-- <div class="swiper-pagination"></div> -->
@@ -162,9 +162,15 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 1,
         spaceBetween: 0,
         grabCursor: true,
-        loop: false,
+        loop: true,
         
         autoplay: false,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.training-programs-swiper .swiper-button-next',
+            prevEl: '.training-programs-swiper .swiper-button-prev',
+        },
+        
         // Responsive breakpoints
         breakpoints: {
             // Mobile: 1 slide, 100% width
