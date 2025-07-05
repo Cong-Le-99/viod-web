@@ -2,6 +2,24 @@
   max-width: 1250px;
   width: 100%;
   margin: auto;
+  padding: 80px 0;
+}
+
+.training-program .title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.training-program .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #666;
+  text-align: center;
 }
 
 .swiper-slide-active {
@@ -194,4 +212,69 @@
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .training-program .description {
+    font-size: 16px;
+  }
+
+  .training-program .title {
+    font-size: 40px;
+  }
+  .training-program {
+    padding: 68px 0;
+  }
+}
+
+/* Button See More Styles */
+.btn-see-more {
+}
+
+.btn-see-more a {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3aa735;
+  transition: all 0.3s ease;
+}
+
+.btn-see-more a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Description - Mobile and Desktop */
+.training-program .description-desktop,
+.training-program .description-mobile {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 991.98px) {
+  .training-program .description-mobile {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Desktop specific adjustments */
+@media (min-width: 992px) {
+  .training-program .description-desktop {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
 }

@@ -1,4 +1,134 @@
 <?php
+/**
+ * Training Section Template with Custom Link Options
+ * Features responsive descriptions for mobile and desktop
+ * 
+ * Usage Examples:
+ * 
+ * 1. Default usage (auto-detect page context):
+ *    get_template_part('trangchu/chuongtrinhdangdienra');
+ * 
+ * 2. Custom content with arguments:
+ *    get_template_part('trangchu/chuongtrinhdangdienra', null, [
+ *        'title' => 'Custom Title',
+ *        'description_desktop' => 'Custom description for desktop',
+ *        'description_mobile' => 'Custom description for mobile',
+ *        'link' => '/custom-link',
+ *        'link_text' => 'Custom Button Text',
+ *        'hide_button' => false // true to hide button
+ *    ]);
+ * 
+ * 5. Using line breaks in title/description:
+ *    get_template_part('trangchu/chuongtrinhdangdienra', null, [
+ *        'title' => "CT tại Việt Nam\nNhận chứng chỉ",
+ *        'description_desktop' => "Dòng 1\nDòng 2\nDòng 3 cho desktop",
+ *        'description_mobile' => "Dòng 1\nDòng 2 cho mobile"
+ *    ]);
+ * 
+ * 6. Different descriptions for mobile and desktop:
+ *    get_template_part('trangchu/chuongtrinhdangdienra', null, [
+ *        'title' => 'Custom Title',
+ *        'description_desktop' => 'Mô tả dài cho desktop với nhiều thông tin chi tiết',
+ *        'description_mobile' => 'Mô tả ngắn cho mobile'
+ *    ]);
+ * 
+ * Note: The template automatically shows description_desktop on screens >= 992px 
+ * and description_mobile on screens < 992px using Bootstrap's responsive classes.
+ * 
+ * 3. Using helper functions to customize link:
+ *    set_training_section_link('/custom-url', 'Custom Text');
+ *    get_template_part('trangchu/chuongtrinhdangdienra');
+ *    reset_training_section_link(); // Clean up after use
+ * 
+ * 4. Hide button completely:
+ *    hide_training_section_button();
+ *    get_template_part('trangchu/chuongtrinhdangdienra');
+ *    reset_training_section_link(); // Clean up after use
+ */
+
+// Helper functions for custom link
+function set_training_section_link($url, $text = null) {
+    $GLOBALS['training_section_link'] = $url;
+    if ($text) {
+        $GLOBALS['training_section_link_text'] = $text;
+    }
+}
+
+function reset_training_section_link() {
+    unset($GLOBALS['training_section_link']);
+    unset($GLOBALS['training_section_link_text']);
+    unset($GLOBALS['training_section_hide_button']);
+}
+
+function hide_training_section_button() {
+    $GLOBALS['training_section_hide_button'] = true;
+}
+
+// Function to get content based on current page context
+function get_training_section_content($custom_link = null, $custom_link_text = null) {
+    $current_page = basename(get_permalink());
+    $page_template = get_page_template_slug();
+    
+    switch(true) {
+        case is_front_page():
+        case is_home():
+            return [
+                'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
+                'description_desktop' => 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện',
+                'description_mobile' => 'Chương trình đào tạo chuyên sâu QTCT',
+                'link' => $custom_link ?? '/dao-tao',
+                'link_text' => $custom_link_text ?? 'XEM THÊM →'
+            ];
+            
+        case is_page('member-certificate'):
+        case strpos($page_template, 'member-certificate') !== false:
+            return [
+                'title' => 'KHÓA HỌC CHỨNG CHỈ THÀNH VIÊN',
+                'description_desktop' => 'Các khóa học chứng chỉ chuyên nghiệp dành cho thành viên với chương trình đào tạo toàn diện',
+                'description_mobile' => 'Khóa học chứng chỉ chuyên nghiệp',
+                'link' => $custom_link ?? '/member-certificate',
+                'link_text' => $custom_link_text ?? 'XEM THÊM CHỨNG CHỈ →'
+            ];
+            
+        default:
+            return [
+                'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
+                'description_desktop' => 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện',
+                'description_mobile' => 'Chương trình đào tạo chuyên sâu QTCT',
+                'link' => $custom_link ?? '',
+                'link_text' => $custom_link_text ?? 'XEM THÊM →'
+            ];
+    }
+}
+
+// Get content based on current context
+if (isset($args)) {
+    // If args provided, use them directly
+    $section_content = $args;
+} else {
+    // Auto-detect context, but allow custom link override from global variables
+    $custom_link = isset($GLOBALS['training_section_link']) ? $GLOBALS['training_section_link'] : null;
+    $custom_link_text = isset($GLOBALS['training_section_link_text']) ? $GLOBALS['training_section_link_text'] : null;
+    $section_content = get_training_section_content($custom_link, $custom_link_text);
+    
+    // Check if button should be hidden
+    if (isset($GLOBALS['training_section_hide_button']) && $GLOBALS['training_section_hide_button']) {
+        $section_content['hide_button'] = true;
+    }
+}
+
+// Safety check: Ensure all required keys exist
+$default_content = [
+    'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
+    'description_desktop' => 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện',
+    'description_mobile' => 'Chương trình đào tạo chuyên sâu QTCT',
+    'link' => '',
+    'link_text' => 'XEM THÊM →'
+];
+
+// Merge with defaults to ensure all keys exist
+$section_content = array_merge($default_content, $section_content);
+
 // Fake data cho chương trình đào tạo
 $training_programs = [
     [
@@ -69,16 +199,19 @@ $training_programs = [
 ];
 ?>
 
-<div class="chuongtrinhdaotao training-program relative overflow-hidden">
-    <div class="tit mb-5">
-        <h2>CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA</h2>
-        <div class="motachuongtrinh">
-            Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT
+<section class="training-program relative overflow-hidden">
+        <h2 class="title"><?php echo isset($section_content['title']) ? nl2br($section_content['title']) : 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA'; ?></h2>
+        <p class="description description-desktop d-none d-lg-block">
+            <?php echo isset($section_content['description_desktop']) ? nl2br($section_content['description_desktop']) : 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện'; ?>
+        </p>
+        <p class="description description-mobile d-block d-lg-none">
+            <?php echo isset($section_content['description_mobile']) ? nl2br($section_content['description_mobile']) : 'Chương trình đào tạo chuyên sâu QTCT'; ?>
+        </p>
+        <?php if (!isset($section_content['hide_button']) || !$section_content['hide_button']): ?>
+        <div class="btn-see-more text-center mb-4">
+            <a href="<?php echo isset($section_content['link']) ? $section_content['link'] : ''; ?>"><?php echo isset($section_content['link_text']) ? $section_content['link_text'] : 'XEM THÊM →'; ?></a>
         </div>
-        <div class="xemthem">
-            <a href="">XEM THÊM →</a>
-        </div>
-    </div>
+        <?php endif; ?>
 
     <!-- Swiper Container -->
     <div class="training-programs-swiper">
@@ -146,14 +279,14 @@ $training_programs = [
             <?php endforeach; ?>
         </div>
         
-        <!-- Swiper Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- Swiper Navigation - Desktop Only -->
+        <div class="swiper-button-next d-none d-lg-block"></div>
+        <div class="swiper-button-prev d-none d-lg-block"></div>
         
         <!-- Swiper Pagination - HIDDEN -->
         <!-- <div class="swiper-pagination"></div> -->
     </div>
-</div>
+</section>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

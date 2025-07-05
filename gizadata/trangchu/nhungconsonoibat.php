@@ -25,7 +25,11 @@
         </div>
         
         <?php
-        get_template_part('trangchu/chuongtrinhdangdienra');
+            get_template_part('trangchu/chuongtrinhdangdienra', null, [
+                'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
+                'description_desktop' => "Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức \n và cải thiện chất lượng QTCT",
+                'description_mobile' => "Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT",
+            ]);
         ?>
     </div>
 </div>
