@@ -167,7 +167,7 @@ get_header();
         <div class="container">
             <div class="team-header text-center">
                 <h2 class="title">Đội ngũ hướng dẫn</h2>
-                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
             </div>
             
             <div class="team-members">
@@ -177,49 +177,97 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Hà Thu Thanh',
                         'position' => 'Chủ tịch HĐQT<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
-                        'image' => 'lecturer-1.png'
+                        'image' => 'lecturer-1.png',
+                        'position_more' => array(
+                            'Chủ tịch HĐQT, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                            'Thành viên HĐQT Công ty Cổ phần Đầu tư Tài chính Việt Nam',
+                            'Giảng viên (thỉnh giảng) Khoa Quản trị Kinh doanh, Đại học Kinh tế TP.HCM'
+                        ),
+                        'biography' => 'Bà Thanh có gần 23 năm công tác trong ngành Tài chính - Kế toán - Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kiểm toán nội bộ, CFO, Trưởng Ban kiểm soát, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải tại Việt Nam.<br><br>Bà Thanh có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Thanh hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Phan Đức Hiếu',
                         'position' => 'Uỷ viên chuyên trách Uỷ ban Kinh tế và Tài chính Quốc hội khóa XV',
-                        'image' => 'lecturer-2.png'
+                        'image' => 'lecturer-2.png',
+                        'position_more' => array(
+                            'Uỷ viên chuyên trách Uỷ ban Kinh tế và Tài chính Quốc hội khóa XV',
+                            'Cựu Phó Tổng Giám đốc Ngân hàng Nhà nước Việt Nam',
+                            'Chuyên gia tư vấn chính sách tài chính - tiền tệ'
+                        ),
+                        'biography' => 'Ông Hiếu có gần 25 năm công tác trong ngành Tài chính - Ngân hàng - Chính sách Kinh tế tại các cơ quan Nhà nước và tổ chức tài chính lớn với hơn 15 năm kinh nghiệm đảm nhận các vị trí lãnh đạo cao cấp trong hệ thống ngân hàng và quản lý chính sách tài chính quốc gia.<br><br>Ông Hiếu có bằng Tiến sĩ Kinh tế, Đại học Kinh tế Quốc dân & Bằng Thạc sĩ Tài chính Ngân hàng, Đại học Kinh tế TP HCM.<br><br>Ông Hiếu hiện cũng là chuyên gia tư vấn chính sách tài chính tiền tệ và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
                         'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
-                        'image' => 'lecturer-3.png'
+                        'image' => 'lecturer-3.png',
+                        'position_more' => array(
+                            'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
+                            'Chủ tịch HĐQT Công ty Cổ phần Vận tải Nhật Việt',
+                            'Giảng viên (thỉnh giảng) Khoa Tài chính, Đại học Kinh tế TP.HCM'
+                        ),
+                        'biography' => 'Bà Giang có gần 23 năm công tác trong ngành Tài chính - Kế toán - Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kiểm toán nội bộ, CFO, Trưởng Ban kiểm soát, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải tại Việt Nam.<br><br>Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Lê Quang Phúc',
                         'position' => 'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
-                        'image' => 'lecturer-4.png'
+                        'image' => 'lecturer-4.png',
+                        'position_more' => array(
+                            'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
+                            'Thành viên HĐQT Công ty Cổ phần Đầu tư Phát triển Bất động sản',
+                            'Chuyên gia tư vấn chiến lược doanh nghiệp'
+                        ),
+                        'biography' => 'Ông Phúc có gần 20 năm công tác trong ngành Tài chính - Đầu tư - Bất động sản tại các Tập đoàn kinh tế tư nhân và Nhà nước với hơn 12 năm kinh nghiệm đảm nhận các vị trí Giám đốc Tài chính, Trưởng Ban Đầu tư, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành bất động sản và tư vấn quản lý.<br><br>Ông Phúc có bằng MBA, Đại học Kinh tế TP HCM & Bằng Cử nhân Quản trị Kinh doanh, Đại học Ngoại thương.<br><br>Ông Phúc hiện cũng là chuyên gia tư vấn chiến lược doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Anh Tuấn',
                         'position' => 'Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)',
-                        'image' => 'lecturer-5.png'
+                        'image' => 'lecturer-5.png',
+                        'position_more' => array(
+                            'Tổng Giám đốc CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)',
+                            'Thành viên HĐQT Hiệp hội Bảo hiểm Việt Nam',
+                            'Chuyên gia tư vấn rủi ro và bảo hiểm'
+                        ),
+                        'biography' => 'Ông Tuấn có gần 18 năm công tác trong ngành Bảo hiểm - Tái bảo hiểm - Quản lý rủi ro tại các công ty bảo hiểm lớn trong và ngoài nước với hơn 10 năm kinh nghiệm đảm nhận các vị trí Giám đốc Kinh doanh, Phó Tổng Giám đốc, Tổng Giám đốc của các công ty bảo hiểm và tái bảo hiểm hàng đầu.<br><br>Ông Tuấn có bằng Thạc sĩ Tài chính Bảo hiểm, Đại học Kinh tế TP HCM & Bằng Cử nhân Toán - Thống kê, Đại học Khoa học Tự nhiên TP HCM.<br><br>Ông Tuấn hiện cũng là chuyên gia tư vấn quản lý rủi ro doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Minh Hiền, FCCA',
                         'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
-                        'image' => 'lecturer-6.png'
+                        'image' => 'lecturer-6.png',
+                        'position_more' => array(
+                            'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                            'Thành viên HĐQT Công ty Cổ phần Tư vấn Tài chính Kế toán',
+                            'Giảng viên (thỉnh giảng) Khoa Kế toán, Đại học Kinh tế TP.HCM'
+                        ),
+                        'biography' => 'Bà Hiền có gần 22 năm công tác trong ngành Tài chính - Kế toán - Kiểm toán tại các công ty Big4 và Tập đoàn đa quốc gia với hơn 14 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kế toán, CFO, Giám đốc Tài chính, Thành viên HĐQT của các công ty niêm yết lớn trong ngành dịch vụ tài chính và sản xuất.<br><br>Bà Hiền có bằng FCCA (Fellow of the Association of Chartered Certified Accountants), ACCA UK & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Hiền hiện cũng là giảng viên môn Kế toán Tài chính tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Phạm Việt Anh',
                         'position' => 'Chủ tịch HĐQT<br>Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
-                        'image' => 'lecturer-7.png'
+                        'image' => 'lecturer-7.png',
+                        'position_more' => array(
+                            'Chủ tịch HĐQT, Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
+                            'Thành viên HĐQT Tập đoàn Dầu khí Việt Nam (PVN)',
+                            'Chuyên gia tư vấn logistics và vận tải'
+                        ),
+                        'biography' => 'Ông Anh có gần 24 năm công tác trong ngành Dầu khí - Vận tải - Logistics tại Tập đoàn Dầu khí Việt Nam và các công ty liên kết với hơn 16 năm kinh nghiệm đảm nhận các vị trí Giám đốc Kinh doanh, Phó Tổng Giám đốc, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải dầu khí.<br><br>Ông Anh có bằng MBA, Đại học Kinh tế TP HCM & Bằng Cử nhân Kỹ thuật Hàng hải, Đại học Hàng hải Việt Nam.<br><br>Ông Anh hiện cũng là chuyên gia tư vấn logistics và vận tải biển tại Việt Nam, ông đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Đinh Toàn Trung',
                         'position' => 'Thành viên Ban Cố vấn Chuyên môn VIOD',
-                        'image' => 'lecturer-8.png'
+                        'image' => 'lecturer-8.png',
+                        'position_more' => array(
+                            'Thành viên Ban Cố vấn Chuyên môn VIOD',
+                            'Cựu Giám đốc Tài chính Tập đoàn Điện lực Việt Nam (EVN)',
+                            'Chuyên gia tư vấn quản trị rủi ro doanh nghiệp'
+                        ),
+                        'biography' => 'Ông Trung có gần 26 năm công tác trong ngành Điện lực - Tài chính - Kiểm toán tại Tập đoàn Điện lực Việt Nam và các tổ chức tài chính lớn với hơn 18 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Tài chính, CFO, Giám đốc Tài chính, Thành viên HĐQT của các công ty niêm yết lớn trong ngành năng lượng.<br><br>Ông Trung có bằng Thạc sĩ Quản trị Kinh doanh, Đại học Kinh tế TP HCM & Bằng Cử nhân Tài chính Kế toán, Đại học Kinh tế TP HCM.<br><br>Ông Trung hiện cũng là chuyên gia tư vấn quản trị rủi ro doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     )
                 );
                 ?>
@@ -252,6 +300,48 @@ get_header();
     
 </div>
 
+<!-- Script để truyền dữ liệu PHP sang JavaScript -->
+<script>
+// Truyền dữ liệu team_members từ PHP sang JavaScript
+var teamMembersData = <?php echo json_encode($team_members); ?>;
+</script>
+
+<!-- Modal thông tin giảng viên -->
+<div class="modal fade" id="lecturerModal" tabindex="-1" aria-labelledby="lecturerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered lecturer-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="lecturerModalLabel">THÔNG TIN GIẢNG VIÊN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="lecturer-info-container">
+                    <div class="lecturer-image-section">
+                        <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image">
+                    </div>
+                    <div class="lecturer-details-section">
+                        <div class="lecturer-name-box">
+                            <p class="lecturer-prefix" id="lecturerPrefix">Bà</p>
+                            <h3 class="lecturer-name" id="lecturerName">NGUYỄN LINH GIANG</h3>
+                            <div class="lecturer-positions" id="lecturerPositions">
+                            </div>
+
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="lecturer-biography" id="lecturerBiography">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 <!-- Content Section program organized -->
 <?php
     get_template_part('trangchu/chuongtrinhdangdienra', null, [
@@ -264,3 +354,4 @@ get_header();
 <?php        
 get_footer();
 ?>
+

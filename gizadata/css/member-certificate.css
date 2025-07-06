@@ -648,3 +648,270 @@
     font-size: 16px;
   }
 }
+
+/* Modal Styles */
+.lecturer-modal {
+  max-width: 707px;
+}
+
+.lecturer-modal .modal-content {
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  background-color: #e0f5df;
+}
+
+.lecturer-modal .modal-header {
+  border-bottom: none;
+  padding-top: 4px;
+  position: relative;
+}
+
+.lecturer-modal .modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #082136;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+#lecturerModal .lecturer-modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/icon-close.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease;
+  background-color: #082136;
+}
+
+.lecturer-modal .btn-close:hover {
+  opacity: 1;
+  background-color: rgba(8, 33, 54, 0.1);
+}
+
+.modal-header .btn-close {
+  margin: 0;
+}
+
+.lecturer-modal .modal-body {
+  padding: 20px 0 0 0;
+}
+
+.lecturer-info-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lecturer-image-section {
+  flex: 0 0 237px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lecturer-modal-image {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lecturer-details-section {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+.lecturer-details-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 65px;
+  background-color: #3aa735;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  top: 8px;
+  left: -4px;
+}
+
+.lecturer-name-box {
+  background: #a1e09e;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.lecturer-prefix {
+  font-weight: 400;
+  color: #333;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.lecturer-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.lecturer-biography {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #a1e09e;
+}
+
+.lecturer-details-section .lecturer-positions p {
+  font-size: 14px;
+  color: #082136;
+  position: relative;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  padding-left: 24px;
+  line-height: 100%;
+}
+
+.lecturer-details-section .lecturer-positions p::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #3aa735;
+  border-radius: 50%;
+  top: 10px;
+  left: 7px;
+  opacity: 1;
+}
+
+.lecturer-positions p:last-child {
+  margin-bottom: 0;
+}
+
+.lecturer-biography p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+  color: #082136;
+}
+
+.lecturer-biography p:last-child {
+  margin-bottom: 0;
+}
+
+/* Modal Footer Biography */
+.lecturer-modal .modal-footer {
+  border-top: none;
+  padding: 0 16px 16px 16px;
+}
+
+.lecturer-modal .modal-footer .lecturer-biography p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.lecturer-modal .modal-footer .lecturer-biography p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover effect for team member images */
+.member-certificate .team-member .member-image {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.member-certificate .team-member .member-image:hover {
+  transform: scale(1.05);
+}
+
+.member-certificate .team-member .member-image img {
+  transition: opacity 0.3s ease;
+}
+
+.member-certificate .team-member .member-image:hover img {
+  opacity: 0.9;
+}
+
+/* Mobile responsive for modal */
+@media (max-width: 768px) {
+  .lecturer-modal {
+    max-width: 95%;
+    margin: 1rem;
+  }
+
+  .lecturer-info-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .lecturer-image-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .lecturer-modal .modal-content {
+    padding: 12px;
+    background-color: #e0f5df;
+  }
+
+  .lecturer-modal .modal-title {
+    font-size: 20x;
+  }
+
+  .lecturer-name-box {
+    padding: 12px;
+  }
+
+  .lecturer-details-section .lecturer-positions p {
+    margin: 0 0 4px 0;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 18px;
+    border-left-width: 3px;
+  }
+
+  .lecturer-details-section .lecturer-positions p::before {
+    width: 5px;
+    height: 5px;
+    top: 8px;
+    left: 6px;
+  }
+
+  .lecturer-modal .btn-close {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    border-radius: 6px;
+    background-size: 10px 10px;
+    background: #082136;
+  }
+}
