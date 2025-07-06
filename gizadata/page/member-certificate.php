@@ -24,7 +24,7 @@ get_header();
                 <div class="col-12 col-lg-6">
                     <div class="video-container">
                         <iframe id="certificateVideo" 
-                                src="https://www.youtube.com/embed/0eesDH_3wR0" 
+                                src="https://www.youtube.com/embed/sEn-e3oYyQM" 
                                 title="Director Certification Program (DCP)" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
