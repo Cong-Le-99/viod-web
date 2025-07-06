@@ -5493,9 +5493,9 @@ transition: opacity 0.3s ease;
         font-size: 25px;
         line-height: 1.4;
     }
-    .conso-chuongtrinh {
+    /* .conso-chuongtrinh {
         padding: 40px 0;
-    }
+    } */
     .conso-chuongtrinh .motaconso {
         margin: 15px 0 10px 0;
     }

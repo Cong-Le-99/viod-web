@@ -74,7 +74,7 @@
                     <button class="search-toggle" aria-label="Tìm kiếm">
                         <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="#0A2536" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="#0A2536" stroke-width="2" stroke-linecap="round"/></svg>
                     </button>
-                    <a href="#" class="login-btn">ĐĂNG NHẬP</a>
+                    <!-- <a href="#" class="login-btn">ĐĂNG NHẬP</a> -->
                 </div>
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     ≡
@@ -106,7 +106,7 @@
             ?>
         </div>
         <div class="mobile-menu-footer">
-            <a href="#" class="login-btn">ĐĂNG NHẬP</a>
+            <!-- <a href="#" class="login-btn">ĐĂNG NHẬP</a> -->
             <div class="mobile-lang-switch">
                 <a href="#" class="active">VN</a> / <a href="#">EN</a>
             </div>
