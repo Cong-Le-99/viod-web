@@ -251,6 +251,7 @@ get_header();
     </section>
     
 </div>
+
 <!-- Content Section program organized -->
 <?php
     get_template_part('trangchu/chuongtrinhdangdienra', null, [
@@ -258,6 +259,8 @@ get_header();
         'description' => "DCP cung cấp các kiến thức về QTCT, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, \n phù hợp với sự phát triển của thị trường tài chính trong nước và thế giới. ",
     ]);
 ?>
+<!-- Testimonial Slider Section -->
+<?php get_template_part('trangchu/testimonial-slider'); ?>
 <?php        
 get_footer();
 ?>
