@@ -181,14 +181,14 @@ get_header();
                 <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                 
                 <div class="attendees-items">
-                    <div class="attendee-item">Thành viên HĐQT</div>
+                    <div class="attendee-item">Thành viên hội đồng quản trị</div>
                     <div class="attendee-item">Thành viên Ban Điều hành</div>
-                    <div class="attendee-item">Thư ký QTCT</div>
-                    <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái QTCT</div>
+                    <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái quản trị công ty</div>
+                    <div class="attendee-item">Thư ký quản trị công ty</div>
                 </div>
                 
                 <div class="attendees-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-mb.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png" 
                          alt="Attendees Mobile" 
                          class="attendees-mobile-image">
                 </div>
@@ -200,11 +200,12 @@ get_header();
                 <div class="attendees-desktop-row">
                     <div class="attendees-content-col">
                     <h2 class="title mt-md-3">Đối tượng tham dự</h2>
-                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty.</p>
-                        <div class="attendee-item">Thành viên HĐQT</div>
-                        <div class="attendee-item">Thành viên Ban Điều hành</div>
-                        <div class="attendee-item">Thư ký QTCT</div>
-                        <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái QTCT</div>
+                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
+                        <div class="attendees-items">
+                            <div class="attendee-item">Thành viên hội đồng quản trị</div>
+                            <div class="attendee-item">Thành viên Ban Điều hành</div>
+                            <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái quản trị công ty</div>
+                            <div class="attendee-item">Thư ký quản trị công ty</div>
                         </div>
                     </div>
                 </div>
@@ -217,6 +218,7 @@ get_header();
             </div>
         </div>
     </section>
+
 
     <!-- Content Section program organized -->
     <section class="program-organized px-custom px-md-0">
