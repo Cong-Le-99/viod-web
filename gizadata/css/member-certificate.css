@@ -728,9 +728,10 @@
 }
 
 .lecturer-modal-image {
-  width: auto;
-  height: auto;
+  width: max-content;
+  height: 100%;
   border-radius: 8px;
+  transform: translateY(-20px);
 }
 
 .lecturer-details-section {
