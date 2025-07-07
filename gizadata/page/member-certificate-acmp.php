@@ -52,23 +52,109 @@ get_header();
     </section>
 
      <!-- Content Section program value -->
-    <section class="program-value px-custom px-md-0">
+     <section class="program-value px-custom px-md-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="title mobile-title d-block">Giá trị chương trình</h2>
-                    
-                    <!-- Mobile Image -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-mb.png" 
-                         alt="Program Value Mobile" 
-                         class="program-value-image d-block d-md-none">
-                    
-                    <!-- Desktop Image -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-dk.png" 
-                         alt="Program Value Desktop" 
-                         class="program-value-image d-none d-md-block">
                 </div>
             </div>
+            
+            <?php
+                         $program_values = array(
+                 array(
+                     'title' => 'Uyên thâm',
+                     'sub_title' => 'Người hướng dẫn & Chuyên gia',
+                     'content' => array(
+                         'Giao lưu với đội ngũ hướng dẫn giàu kiến thức và kinh nghiệm thực tế trong việc triển khai mô hình UBKT',
+                         'Chia sẻ kinh nghiệm quý báu cùng các chuyên gia hàng đầu trong việc thành lập và vận hành mô hình UBKT'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Linh hoạt',
+                     'sub_title' => 'Chương trình giảng dạy & Tình huống nghiên cứu',
+                     'content' => array(
+                         'Trang bị kiến thức về UBKT ở góc độ pháp lý',
+                         'Tiếp cận với các bộ công cụ thực tiễn để có thể được áp dụng khi vận hành mô hình UBKT'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Ưu việt',
+                     'sub_title' => 'Mạng lưới người tham dự',
+                     'content' => array(
+                         'Trở thành một phần của mạng lưới thành viên của VIOD',
+                         'Trở thành một đại sứ với cam kết cải cách thị trường và quản trị hiệu quả'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Thịnh vượng',
+                     'sub_title' => 'Phát triển nghề nghiệp',
+                     'content' => array(
+                         'Cập nhật các thông lệ tốt liên quan đến UBKT',
+                         'Kết nối mạng lưới xuyên quốc gia của các thành viên HĐQT',
+                         'Được công nhận 16 giờ CPD (Phát triển chuyên môn) của VIOD'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 )
+             );
+            ?>
+            
+             <div class="program-values-content">
+                 <div class="desktop-layout-program-value relative">
+                     <div class="left-column">
+                         <?php for($i = 0; $i < 2; $i++): ?>
+                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                 </div>
+                                 <div class="value-content">
+                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                         <div class="content-item">
+                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                             <p><?php echo $content_item; ?></p>
+                                         </div>
+                                     <?php endforeach; ?>
+                                 </div>
+                             </div>
+                         <?php endfor; ?>
+                     </div>
+
+                     <!-- Center Image -->  
+                     <div class="center-image">
+                         <img src="<?php echo get_template_directory_uri(); ?>/images/value-acmp.png" 
+                              alt="DCP Value Center" 
+                              class="center-value-image">
+                     </div>
+
+                     <!-- Right Column -->
+                     <div class="right-column">
+                         <?php for($i = 2; $i < 4; $i++): ?>
+                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                 </div>
+                                 <div class="value-content">
+                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                         <div class="content-item">
+                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                             <p><?php echo $content_item; ?></p>
+                                         </div>
+                                     <?php endforeach; ?>
+                                 </div>
+                             </div>
+                         <?php endfor; ?>
+                     </div>
+                 </div>
+             </div>
         </div>
     </section>
 
@@ -78,7 +164,7 @@ get_header();
             <div class="row">
                 <div class="col-12">
                     <h2 class="title">Mục tiêu tham dự chương trình</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds-acmp.png" 
                          alt="Program goals Desktop" 
                          class="program-goals-image">
                 </div>
@@ -92,17 +178,17 @@ get_header();
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Đối tượng tham dự</h2>
-                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                 
                 <div class="attendees-items">
-                    <div class="attendee-item">Thành viên HĐQT</div>
-                    <div class="attendee-item">Thành viên Ban Điều hành</div>
-                    <div class="attendee-item">Thư ký QTCT</div>
-                    <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái QTCT</div>
+                    <div class="attendee-item">THÀNH VIÊN HĐQT, BKS , UBKT</div>
+                    <div class="attendee-item">TRƯỞNG BỘ PHẬN KIỂM TOÁN NỘI BỘ, THƯ KÝ QTCT</div>
+                    <div class="attendee-item">CÁC CÁ NHÂN MUỐN TÌM HIỂU HOẠT ĐỘNG CỦA UBKT</div>
+                    <div class="attendee-item">Các cá nhân muốn theo đuổi nghề nghiệp là thành viên độc lập trong HĐQT</div>
                 </div>
                 
                 <div class="attendees-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-mb.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-acmp-dk.png" 
                          alt="Attendees Mobile" 
                          class="attendees-mobile-image">
                 </div>
@@ -114,17 +200,17 @@ get_header();
                 <div class="attendees-desktop-row">
                     <div class="attendees-content-col">
                     <h2 class="title mt-md-3">Đối tượng tham dự</h2>
-                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty.</p>
+                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                         <div class="attendees-items">
-                            <div class="attendee-item">Thành viên Hội đồng Quản trị</div>
-                            <div class="attendee-item">Thành viên Ban Điều hành</div>
-                            <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái Quản trị Công ty</div>
-                            <div class="attendee-item">Thư ký Quản trị Công ty</div>
+                            <div class="attendee-item">THÀNH VIÊN HĐQT, BKS , UBKT</div>
+                            <div class="attendee-item">TRƯỞNG BỘ PHẬN KIỂM TOÁN NỘI BỘ, THƯ KÝ QTCT</div>
+                            <div class="attendee-item">CÁC CÁ NHÂN MUỐN TÌM HIỂU HOẠT ĐỘNG CỦA UBKT</div>
+                            <div class="attendee-item">Các cá nhân muốn theo đuổi nghề nghiệp là thành viên độc lập trong HĐQT</div>
                         </div>
                     </div>
                 </div>
                 <div class="attendees-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png" 
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-acmp-dk.png" 
                              alt="Attendees Desktop" 
                              class="attendees-desktop-image">
                 </div>
@@ -142,7 +228,7 @@ get_header();
                 <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
                 
                 <div class="organized-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-mb.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-acmp-mb.png" 
                          alt="Program Organized Mobile" 
                          class="organized-mobile-image">
                 </div>
@@ -155,7 +241,7 @@ get_header();
                         <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
                     </div>
                     <div class="organized-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-dk.png" 
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-acmp-dk.png" 
                              alt="Program Organized Desktop" 
                              class="organized-desktop-image">
                     </div>

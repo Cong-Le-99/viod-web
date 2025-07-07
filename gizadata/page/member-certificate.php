@@ -178,7 +178,7 @@ get_header();
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Đối tượng tham dự</h2>
-                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                 
                 <div class="attendees-items">
                     <div class="attendee-item">Thành viên HĐQT</div>
@@ -201,11 +201,10 @@ get_header();
                     <div class="attendees-content-col">
                     <h2 class="title mt-md-3">Đối tượng tham dự</h2>
                     <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty.</p>
-                        <div class="attendees-items">
-                            <div class="attendee-item">Thành viên Hội đồng Quản trị</div>
-                            <div class="attendee-item">Thành viên Ban Điều hành</div>
-                            <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái Quản trị Công ty</div>
-                            <div class="attendee-item">Thư ký Quản trị Công ty</div>
+                        <div class="attendee-item">Thành viên HĐQT</div>
+                        <div class="attendee-item">Thành viên Ban Điều hành</div>
+                        <div class="attendee-item">Thư ký QTCT</div>
+                        <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái QTCT</div>
                         </div>
                     </div>
                 </div>
