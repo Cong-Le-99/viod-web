@@ -55,18 +55,106 @@ get_header();
             <div class="row">
                 <div class="col-12">
                     <h2 class="title mobile-title d-block">Giá trị chương trình</h2>
-                    
-                    <!-- Mobile Image -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-mb.png" 
-                         alt="Program Value Mobile" 
-                         class="program-value-image d-block d-md-none">
-                    
-                    <!-- Desktop Image -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-value-dk.png" 
-                         alt="Program Value Desktop" 
-                         class="program-value-image d-none d-md-block">
                 </div>
             </div>
+            
+            <?php
+                         $program_values = array(
+                 array(
+                     'title' => 'Uyên thâm',
+                     'sub_title' => 'Người hướng dẫn & Chuyên gia',
+                     'content' => array(
+                         'Cơ hội tiếp cận kiến thức và kinh nghiệm của người hướng dẫn và diễn giả quốc tế và Việt Nam',
+                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Linh hoạt',
+                     'sub_title' => 'Chương trình giảng dạy & Tình huống nghiên cứu',
+                     'content' => array(
+                         'Chương trình, nội dung và tình huống bám sát diễn biến thị trường',
+                         'Cập nhật theo thông lệ tốt nhất của Việt Nam và quốc tế về QTCT & phát triển bền vững (ESG)',
+                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Ưu việt',
+                     'sub_title' => 'Mạng lưới người tham dự',
+                     'content' => array(
+                         'Gia nhập cộng đồng các thành viên HĐQT chuyên',
+                         'Trở thành một đại sứ với cam kết cải cách thị trường và quản trị hiệu quả',
+                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 ),
+                 array(
+                     'title' => 'Thịnh vượng',
+                     'sub_title' => 'Phát triển nghề nghiệp',
+                     'content' => array(
+                         'Tham gia lộ trình phát triển nghề nghiệp bài bản của VIOD',
+                         'Được công nhận 30 giờ CPD (Phát triển chuyên môn) của VIOD',
+                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                     ),
+                     'color' => 'green',
+                     'icon' => 'check-circle.svg'
+                 )
+             );
+            ?>
+            
+             <div class="program-values-content">
+                 <div class="desktop-layout-program-value relative">
+                     <div class="left-column">
+                         <?php for($i = 0; $i < 2; $i++): ?>
+                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                 </div>
+                                 <div class="value-content">
+                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                         <div class="content-item">
+                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                             <p><?php echo $content_item; ?></p>
+                                         </div>
+                                     <?php endforeach; ?>
+                                 </div>
+                             </div>
+                         <?php endfor; ?>
+                     </div>
+
+                     <!-- Center Image -->  
+                     <div class="center-image">
+                         <img src="<?php echo get_template_directory_uri(); ?>/images/value-dcp.png" 
+                              alt="DCP Value Center" 
+                              class="center-value-image">
+                     </div>
+
+                     <!-- Right Column -->
+                     <div class="right-column">
+                         <?php for($i = 2; $i < 4; $i++): ?>
+                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                 </div>
+                                 <div class="value-content">
+                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                         <div class="content-item">
+                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                             <p><?php echo $content_item; ?></p>
+                                         </div>
+                                     <?php endforeach; ?>
+                                 </div>
+                             </div>
+                         <?php endfor; ?>
+                     </div>
+                 </div>
+             </div>
         </div>
     </section>
 

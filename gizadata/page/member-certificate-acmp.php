@@ -6,13 +6,13 @@ Template Name: Chương trình Chuyên sâu về Uỷ ban Kiểm toán (ACMP)
 get_header();
 ?>
 <div class="member-certificate">
-    <div class="banner">
+    <div class="banner banner-acmp">
         <!-- Breadcrumb chỉ hiện trên desktop -->
         <nav class="breadcrumb-nav d-none d-md-block">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Home</a></li>
                 <li class="breadcrumb-item"><a href="<?php echo get_post_type_archive_link('training_program'); ?>">Chương trình đào tạo</a></li>
-                <li class="breadcrumb-item active">Director Certification Program (DCP)</li>
+                <li class="breadcrumb-item active">Audit Committee Master Program (ACMP)</li>
             </ol>
         </nav>
     </div>
@@ -26,7 +26,7 @@ get_header();
                     <div class="video-container">
                         <iframe id="certificateVideo" 
                                 src="https://www.youtube.com/embed/sEn-e3oYyQM" 
-                                title="Director Certification Program (DCP)" 
+                                title="Director Certification Program (ACMP)" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerpolicy="strict-origin-when-cross-origin" 
@@ -39,7 +39,8 @@ get_header();
                         <!-- <h2 class="title desktop-title d-none d-lg-block">TỔNG QUAN VỀ CHƯƠNG TRÌNH</h2> -->
                         <div class="description">
                             <div class="text-content" id="textContent">
-                                <p>Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP) - chương trình nòng cốt nằm trong chuỗi các Chương trình Quản trị Tiên tiến (GEPs) sẽ là công cụ hoàn hảo giúp các doanh nghiệp đạt được mục tiêu này. DCP được phát triển bởi Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD) với sự hỗ trợ kỹ thuật của Tổ chức Tài chính Quốc tế (IFC) và Cục Kinh tế Liên bang Thụy Sĩ (SECO), đáp ứng các tiêu chuẩn của các Viện Thành viên HĐQT trên thế giới. Chương trình DCP cung cấp các kiến thức về QTCT bao gồm vai trò, trách nhiệm của các HĐQT, chức năng của các Ủy ban chuyên trách, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, phù hợp với sự phát triển của thị trường tài chính trong nước, trong khu vực ASEAN và trên thế giới. DCP được công nhận rộng rãi cả về chất lượng học thuật, tính thực tiễn trong các tình huống nghiên cứu và chất lượng chuyên môn của đội ngũ người hướng dẫn, các khách mời chuyên gia trong phiên thảo luận.</p>
+                                <p>Chương trình Chuyên sâu về Ủy ban Kiểm toán (ACMP) được Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD) triển khai với sự hỗ trợ kỹ thuật của Tổ chức Tài chính Quốc tế (IFC), hợp tác cùng PwC Việt Nam, đáp ứng các tiêu chuẩn của các Viện Thành viên Hội đồng Quản trị trên thế giới.</p>
+                                <p>Chương trình được thiết kế phù hợp với bối cảnh các công ty Việt Nam, nhằm hỗ trợ doanh nghiệp triển khai mô hình Ủy ban Kiểm toán (UBKT) theo các thông lệ quản trị công ty tốt nhất tại Việt Nam và quốc tế. Được tổ chức dưới hình thức trực tiếp, chương trình tạo cơ hội cho các thành viên tham dự được trao đổi chi tiết về cơ cấu, chức năng, quyền hạn và nghĩa vụ của UBKT theo quy định pháp luật hiện hành, bao gồm các văn bản hướng dẫn thi hành luật, nghị định liên quan. Đồng thời, chương trình cũng chia sẻ các thông lệ thực tiễn tại các doanh nghiệp hàng đầu Việt Nam, nhằm giúp các thành viên áp dụng hiệu quả mô hình UBKT trong tổ chức của mình.</p>
                                 <!-- <p class="extended-content">Chương trình DCP cung cấp các kiến thức về QTCT bao gồm vai trò, trách nhiệm của các HĐQT, chức năng của các Ủy ban chuyên trách, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, phù hợp với sự phát triển của thị trường tài chính trong nước, trong khu vực ASEAN và trên thế giới. DCP được công nhận rộng rãi cả về chất lượng học thuật, tính thực tiễn trong các tình huống nghiên cứu và chất lượng chuyên môn của đội ngũ người hướng dẫn, các khách mời chuyên gia trong phiên thảo luận.</p> -->
                             </div>
                             <a href="#" class="read-more-btn" id="readMoreBtn">Đọc thêm</a>
