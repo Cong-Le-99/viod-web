@@ -1,23 +1,23 @@
 <?php
 /*
-Template Name: Chương trình Chuyên sâu về Uỷ ban Kiểm toán (ACMP)
+Template Name: Chương tình Chuyên sâu dành cho Thư ký Quản trị Công ty (CSMP)
 */
 get_header();
 ?>
 <div class="member-certificate">
-    <div class="banner banner-acmp">
+    <div class="banner banner-csmp">
         <!-- Breadcrumb chỉ hiện trên desktop -->
         <nav class="breadcrumb-nav d-none d-md-block">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>">Home</a></li>
                 <li class="breadcrumb-item"><a href="<?php echo get_post_type_archive_link('training_program'); ?>">Chương trình đào tạo</a></li>
-                <li class="breadcrumb-item active">Audit Committee Master Program (ACMP)</li>
+                <li class="breadcrumb-item active">CORPORATE SECRETARY MASTER PROGRAM</li>
             </ol>
         </nav>
     </div>
     
     <!-- Content Section -->
-    <section class="content-section px-custom px-md-0">
+    <section class="content-section content-section-csmp px-custom px-md-0">
         <div class="container">
             <h2 class="title mobile-title d-block">TỔNG QUAN VỀ CHƯƠNG TRÌNH</h2>
             <div class="row">
@@ -25,7 +25,7 @@ get_header();
                     <div class="video-container">
                         <iframe id="certificateVideo" 
                                 src="https://www.youtube.com/embed/sEn-e3oYyQM" 
-                                title="Director Certification Program (ACMP)" 
+                                title="Director Certification Program (DCP)" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerpolicy="strict-origin-when-cross-origin" 
@@ -38,9 +38,8 @@ get_header();
                         <!-- <h2 class="title desktop-title d-none d-lg-block">TỔNG QUAN VỀ CHƯƠNG TRÌNH</h2> -->
                         <div class="description">
                             <div class="text-content" id="textContent">
-                                <p>Chương trình Chuyên sâu về Ủy ban Kiểm toán (ACMP) được Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD) triển khai với sự hỗ trợ kỹ thuật của Tổ chức Tài chính Quốc tế (IFC), hợp tác cùng PwC Việt Nam, đáp ứng các tiêu chuẩn của các Viện Thành viên Hội đồng Quản trị trên thế giới.</p>
-                                <p>Chương trình được thiết kế phù hợp với bối cảnh các công ty Việt Nam, nhằm hỗ trợ doanh nghiệp triển khai mô hình Ủy ban Kiểm toán (UBKT) theo các thông lệ quản trị công ty tốt nhất tại Việt Nam và quốc tế. Được tổ chức dưới hình thức trực tiếp, chương trình tạo cơ hội cho các thành viên tham dự được trao đổi chi tiết về cơ cấu, chức năng, quyền hạn và nghĩa vụ của UBKT theo quy định pháp luật hiện hành, bao gồm các văn bản hướng dẫn thi hành luật, nghị định liên quan. Đồng thời, chương trình cũng chia sẻ các thông lệ thực tiễn tại các doanh nghiệp hàng đầu Việt Nam, nhằm giúp các thành viên áp dụng hiệu quả mô hình UBKT trong tổ chức của mình.</p>
-                                <!-- <p class="extended-content">Chương trình DCP cung cấp các kiến thức về QTCT bao gồm vai trò, trách nhiệm của các HĐQT, chức năng của các Ủy ban chuyên trách, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, phù hợp với sự phát triển của thị trường tài chính trong nước, trong khu vực ASEAN và trên thế giới. DCP được công nhận rộng rãi cả về chất lượng học thuật, tính thực tiễn trong các tình huống nghiên cứu và chất lượng chuyên môn của đội ngũ người hướng dẫn, các khách mời chuyên gia trong phiên thảo luận.</p> -->
+                                <p>Thư ký Quản trị Công ty (QTCT) là một chức năng quan trọng của Hội đồng Quản trị (HĐQT), có vị trí then chốt trong chiến lược và hành động hướng tới QTCT hiệu quả và bền vững. Thư ký QTCT có ba nhiệm vụ chính: trợ giúp HĐQT triển khai và cải tiến các chương trình QTCT cho doanh nghiệp, kết nối các thành viên HĐQT và HĐQT với các nhà đầu tư và các bên hữu quan, kết nối HĐQT với Ban Điều hành trong mục tiêu triển khai QTCT hiệu quả và bền vững. </p>
+                                <p>Chương trình Chuyên sâu về Thư ký Quản trị Công ty (CSMP) là một trong các chương trình cốt lõi nắm trong chuỗi Chương trình đào tạo về Quản trị Tiên tiến (GEP) do Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD) tổ chức nhằm nâng cao các hiểu biết về chức năng, nhiệm vụ, và vai trò trách nhiệm của Thư ký QTCT trong hệ sinh thái QTCT của doanh nghiệp.</p>
                             </div>
                             <a href="#" class="read-more-btn" id="readMoreBtn">Đọc thêm</a>
                         </div>
@@ -51,7 +50,7 @@ get_header();
     </section>
 
      <!-- Content Section program value -->
-     <section class="program-value px-custom px-md-0">
+    <section class="program-value program-value-csmp px-custom px-md-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -65,42 +64,41 @@ get_header();
                      'title' => 'Uyên thâm',
                      'sub_title' => 'Người hướng dẫn & Chuyên gia',
                      'content' => array(
-                         'Giao lưu với đội ngũ hướng dẫn giàu kiến thức và kinh nghiệm thực tế trong việc triển khai mô hình UBKT',
-                         'Chia sẻ kinh nghiệm quý báu cùng các chuyên gia hàng đầu trong việc thành lập và vận hành mô hình UBKT'
+                         'Cơ hội tiếp cận kiền thức chuyên sâu và kinh nghiệm lâu năm của những người hướng dẫn và diễn giả quốc tế, khu vực và Việt Nam.',
+                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế.'
                      ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
+                     'color' => 'blue',
+                     'icon' => 'check-circle-blue.svg'
                  ),
                  array(
                      'title' => 'Linh hoạt',
                      'sub_title' => 'Chương trình giảng dạy & Tình huống nghiên cứu',
                      'content' => array(
-                         'Trang bị kiến thức về UBKT ở góc độ pháp lý',
-                         'Tiếp cận với các bộ công cụ thực tiễn để có thể được áp dụng khi vận hành mô hình UBKT'
+                         'Cập nhật các thông lệ tốt nhất của Việt Nam và Quốc tế về QTCT & ESG.',
+                         'Chương trình, nội dung và tình huống bám sát diễn biến thị trường.',
                      ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
+                     'color' => 'blue',
+                     'icon' => 'check-circle-blue.svg'
                  ),
                  array(
                      'title' => 'Ưu việt',
                      'sub_title' => 'Mạng lưới người tham dự',
                      'content' => array(
-                         'Trở thành một phần của mạng lưới thành viên của VIOD',
-                         'Trở thành một đại sứ với cam kết cải cách thị trường và quản trị hiệu quả'
+                         'Trở thành một phần của Cộng đồng người làm nghê Thư ký QTCT chuyên nghiệp đến từ nhiều ngành nghê, lĩnh vực khác nhau tại Việt Nam.',
+                         'Cơ hội kết nối, học hỏi, cập nhật các thông tin, tư vấn và phát triển quan hệ tốt, giúp tăng cường văn hóá quản trị tốt.',
                      ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
+                     'color' => 'blue',
+                     'icon' => 'check-circle-blue.svg'
                  ),
                  array(
                      'title' => 'Thịnh vượng',
                      'sub_title' => 'Phát triển nghề nghiệp',
                      'content' => array(
-                         'Cập nhật các thông lệ tốt liên quan đến UBKT',
-                         'Kết nối mạng lưới xuyên quốc gia của các thành viên HĐQT',
-                         'Được công nhận 16 giờ CPD (Phát triển chuyên môn) của VIOD'
+                         'Tham gia lộ trình phát triển nghề nghiệp bài bản của VIOD.',
+                         'Được công nhận 15 giờ CPD *Phát triển chuyên môn của VIOD.',
                      ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
+                     'color' => 'blue',
+                     'icon' => 'check-circle-blue.svg'
                  )
              );
             ?>
@@ -116,7 +114,7 @@ get_header();
                                  </div>
                                  <div class="value-content">
                                      <?php foreach ($program_values[$i]['content'] as $content_item): ?>
-                                         <div class="content-item">
+                                         <div class="content-item content-item-csmp">
                                              <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
                                              <p><?php echo $content_item; ?></p>
                                          </div>
@@ -128,8 +126,8 @@ get_header();
 
                      <!-- Center Image -->  
                      <div class="center-image">
-                         <img src="<?php echo get_template_directory_uri(); ?>/images/value-acmp.png" 
-                              alt="DCP Value Center" 
+                         <img src="<?php echo get_template_directory_uri(); ?>/images/value-csmp.png" 
+                              alt="CSMP Value Center" 
                               class="center-value-image">
                      </div>
 
@@ -143,7 +141,7 @@ get_header();
                                  </div>
                                  <div class="value-content">
                                      <?php foreach ($program_values[$i]['content'] as $content_item): ?>
-                                         <div class="content-item">
+                                         <div class="content-item content-item-csmp">
                                              <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
                                              <p><?php echo $content_item; ?></p>
                                          </div>
@@ -158,12 +156,12 @@ get_header();
     </section>
 
     <!-- Content Section program goals - Desktop only -->
-    <section class="program-goals d-none d-md-block px-custom px-md-0">
+    <section class="program-goals program-goals-csmp d-none d-md-block px-custom px-md-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="title">Mục tiêu tham dự chương trình</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds-acmp.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds-csmp.png" 
                          alt="Program goals Desktop" 
                          class="program-goals-image">
                 </div>
@@ -180,14 +178,12 @@ get_header();
                 <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                 
                 <div class="attendees-items">
-                    <div class="attendee-item">THÀNH VIÊN HĐQT, BKS , UBKT</div>
-                    <div class="attendee-item">TRƯỞNG BỘ PHẬN KIỂM TOÁN NỘI BỘ, THƯ KÝ QTCT</div>
-                    <div class="attendee-item">CÁC CÁ NHÂN MUỐN TÌM HIỂU HOẠT ĐỘNG CỦA UBKT</div>
-                    <div class="attendee-item">Các cá nhân muốn theo đuổi nghề nghiệp là thành viên độc lập trong HĐQT</div>
+                    <div class="attendee-item">Thành viên HĐQT</div>
+                    <div class="attendee-item">Người làm QTCT: Thư ký Công ty, người phụ trách QTCT, Trợ lý Tổng Giám đốc & Ban Điều hành, Chuyên viên Văn phòng HĐQT, người phụ trách quan hệ nhà đầu tư & các bên hữu quan.</div>
                 </div>
                 
                 <div class="attendees-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-acmp-dk.png" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png" 
                          alt="Attendees Mobile" 
                          class="attendees-mobile-image">
                 </div>
@@ -200,16 +196,14 @@ get_header();
                     <div class="attendees-content-col">
                     <h2 class="title mt-md-3">Đối tượng tham dự</h2>
                     <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
-                        <div class="attendees-items">
-                            <div class="attendee-item">THÀNH VIÊN HĐQT, BKS , UBKT</div>
-                            <div class="attendee-item">TRƯỞNG BỘ PHẬN KIỂM TOÁN NỘI BỘ, THƯ KÝ QTCT</div>
-                            <div class="attendee-item">CÁC CÁ NHÂN MUỐN TÌM HIỂU HOẠT ĐỘNG CỦA UBKT</div>
-                            <div class="attendee-item">Các cá nhân muốn theo đuổi nghề nghiệp là thành viên độc lập trong HĐQT</div>
-                        </div>
+                    <div class="attendees-items">
+                    <div class="attendee-item">Thành viên HĐQT</div>
+                    <div class="attendee-item">Người làm QTCT: Thư ký Công ty, người phụ trách QTCT, Trợ lý Tổng Giám đốc & Ban Điều hành, Chuyên viên Văn phòng HĐQT, người phụ trách quan hệ nhà đầu tư & các bên hữu quan.</div>
+                </div>
                     </div>
                 </div>
                 <div class="attendees-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-acmp-dk.png" 
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png" 
                              alt="Attendees Desktop" 
                              class="attendees-desktop-image">
                 </div>
@@ -218,6 +212,7 @@ get_header();
         </div>
     </section>
 
+
     <!-- Content Section program organized -->
     <section class="program-organized px-custom px-md-0">
         <div class="container">
@@ -225,28 +220,28 @@ get_header();
             // Data cho organized content với SVG icons thực tế
             $organized_content = array(
                 array(
-                    'icon' => 'calendar-clock.svg',
+                    'icon' => 'calendar-clock-blue.svg',
                     'title' => 'THỜI LƯỢNG',
-                    'content' => '4 buổi học tương tác liên tục trong 2 ngày tham dự',
-                    'color' => 'dark'
+                    'content' => '3 buổi tương tác liên tục trong 1,5 ngày tham dự',
+                    'color' => 'blue'
                 ),
                 array(
-                    'icon' => 'user-tie.svg',
+                    'icon' => 'user-tie-blue.svg',
                     'title' => 'NGƯỜI HƯỚNG DẪN',
-                    'content' => 'Chuyên gia về QTCT, thành viên HĐQT có nhiều kinh nghiệm về QTCT tại Việt Nam',
-                    'color' => 'dark'
+                    'content' => 'Các chuyên gia Quản trị Công ty, các nhà chuyên môn về thực hành nghề Thư ký QTCT hàng đầu của Việt Nam và quốc tế ',
+                    'color' => 'blue'
                 ),
                 array(
-                    'icon' => 'activity.svg',
+                    'icon' => 'activity-blue.svg',
                     'title' => 'HOẠT ĐỘNG',
-                    'content' => 'Tình huống nghiên cứu, thảo luận nhóm, phiên thảo luận và các hoạt động khác',
-                    'color' => 'dark'
+                    'content' => 'Tình huống nghiên cứu, thảo luận nhóm, phiên thảo luận, nhập vai và các hoạt động khác ',
+                    'color' => 'blue'
                 ),
                 array(
-                    'icon' => 'network.svg',
+                    'icon' => 'network-blue.svg',
                     'title' => 'KẾT NỐI',
-                    'content' => 'Trong và sau chương trình qua các hoạt động "Member Networking" và các sự kiện cho thành viên VIOD',
-                    'color' => 'dark'
+                    'content' => 'Trong và sau chương trình thông qua hoạt động “Member Networking” và Câu lạc bộ Thư ký QTCT của VIOD',
+                    'color' => 'blue'
                 )
             );
             ?>
@@ -296,7 +291,7 @@ get_header();
     </section>
 
     <!-- Content Section team contact -->
-    <section class="team-contact px-custom px-md-0">
+    <section class="team-contact team-contact-csmp px-custom px-md-0">
         <div class="container">
             <div class="team-header text-center">
                 <h2 class="title">Đội ngũ hướng dẫn</h2>
@@ -306,17 +301,15 @@ get_header();
             <div class="team-members">
                 <?php
                 $team_members = array(
-
                     array(
-                        'gender' => 'male',
-                        'name' => 'Phan Đức Hiếu',
-                        'position' => 'Ủy viên Thường trực<br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
-                        'image' => 'lecturer-2.png',
+                        'gender' => 'female',
+                        'name' => 'Nguyễn minh hiền, FCCA',
+                        'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'image' => 'lecturer-6.png',
                         'position_more' => array(
-                            'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
-                            'Chủ tịch Ban Cố vấn Cấp cao VIOD',
+                            'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
                         ),
-                        'biography' => 'Ông Hiếu nhận bằng Thạc sĩ Luật tại Trường ĐH Maastricht, Hà Lan năm 2004. Là một nhà phân tích và hoạch định chính sách, Ông đã đóng góp cho sự thành công trong dự án về cải cách thủ tục hành chính của Chính phủ với vai trò là Trưởng nhóm đánh giá chính sách đầu tư.<br><br>Ông đã cộng tác và làm việc với Nhóm Ngân hàng Thế giới trên các lĩnh vực Quản trị Công ty, cải cách đổi mới hành chính trong nhiều năm qua và là giảng viên/diễn giả nổi tiếng về Quản trị Công ty.<br><br>Ông Hiếu là người soạn thảo chính của Luật Doanh nghiệp 2014 được biết đến là luật cải cách lớn nhất về tự do kinh doanh. Ông có nhiều kinh nghiệm về các công cụ hoạch định chính sách như đánh giá/dự báo tác động của pháp luật (RIA) và đo lường chi phí tiêu chuẩn (SCM).'
+                        'biography' => 'Bà Hiền có hơn 20 năm công tác tại Deloitte Việt Nam, trong đó có trên 13 năm kinh nghiệm cung cấp dịch vụ kiểm toán và đảm bảo, hơn 10 năm phụ trách quản lý và thực hiện hoạt động đào tạo của toàn công ty và cung cấp dịch vụ đào tạo chuyên môn về kế toán và kiểm toán cho các khách hàng là các Tập đoàn đa quốc gia, Tập đoàn trong nước, các DN niêm yết, DN tư nhân hoạt động trong các lĩnh vực sản xuất, khách sạn, kinh doanh bất động sản, dịch vụ…<br><br>Bà có nhiều năm cung cấp dịch vụ tư vấn và đào tạo về Quản trị Công ty (QTCT) cho các doanh nghiệp niêm yết, công ty cổ phần đại chúng, công ty cổ phần chưa niêm yết, công ty cổ phần có vốn nhà nước,…liên quan đến các lĩnh vực như: đánh giá hiệu quả hoạt động QTCT của doanh nghiệp theo quy định pháp luật, VN CG Code, ASEAN CG Scorecard…, tư vấn về cấu trúc Hội đồng Quản trị và các Ủy ban chuyên trách, tư vấn soát xét, hoàn thiện, xây dựng mới quy chế, chính sách liên quan đến hoạt động QTCT để đáp ứng yêu cầu pháp luật, thông lệ tốt và đặc điểm của doanh nghiệp. Bà là chuyên gia trong nước (ký hợp đồng dịch vụ) của Ngân hàng Phát triển Châu Á (ADB) trong việc đánh giá hoạt động QTCT cho các khách hàng do ADB chỉ định; thành viên tham gia đánh giá về QTCT và phát triển bền vững: ACGS, VNSI, VLCA, CSI 100, CSA…; giảng viên cho nhiều khóa đào tạo về QTCT; hỗ trợ xây dựng bản tin, viết bài chuyên sâu về lĩnh vực này; và thành viên chính của Việt Nam để phối hợp triển khai các chương trình Deloitte Global Boardroom Program (dự án nghiên cứu chuyên sâu, dự án đánh giá chuyên đề, chương trình hội thảo dành cho các thành viên HĐQT toàn cầu…).<br><br>Bên cạnh đó, Bà cũng có một số kinh nghiệm trong lĩnh vực nghiên cứu và tư vấn về ESG bao gồm các dự án nghiên cứu chuyên sâu tác động môi trường của chất thải bao bì rắn, sản xuất lúa phát thải thấp, nghiên cứu tiềm năng phát triển thương mại của Green Hydrogen, Kiểm kê khí nhà kính và dịch vụ đảm bảo, đánh giá thực hành PTBV đáp ứng mục tiêu của Liên Hợp Quốc (SDG) tư vấn soát xét và hướng dẫn xây dựng báo cáo Phát triển bền vững theo quy định Việt Nam và khung chuẩn mực báo cáo Quốc tế…'
                     ),
                     array(
                         'gender' => 'female',
@@ -332,76 +325,49 @@ get_header();
                         'biography' => 'Bà Giang có gần 25 năm công tác trong ngành Tài chính – Kế toán – Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm đảm nhận chức danh lãnh đạo quản lý chuyên sâu về Quản trị Công ty qua các chức danh Trưởng Ban kiểm soát, Trưởng Ban Kiểm toán nội bộ, CFO, Thành viên/Chủ tịch HĐQT, Trưởng Tiểu Ban KT&QTRR, Phó Chủ tịch UB ESG tại các Công ty niêm yết lớn trên sàn chứng khoán như Gas Shipping (GSP), PVTrans(PVT), PVOil (OIL) Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM. Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
-                        'gender' => 'male',
-                        'name' => 'Nguyễn Anh Tuấn',
-                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
-                        'image' => 'lecturer-5.png',
+                        'gender' => 'female',
+                        'name' => 'Hồ Thị Phương Tú',
+                        'position' => 'Giám đốc Phòng Quản lý Niêm yết<br>Sở Giao dịch Chứng khoán Hà Nội (HNX)',
+                        'image' => 'lecturer-13.png',
                         'position_more' => array(
-                            'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
-                            'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
-                            'Chủ tịch HĐQT, Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
-                            'Doanh nhân trẻ Việt Nam tiêu biểu 2022​'
+                            'Giám đốc Phòng Quản lý Niêm yết, Sở Giao dịch Chứng khoán Hà Nội (HNX)',
                         ),
-                        'biography' => 'Ông Tuấn có 20 năm kinh nghiệm trên vai trò là Thư ký HĐQT rồi Trưởng Ban Quản lý Vốn đầu tư, Tổng Công ty Đầu tư và Kinh doanh Vốn nhà nước.<br><br>Đặc biệt, Ông Tuấn đã có thời gian đảm nhiệm các vị trí quan trọng trong Hội đồng Quản trị bao gồm Chủ tịch điều hành, không điều hành, Phó Chủ tịch không điều hành và thành viên Hội đồng Quản trị không điều hành ở nhiều tổ chức như Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam, Cơ quan quốc gia về xe cơ giới quá cảnh ASEAN của Việt Nam, Tổng Công ty Thủy sản Việt Nam, Công ty TNHH Bảo hiểm Samsung Vina, Hiệp hội Bảo hiểm Việt Nam, Công ty Cổ phần nhựa Thiếu niên Tiền Phong, Công ty Cổ phần Traphaco.<br><br>Ông Tuấn tốt nghiệp cử nhân Đại học Ngoại thương Hà Nội và có bằng Thạc Sỹ Luật Kinh doanh Quốc tế của Pháp. Với mong muốn góp phần vào nâng cao nhận thức, hiệu quả của quản trị công ty đối với các doanh nghiệp Việt Nam, Ông đã tham gia nhiều hoạt động do VIOD tổ chức trên cương vị là diễn giả, tham gia các phiên thảo luận, là Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​, Phó Chủ tịch Câu lạc bộ các Chủ tịch HĐQT (Chair Club), thành viên Ban Cố vấn Chuyên môn VIOD và là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP).'
+                        'biography' => 'Bà Tú có hơn 20 năm kinh nghiệm làm việc trên thị trường vốn Việt Nam. Bà từng làm việc tại Vụ Phát triển thị trường Ủy ban Chứng khoán Nhà nước trong 02 năm (1999 – 2000) trước khi chuyển sang Trung tâm Giao dịch Chứng khoán Hà Nội – HaSTC (nay là Sở Giao dịch Chứng khoán Hà Nội – HNX). Bà là một trong những cán bộ đầu tiên của Trung tâm.<br><br>Bà có nhiều năm công tác ở mảng thẩm định và quản lý niêm yết và hiện đang giữ cương vị Giám đốc Phòng Quản lý Niêm yết tại HNX. Bà cũng tham gia nhiều chương trình quản trị công ty tại Việt Nam.<br><br>Bà Tú có bằng cử nhân của Đại học Kinh tế quốc dân và MBA của ĐH Quốc tế Nhật Bản.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Thế Mạnh',
                         'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
-                        'image' => 'lecturer-4.png',
+                        'image' => 'lecturer-14.png',
                         'position_more' => array(
-                            'Giám đốc Tư vấn, Deloitte Đông Nam Á'
+                            'Giám đốc Tư vấn, Deloitte Đông Nam Á',
                         ),
                         'biography' => 'Ông Mạnh là một chuyên gia tư vấn quản trị và tái cấu trúc doanh nghiệp với 14 năm kinh nghiệm trong các lĩnh vực: chiến lược & vận hành, quản trị công ty, quản trị rủi ro, kiểm soát nội bộ, kiểm toán nội bộ, quy trình kinh doanh, mô hình hoạt động, hệ thống phát hiện gian lận sớm, hệ thống quản lý tuân thủ và phân tích dữ liệu. Ông đã tích lũy rất nhiều kinh nghiệm thực tiễn trong việc thiết kế và triển khai các nội dung trên cho khách hàng từ nhiều ngành nghề khác nhau như: sản xuất, FMCG, dầu khí, viễn thông, thương mại, các công ty bảo hiểm và các định chế tài chính.<br><br>Ông Mạnh hiện đang giữ chức vụ Giám đốc Tư vấn tại Deloitte Đông Nam Á và đồng thời là giảng viên cho VIOD. Ông có nhiều kinh nghiệm thực tiễn trong việc phục vụ các doanh nghiệp lớn của khối nhà nước, tư nhân và doanh nghiệp gia đình tại Việt Nam.<br><br>Ông Mạnh đã có chứng nhận DCP của Viện Thành Viên HĐQT Việt Nam (VIOD) cùng nhiều chứng chỉ khác như chứng chỉ PSM I – Professional Scrum Master (Agile), chứng chỉ Quản lý rủi ro Tài chính – FRM.'
                     ),
                     array(
-                        'gender' => 'male',
-                        'name' => 'Phạm Hải Âu',
-                        'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
-                        'image' => 'lecturer-8.png',
-                        'position_more' => array(
-                            'Giám đốc Quản trị Rủi ro – Ngân hàng Quốc Dân (NCB)'
-                        ),
-                        'biography' => 'Ông Phạm Hải Âu là chuyên gia giàu kinh nghiệm trong lĩnh vực Kiểm toán, Kiểm soát Nội bộ và Quản trị Công ty, với hơn 20 năm công tác tại các tổ chức tài chính hàng đầu như PwC, Deutsche Bank, VietinBank, LPBank và VietCredit. Ông từng đảm nhiệm nhiều vị trí cấp cao như Trưởng Ban Kiểm soát, Thành viên HĐQT, Phó Tổng Giám đốc phụ trách Chiến lược và Rủi ro tại các ngân hàng và công ty tài Chính.<br><br>Trong suốt quá trình công tác, ông đã tham gia trực tiếp vào việc thiết kế, triển khai và giám sát hoạt động kiểm soát nội bộ, quản trị rủi ro và cơ chế vận hành của Ủy ban Kiểm toán. Với kiến thức chuyên môn sâu sắc cùng kinh nghiệm thực tiễn phong phú, ông là một trong những chuyên gia có nhiều đóng góp cho việc chuẩn hóa và nâng cao hiệu quả hoạt động UBKT tại Việt Nam, phù hợp với các chuẩn mực quốc tế về Quản trị Công ty.'
-                    ),
-                    array(
                         'gender' => 'female',
-                        'name' => 'Nguyễn Lưu Tuyền',
-                        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
-                        'image' => 'lecturer-9.png',
+                        'name' => 'Phan Mẫu Đơn',
+                        'position' => 'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT<br>Ngân hàng TMCP Quân đội (MB)',
+                        'image' => 'lecturer-15.png',
                         'position_more' => array(
-                            'Chuyên gia Ủy Ban kiểm Toán Tập đoàn Nam Long',
-                            'Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)'
+                            'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT, Ngân hàng TMCP Quân đội (MB)',
                         ),
-                        'biography' => 'TS. Nguyễn Lưu Tuyền đã có 20 năm kinh nghiệm làm việc trong lĩnh vực kiểm soát nội bộ, quản trị rủi ro, và kiểm toán khi đảm nhiệm các vị trí kiểm toán viên độc lập tại công ty kiểm toán KPMG, Trưởng kiểm soát nội bộ tại Ngân Hàng Credit Agricole CIB, Trưởng Ban Kiểm Soát, thành viên Ủy ban kiểm toán, và hiện nay là Chuyên gia Ủy ban kiểm toán của tập đoàn đầu tư và bất động sản Nam Long.<br><br>Bà Tuyền cũng có nhiều năm kinh nghiệm hướng dẫn và đào tạo chuyên sâu về hoạt động của UBKT và các chương trình cập nhật kiến thức dành cho kiểm toán viên. Cô đã trực tiếp tham gia nhiều hội nghị quốc tế về kiểm toán tại New York, Sydney, Dubai, và Anaheim – South California US. Bằng kinh nghiệm thực tiễn và kiến thức chuyên môn, cô đã có những đóng góp tích cực vào sự phát triển của nghề nghiệp kiểm toán và hoạt động của UBKT tại Việt Nam.'
-                    ),
-                    array(
-                        'gender' => 'female',
-                        'name' => 'Đồng Thị Thu Hương',
-                        'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
-                        'image' => 'lecturer-12.png',
-                        'position_more' => array(
-                            'Chuyên gia độc lập',
-                            'Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD'
-                        ),
-                        'biography' => 'Bà Đồng Thu Hương có hơn 15 năm kinh nghiệm trong lĩnh vực Quản trị Rủi ro, Kiểm toán Nội bộ và tư vấn Quản trị Công ty, đặc biệt trong ngành dịch vụ tài chính. Tại Deloitte Việt Nam, bà đảm nhiệm vai trò Giám đốc/Quản lý cấp cao, phụ trách tư vấn các dự án liên quan đến quản trị rủi ro, kiểm soát nội bộ, cấu trúc tổ chức rủi ro, tuân thủ Basel II, tỷ lệ an toàn vốn, và hệ thống đánh giá nội bộ về đầy đủ vốn (ICAAP) cho các ngân hàng thương mại trong nước và tổ chức tài chính quốc tế.<br><br>Bà từng là quản lý cấp trung tại EntroFine Vietnam và chuyên viên tư vấn cao cấp tại KPMG Việt Nam, tham gia nhiều dự án lớn về đánh giá tuân thủ, quản trị doanh nghiệp, phòng chống tội phạm tài chính và tái cấu trúc tổ chức. Khách hàng của bà bao gồm các ngân hàng và tổ chức tài chính lớn như BIDV, Vietcombank, ACB, Sacombank, SMBC, CTBC, JP Morgan Vietnam, cũng như các đơn vị tài trợ phát triển như CIDA, Cowater, BRASS.<br><br>Bà Hương Đông tốt nghiệp Thạc sĩ Tài chính – Ngân hàng tại Đại học Leeds (Vương quốc Anh), Cử nhân Kinh tế Quốc tế tại Đại học Kinh tế Quốc dân Hà Nội, đồng thời sở hữu các chứng chỉ quốc tế chuyên sâu như CIMA (2015) và Financial Risk Manager – FRM (GARP, 2018). Với kiến thức chuyên môn vững vàng và kinh nghiệm triển khai thực tiễn đa dạng, bà có nhiều đóng góp trong việc xây dựng hệ thống kiểm soát rủi ro, kiểm toán nội bộ và chuẩn hóa cơ chế tuân thủ trong các tổ chức tài chính tại Việt Nam.'
+                        'biography' => 'Bà Mẫu Đơn gắn bó với Ngân hàng TMCP Quân đội 21 năm và 17 năm là cán bộ quản lý của Phòng Kế hoạch tổng hợp – cơ quan giúp việc của TGĐ và Văn phòng HĐQT - cơ quan giúp việc của HĐQT. Bà Mẫu Đơn có 12 năm kinh nghiệm tại Văn phòng HĐQT với các mảng công việc từng phụ trách là: Thư ký Hội đồng quản trị, Thư ký Uỷ ban Nhân sự, Thư ký Hội đồng thi đua khen thưởng cấp HĐQT và là Thư ký của Đại hội đồng cổ đông MB từ năm 2017 đến nay.<br><br>Bà Mẫu Đơn có kinh nghiệm triển khai các mảng công việc: i) Báo cáo HĐQT, Đại hội đồng cổ đông, báo cáo thường niên, báo cáo quản trị theo quy định; ii) Hoạt động truyền thông định hướng và chính sách, hoạt động của HĐQT/BKS trong và ngoài MB; iii) Tham mưu và kết nối công tác truyền thông Tập đoàn và Quan hệ Công chúng theo chủ trương chính sách, định hướng của HĐQT về Tập đoàn. Ngoài ra, Bà Mẫu Đơn còn có nhiều kinh nghiệm trong triển khai hoạt động đối ngoại, hậu cần của HĐQT, BKS.'
                     ),
                 );
-                ?>
                 
-                <?php 
+                // Tự động xác định layout class dựa trên số lượng team members
                 $member_count = count($team_members);
                 $layout_class = '';
-                if ($member_count == 10) {
-                    $layout_class = 'layout-10';
-                } elseif ($member_count == 8) {
-                    $layout_class = 'layout-8';
+                if ($member_count == 5) {
+                    $layout_class = 'layout-5';
                 } elseif ($member_count == 7) {
                     $layout_class = 'layout-7';
-                } elseif ($member_count == 5) {
-                    $layout_class = 'layout-5';
+                } elseif ($member_count == 8) {
+                    $layout_class = 'layout-8';
                 }
                 ?>
+                
                 <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
