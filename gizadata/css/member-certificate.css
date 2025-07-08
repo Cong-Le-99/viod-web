@@ -123,6 +123,18 @@
     top: 18px;
     left: 40px;
   }
+  .member-certificate .organized-content-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 28px !important;
+    gap: 29px;
+  }
+  .member-certificate .organized-box-icon {
+    left: -26px !important;
+    top: calc(50% - 26px) !important;
+  }
 }
 
 /* Large Desktop */
@@ -541,7 +553,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1056px;
+  min-height: 1056px;
   display: flex;
   align-items: center;
   padding: 68px 0;
@@ -563,6 +575,67 @@
   text-align: left;
   color: #fff;
   margin-bottom: 32px;
+}
+
+/* Program Organized Content Boxes */
+.member-certificate .organized-content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.member-certificate .organized-content-box {
+  background: #082136;
+  border-radius: 20px;
+  padding: 32px 16px 16px 16px;
+  text-align: center;
+  position: relative;
+}
+
+.member-certificate .organized-box-icon {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 26px);
+}
+
+.member-certificate .organized-box-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.member-certificate .organized-box-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+
+.member-certificate .organized-box-content {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  border-top: 1px solid #394d5e;
+  padding-top: 12px;
+}
+
+/* Color variations */
+.member-certificate .organized-content-box.blue {
+  background: #1769ab;
+}
+
+.member-certificate .organized-content-box.dark {
+  background: #082136;
 }
 
 .member-certificate .organized-mobile-image {
@@ -669,6 +742,13 @@
     padding: 80px 0;
   }
 
+  .member-certificate .program-organized .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
   .member-certificate .content-section .row {
     margin-left: -24px;
     margin-right: -24px;
@@ -745,7 +825,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 715px;
+    min-height: 715px;
     display: flex;
     align-items: center;
     padding: 80px 0;
@@ -753,7 +833,7 @@
 
   .member-certificate .program-organized .organized-desktop-row {
     display: flex;
-    gap: 24px;
+    gap: 68px;
     align-items: center;
     width: 100%;
   }
@@ -766,7 +846,7 @@
   }
 
   .member-certificate .program-organized .organized-image-col {
-    flex: 0 0 680px;
+    flex: 0 0 670px;
   }
 
   .member-certificate .program-organized .organized-desktop-image {
@@ -777,8 +857,42 @@
   .member-certificate .program-organized .title {
     font-size: 32px;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 32px;
   }
+
+  /* Desktop Grid Layout for Content Boxes */
+  .member-certificate .organized-content-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    margin-top: 0;
+  }
+
+  .member-certificate .organized-box-title {
+    font-size: 20px;
+    flex: 0 0 240px;
+    text-align: right;
+    margin: 0;
+  }
+
+  .member-certificate .organized-box-content {
+    font-size: 16px;
+    position: relative;
+    padding: 0;
+    border-top: none !important;
+    text-align: left !important;
+  }
+  .member-certificate .organized-box-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -14px;
+    width: 1px;
+    height: 100%;
+    background-color: #394d5e;
+  }
+
+  /* Team Contact Section Desktop */
 
   /* Team Contact Section Desktop */
   .member-certificate .team-contact {
@@ -896,6 +1010,18 @@
   .member-certificate .btn-view-more {
     padding: 16px 32px;
     font-size: 16px;
+  }
+}
+
+/* Tablet Layout for Organized Section */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .member-certificate .program-organized .organized-desktop-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .member-certificate .program-organized .organized-content-col {
+    text-align: center;
   }
 }
 

@@ -223,28 +223,74 @@ get_header();
     <!-- Content Section program organized -->
     <section class="program-organized px-custom px-md-0">
         <div class="container">
+            <?php
+            // Data cho organized content với SVG icons thực tế
+            $organized_content = array(
+                array(
+                    'icon' => 'calendar-clock.svg',
+                    'title' => 'THỜI LƯỢNG',
+                    'content' => '6 buổi học tương tác liên tục trong 3 ngày tham dự',
+                    'color' => 'dark'
+                ),
+                array(
+                    'icon' => 'user-tie.svg',
+                    'title' => 'NGƯỜI HƯỚNG DẪN',
+                    'content' => 'Chuyên gia QTCT, thành viên HĐQT nhiều kinh nghiệm về QTCT tại Việt Nam và trên thế giới',
+                    'color' => 'dark'
+                ),
+                array(
+                    'icon' => 'activity.svg',
+                    'title' => 'HOẠT ĐỘNG',
+                    'content' => 'Tính hướng nghiên cứu, thảo luận nhóm, phiên thảo luận và các hoạt động khác',
+                    'color' => 'dark'
+                ),
+                array(
+                    'icon' => 'network.svg',
+                    'title' => 'KẾT NỐI',
+                    'content' => 'Hoạt động "Member Networking" và các sự kiện cho thành viên VIOD',
+                    'color' => 'dark'
+                )
+            );
+            ?>
+            
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
                 <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
                 
-                <div class="organized-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-mb.png" 
-                         alt="Program Organized Mobile" 
-                         class="organized-mobile-image">
+                <div class="organized-content-grid">
+                    <?php foreach ($organized_content as $content): ?>
+                        <div class="organized-content-box <?php echo $content['color']; ?>">
+                            <div class="organized-box-icon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $content['icon']; ?>" alt="<?php echo $content['title']; ?>" />
+                            </div>
+                            <h3 class="organized-box-title"><?php echo $content['title']; ?></h3>
+                            <p class="organized-box-content"><?php echo $content['content']; ?></p>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
             <!-- Desktop Layout -->
             <div class="desktop-layout d-none d-md-block">
                 <div class="organized-desktop-row">
-                    <div class="organized-content-col">
-                        <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
-                    </div>
-                    <div class="organized-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/program-organized-box-dk.png" 
-                             alt="Program Organized Desktop" 
-                             class="organized-desktop-image">
+                    <div class="organized-content-col organized-desktop-row">
+                        <div class="organized-content-col">
+                            <h2 class="title mb-0">Chương trình được tổ chức như thế nào?</h2>
+                        </div>
+                        <div class="organized-image-col">
+                            <div class="organized-content-grid">
+                                <?php foreach ($organized_content as $content): ?>
+                                    <div class="organized-content-box <?php echo $content['color']; ?>">
+                                        <div class="organized-box-icon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $content['icon']; ?>" alt="<?php echo $content['title']; ?>" />
+                                        </div>
+                                        <h3 class="organized-box-title"><?php echo $content['title']; ?></h3>
+                                        <p class="organized-box-content"><?php echo $content['content']; ?></p>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
