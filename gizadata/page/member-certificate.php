@@ -311,26 +311,29 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Hà Thu Thanh',
-                        'position' => 'Chủ tịch HĐQT<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'position' => 'Chủ tịch HĐQT<br>Viện Thành viên HĐQT Việt Nam (VIOD)',
                         'image' => 'lecturer-1.png',
                         'position_more' => array(
-                            'Chủ tịch HĐQT, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
-                            'Thành viên HĐQT Công ty Cổ phần Đầu tư Tài chính Việt Nam',
-                            'Giảng viên (thỉnh giảng) Khoa Quản trị Kinh doanh, Đại học Kinh tế TP.HCM'
+                            'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
+                            'Luật sư hành nghề, Đoàn Luật sư Thành phố Hà Nội',
                         ),
-                        'biography' => 'Bà Thanh có gần 23 năm công tác trong ngành Tài chính - Kế toán - Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kiểm toán nội bộ, CFO, Trưởng Ban kiểm soát, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải tại Việt Nam.<br><br>Bà Thanh có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Thanh hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Bà Hà Thu Thanh là Chủ tịch HĐTV và là một trong những người sáng lập của Deloitte Việt Nam – hãng tư vấn chuyên ngành và kiểm toán lớn nhất trên thế giới và tại Việt Nam, với hơn 40 năm kinh nghiệm, bao gồm 32 năm làm việc tại Deloitte Việt Nam trong đó có 25 năm đảm nhiệm vị trí lãnh đạo. Bên cạnh đó, Bà cũng có 8 năm làm việc tại Bộ Tài Chính trong vai trò là người làm chính sách về kế toán, kiểm toán. <br></br>
+                        Bà Thanh là Chủ tịch Viện Thành viên Hội đồng Quản trị (VIOD) kể từ khi VIOD được thành lập vào năm 2018. Bên cạnh vai trò lãnh đạo tại VIOD, Bà Thanh được đánh giá cao về những đóng góp to lớn và tiên phong trong việc phát triển nghề kế toán, kiểm toán, thúc đẩy quyền năng phụ nữ và tư duy lãnh đạo thông qua những vai trò chủ chốt trong một số hiệp hội và tổ chức nghề nghiệp. Trong những năm gần đây, Bà Thanh cũng là chuyên gia cao cấp trong lĩnh vực Quản trị Công ty, tư vấn về phát triển bền vững (ESG) cho cộng đồng doanh nghiệp xã hội và doanh nghiệp tư nhân tại Việt Nam. <br></br>
+                        Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" được bình chọn bởi Forbes và vinh dự nhận giải thưởng "Doanh nhân xuất sắc Châu Á Thái Bình Dương" năm 2017 & 2019 do Enterprise Asia tổ chức.
+                        '
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Phan Đức Hiếu',
-                        'position' => 'Uỷ viên chuyên trách Uỷ ban Kinh tế và Tài chính Quốc hội khóa XV',
+                        'position' => 'Ủy viên Thường trực <br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
                         'image' => 'lecturer-2.png',
                         'position_more' => array(
-                            'Uỷ viên chuyên trách Uỷ ban Kinh tế và Tài chính Quốc hội khóa XV',
-                            'Cựu Phó Tổng Giám đốc Ngân hàng Nhà nước Việt Nam',
-                            'Chuyên gia tư vấn chính sách tài chính - tiền tệ'
+                            'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
+                            'Chủ tịch Ban Cố vấn Cấp cao VIOD',
                         ),
-                        'biography' => 'Ông Hiếu có gần 25 năm công tác trong ngành Tài chính - Ngân hàng - Chính sách Kinh tế tại các cơ quan Nhà nước và tổ chức tài chính lớn với hơn 15 năm kinh nghiệm đảm nhận các vị trí lãnh đạo cao cấp trong hệ thống ngân hàng và quản lý chính sách tài chính quốc gia.<br><br>Ông Hiếu có bằng Tiến sĩ Kinh tế, Đại học Kinh tế Quốc dân & Bằng Thạc sĩ Tài chính Ngân hàng, Đại học Kinh tế TP HCM.<br><br>Ông Hiếu hiện cũng là chuyên gia tư vấn chính sách tài chính tiền tệ và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Ông Hiếu nhận bằng Thạc sĩ Luật tại Trường ĐH Maastricht, Hà Lan năm 2004. Là một nhà phân tích và hoạch định chính sách, Ông đã đóng góp cho sự thành công trong dự án về cải cách thủ tục hành chính của Chính phủ với vai trò là Trưởng nhóm đánh giá chính sách đầu tư.<br></br>
+                        Ông đã cộng tác và làm việc với Nhóm Ngân hàng Thế giới trên các lĩnh vực Quản trị Công ty, cải cách đổi mới hành chính trong nhiều năm qua và là giảng viên/diễn giả nổi tiếng về Quản trị Công ty. <br></br>
+                        Ông Hiếu là người soạn thảo chính của Luật Doanh nghiệp 2014 được biết đến là luật cải cách lớn nhất về tự do kinh doanh. Ông có nhiều kinh nghiệm về các công cụ hoạch định chính sách như đánh giá/dự báo tác động của pháp luật (RIA) và đo lường chi phí tiêu chuẩn (SCM).'
                     ),
                     array(
                         'gender' => 'female',
@@ -339,34 +342,38 @@ get_header();
                         'image' => 'lecturer-3.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
+                            'Thành viên HĐQT, Trưởng Tiểu Ban Kiểm toán & Quản trị rủi ro Tổng công ty Cổ phần Vận tải Dầu khí (PVTrans)',
                             'Chủ tịch HĐQT Công ty Cổ phần Vận tải Nhật Việt',
-                            'Giảng viên (thỉnh giảng) Khoa Tài chính, Đại học Kinh tế TP.HCM'
+                            'Giảng viên (thỉnh giảng) Khoa Tài chính, Đại học Kinh tế TP. Hồ Chí Minh'
                         ),
-                        'biography' => 'Bà Giang có gần 23 năm công tác trong ngành Tài chính - Kế toán - Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kiểm toán nội bộ, CFO, Trưởng Ban kiểm soát, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải tại Việt Nam.<br><br>Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Bà Giang có gần 25 năm công tác trong ngành Tài chính – Kế toán – Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm đảm nhận chức danh lãnh đạo quản lý chuyên sâu về Quản trị Công ty qua các chức danh Trưởng Ban kiểm soát, Trưởng Ban Kiểm toán nội bộ, CFO, Thành viên/Chủ tịch HĐQT, Trưởng Tiểu Ban KT&QTRR, Phó Chủ tịch UB ESG tại các Công ty niêm yết lớn trên sàn chứng khoán như Gas Shipping (GSP), PVTrans(PVT), PVOil (OIL) Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM. Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Lê Quang Phúc',
-                        'position' => 'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
+                        'position' => 'Chủ tịch HĐQT<br>Công ty Cổ phần Tư vấn Quản lý BDSC',
                         'image' => 'lecturer-4.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
-                            'Thành viên HĐQT Công ty Cổ phần Đầu tư Phát triển Bất động sản',
-                            'Chuyên gia tư vấn chiến lược doanh nghiệp'
+                            'Thành viên HĐQT độc lập, Chủ tịch UBKT, Công ty Cổ phần Vàng bạc đá quý Phú Nhuận (PNJ)',
+                            'Thành viên HĐQT độc lập, Chủ tịch UBNS&LT, Công ty Cổ phần Searefico (SRF)',
+                            'Thành viên HĐQT không điều hành, Công ty Cổ phần Phát triển bất động sản Phát Đạt (PDR)',
+                            'Thành viên độc lập HĐQT kiêm Chủ tịch Uỷ ban ESG/Chủ tịch UBKT Công ty Cổ phần Thành Thành Công - Biên Hoà (SBT)'
                         ),
-                        'biography' => 'Ông Phúc có gần 20 năm công tác trong ngành Tài chính - Đầu tư - Bất động sản tại các Tập đoàn kinh tế tư nhân và Nhà nước với hơn 12 năm kinh nghiệm đảm nhận các vị trí Giám đốc Tài chính, Trưởng Ban Đầu tư, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành bất động sản và tư vấn quản lý.<br><br>Ông Phúc có bằng MBA, Đại học Kinh tế TP HCM & Bằng Cử nhân Quản trị Kinh doanh, Đại học Ngoại thương.<br><br>Ông Phúc hiện cũng là chuyên gia tư vấn chiến lược doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Ông Phúc có hơn 25 năm kinh nghiệm làm việc ở các vị trí quản lý cấp cao tại các doanh nghiệp quy mô vừa và lớn ở Việt Nam; đặc biệt ở vị trí cố vấn cho HĐQT/Chủ tịch HĐQT/CEO của các công ty. Ông cũng có hơn 16 năm kinh nghiệm thực hiện dịch vụ tư vấn quản lý và giữ vị trí thành viên HĐQT độc lập/không điều hành của các công ty đại chúng/niêm yết tại việt Nam.<br><br>Với tư cách là Chủ tịch Công ty Cổ phần Tư vấn Quản lý BDSC, Ông Phúc đã tham gia vào nhiều dự án tư vấn quản lý cho các doanh nghiệp hàng đầu Việt Nam như Bến Thành Group, Trung Nguyên Group, Cienco 5, Acecook, Merap Group…. Ông cũng đã dẫn dắt đội ngũ chuyên gia tư vấn dày dặn kinh nghiệm đưa ra các giải pháp về quản trị công ty, chiến lược và vận hành cho nhiều công ty trong các ngành công nghiệp khác nhau tại Việt Nam. BDSC đã giúp cải thiện đáng kể hiệu suất, hiệu quả và tính bền vững trong hoạt động kinh doanh của khách hàng.<br><br>Ngoài vai trò lãnh đạo tại BDSC, ông Phúc hiện đang giữ vai trò Thành viên HĐQT độc lập/không điều hành trong hội đồng quản trị của các công ty niêm yết như PNJ, SRF, PDR và SBT. Ông đã vận dụng kiến thức sâu rộng của mình về quản trị công ty, kiểm toán nội bộ và quản lý doanh nghiệp để góp phần xây dựng văn hóa tuân thủ, minh bạch và trách nhiệm giải trình, đảm bảo rằng các doanh nghiệp này không chỉ phát triển mạnh mẽ mà còn đóng góp tích cực cho cộng đồng. Ông Phúc cam kết thúc đẩy sự phát triển và tiến bộ của cộng đồng doanh nghiệp Việt Nam thông qua những nỗ lực về chuyên môn và đạo đức nghề nghiệp của mình.'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Anh Tuấn',
-                        'position' => 'Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)',
+                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
                         'image' => 'lecturer-5.png',
                         'position_more' => array(
-                            'Tổng Giám đốc CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)',
-                            'Thành viên HĐQT Hiệp hội Bảo hiểm Việt Nam',
-                            'Chuyên gia tư vấn rủi ro và bảo hiểm'
+                            'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
+                            'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
+                            'Chủ tịch HĐQT, Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+                            'Doanh nhân trẻ Việt Nam tiêu biểu 2022​'
                         ),
-                        'biography' => 'Ông Tuấn có gần 18 năm công tác trong ngành Bảo hiểm - Tái bảo hiểm - Quản lý rủi ro tại các công ty bảo hiểm lớn trong và ngoài nước với hơn 10 năm kinh nghiệm đảm nhận các vị trí Giám đốc Kinh doanh, Phó Tổng Giám đốc, Tổng Giám đốc của các công ty bảo hiểm và tái bảo hiểm hàng đầu.<br><br>Ông Tuấn có bằng Thạc sĩ Tài chính Bảo hiểm, Đại học Kinh tế TP HCM & Bằng Cử nhân Toán - Thống kê, Đại học Khoa học Tự nhiên TP HCM.<br><br>Ông Tuấn hiện cũng là chuyên gia tư vấn quản lý rủi ro doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Ông Tuấn có 20 năm kinh nghiệm trên vai trò là Thư ký HĐQT rồi Trưởng Ban Quản lý Vốn đầu tư, Tổng Công ty Đầu tư và Kinh doanh Vốn nhà nước.<br><br>Đặc biệt, Ông Tuấn đã có thời gian đảm nhiệm các vị trí quan trọng trong Hội đồng Quản trị bao gồm Chủ tịch điều hành, không điều hành, Phó Chủ tịch không điều hành và thành viên Hội đồng Quản trị không điều hành ở nhiều tổ chức như Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam, Cơ quan quốc gia về xe cơ giới quá cảnh ASEAN của Việt Nam, Tổng Công ty Thủy sản Việt Nam, Công ty TNHH Bảo hiểm Samsung Vina, Hiệp hội Bảo hiểm Việt Nam, Công ty Cổ phần nhựa Thiếu niên Tiền Phong, Công ty Cổ phần Traphaco.<br><br>Ông Tuấn tốt nghiệp cử nhân Đại học Ngoại thương Hà Nội và có bằng Thạc Sỹ Luật Kinh doanh Quốc tế của Pháp. Với mong muốn góp phần vào nâng cao nhận thức, hiệu quả của quản trị công ty đối với các doanh nghiệp Việt Nam, Ông đã tham gia nhiều hoạt động do VIOD tổ chức trên cương vị là diễn giả, tham gia các phiên thảo luận, là Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​, Phó Chủ tịch Câu lạc bộ các Chủ tịch HĐQT (Chair Club), thành viên Ban Cố vấn Chuyên môn VIOD và là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP).'
                     ),
                     array(
                         'gender' => 'female',
@@ -374,11 +381,9 @@ get_header();
                         'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
                         'image' => 'lecturer-6.png',
                         'position_more' => array(
-                            'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
-                            'Thành viên HĐQT Công ty Cổ phần Tư vấn Tài chính Kế toán',
-                            'Giảng viên (thỉnh giảng) Khoa Kế toán, Đại học Kinh tế TP.HCM'
+                            'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)'
                         ),
-                        'biography' => 'Bà Hiền có gần 22 năm công tác trong ngành Tài chính - Kế toán - Kiểm toán tại các công ty Big4 và Tập đoàn đa quốc gia với hơn 14 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Kế toán, CFO, Giám đốc Tài chính, Thành viên HĐQT của các công ty niêm yết lớn trong ngành dịch vụ tài chính và sản xuất.<br><br>Bà Hiền có bằng FCCA (Fellow of the Association of Chartered Certified Accountants), ACCA UK & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM.<br><br>Bà Hiền hiện cũng là giảng viên môn Kế toán Tài chính tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Bà Hiền có hơn 20 năm công tác tại Deloitte Việt Nam, trong đó có trên 13 năm kinh nghiệm cung cấp dịch vụ kiểm toán và đảm bảo, hơn 10 năm phụ trách quản lý và thực hiện hoạt động đào tạo của toàn công ty và cung cấp dịch vụ đào tạo chuyên môn về kế toán và kiểm toán cho các khách hàng là các Tập đoàn đa quốc gia, Tập đoàn trong nước, các DN niêm yết, DN tư nhân hoạt động trong các lĩnh vực sản xuất, khách sạn, kinh doanh bất động sản, dịch vụ…<br><br>Bà có nhiều năm cung cấp dịch vụ tư vấn và đào tạo về Quản trị Công ty (QTCT) cho các doanh nghiệp niêm yết, công ty cổ phần đại chúng, công ty cổ phần chưa niêm yết, công ty cổ phần có vốn nhà nước,…liên quan đến các lĩnh vực như: đánh giá hiệu quả hoạt động QTCT của doanh nghiệp theo quy định pháp luật, VN CG Code, ASEAN CG Scorecard…, tư vấn về cấu trúc Hội đồng Quản trị và các Ủy ban chuyên trách, tư vấn soát xét, hoàn thiện, xây dựng mới quy chế, chính sách liên quan đến hoạt động QTCT để đáp ứng yêu cầu pháp luật, thông lệ tốt và đặc điểm của doanh nghiệp. Bà là chuyên gia trong nước (ký hợp đồng dịch vụ) của Ngân hàng Phát triển Châu Á (ADB) trong việc đánh giá hoạt động QTCT cho các khách hàng do ADB chỉ định; thành viên tham gia đánh giá về QTCT và phát triển bền vững: ACGS, VNSI, VLCA, CSI 100, CSA…; giảng viên cho nhiều khóa đào tạo về QTCT; hỗ trợ xây dựng bản tin, viết bài chuyên sâu về lĩnh vực này; và thành viên chính của Việt Nam để phối hợp triển khai các chương trình Deloitte Global Boardroom Program (dự án nghiên cứu chuyên sâu, dự án đánh giá chuyên đề, chương trình hội thảo dành cho các thành viên HĐQT toàn cầu…).<br><br>Bên cạnh đó, Bà cũng có một số kinh nghiệm trong lĩnh vực nghiên cứu và tư vấn về ESG bao gồm các dự án nghiên cứu chuyên sâu tác động môi trường của chất thải bao bì rắn, sản xuất lúa phát thải thấp, nghiên cứu tiềm năng phát triển thương mại của Green Hydrogen, Kiểm kê khí nhà kính và dịch vụ đảm bảo, đánh giá thực hành PTBV đáp ứng mục tiêu của Liên Hợp Quốc (SDG) tư vấn soát xét và hướng dẫn xây dựng báo cáo Phát triển bền vững theo quy định Việt Nam và khung chuẩn mực báo cáo Quốc tế…'
                     ),
                     array(
                         'gender' => 'male',
@@ -386,23 +391,21 @@ get_header();
                         'position' => 'Chủ tịch HĐQT<br>Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
                         'image' => 'lecturer-7.png',
                         'position_more' => array(
-                            'Chủ tịch HĐQT, Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
-                            'Thành viên HĐQT Tập đoàn Dầu khí Việt Nam (PVN)',
-                            'Chuyên gia tư vấn logistics và vận tải'
+                            'Chủ tịch HĐQT Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
+                            'Nguyên Phó Chủ tịch HĐQT Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí'
                         ),
-                        'biography' => 'Ông Anh có gần 24 năm công tác trong ngành Dầu khí - Vận tải - Logistics tại Tập đoàn Dầu khí Việt Nam và các công ty liên kết với hơn 16 năm kinh nghiệm đảm nhận các vị trí Giám đốc Kinh doanh, Phó Tổng Giám đốc, Thành viên/Chủ tịch HĐQT của các công ty niêm yết lớn trong ngành vận tải dầu khí.<br><br>Ông Anh có bằng MBA, Đại học Kinh tế TP HCM & Bằng Cử nhân Kỹ thuật Hàng hải, Đại học Hàng hải Việt Nam.<br><br>Ông Anh hiện cũng là chuyên gia tư vấn logistics và vận tải biển tại Việt Nam, ông đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Ông Việt Anh có hơn 30 năm kinh nghiệm làm trong ngành công nghiệp dầu khí tại PetroVietnam và các công ty dầu khí hàng đầu quốc tế như BP, ExxonMobil. Từ năm 2007 đến nay ông đã đảm nhận các vị trí quản lý cấp cao như Tổng Giám đốc, Phó Chủ tịch HĐQT, Chủ tịch HĐQT của các Tổng công ty niêm yết lớn trên sàn chứng khoán như PVGAS (GAS), PTSC (PVS) và PVTrans (PVT).<br><br>Ông là một trong những nhà lãnh đạo tiên phong và dày dạn kinh nghiệm thực tiễn trong thực hành quản trị công ty, quản trị chiến lược và các mô hình tái cấu trúc tại các công ty đại chúng. Ông Việt Anh đã nhiều lần nhận các giải thưởng cao quý về lãnh đạo quản lý của Chính phủ cũng như các giải thưởng uy tín quốc tế như Doanh nhân Xuất sắc Châu Á các năm 2018, 2022 do APEA trao tặng (Master Entrepreneur Award).<br><br>Ông là Kỹ sư cơ khí và có bằng MBA, từng tham dự nhiều khóa học quản trị doanh nghiệp trong và ngoài nước. Ông đã có chứng nhận DCP và hiện là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP) của Viện Thành Viên HĐQT Việt Nam (VIOD).'
                     ),
                     array(
                         'gender' => 'male',
                         'name' => 'Đinh Toàn Trung',
-                        'position' => 'Thành viên Ban Cố vấn Chuyên môn VIOD',
+                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn VIOD​<br>Thành viên<br>Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
                         'image' => 'lecturer-8.png',
                         'position_more' => array(
-                            'Thành viên Ban Cố vấn Chuyên môn VIOD',
-                            'Cựu Giám đốc Tài chính Tập đoàn Điện lực Việt Nam (EVN)',
-                            'Chuyên gia tư vấn quản trị rủi ro doanh nghiệp'
+                            'Thành viên Ban Cố vấn Chuyên môn VIOD​',
+                            'Thành viên Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ'
                         ),
-                        'biography' => 'Ông Trung có gần 26 năm công tác trong ngành Điện lực - Tài chính - Kiểm toán tại Tập đoàn Điện lực Việt Nam và các tổ chức tài chính lớn với hơn 18 năm kinh nghiệm đảm nhận các vị trí Trưởng Ban Tài chính, CFO, Giám đốc Tài chính, Thành viên HĐQT của các công ty niêm yết lớn trong ngành năng lượng.<br><br>Ông Trung có bằng Thạc sĩ Quản trị Kinh doanh, Đại học Kinh tế TP HCM & Bằng Cử nhân Tài chính Kế toán, Đại học Kinh tế TP HCM.<br><br>Ông Trung hiện cũng là chuyên gia tư vấn quản trị rủi ro doanh nghiệp và có chứng nhận DCP, đồng thời là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+                        'biography' => 'Tiến sĩ Đinh Toàn Trung có nhiều kinh nghiệm làm việc tại các công ty đa quốc gia, như UBS AG, Credit Suisse, Trisa AG, và Holcim Ltd, và cũng là một doanh nhân khởi nghiệp, đồng sáng lập một công ty bao bì hàng đầu Việt Nam, Giám đốc Điều hành của PAT Industry Park. Ông cũng là cố vấn chiến lược cho nhiều công ty ở Việt Nam, như Công ty Xi măng Holcim Việt Nam, Ngân hàng Việt Á, Khu Công nghiệp PAT, Bao bì Thiên Ý.<br><br>Ông cũng đã hoạt động nhiều năm trong lĩnh vực giáo dục, là Giáo sư chính môn Chiến lược & Quản lý Quốc tế tại Trường đại học Khoa học Ứng dụng và Nghệ thuật Tây Bắc Thụy Sĩ. Ông cũng là giảng viên môn Quản lý Sự Thay đổi trong một chương trình "Đào tạo Giảng viên" cho lãnh đạo cấp cao của chính phủ ở Bắc Kinh và Sáng lập viên của một Chương trình Cao học Thụy Sĩ chuyên ngành Ngân hàng - Tài chính ở TP. Hồ Chí Minh.<br><br>Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels School ở Việt Nam và giảng dạy bộ môn Chiến lược/Quản trị Công ty. Trong nghiên cứu, Tiến sĩ Đinh Toàn Trung là Cố vấn Danh mục của Trung tâm Quốc tế về Quản trị Công ty tại Trường Đại học St. Gallen và là tác giả cũng như dịch giả trong các bộ môn chuyên về chiến lược, Quản trị Công ty. Ông có bằng Tiến sĩ Kinh tế học của Trường Đại học St. Gallen, và bằng Thạc sĩ QTKD của Trường Đại học Fribourg, Thụy Sĩ.'
                     )
                 );
                 ?>

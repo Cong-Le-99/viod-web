@@ -711,7 +711,7 @@
 .member-certificate .member-position {
   font-weight: 500;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 120%;
   color: #0c3555;
   margin: 0;
   /* line-height: 120%; */
@@ -1180,7 +1180,7 @@
   height: 6px;
   background-color: #3aa735;
   border-radius: 50%;
-  top: 10px;
+  top: 6px;
   left: 7px;
   opacity: 1;
 }
