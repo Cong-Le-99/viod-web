@@ -89,8 +89,93 @@
   transform: translateX(4px);
 }
 
+.ongoing-training {
+  background-image: url("../images/team-contact-bg-dk.png");
+}
+
+.ongoing-training-swiper {
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.ongoing-training-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  align-items: end;
+  transition: all 0.3s ease;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
+  .ongoing-training-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    gap: 0;
+    margin: 0 -44px;
+    min-height: 550px;
+    height: 550px;
+  }
+
+  .ongoing-training-swiper .swiper-slide {
+    flex: 0 0 auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    width: calc(33.333% - 18px);
+  }
+
+  /* Phần tử 1 - z-index 3, active mặc định */
+  .ongoing-training-swiper .swiper-slide:nth-child(1) {
+    z-index: 3;
+    margin-left: 0;
+  }
+
+  /* Phần tử 2 - z-index 2, overlap 30% với card 1 */
+  .ongoing-training-swiper .swiper-slide:nth-child(2) {
+    z-index: 2;
+    /* margin-left: -16px; */
+  }
+
+  /* Phần tử 3 - z-index 1, overlap 30% với card 2 */
+  .ongoing-training-swiper .swiper-slide:nth-child(3) {
+    z-index: 1;
+    /* margin-left: -16px; */
+  }
+
+  /* Base card width */
+  .ongoing-training-swiper .swiper-slide .card-event {
+    /* width: 300px; */
+    transition: all 0.3s ease;
+  }
+
+  /* Active state - width tăng 32px và scale nhẹ */
+  .ongoing-training-swiper .swiper-slide.swiper-slide-active .card-event,
+  .ongoing-training-swiper .swiper-slide:nth-child(1) .card-event {
+    /* width: 332px;
+    transform: scale(1.05); */
+  }
+
+  /* Cards không active có opacity nhẹ */
+  .ongoing-training-swiper
+    .swiper-slide:not(.swiper-slide-active):not(:nth-child(1))
+    .card-event {
+    /* width: calc(33.333% - 17px); */
+  }
+
+  .ongoing-training-swiper .swiper-slide-active {
+    width: calc(33.333% + 36px);
+  }
+
   .core-values {
     padding: 80px 0;
   }

@@ -229,6 +229,14 @@
 
 /* Button See More Styles */
 .btn-see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-see-more img {
+  transform: translateY(-2px);
 }
 
 .btn-see-more a {
@@ -261,6 +269,15 @@
   margin-right: auto;
 }
 
+.training-program .description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #0c3555;
+  margin-bottom: 48px;
+}
+
 /* Mobile specific adjustments */
 @media (max-width: 991.98px) {
   .training-program .description-mobile {
@@ -271,10 +288,22 @@
 }
 
 /* Desktop specific adjustments */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .training-program .description-desktop {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 16px;
+  }
+
+  .training-program .description {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .swiper-slide-active + .swiper-slide {
+    margin-left: 0px;
+  }
+
+  .swiper-slide-active + .swiper-slide + .swiper-slide {
+    margin-left: 0px;
   }
 }
