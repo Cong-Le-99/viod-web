@@ -2,7 +2,7 @@
   max-width: 1250px;
   width: 100%;
   margin: auto;
-  padding: 80px 0;
+  padding: 68px 0;
 }
 
 .training-program .title {
@@ -172,7 +172,7 @@
   padding: 14px 24px;
   border-radius: 8px;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -223,7 +223,7 @@
     font-size: 40px;
   }
   .training-program {
-    padding: 68px 0;
+    padding: 80px 0;
   }
 }
 
@@ -301,9 +301,18 @@
   }
   .swiper-slide-active + .swiper-slide {
     margin-left: 0px;
+    z-index: 2;
   }
 
   .swiper-slide-active + .swiper-slide + .swiper-slide {
-    margin-left: 0px !important;
+    /* margin-left: -16px; */
+    z-index: 1;
+  }
+
+  .btn-register {
+    font-size: 16px;
+  }
+  .swiper-slide-active .card-event .card-event_content {
+    padding: 16px;
   }
 }

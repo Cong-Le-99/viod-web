@@ -113,6 +113,17 @@
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .ongoing-training-swiper .swiper-slide:nth-child(1) {
+    margin-left: 0 !important;
+  }
+
+  /* Phần tử 2 - z-index 2, overlap 30% với card 1 */
+  .ongoing-training-swiper .swiper-slide:nth-child(2) {
+    margin-left: 0px !important;
+  }
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .ongoing-training-swiper {
@@ -144,13 +155,13 @@
   /* Phần tử 2 - z-index 2, overlap 30% với card 1 */
   .ongoing-training-swiper .swiper-slide:nth-child(2) {
     z-index: 2;
-    /* margin-left: -16px; */
+    margin-left: -16px;
   }
 
   /* Phần tử 3 - z-index 1, overlap 30% với card 2 */
   .ongoing-training-swiper .swiper-slide:nth-child(3) {
     z-index: 1;
-    /* margin-left: -16px; */
+    margin-left: -16px;
   }
 
   /* Base card width */

@@ -200,6 +200,7 @@ $training_programs = [
 ?>
 
 <section class="training-program relative overflow-hidden">
+    <div class="container">
         <h2 class="title"><?php echo isset($section_content['title']) ? nl2br($section_content['title']) : 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA'; ?></h2>
         <p class="description description-desktop d-none d-lg-block">
             <?php echo isset($section_content['description_desktop']) ? nl2br($section_content['description_desktop']) : 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện'; ?>
@@ -212,7 +213,7 @@ $training_programs = [
             <a href="<?php echo isset($section_content['link']) ? $section_content['link'] : ''; ?>"><?php echo isset($section_content['link_text']) ? $section_content['link_text'] : 'XEM THÊM →'; ?></a>
         </div>
         <?php endif; ?>
-
+    </div>
     <!-- Swiper Container -->
     <div class="training-programs-swiper">
         <div class="swiper-wrapper">
