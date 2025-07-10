@@ -1,0 +1,123 @@
+/* Core Values Section */
+.core-values {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+  padding: 68px 0;
+}
+
+.core-values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.core-value-item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: center; */
+  padding: 32px 32px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.core-value-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.core-value-icon {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.core-value-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.core-value-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #0c3555;
+  margin: 0 0 16px 0;
+}
+
+.core-value-description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #082136;
+  margin: 0 0 32px 0;
+  /* text-align: center; */
+  flex: 1;
+}
+
+.core-value-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3aa735;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.core-value-link:hover {
+  color: #2e8b2e;
+  transform: translateX(4px);
+}
+
+.core-value-link img {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.core-value-link:hover img {
+  transform: translateX(4px);
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .core-values {
+    padding: 80px 0;
+  }
+
+  .core-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  .core-value-item {
+    padding: 24px 48px;
+  }
+
+  .core-value-title {
+    font-size: 32px;
+  }
+
+  .core-value-description {
+    font-size: 18px;
+  }
+
+  .core-value-link {
+    font-size: 16px;
+  }
+
+  .core-value-link img {
+    width: 20px;
+    height: 20px;
+  }
+}

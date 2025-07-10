@@ -4,7 +4,9 @@
 get_template_part('trangchu/slide');
 
 /* những con số nổi bật */
-get_template_part('trangchu/nhungconsonoibat');
+// get_template_part('trangchu/nhungconsonoibat');
+get_template_part('trangchu/core-values');
+
 
 /* chương trình đào tạo dự kiến */
 get_template_part('trangchu/daotaodukien');
