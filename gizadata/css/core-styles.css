@@ -1,0 +1,23 @@
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #082136;
+  margin-bottom: 24px;
+}
+
+.session-wrap {
+  padding: 68px 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .session-wrap {
+    padding: 80px 0;
+  }
+}

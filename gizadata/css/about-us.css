@@ -31,6 +31,14 @@
   padding: 0px 20px;
 }
 
+.about-us-info {
+  background-image: url("../images/bg.png") !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .about-us-session {
@@ -47,3 +55,114 @@
     line-height: 48px;
   }
 }
+
+/* -------------------------- */
+/* About Us – Overview Styles */
+/* -------------------------- */
+.about-us-overview {
+  padding: 68px 0;
+}
+
+.about-us-overview .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #082136;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Mobile wrapper with background image */
+.overview-wrapper {
+  background-image: url("../images/about-us-overview-mb.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+}
+
+/* Box styles */
+.overview-box {
+  background: #e0f5df;
+  border-radius: 24px;
+  padding: 24px;
+  height: 100%;
+}
+
+.box-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #082136;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.box-title img {
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.box-content {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #082136;
+  margin-bottom: 0px;
+}
+
+/* Commitment section */
+.commit-item .commit-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #082136;
+}
+
+.commit-icon {
+  width: 58px;
+  height: 58px;
+}
+
+/* Desktop Overrides */
+@media (min-width: 768px) {
+  .about-us-overview {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+  }
+
+  .about-us-overview .title {
+    font-size: 24px;
+  }
+
+  .overview-wrapper {
+    background: none;
+    padding: 0;
+  }
+
+  .box-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .box-content {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .overview-box.overview-box-transparent {
+    background: transparent !important;
+  }
+
+  .overview-box {
+    padding: 24px 32px;
+  }
+}
+
+/* -------------------------- */
