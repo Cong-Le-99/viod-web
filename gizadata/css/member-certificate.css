@@ -2,7 +2,7 @@
 
 /* Custom Container Width - Override BS5 */
 .container {
-  max-width: 1222px !important;
+  max-width: 1200px !important;
 }
 
 /* Custom padding utilities for mobile sections */
@@ -44,8 +44,8 @@
 /* Breadcrumb Styles */
 .member-certificate .breadcrumb-nav {
   position: absolute;
-  top: 18px;
-  left: 40px;
+  top: 16px;
+  left: 24px;
   z-index: 10;
 }
 
@@ -117,6 +117,9 @@
 
 /* Desktop Styles */
 @media (min-width: 768px) {
+  .member-certificate.about-us .banner {
+    background-image: url("../images/about-us-dk.png") !important;
+  }
   .member-certificate .banner {
     height: 674px;
     background-image: url("../images/hero-banner-dcp-dk.png");
