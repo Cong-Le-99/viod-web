@@ -376,6 +376,7 @@ get_header();
         </div>
     </div>
 </section>
+<?php get_template_part('components/contact-us-socials'); ?>
 </div>
 
 <?php        

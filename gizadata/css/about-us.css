@@ -39,6 +39,10 @@
   background-position: top;
 }
 
+.contact-us-socials {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+}
+
 .roadmap {
   background-image: url("../images/bg.png") !important;
   background-color: transparent !important;
@@ -46,6 +50,11 @@
   background-size: cover;
   background-position: top;
   background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+}
+.contact-us-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Desktop Styles */
@@ -236,6 +245,42 @@
   display: block;
 }
 
+.contact-us-item-title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+  color: #3aa735;
+}
+
+.contact-us-item-content {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #082136;
+}
+
+.contact-us-item-title-label {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #3aa735;
+}
+.contact-us-item-content-label {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #082136;
+}
+
 @media (min-width: 767px) {
   /* Giữ nguyên 2 items/row ở sm */
   .founder-item {
@@ -248,6 +293,11 @@
 
   .founder-partners {
     flex-wrap: nowrap;
+  }
+
+  .contact-us-wrap {
+    flex-direction: row;
+    gap: 78px;
   }
 }
 /* 
@@ -313,4 +363,16 @@
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 0px;
+}
+
+.contact-us-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-us-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
