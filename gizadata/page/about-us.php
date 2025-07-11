@@ -242,7 +242,142 @@ get_header();
         </div>
     </div>
 </section>
+<section class="viod-partner d-md-block d-none">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6">
+                <h2 class="viod-partner-title text-center text-lg-start mb-0">VIOD Là đối tác kỹ thuật đáng tin cậy của Cuộc Bình chọn Doanh nghiệp Niêm yết (VLCA). Đồng thời là Cơ quan tham gia đánh giá Thẻ điểm Quản trị Công ty khu vực ASEAN (ACGS)</h2>
+            </div>
+            <div class="col-6">
+                <div class="viod-partner-content d-flex justify-content-center align-items-center flex-wrap flex-lg-nowrap">
+                    <div class="viod-partner-content-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/partner-1.png" alt="partner-1" class="partner-img" />
+                    </div>
+                    <div class="viod-partner-content-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/partner-2.png" alt="partner-2" class="partner-img" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="roadmap  session-wrap d-md-block d-none">
+    <div class="container relative">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title mb-5">CHẶNG ĐƯỜNG HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/roadmap.png" alt="roadmap" class="roadmap-image w-100 h-auto mt-1" />
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 md-mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title ">Đối tác sáng lập</h2>
+               <div class="founder-partners">
+                   <?php
+                       $founder_imgs = [
+                           'partner-3.png',
+                           'partner-4.png',
+                           'partner-5.png',
+                           'partner-6.png',
+                           'partner-7.png'
+                       ];
+                       foreach ($founder_imgs as $img_name) : ?>
+                           <div class="founder-item">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $img_name; ?>" alt="founder-partner" class="img-fluid" />
+                           </div>
+                   <?php endforeach; ?>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="roadmap-partners  session-wrap d-md-none d-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <h2 class="title">CHẶNG ĐƯỜNG HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
+            <p class="roadmap-title-sub text-center mb-5">
+                VIOD là định chế tiên phong và chuyên nghiệp về Quản trị Công ty và phát triển bền vững tại Việt Nam.
+            </p>
+            <?php
+                $roadmap_mobile = [
+                    [
+                        'year' => '12/2016',
+                        'title' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI)',
+                        'description' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI) hình thành với sự hỗ trợ của <strong>Tổ chức Tài chính quốc tế (IFC)</strong> phối hợp <strong>Sở Giao dịch Chứng khoán TP.HCM (HOSE)</strong> và <strong>Sở Giao dịch Chứng khoán Hà Nội (HNX)</strong> cùng sự hỗ trợ của <strong>Ủy ban Chứng khoán Nhà nước (SSC)</strong>.',
+                    ],
+                    [
+                        'year' => '2018',
+                        'title' => 'Thành lập VIOD',
+                        'description' => 'VCGI thành lập <strong>Viện Thành viên Hội đồng quản trị Việt Nam (VIOD)</strong> với sự hỗ trợ kỹ thuật của <strong>IFC</strong> và <strong>Cục Kinh tế Liên bang Thụy Sĩ (SECO)</strong>.',
+                    ],
+                    [
+                        'year' => '2019',
+                        'title' => 'Ra đời CMP',
+                        'description' => 'Từ năm 2018–2021, phạm vi phủ sóng của VIOD ngày càng phát triển nhanh chóng trong cộng đồng và mạng lưới quan hệ đối tác với sự ra đời của <strong>Chương trình thành viên Doanh nghiệp (CMP)</strong>.',
+                    ],
+                    [
+                        'year' => '2022',
+                        'title' => 'Kỷ niệm 6 năm',
+                        'description' => '<strong>Nhận Bằng khen của Bộ Tài chính vào tháng 9/2024</strong>.',
+                    ],
+                    [
+                        'year' => '2023',
+                        'title' => 'Dấu ấn 5 năm',
+                        'description' => '',
+                    ],
+                    [
+                        'year' => '2024',
+                        'title' => 'Thành viên GNDi & Ra mắt IMP',
+                        'description' => '<strong>Chính thức là Thành viên của GNDi</strong> – Đại diện Việt Nam trong mạng lưới các Viện Thành viên Hội đồng Quản trị toàn cầu. Ra mắt <strong>Chương trình thành viên Cá nhân (IMP)</strong>.',
+                    ],
+                ];
+            ?>
+            <div class="roadmap-time-line">
+                <?php foreach ($roadmap_mobile as $item): ?>
+                    <div class="roadmap-card">
+                       <div class="d-flex align-items-center gap-1 mb-2">
+                       <span class="roadmap-year"><?php echo $item['year']; ?></span>
+                       <img src="<?php echo get_template_directory_uri(); ?>/images/viod.svg" alt="viod" class="roadmap-logo" />
+                       </div>
+                        <h3 class="roadmap-card-title"><?php echo $item['title']; ?></h3>
+                        <?php if (!empty($item['description'])): ?>
+                        <p class="roadmap-desc"><?php echo $item['description']; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 md-mt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title ">Đối tác sáng lập</h2>
+               <div class="founder-partners">
+                   <?php
+                       $founder_imgs = [
+                           'partner-3.png',
+                           'partner-4.png',
+                           'partner-5.png',
+                           'partner-6.png',
+                           'partner-7.png'
+                       ];
+                       foreach ($founder_imgs as $img_name) : ?>
+                           <div class="founder-item">
+                               <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $img_name; ?>" alt="founder-partner" class="img-fluid" />
+                           </div>
+                   <?php endforeach; ?>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
+
 <?php        
 get_footer();
 ?>
