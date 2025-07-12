@@ -708,6 +708,10 @@ a:hover {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
+.social-icon-light {
+  background: #d1dfd8;
+}
+
 .social-icon svg {
   width: 16px;
   height: 16px;
