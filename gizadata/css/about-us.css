@@ -72,6 +72,10 @@
     font-size: 40px;
     line-height: 48px;
   }
+
+  .contact-us-global-partnerships {
+    background: #fff;
+  }
 }
 
 /* -------------------------- */
@@ -299,6 +303,16 @@
     flex-direction: row;
     gap: 78px;
   }
+
+  .partnerships-item-title,
+  .partnerships-item-title h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .acgn-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 /* 
 @media (min-width: 992px) {
@@ -375,4 +389,115 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+/* --- Partnerships Section --- */
+.partnerships-item {
+  border: 1.5px solid #3aa735;
+  border-radius: 16px;
+  padding: 24px 16px;
+  background: #fff;
+  margin-bottom: 16px;
+}
+
+.partnerships-item-title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #082136;
+}
+
+.partnerships-item-title h3 {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Box ACGN */
+.acgn-box {
+  border: 1.5px solid #0c3555;
+  border-radius: 12px;
+  padding: 16px 0px;
+  background: #fff;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.acgn-text {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0c3555;
+  width: 100%;
+  display: block;
+}
+
+/* VIOD member content in B column */
+.viod-member-content {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #082136;
+}
+
+/* Đảm bảo 2 cột partnerships-item luôn bằng chiều cao nhau */
+/* @media (min-width: 768px) {
+  .contact-us-global-partnerships .row.gy-4 {
+    display: flex;
+    align-items: stretch;
+  }
+  .contact-us-global-partnerships .partnerships-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-us-global-partnerships .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+} */
+
+.contact-us-container-custom {
+  max-width: 1400px !important;
+}
+
+@media (min-width: 768px) {
+  .contact-us-global-partnerships .row.gy-4 {
+    display: flex;
+    align-items: stretch;
+  }
+  .contact-us-global-partnerships .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us-global-partnerships .partnerships-item {
+    flex: 1 1 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+  }
+  .acgn-box {
+    width: calc(100% - 160px) !important;
+  }
 }
