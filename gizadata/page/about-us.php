@@ -263,7 +263,7 @@ get_header();
     </div>
 </section>
 
-<section class="roadmap  session-wrap d-md-block d-none">
+<section class="roadmap  session-wrap d-md-block d-none bg-before position-relative">
     <div class="container relative">
         <div class="row">
             <div class="col-12">
@@ -376,6 +376,7 @@ get_header();
         </div>
     </div>
 </section>
+<?php get_template_part('components/partners-section'); ?>
 <?php get_template_part('components/publications-and-research'); ?>
 <?php get_template_part('components/contact-us-membership-programs'); ?>
 <?php get_template_part('components/contact-us-global-partnerships'); ?>
