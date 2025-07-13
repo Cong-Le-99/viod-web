@@ -17,7 +17,7 @@ get_header();
                         <img class="w-1 h-1" src="<?php echo get_template_directory_uri(); ?>/images/home.svg" alt="">
                     </a>
                 </li>
-                <li class="breadcrumb-item active">Liên hệ</li>
+                <li class="breadcrumb-item active">Về chúng tôi</li>
             </ol>
         </nav>
         <div class="banner-content">
@@ -376,6 +376,7 @@ get_header();
         </div>
     </div>
 </section>
+<?php get_template_part('components/board-of-directors'); ?>
 <?php get_template_part('components/partners-section'); ?>
 <?php get_template_part('components/publications-and-research'); ?>
 <?php get_template_part('components/contact-us-membership-programs'); ?>

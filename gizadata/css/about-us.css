@@ -77,6 +77,14 @@
     padding: 68px 0;
   }
 
+  .team-grid-aac {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid-acac {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .member-certificate .about-us .banner {
     height: 674px;
     background-image: url("../images/about-us-dk.png");
@@ -626,3 +634,37 @@
   display: block;
   margin: auto;
 }
+
+.member-certificate .board-of-directors {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%) !important;
+}
+
+.bg-board-of-directors {
+  background-image: url("../images/bg-group.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-grid-aac {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.team-grid-acac {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+/* 
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
