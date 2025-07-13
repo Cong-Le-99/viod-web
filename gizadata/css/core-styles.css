@@ -7,6 +7,10 @@
   margin-bottom: 24px;
 }
 
+.title.light {
+  color: #fff;
+}
+
 .session-wrap {
   padding: 68px 0;
 }
@@ -19,6 +23,36 @@
   letter-spacing: 0%;
   text-align: justify;
   color: #082136;
+}
+
+.bg-before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #082136; */
+  z-index: -1;
+  background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+}
+
+.bg-session-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-base.light {
+  color: #c3c5c4;
+}
+
+.publications-and-research-img {
+  max-width: 414px;
 }
 
 @media (min-width: 768px) {

@@ -1,4 +1,4 @@
-<div class="contact-us-membership-programs-wrap">
+<div class="contact-us-membership-programs-wrap position-relative bg-before">
 <section class="contact-us-membership-programs session-wrap">
     <div class="container">
         <div class="row gy-4 md-gy-2">

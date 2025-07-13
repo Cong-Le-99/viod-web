@@ -208,8 +208,16 @@
   padding: 0;
 }
 
+.publications-and-research {
+  background-image: url("../images/publications-bg-mb.png") !important;
+}
+
 /* Desktop Overrides */
 @media (min-width: 768px) {
+  .publications-and-research {
+    background-image: url("../images/publications-bg-dk.png") !important;
+  }
+
   .about-us-overview {
     padding: 80px 0;
     background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
@@ -529,4 +537,56 @@
   align-items: center;
   gap: 20px;
   margin-top: 24px;
+}
+
+/* --- Publications and Research Section --- */
+.publications-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: calc(100% - 48px);
+}
+
+.publication-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.publication-item span {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #fff;
+  flex: 1;
+  margin-right: 48px;
+  transition: all 0.3s ease;
+}
+
+.publication-item svg {
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.publication-item svg path {
+  fill: #fff;
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover span,
+.publication-item.active span {
+  color: #3aa735;
+}
+
+.publication-item:hover svg path,
+.publication-item.active svg path {
+  fill: #3aa735;
+}
+
+.publications-and-research-img {
+  transition: all 0.3s ease;
 }

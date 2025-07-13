@@ -80,6 +80,12 @@ function viod_scripts() {
         ? filemtime(get_stylesheet_directory() . '/js/member-certificate.js') 
         : '1.0.0';
     wp_enqueue_script('member-certificate', get_template_directory_uri() . '/js/member-certificate.js', array('jquery'), $member_cert_js_version, true);
+    
+    // Enqueue publications script
+    $publications_js_version = file_exists(get_stylesheet_directory() . '/js/publications.js') 
+        ? filemtime(get_stylesheet_directory() . '/js/publications.js') 
+        : '1.0.0';
+    wp_enqueue_script('publications', get_template_directory_uri() . '/js/publications.js', array(), $publications_js_version, true);
 }
 add_action('wp_enqueue_scripts', 'viod_scripts');
 
