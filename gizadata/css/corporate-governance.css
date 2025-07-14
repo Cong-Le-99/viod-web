@@ -1,0 +1,16 @@
+.bg-corporate-governance {
+  background-image: url("../images/about-us-mb.png") !important;
+  height: 300px !important;
+  padding: 0px 20px;
+}
+
+.corporate-governance .title.light {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .bg-corporate-governance {
+    background-image: url("../images/banner-heading.png") !important;
+    height: 400px !important;
+  }
+}
