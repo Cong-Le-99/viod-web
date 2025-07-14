@@ -536,6 +536,14 @@
   .acgn-box {
     width: calc(100% - 160px) !important;
   }
+
+  .publications-grid {
+    width: calc(100% - 48px);
+  }
+
+  .publication-item span {
+    margin-right: 16px;
+  }
 }
 
 /* --- Membership Programs Section --- */
@@ -552,7 +560,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: calc(100% - 48px);
+  width: calc(100% - 0px);
 }
 
 .publication-item {

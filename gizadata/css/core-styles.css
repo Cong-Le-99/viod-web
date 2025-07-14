@@ -7,6 +7,21 @@
   margin-bottom: 24px;
 }
 
+.bg-session-dark {
+  background-color: #082136;
+}
+
+.btn-register-outline {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3aa735;
+}
+
 .title.light {
   color: #fff;
 }
@@ -67,5 +82,9 @@
 
   .text-base {
     line-height: 26px;
+  }
+
+  .btn-register-outline {
+    font-size: 16px;
   }
 }

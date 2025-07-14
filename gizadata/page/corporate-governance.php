@@ -29,6 +29,7 @@ get_header();
 </div>
 <?php get_template_part('components/library-governance-ipreport'); ?>
 <?php get_template_part('components/viod-directors-bulletin'); ?>
+<?php get_template_part('components/legal-docs'); ?>
 <?php        
 get_footer();
 ?>
