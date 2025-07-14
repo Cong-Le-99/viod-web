@@ -538,11 +538,11 @@
   }
 
   .publications-grid {
-    width: calc(100% - 48px);
+    width: calc(100% - 48px) !important;
   }
 
   .publication-item span {
-    margin-right: 16px;
+    margin-right: 48px !important;
   }
 }
 
@@ -579,7 +579,7 @@
   letter-spacing: 0%;
   color: #fff;
   flex: 1;
-  margin-right: 48px;
+  margin-right: 16px;
   transition: all 0.3s ease;
 }
 

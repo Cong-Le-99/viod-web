@@ -25,7 +25,43 @@
   max-width: fit-content !important;
 }
 
+.linked-websites-slider-section {
+  min-height: 440px;
+}
+
+.linked-websites-slider-navigation-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.linked-websites-slider-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.linked-websites-slider-images .linked-website-card {
+  border-radius: 16px;
+  border: 1px solid #3aa735;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linked-websites-slider-images .linked-website-card {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 8px; */
+}
+
 @media (min-width: 768px) {
+  .linked-websites-slider-navigation-top {
+    justify-content: left;
+    margin-bottom: 64px;
+  }
   .bg-corporate-governance {
     background-image: url("../images/banner-heading.png") !important;
     height: 400px !important;
@@ -35,5 +71,9 @@
   }
   .viod-directors-bulletin {
     background-image: url("../images/viod-directors-bulletin-bg-dk.png") !important;
+  }
+
+  .linked-websites-slider-right {
+    padding-left: 50px;
   }
 }
