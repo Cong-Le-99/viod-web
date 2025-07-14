@@ -575,6 +575,10 @@
   transition: all 0.3s ease;
 }
 
+.publication-item.dark span {
+  color: #082136;
+}
+
 .publication-item svg {
   flex-shrink: 0;
   transition: all 0.3s ease;
@@ -583,6 +587,10 @@
 .publication-item svg path {
   fill: #fff;
   transition: all 0.3s ease;
+}
+
+.publication-item.dark svg path {
+  fill: #082136;
 }
 
 .publication-item:hover span,

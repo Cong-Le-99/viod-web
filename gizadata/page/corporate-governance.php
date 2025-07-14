@@ -27,6 +27,7 @@ get_header();
         </div>
     </section>
 </div>
+<?php get_template_part('components/library-governance-ipreport'); ?>
 
 <?php        
 get_footer();

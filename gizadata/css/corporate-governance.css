@@ -8,9 +8,20 @@
   margin-bottom: 16px;
 }
 
+.library-governance {
+  background-image: url("../images/library-governance-ipreport-bg-mb.png") !important;
+}
+
+.library-governance-img {
+  min-height: 612px;
+}
+
 @media (min-width: 768px) {
   .bg-corporate-governance {
     background-image: url("../images/banner-heading.png") !important;
     height: 400px !important;
+  }
+  .library-governance {
+    background-image: url("../images/library-governance-ipreport-bg-dk.png") !important;
   }
 }
