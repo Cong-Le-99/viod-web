@@ -2,17 +2,16 @@
 function initializePublicationItems(containerSelector = null) {
   // Nếu có containerSelector, tìm publication items trong container đó
   // Nếu không, tìm tất cả publication items trên trang
-  const publicationItems = containerSelector
-    ? document
-        .querySelector(containerSelector)
-        ?.querySelectorAll(".publication-item")
-    : document.querySelectorAll(".publication-item");
+  const container = containerSelector
+    ? document.querySelector(containerSelector)
+    : document.body;
 
-  const publicationImage = containerSelector
-    ? document
-        .querySelector(containerSelector)
-        ?.querySelector(".publications-and-research-img")
-    : document.querySelector(".publications-and-research-img");
+  if (!container) return;
+
+  const publicationItems = container.querySelectorAll(".publication-item");
+  const publicationImage = container.querySelector(
+    ".publications-and-research-img"
+  );
 
   if (!publicationItems || !publicationItems.length || !publicationImage)
     return;
@@ -20,7 +19,7 @@ function initializePublicationItems(containerSelector = null) {
   // Xử lý hover cho từng item
   publicationItems.forEach((item) => {
     item.addEventListener("mouseenter", function () {
-      // Xóa active class từ tất cả items trong cùng container
+      // Xóa active class chỉ từ items trong cùng container
       publicationItems.forEach((i) => i.classList.remove("active"));
 
       // Thêm active class cho item hiện tại
@@ -34,11 +33,8 @@ function initializePublicationItems(containerSelector = null) {
     });
 
     item.addEventListener("mouseleave", function () {
-      const activeItem = containerSelector
-        ? document
-            .querySelector(containerSelector)
-            ?.querySelector(".publication-item.active")
-        : document.querySelector(".publication-item.active");
+      // Kiểm tra active item chỉ trong container hiện tại
+      const activeItem = container.querySelector(".publication-item.active");
 
       if (!activeItem) {
         publicationItems[0].classList.add("active");
@@ -61,6 +57,10 @@ function initializePublicationItems(containerSelector = null) {
 
 // Khởi tạo khi DOM loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Khởi tạo cho tất cả publication items trên trang
-  initializePublicationItems();
+  // Khởi tạo cho từng section riêng biệt
+  initializePublicationItems(".publications-and-research");
+  initializePublicationItems(".library-governance");
+
+  // Hoặc khởi tạo cho tất cả publication items trên trang (nếu không có container cụ thể)
+  // initializePublicationItems();
 });

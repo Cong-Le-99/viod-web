@@ -2,28 +2,33 @@
 // Mảng publications với title, image và link
 $publications = [
     [
-        'title' => 'Đề cử Thành viên Hội đồng Quản trị',
-        'image' => get_template_directory_uri() . '/images/books-2.png',
+        'title' => 'TÀI LIỆU VỀ QTCT CỦA VIỆT NAM',
+        'image' => get_template_directory_uri() . '/images/books-1.png',
         'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
     ],
     [
-        'title' => 'QTCT HIỆN ĐẠI <br class="d-none d-md-block">Bộ công cụ cho Hội đồng Quản trị <br class="d-none d-md-block">thành công vượt trội',
+        'title' => 'CÁC NGUYÊN TẮC VÀ THÔNG LỆ QTCT TỐT <br class="d-none d-md-block"> CỦA TRONG NƯỚC VÀ QUỐC TẾ',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
         'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
     ],
     [
-        'title' => 'Quản trị Công ty hiện đại <br class="d-none d-md-block"> Những bài học thực tiễn',
+        'title' => 'TỦ SÁCH QTCT VÀ CÁC ẤN PHẨM',
+        'image' => get_template_directory_uri() . '/images/publications-1.png',
+        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+    ],
+    [
+        'title' => 'BẢN TIN ĐỊNH KỲ VIOD',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
         'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
     ],
 ];
 ?>
 
-<section class="library-governance publications-and-research session-wrap position-relative bg-session-image">
+<section class="viod-directors-bulletin publications-and-research-2 session-wrap position-relative bg-session-image">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 ">
-                <h2 class="title text-center text-md-start text-nowrap-md">tủ sách sGDG</h2>
+                <h2 class="title text-center text-md-start text-nowrap-md">TÀI LIỆU VỀ QTCT</h2>
                 <p class="text-base ">
                 Cập nhật thông tin mới nhất về Quản trị Công ty và <br class="d-none d-md-block">  những xu hướng nổi bật trong lĩnh vực
                 </p>    
@@ -47,7 +52,7 @@ $publications = [
                 </button>
             </div>
             <div class="col-12 col-md-6 d-none d-md-block text-center">
-                <img class="library-governance-img publications-and-research-img w-100 h-auto" src="<?php echo $publications[0]['image']; ?>" alt="Tài liệu và nghiên cứu"> 
+                <img class="viod-directors-bulletin-img publications-and-research-img w-100 h-auto" src="<?php echo $publications[0]['image']; ?>" alt="Tài liệu và nghiên cứu"> 
             </div>
         </div>
     </div>
@@ -56,6 +61,6 @@ $publications = [
 <script>
 // Khởi tạo publication items cho section này
 document.addEventListener("DOMContentLoaded", function() {
-    initializePublicationItems(".library-governance");
+    initializePublicationItems(".publications-and-research-2");
 });
 </script>

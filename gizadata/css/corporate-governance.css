@@ -14,6 +14,15 @@
 
 .library-governance-img {
   min-height: 612px;
+  max-width: fit-content !important;
+}
+
+.viod-directors-bulletin {
+  background-image: url("../images/viod-directors-bulletin-bg-mb.png") !important;
+}
+.viod-directors-bulletin-img {
+  min-height: 888px;
+  max-width: fit-content !important;
 }
 
 @media (min-width: 768px) {
@@ -23,5 +32,8 @@
   }
   .library-governance {
     background-image: url("../images/library-governance-ipreport-bg-dk.png") !important;
+  }
+  .viod-directors-bulletin {
+    background-image: url("../images/viod-directors-bulletin-bg-dk.png") !important;
   }
 }
