@@ -57,7 +57,53 @@
   /* border-radius: 8px; */
 }
 
+.viod-events-carousel-section .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+}
+
+.swiper.viod-events-swiper {
+  padding-bottom: 68px;
+}
+/* Swiper dot và navigation cho slider video */
+.viod-events-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #3aa735;
+  opacity: 0.3;
+  margin: 0 4px !important;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.viod-events-swiper .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 8px;
+  background: #3aa735;
+  opacity: 1;
+}
+.viod-events-swiper .swiper-button-next,
+.viod-events-swiper .swiper-button-prev {
+  color: #3aa735;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.viod-events-swiper .swiper-button-next:after,
+.viod-events-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
+  .viod-events-carousel-section .swiper-slide {
+    width: 50%;
+  }
   .linked-websites-slider-navigation-top {
     justify-content: left;
     margin-bottom: 64px;

@@ -20,6 +20,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #3aa735;
+  border: none;
+  background-color: transparent;
 }
 
 .title.light {

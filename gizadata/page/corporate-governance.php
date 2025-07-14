@@ -30,6 +30,7 @@ get_header();
 <?php get_template_part('components/library-governance-ipreport'); ?>
 <?php get_template_part('components/viod-directors-bulletin'); ?>
 <?php get_template_part('components/legal-docs'); ?>
+<?php get_template_part('components/viod-events-carousel'); ?>
 <?php get_template_part('components/linked-websites-slider'); ?>
 <?php        
 get_footer();
