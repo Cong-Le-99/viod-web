@@ -120,4 +120,6 @@ $description = category_description($category->term_id);
         </div>
     </div>
 </section>
+
+
 <?php get_footer(); ?>
