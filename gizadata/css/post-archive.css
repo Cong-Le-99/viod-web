@@ -1,0 +1,9 @@
+.post-archive .banner {
+  background-image: url("../images/banner-heading-mb.png") !important;
+}
+
+@media (min-width: 768px) {
+  .post-archive .banner {
+    background-image: url("../images/banner-heading.png") !important;
+  }
+}

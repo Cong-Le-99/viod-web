@@ -9,6 +9,30 @@ $banner_image = $banner_image ? $banner_image : $default_image;
 $description = category_description($category->term_id);
 ?>
 
+<div class="member-certificate post-archive bg-post-archive">
+    <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
+    <div class="banner">
+        <!-- Breadcrumb chỉ hiện trên desktop -->
+        <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
+                    <a class="d-block d-md-none" href="<?php echo home_url(); ?>" style="width: 20px; height: 20px;">
+                        <img class="w-1 h-1" src="<?php echo get_template_directory_uri(); ?>/images/home.svg" alt="">
+                    </a>
+                </li>
+                <li class="breadcrumb-item active">Tin tức</li>
+            </ol>
+        </nav>
+        <div class="banner-content px-4">
+            <h2 class="title light">Tin tức</h2>
+            <p class="text-base light text-center">
+                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. <br class="d-none d-md-block"> Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP) 
+            </p>
+        </div>
+    </div>
+</div>
+
 <div class="chuyenmucbaiviet">
     <div class="archive-banner" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
         <div class="overlay"></div>

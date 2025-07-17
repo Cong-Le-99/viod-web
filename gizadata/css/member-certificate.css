@@ -79,6 +79,9 @@
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 4px;
+  margin-bottom: 2px;
 }
 
 /* Icon active - sá»­ dá»¥ng left-arrow-active.svg cho item active */

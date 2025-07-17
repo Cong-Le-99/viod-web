@@ -12,12 +12,13 @@ Text Domain: gizadata
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("css/home.css");
 @import url("css/about-us.css");
-/* @import url("css/core-styles.css"); */
+@import url("css/core-styles.css");
 @import url("css/testimonial.css");
 @import url("css/about.css");
 @import url("css/card.css");
 @import url("css/swiper-custom.css");
 @import url("css/corporate-governance.css");
+@import url("css/post-archive.css");
 /* Reset CSS */
 
 * {
