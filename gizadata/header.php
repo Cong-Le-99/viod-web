@@ -6,6 +6,9 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="<?php echo get_template_directory_uri(); ?>/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 

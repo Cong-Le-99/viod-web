@@ -123,16 +123,7 @@ $description = category_description($category->term_id);
 </section>
 <section class="post-archive-tabs session-wrap">
     <div class="container">
-        <div class="d-flex justify-content-between ">
-            <h2 class="title text-start mb-3 mb-md-5">DANH SÁCH BÀI VIẾT</h2>
-            <div class="d-flex justify-content-start align-items-baseline mt-1">
-                <a class="post-card-readmore">
-                    Xem tất cả
-                </a>
-            </div>
-        </div>
-        
-        <?php
+    <?php
         // Lấy category "Tin tức" và các sub categories
         $news_category = get_category_by_slug('tin-tuc');
         $news_category_id = $news_category ? $news_category->term_id : 0;
@@ -171,6 +162,16 @@ $description = category_description($category->term_id);
                 <?php endforeach; ?>
             </div>
         </div>
+        <div class="d-flex justify-content-between ">
+            <h2 class="title text-start mb-3 mb-md-5">DANH SÁCH BÀI VIẾT</h2>
+            <div class="d-flex justify-content-start align-items-baseline mt-1">
+                <a class="post-card-readmore">
+                    Xem tất cả
+                </a>
+            </div>
+        </div>
+        
+      
         
         <!-- Posts Grid -->
         <div class="posts-tabs-content">
