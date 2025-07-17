@@ -32,6 +32,7 @@ $description = category_description($category->term_id);
         </div>
     </div>
 </div>
+<div class="post-archive-content-wrap">
 <section class="post-archive-content session-wrap">
     <div class="container">
         <h2 class="title text-start mb-3 mb-md-5">TIN TỨC nổi bật</h2>
@@ -120,4 +121,130 @@ $description = category_description($category->term_id);
         </div>
     </div>
 </section>
+<section class="post-archive-tabs session-wrap">
+    <div class="container">
+        <div class="d-flex justify-content-between ">
+            <h2 class="title text-start mb-3 mb-md-5">DANH SÁCH BÀI VIẾT</h2>
+            <div class="d-flex justify-content-start align-items-baseline mt-1">
+                <a class="post-card-readmore">
+                    Xem tất cả
+                </a>
+            </div>
+        </div>
+        
+        <?php
+        // Lấy category "Tin tức" và các sub categories
+        $news_category = get_category_by_slug('tin-tuc');
+        $news_category_id = $news_category ? $news_category->term_id : 0;
+        
+        // Lấy các sub categories của "Tin tức"
+        $sub_categories = get_categories([
+            'parent' => $news_category_id,
+            'hide_empty' => false
+        ]);
+        
+        // Nếu không có sub categories, tạo mảng mặc định
+        if (empty($sub_categories)) {
+            $sub_categories = [
+                (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all'],
+                (object) ['term_id' => 0, 'name' => 'Tin thành viên', 'slug' => 'tin-thanh-vien'],
+                (object) ['term_id' => 0, 'name' => 'Góc chuyên gia', 'slug' => 'goc-chuyen-gia'],
+                (object) ['term_id' => 0, 'name' => 'Thông cáo báo chí', 'slug' => 'thong-cao-bao-chi']
+            ];
+        } else {
+            // Thêm option "Tất cả" vào đầu
+            array_unshift($sub_categories, (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all']);
+        }
+        
+        // Lấy category hiện tại từ URL parameter hoặc mặc định là category đầu tiên
+        $current_category_slug = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : $sub_categories[0]->slug;
+        ?>
+        
+        <!-- Tab Navigation -->
+        <div class="category-tabs mb-4">
+            <div class="tab-nav">
+                <?php foreach ($sub_categories as $sub_cat) : ?>
+                    <button class="tab-button <?php echo ($current_category_slug === $sub_cat->slug) ? 'active' : ''; ?>" 
+                            data-category="<?php echo $sub_cat->slug; ?>">
+                        <?php echo $sub_cat->name; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        
+        <!-- Posts Grid -->
+        <div class="posts-tabs-content">
+            <?php
+            // Query posts theo category được chọn
+            $query_args = [
+                'post_type' => 'post',
+                'posts_per_page' => 9,
+                'orderby' => 'date',
+                'order' => 'DESC'
+            ];
+            
+            if ($current_category_slug !== 'all') {
+                // Tìm category ID theo slug
+                $selected_category = get_category_by_slug($current_category_slug);
+                if ($selected_category) {
+                    $query_args['cat'] = $selected_category->term_id;
+                } else {
+                    // Nếu không tìm thấy category, lấy tất cả bài viết trong "Tin tức"
+                    $query_args['cat'] = $news_category_id;
+                }
+            } else {
+                // Hiển thị tất cả bài viết trong "Tin tức"
+                $query_args['cat'] = $news_category_id;
+            }
+            
+            $posts_query = new WP_Query($query_args);
+            
+            if ($posts_query->have_posts()) :
+                echo '<div class="posts-grid">';
+                while ($posts_query->have_posts()) : $posts_query->the_post();
+                    $image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                    if (!$image_url) {
+                        $image_url = get_template_directory_uri() . '/images/default.png';
+                    }
+                    
+                    $categories = get_the_category();
+                    $category_names = [];
+                    foreach ($categories as $category) {
+                        $category_names[] = $category->name;
+                    }
+                    ?>
+                    <article class="post-card">
+                        <div class="post-card-image">
+                            <a href="<?php the_permalink(); ?>">
+                                <img src="<?php echo $image_url; ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
+                            </a>
+                        </div>
+                        <div class="post-card-content">
+                            <div class="post-card-tags">
+                                <?php foreach ($category_names as $category_name) { ?>
+                                    <a href="#" class="post-card-tag"><?php echo $category_name; ?></a>
+                                <?php } ?>
+                            </div>
+                            <div class="post-card-meta"><?php echo get_the_date('d M Y'); ?> | By <?php the_author(); ?></div>
+                            <h2 class="post-card-title">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            </h2>
+                            <div class="post-card-excerpt">
+                                <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+                            </div>
+                            <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM</a>
+                        </div>
+                    </article>
+                    <?php
+                endwhile;
+                echo '</div>';
+                wp_reset_postdata();
+            else :
+                echo '<div class="no-posts-message">Không có bài viết nào trong chuyên mục này.</div>';
+            endif;
+            ?>
+        </div>
+    </div>
+</section>
+</div>
 <?php get_footer(); ?>

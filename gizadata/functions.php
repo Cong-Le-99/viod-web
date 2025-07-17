@@ -86,6 +86,12 @@ function viod_scripts() {
         ? filemtime(get_stylesheet_directory() . '/js/publications.js') 
         : '1.0.0';
     wp_enqueue_script('publications', get_template_directory_uri() . '/js/publications.js', array(), $publications_js_version, true);
+    
+    // Enqueue post archive tabs script
+    $post_archive_tabs_js_version = file_exists(get_stylesheet_directory() . '/js/post-archive-tabs.js') 
+        ? filemtime(get_stylesheet_directory() . '/js/post-archive-tabs.js') 
+        : '1.0.0';
+    wp_enqueue_script('post-archive-tabs', get_template_directory_uri() . '/js/post-archive-tabs.js', array(), $post_archive_tabs_js_version, true);
 }
 add_action('wp_enqueue_scripts', 'viod_scripts');
 
