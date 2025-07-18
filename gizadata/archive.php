@@ -165,7 +165,7 @@ $description = category_description($category->term_id);
         <div class="d-flex justify-content-between ">
             <h2 class="title text-start mb-3 mb-md-5">DANH SÁCH BÀI VIẾT</h2>
             <div class="d-flex justify-content-start align-items-baseline mt-1">
-                <a class="post-card-readmore">
+                <a href="<?php echo home_url('/tin-tuc-news/'); ?>" class="post-card-readmore">
                     Xem tất cả
                 </a>
             </div>
