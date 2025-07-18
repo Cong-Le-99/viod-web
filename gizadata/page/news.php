@@ -215,8 +215,8 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                             echo paginate_links([
                                 'total' => $posts_query->max_num_pages,
                                 'current' => max(1, get_query_var('paged')),
-                                'prev_text' => '&laquo; Trước',
-                                'next_text' => 'Sau &raquo;',
+                                'prev_text' => __('«', 'viod'),
+                                'next_text' => __('»', 'viod'),
                                 'type' => 'list'
                             ]);
                             ?>
