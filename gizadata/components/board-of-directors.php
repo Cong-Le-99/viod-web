@@ -202,7 +202,7 @@ $acac_members = array(
                     <div class="team-grid-aac">
                         <?php foreach (
                             isset($aac_members) ? $aac_members : array() as $index => $member): ?>
-                            <div class="team-member" data-group="aac" data-index="<?php echo $index; ?>">
+                            <div class="team-member team-member-not-more" data-group="aac" data-index="<?php echo $index; ?>">
                                 <div class="member-image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
                                          alt="<?php echo $member['name']; ?>"
@@ -224,7 +224,7 @@ $acac_members = array(
                     <div class="team-grid-acac">
                         <?php foreach (
                             isset($acac_members) ? $acac_members : array() as $index => $member): ?>
-                            <div class="team-member" data-group="acac" data-index="<?php echo $index; ?>">
+                            <div class="team-member team-member-not-more" data-group="acac" data-index="<?php echo $index; ?>">
                                 <div class="member-image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
                                          alt="<?php echo $member['name']; ?>"

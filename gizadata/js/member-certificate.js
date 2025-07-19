@@ -50,7 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", checkTextHeight);
 
   // Logic hiển thị giảng viên - mặc định 7 người (hoặc 5 cho CSMP)
-  const teamMembers = document.querySelectorAll(".team-member");
+  // Chỉ lấy những team member không có class team-member-not-more
+  const allTeamMembers = document.querySelectorAll(".team-member");
+  const teamMembers = Array.from(allTeamMembers).filter(
+    (member) => !member.classList.contains("team-member-not-more")
+  );
   const viewMoreBtn = document.querySelector(".btn-view-more");
   let currentDisplayCount = teamMembers.length >= 7 ? 7 : teamMembers.length;
 
@@ -64,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Cập nhật class layout ban đầu
+    // Cập nhật class layout ban đầu - chỉ áp dụng cho team grid chính
     const teamGrid = document.querySelector(".team-grid");
     if (teamGrid) {
       // Xóa tất cả class layout hiện tại
@@ -100,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     currentDisplayCount = nextBatch;
 
-    // Cập nhật class layout dựa trên số lượng giảng viên hiển thị
+    // Cập nhật class layout dựa trên số lượng giảng viên hiển thị - chỉ áp dụng cho team grid chính
     const teamGrid = document.querySelector(".team-grid");
     if (teamGrid) {
       // Xóa tất cả class layout hiện tại
@@ -136,6 +140,13 @@ document.addEventListener("DOMContentLoaded", function () {
   if (currentDisplayCount >= teamMembers.length && viewMoreBtn) {
     viewMoreBtn.style.display = "none";
   }
+
+  // Đảm bảo các team member có class team-member-not-more luôn hiển thị
+  document
+    .querySelectorAll(".team-member.team-member-not-more")
+    .forEach((member) => {
+      member.style.display = "block";
+    });
 
   // Thêm event listener cho nút "Xem thêm giảng viên"
   if (viewMoreBtn) {

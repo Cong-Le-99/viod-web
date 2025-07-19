@@ -471,9 +471,12 @@ get_header();
                 
                 <?php 
                 $member_count = count($team_members);
-                $layout_class = 'layout-7'; // Layout cho 10+ giảng viên
+                $layout_class = 'layout-10'; // Layout cho 10+ giảng viên
+                $use_note_more = true; // Sử dụng team-member-note-more để hiển thị tất cả
+                $container_class = $use_note_more ? 'team-members team-member-note-more' : 'team-members';
                 ?>
-                <div class="team-grid <?php echo $layout_class; ?>">
+                <div class="<?php echo $container_class; ?>">
+                    <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
                             <div class="member-image">
@@ -490,10 +493,11 @@ get_header();
                             </div>
                         </div>
                     <?php endforeach; ?>
-                </div>
-                
-                <div class="team-button text-center">
-                    <a href="#" class="btn-view-more">Xem thêm giảng viên</a>
+                    </div>
+                    
+                    <div class="team-button text-center">
+                        <a href="#" class="btn-view-more">Xem thêm giảng viên</a>
+                    </div>
                 </div>
             </div>
         </div>
