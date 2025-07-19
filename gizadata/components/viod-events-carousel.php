@@ -26,11 +26,11 @@ $events = [
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="title text-center">Sự kiện</h2>
+                <h2 class="title text-center">Video</h2>
                 <p class="text-base text-center">Trusted partner of Board of Directors, business leaders and experts in the <br class="d-none d-md-block"> journey to improve governance capacity.</p>
                 <div class="d-flex justify-content-center">
                     <button class="btn-register-outline  mt-2 text-center">
-                    Xem tất cả
+                    Xem tất cả →
                     </button>
                 </div>
             </div>

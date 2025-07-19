@@ -108,7 +108,7 @@ $description = category_description($category->term_id);
                             <div class="post-card-excerpt">
                                 <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                             </div>
-                            <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM</a>
+                            <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM →</a>
                         </div>
                     </article>
                     <?php
@@ -233,7 +233,7 @@ $description = category_description($category->term_id);
                             <div class="post-card-excerpt">
                                 <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                             </div>
-                            <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM</a>
+                            <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM →</a>
                         </div>
                     </article>
                     <?php
