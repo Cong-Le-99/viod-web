@@ -49,6 +49,102 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(checkTextHeight, 100);
   window.addEventListener("resize", checkTextHeight);
 
+  // Logic hiển thị giảng viên - mặc định 7 người (hoặc 5 cho CSMP)
+  const teamMembers = document.querySelectorAll(".team-member");
+  const viewMoreBtn = document.querySelector(".btn-view-more");
+  let currentDisplayCount = teamMembers.length >= 7 ? 7 : teamMembers.length;
+
+  // Ẩn tất cả giảng viên từ vị trí thứ 8 trở đi
+  function hideExtraMembers() {
+    teamMembers.forEach((member, index) => {
+      if (index >= currentDisplayCount) {
+        member.style.display = "none";
+      } else {
+        member.style.display = "block";
+      }
+    });
+
+    // Cập nhật class layout ban đầu
+    const teamGrid = document.querySelector(".team-grid");
+    if (teamGrid) {
+      // Xóa tất cả class layout hiện tại
+      teamGrid.classList.remove(
+        "layout-5",
+        "layout-7",
+        "layout-8",
+        "layout-10"
+      );
+
+      // Thêm class layout phù hợp
+      if (currentDisplayCount <= 5) {
+        teamGrid.classList.add("layout-5");
+      } else if (currentDisplayCount <= 7) {
+        teamGrid.classList.add("layout-7");
+      } else if (currentDisplayCount <= 8) {
+        teamGrid.classList.add("layout-8");
+      } else {
+        teamGrid.classList.add("layout-10");
+      }
+    }
+  }
+
+  // Hiển thị thêm giảng viên
+  function showMoreMembers() {
+    const nextBatch = Math.min(currentDisplayCount + 7, teamMembers.length);
+
+    for (let i = currentDisplayCount; i < nextBatch; i++) {
+      if (teamMembers[i]) {
+        teamMembers[i].style.display = "block";
+      }
+    }
+
+    currentDisplayCount = nextBatch;
+
+    // Cập nhật class layout dựa trên số lượng giảng viên hiển thị
+    const teamGrid = document.querySelector(".team-grid");
+    if (teamGrid) {
+      // Xóa tất cả class layout hiện tại
+      teamGrid.classList.remove(
+        "layout-5",
+        "layout-7",
+        "layout-8",
+        "layout-10"
+      );
+
+      // Thêm class layout phù hợp
+      if (currentDisplayCount <= 5) {
+        teamGrid.classList.add("layout-5");
+      } else if (currentDisplayCount <= 7) {
+        teamGrid.classList.add("layout-7");
+      } else if (currentDisplayCount <= 8) {
+        teamGrid.classList.add("layout-8");
+      } else {
+        teamGrid.classList.add("layout-10");
+      }
+    }
+
+    // Ẩn nút "Xem thêm" nếu đã hiển thị hết
+    if (currentDisplayCount >= teamMembers.length) {
+      viewMoreBtn.style.display = "none";
+    }
+  }
+
+  // Khởi tạo hiển thị
+  hideExtraMembers();
+
+  // Ẩn nút "Xem thêm" nếu không có giảng viên nào để hiển thị thêm
+  if (currentDisplayCount >= teamMembers.length && viewMoreBtn) {
+    viewMoreBtn.style.display = "none";
+  }
+
+  // Thêm event listener cho nút "Xem thêm giảng viên"
+  if (viewMoreBtn) {
+    viewMoreBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      showMoreMembers();
+    });
+  }
+
   // Data for each lecturer - sử dụng dữ liệu từ PHP
   const lecturersData = {};
 

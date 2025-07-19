@@ -410,7 +410,11 @@ get_header();
                 );
                 ?>
                 
-                <div class="team-grid">
+                <?php 
+                $member_count = count($team_members);
+                $layout_class = 'layout-7'; // Mặc định hiển thị 7 giảng viên
+                ?>
+                <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
                             <div class="member-image">

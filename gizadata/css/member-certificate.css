@@ -120,6 +120,11 @@
 
 /* Desktop Styles */
 @media (min-width: 768px) {
+  /* Modal Styles */
+  .lecturer-modal {
+    max-width: 707px;
+    min-width: 707px;
+  }
   .member-certificate.about-us .banner {
     background-image: url("../images/about-us-dk.png") !important;
   }
@@ -716,8 +721,22 @@
   margin-bottom: 48px;
 }
 
+/* Mobile layout cho 10+ giảng viên */
+.member-certificate .team-grid.layout-10 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 24px;
+}
+
 .member-certificate .team-member {
   text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Ẩn các giảng viên không hiển thị */
+.member-certificate .team-member[style*="display: none"] {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .member-certificate .member-photo {
@@ -1034,8 +1053,16 @@
     grid-row: 2;
   }
 
+  /* Layout cho 10+ giảng viên */
+  .member-certificate .team-grid.layout-10 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 32px;
+  }
+
   /* Default layout (giá»¯ nguyÃªn cho tÆ°Æ¡ng thÃ­ch) */
-  .member-certificate .team-grid:not(.layout-8):not(.layout-7):not(.layout-5) {
+  .member-certificate
+    .team-grid:not(.layout-8):not(.layout-7):not(.layout-5):not(.layout-10) {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -1075,11 +1102,6 @@
   .member-certificate .program-organized .organized-content-col {
     text-align: center;
   }
-}
-
-/* Modal Styles */
-.lecturer-modal {
-  max-width: 707px;
 }
 
 .lecturer-modal .modal-content {

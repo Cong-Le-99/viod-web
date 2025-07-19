@@ -356,16 +356,9 @@ get_header();
                     ),
                 );
                 
-                // Tự động xác định layout class dựa trên số lượng team members
+                // Mặc định hiển thị 5 giảng viên cho CSMP
                 $member_count = count($team_members);
-                $layout_class = '';
-                if ($member_count == 5) {
-                    $layout_class = 'layout-5';
-                } elseif ($member_count == 7) {
-                    $layout_class = 'layout-7';
-                } elseif ($member_count == 8) {
-                    $layout_class = 'layout-8';
-                }
+                $layout_class = 'layout-5';
                 ?>
                 
                 <div class="team-grid <?php echo $layout_class; ?>">
