@@ -1,0 +1,77 @@
+.posts-grid-pdf {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.post-card-image-pdf {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  min-height: 354px;
+}
+
+.post-card-image-pdf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PDF Overlay Styles */
+.pdf-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.post-card-image-pdf:hover .pdf-overlay {
+  opacity: 1;
+}
+
+.pdf-icon {
+  margin-bottom: 8px;
+}
+
+.pdf-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Hover effect chỉ cho những card có link PDF */
+.post-card-image-pdf a {
+  display: block;
+  height: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.post-card-image-pdf a:hover {
+  transform: translateY(-4px);
+}
+
+/* Card không có PDF - không có hiệu ứng hover */
+.post-card-image-pdf img:not(a img) {
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .posts-grid-pdf {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
