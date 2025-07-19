@@ -137,14 +137,14 @@ $description = category_description($category->term_id);
         // Nếu không có sub categories, tạo mảng mặc định
         if (empty($sub_categories)) {
             $sub_categories = [
-                (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all'],
+                // (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all'],
                 (object) ['term_id' => 0, 'name' => 'Tin thành viên', 'slug' => 'tin-thanh-vien'],
                 (object) ['term_id' => 0, 'name' => 'Góc chuyên gia', 'slug' => 'goc-chuyen-gia'],
                 (object) ['term_id' => 0, 'name' => 'Thông cáo báo chí', 'slug' => 'thong-cao-bao-chi']
             ];
         } else {
             // Thêm option "Tất cả" vào đầu
-            array_unshift($sub_categories, (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all']);
+            // array_unshift($sub_categories, (object) ['term_id' => 0, 'name' => 'Tất cả', 'slug' => 'all']);
         }
         
         // Lấy category hiện tại từ URL parameter hoặc mặc định là category đầu tiên

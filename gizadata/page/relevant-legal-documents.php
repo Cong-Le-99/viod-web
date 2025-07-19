@@ -127,40 +127,42 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                             </div>
                         </div>
                     </button>
-                    <!-- Posts Grid -->
-                    <div class="posts-grid-pdf  " id="posts-container">
-                        <?php
-                        // Query posts với filter
-                        $query_args = [
-                            'post_type' => 'post',
-                            'posts_per_page' => 12,
-                            'cat' => $news_category_id,
-                            'orderby' => 'date',
-                            'order' => 'DESC'
-                        ];
+                    <?php
+                    // Query posts với filter
+                    $query_args = [
+                        'post_type' => 'post',
+                        'posts_per_page' => 12,
+                        'cat' => $news_category_id,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    ];
 
-                        // Thêm search
-                        if (!empty($search_query)) {
-                            $query_args['s'] = $search_query;
+                    // Thêm search
+                    if (!empty($search_query)) {
+                        $query_args['s'] = $search_query;
+                    }
+
+                    // Thêm sort
+                    if ($sort_by === 'name') {
+                        $query_args['orderby'] = 'title';
+                        $query_args['order'] = 'ASC';
+                    }
+
+                    // Thêm category filter
+                    if ($selected_category !== 'all') {
+                        $selected_cat = get_category_by_slug($selected_category);
+                        if ($selected_cat) {
+                            $query_args['cat'] = $selected_cat->term_id;
                         }
+                    }
 
-                        // Thêm sort
-                        if ($sort_by === 'name') {
-                            $query_args['orderby'] = 'title';
-                            $query_args['order'] = 'ASC';
-                        }
+                    $posts_query = new WP_Query($query_args);
 
-                        // Thêm category filter
-                        if ($selected_category !== 'all') {
-                            $selected_cat = get_category_by_slug($selected_category);
-                            if ($selected_cat) {
-                                $query_args['cat'] = $selected_cat->term_id;
-                            }
-                        }
-
-                        $posts_query = new WP_Query($query_args);
-
-                        if ($posts_query->have_posts()) :
+                    if ($posts_query->have_posts()) :
+                    ?>
+                        <!-- Posts Grid -->
+                        <div class="posts-grid-pdf" id="posts-container">
+                            <?php
                             while ($posts_query->have_posts()) : $posts_query->the_post();
                                 $image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                                 if (!$image_url) {
@@ -180,7 +182,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                                     <div class="post-card-image-pdf">
                                         <?php if ($pdf_file) : ?>
                                             <!-- Nếu có PDF file, mở trong tab mới -->
-                                            <a href="<?php echo esc_url($pdf_file); ?>" target="_blank" rel="noopener noreferrer">
+                                        <a href="<?php echo esc_url($pdf_file); ?>" target="_blank" rel="noopener noreferrer">
                                                 <img src="<?php echo $image_url; ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
                                                 <div class="pdf-overlay">
                                                     <div class="pdf-icon">
@@ -204,11 +206,11 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                                 <?php
                             endwhile;
                             wp_reset_postdata();
-                        else :
-                            echo '<div class="no-posts-message">Không có bài viết nào phù hợp với bộ lọc.</div>';
-                        endif;
-                        ?>
-                    </div>
+                            ?>
+                        </div>
+                    <?php else : ?>
+                        <div class="no-posts-message">Không có bài viết nào phù hợp với bộ lọc.</div>
+                    <?php endif; ?>
 
                     <!-- Pagination -->
                     <?php if ($posts_query->max_num_pages > 1) : ?>
