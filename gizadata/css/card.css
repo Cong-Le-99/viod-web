@@ -78,6 +78,11 @@
   background-color: #fff;
   gap: 12px;
 }
+
+.card-event_content svg {
+  margin-top: -2px;
+}
+
 .swiper-slide-active .card-event .card-event_content {
   padding: 24px;
 }
