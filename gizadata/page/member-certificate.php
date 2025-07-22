@@ -5,7 +5,7 @@ Template Name: Chương trình Chứng nhận Thành viên HĐQT (DCP)
 get_header();
 ?>
 <div class="member-certificate">
-    <div class="banner">
+    <div class="banner banner-dcp">
         <!-- Breadcrumb chỉ hiện trên desktop -->
         <nav class="breadcrumb-nav d-none d-md-block">
             <ol class="breadcrumb">

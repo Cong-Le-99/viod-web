@@ -4,7 +4,7 @@ Template Name: Chương tình Chuyên sâu dành cho Thư ký Quản trị Công
 */
 get_header();
 ?>
-<div class="member-certificate">
+<div class="member-certificate blue">
     <div class="banner banner-csmp">
         <!-- Breadcrumb chỉ hiện trên desktop -->
         <nav class="breadcrumb-nav d-none d-md-block">

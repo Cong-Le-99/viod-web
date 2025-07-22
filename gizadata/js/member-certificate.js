@@ -211,4 +211,45 @@ document.addEventListener("DOMContentLoaded", function () {
         showLecturerModal(imgSrc);
       });
     });
+
+  // Hover effect for attendee items
+  const attendeeItems = document.querySelectorAll(".attendee-item");
+
+  attendeeItems.forEach(function (item) {
+    // Tạo SVG icon element
+    const svgIcon = document.createElement("div");
+    svgIcon.className = "attendee-hover-icon";
+    svgIcon.innerHTML = `
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="10" cy="10" r="9" fill="white"/>
+        <path d="M13.7397 8.5364C14.0868 8.18492 14.0868 7.61508 13.7397 7.2636C13.3925 6.91213 12.8297 6.91213 12.4826 7.2636L8.96296 10.8272L7.51743 9.3636C7.1703 9.01213 6.60748 9.01213 6.26035 9.3636C5.91322 9.71508 5.91322 10.2849 6.26035 10.6364L8.33442 12.7364C8.68156 13.0879 9.24437 13.0879 9.5915 12.7364L13.7397 8.5364Z" fill="#3AA735"/>
+      </svg>
+    `;
+
+    // Thêm icon vào item
+    item.appendChild(svgIcon);
+
+    // Xử lý hover events
+    item.addEventListener("mouseenter", function () {
+      this.style.backgroundColor = "#1769AB";
+
+      // Kiểm tra xem có phải desktop layout không
+      const isDesktop = window.innerWidth >= 768;
+      const defaultPadding = isDesktop ? "24px" : "24px";
+      this.style.paddingLeft = "54px";
+
+      svgIcon.style.opacity = "1";
+    });
+
+    item.addEventListener("mouseleave", function () {
+      this.style.backgroundColor = "#e0f5df";
+
+      // Kiểm tra xem có phải desktop layout không
+      const isDesktop = window.innerWidth >= 768;
+      const defaultPadding = isDesktop ? "24px" : "24px";
+      this.style.paddingLeft = defaultPadding;
+
+      svgIcon.style.opacity = "0";
+    });
+  });
 });

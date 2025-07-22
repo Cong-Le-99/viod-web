@@ -549,6 +549,13 @@
   /* border: 1px solid #e0f5df; */
 }
 
+.post-card-order .post-card-image {
+  order: 2;
+}
+.post-card-order .post-card-content {
+  order: 1;
+}
+
 .post-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -567,7 +574,7 @@
 }
 
 .post-card.large .post-card-image {
-  height: 300px;
+  min-height: 300px;
 }
 
 .post-card:not(.large) .post-card-image {
