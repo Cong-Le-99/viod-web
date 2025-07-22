@@ -1,7 +1,7 @@
 
     <footer class="site-footer">
         <div class="footer-newsletter">
-            <h2>Subscribe to VIOD's monthly newsletter to be updated on our latest news and events.</h2>
+            <h2>Đăng ký nhận tin từ VIOD để xem bài viết mới và tham gia các sự kiện sớm nhất</h2>
             <form action="#" class="newsletter-form">
                 <input type="email" placeholder="Email*" required>
                 <button type="submit">SUBSCRIBE</button>
@@ -71,7 +71,7 @@
 
         <div class="footer-bottom">
             <p><a href="">Privacy policy</a> <a href="">Cookie policy</a> <a href="">Terms and conditions</a> <a href="">Sitemap</a></p>
-            <p>© 2025 VIOD. ALL RIGHTS RESERVED.</p>
+            <p class="viod-rights">© 2025 VIOD. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 

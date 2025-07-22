@@ -1,5 +1,13 @@
 <?php
 $testimonials = array(
+    // array(
+    //     'name' => 'Georgina Freeman',
+    //     'gender' => 'male',
+    //     'position' => 'Tổng giám đốc điều hành tại VIOD',
+    //     'content_desktop' => "VIOD luôn đi đầu trong việc cập nhật những diễn biến đang diễn ra trên toàn thế giới và cách các Giám đốc nên theo dõi sát sao tình hình.",
+    //     'content_mobile' => "VIOD luôn đi đầu trong việc cập nhật những diễn biến đang diễn ra trên toàn thế giới và cách các Giám đốc nên theo dõi sát sao tình hình.",
+    //     'image' => 'Georgina-Freeman.jpg'
+    // ),
     array(
         'name' => 'NGUYỄN ANH TUẤN',
         'gender' => 'male',

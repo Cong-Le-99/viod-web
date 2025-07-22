@@ -1,23 +1,23 @@
 <div class="slider-trangchu">
-    <div class="ndslide" style="background-image: url('https://viod.1994.cloud/wp-content/uploads/2025/05/image_concrete-building-city_EjnX.webp');">
+    <div class="ndslide" style="background-image: url('https://viod.1994.cloud/wp-content/uploads/2025/07/image_bg-slider-home-page_fc4i.webp');">
         <div class="slide-content">
-            <h1>ĐỊNH CHẾ TIÊN PHONG VÀ CHUYÊN NGHIỆP VỀ QTCT TẠI VIỆT NAM</h1>
-            <p>Trusted partner of Board of Directors, business leaders, and experts in the journey to improve governance capacity.</p>
-            <a href="#" class="button">XEM THÊM</a>
+            <h1>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)</h1>
+            <p>Thành viên của Mạng lưới Thành viên Hội đồng Quản trị Toàn cầu (GNDI), là định chế chuyên nghiệp, độc lập và tiên phong trong lĩnh vực Quản trị công ty & Phát triển bền vững tại Việt Nam.</p>
+            <a href="#" class="button">CHÚNG TÔI LÀ AI</a>
         </div>
     </div>
     <div class="ndslide" style="background-image: url('https://viod.1994.cloud/wp-content/uploads/2025/05/image_abstract-building-with-sky_x4Pc-scaled.webp'); opacity: 0;">
         <div class="slide-content">
             <h1>ĐỊNH CHẾ TIÊN PHONG VÀ CHUYÊN NGHIỆP VỀ QTCT TẠI VIỆT NAM</h1>
             <p>Trusted partner of Board of Directors, business leaders, and experts in the journey to improve governance capacity.</p>
-            <a href="#" class="button">DISCOVER MORE</a>
+            <a href="#" class="button">CHÚNG TÔI LÀ AI</a>
         </div>
     </div>
     <div class="ndslide" style="background-image: url('https://viod.1994.cloud/wp-content/uploads/2025/05/image_large-modern-office-building_TQni.webp'); opacity: 0;">
         <div class="slide-content">
             <h1>ĐỊNH CHẾ TIÊN PHONG VÀ CHUYÊN NGHIỆP VỀ QTCT TẠI VIỆT NAM</h1>
             <p>Trusted partner of Board of Directors, business leaders, and experts in the journey to improve governance capacity.</p>
-            <a href="#" class="button">LEARN MORE</a>
+            <a href="#" class="button">CHÚNG TÔI LÀ AI</a>
         </div>
     </div>
     <button class="nav-button nav-left">&#8592;</button>

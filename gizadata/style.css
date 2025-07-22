@@ -99,6 +99,11 @@ a:hover {
   gap: 4px;
 }
 
+.topbar-social {
+  gap: 12px;
+  display: flex;
+}
+
 .topbar-lang a {
   color: #fff;
   text-decoration: none;
@@ -111,11 +116,11 @@ a:hover {
 }
 
 .topbar-social a {
-  margin-left: 8px;
   display: inline-flex;
   align-items: center;
   color: #fff;
   transition: opacity 0.2s;
+  width: 18px;
 }
 
 .topbar-social a:hover {
@@ -290,8 +295,8 @@ a:hover {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     background: #0a2536;
     border-radius: 10px;
     color: #fff;
@@ -547,6 +552,7 @@ a:hover {
   .button {
     width: 100%;
     text-align: center;
+    font-size: 14px;
   }
 }
 
@@ -607,6 +613,8 @@ a:hover {
   color: white;
   border: 0;
   cursor: pointer;
+  width: max-content;
+  font-weight: 600;
 }
 
 .footer-links {
@@ -633,6 +641,7 @@ a:hover {
   gap: 16px;
   flex-direction: column;
   flex-wrap: nowrap;
+  padding-left: 0px;
 }
 
 .footer-column li {
@@ -645,7 +654,7 @@ a:hover {
 }
 
 .footer-column a {
-  color: #b5bcc3;
+  color: #ffff;
   text-decoration: none;
 }
 .footer-column li span {
@@ -688,6 +697,9 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: #eaf6ff;
+}
+.footer-bottom p.viod-rights {
+  font-weight: 600;
 }
 
 .footer-column a i {
@@ -793,8 +805,6 @@ a:hover {
 .mobile-menu-close {
   background: #0a2536;
   border: none;
-  font-size: 2rem;
-  color: #fff;
   border-radius: 10px;
   width: 44px;
   height: 44px;
@@ -807,14 +817,34 @@ a:hover {
   padding: 18px 20px 0 20px;
 }
 
-.mobile-search-form input[type="search"] {
+.search-input-wrapper input[type="search"] {
   width: 100%;
-  padding: 12px 16px;
+  padding: 12px 16px 12px 40px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   font-size: 1.1rem;
   background: #fff;
-  margin-bottom: 10px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.search-input-wrapper svg {
+  position: absolute;
+  left: 16px;
+}
+
+.search-input-wrapper .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  pointer-events: none;
 }
 
 .mobile-menu-content {
@@ -1652,11 +1682,11 @@ a:hover {
 }
 
 .slider-trangchu .slide-content {
-  max-width: 1200px;
   text-align: left;
   color: #fff;
   position: relative;
   z-index: 2;
+  width: 90%;
 }
 
 .slider-trangchu .ndslide::before {
@@ -1666,13 +1696,13 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  /* Overlay with 30% opacity */
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
 .slider-trangchu .slide-content h1 {
-  color: #fff;
+  color: #082136;
+  text-shadow: 0px 4px 4px #ffffff;
   /* H1 */
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -1685,7 +1715,7 @@ a:hover {
 }
 
 .slider-trangchu .slide-content p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #082136;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -1708,6 +1738,7 @@ a:hover {
   line-height: normal;
   text-transform: uppercase;
   padding: 16px 24px;
+  width: max-content;
 }
 
 .slider-trangchu .button:hover {
@@ -5318,8 +5349,15 @@ transition: opacity 0.3s ease;
 }
 
 @media (max-width: 800px) {
+  .slider-trangchu .nav-button {
+    display: none;
+  }
   .slider-trangchu .slide-content {
-    width: 80%;
+    width: 76%;
+    padding: 0px;
+  }
+  .newsletter-form input[type="email"] {
+    width: 100%;
   }
   .conso-chuongtrinh .highlight-numbers {
     display: flex;
@@ -5466,9 +5504,7 @@ transition: opacity 0.3s ease;
     width: 90%;
     margin: auto;
   }
-  .newsletter-form input[type="email"] {
-    width: 250px;
-  }
+
   .cacchuongtrinh .ds .other-training-card img {
     width: 100%;
   }
@@ -5481,6 +5517,8 @@ transition: opacity 0.3s ease;
     gap: 20px;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
   }
   .newsletter-form input[type="email"] {
     padding: 15px 20px;
@@ -5596,7 +5634,6 @@ transition: opacity 0.3s ease;
   .chuongtrinhduoctochuc .main .a .mota,
   .ketnoicacthanhvien .mota,
   .cacchuongtrinh .mota,
-  .footer-newsletter h2,
   .dscacbaivietxemthem .listbv .tieude {
     font-size: 16px;
     line-height: 1.5;
@@ -5605,6 +5642,9 @@ transition: opacity 0.3s ease;
   .doituongthamdu-chuyenmuc .main,
   .ketnoicacthanhvien .main {
     width: 90%;
+  }
+  .footer-newsletter h2 {
+    font-size: 20px;
   }
   .cacchuongtrinh.xemthemformtrangdangky {
     display: none;
@@ -5619,7 +5659,14 @@ transition: opacity 0.3s ease;
     gap: 10px;
   }
   .slider-trangchu {
-    height: 92svh;
+    height: 400px;
+  }
+  .slider-trangchu .slide-content h1 {
+    font-size: 24px;
+  }
+  .slider-trangchu .slide-content p {
+    font-size: 16px;
+    font-weight: 500;
   }
   #mobile-primary-menu ul.sub-menu li a {
     font-size: 17px;
