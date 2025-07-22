@@ -3,20 +3,30 @@ get_header();
 
 if (have_posts()) :
     while (have_posts()) : the_post();
-        // Get category image or default image
-        $categories = get_the_category();
-        $banner_image = '';
-        if (!empty($categories)) {
-            foreach ($categories as $category) {
-                $image = get_term_meta($category->term_id, 'category_image', true);
-                if ($image) {
-                    $banner_image = $image;
-                    break;
+        $custom_hero_bg = get_field('post_hero_bg', get_the_ID());
+        
+        if ($custom_hero_bg) {
+            $banner_image = $custom_hero_bg;
+        } else {
+            // Nếu không có custom field, sử dụng category image
+            $categories = get_the_category();
+            $banner_image = '';
+            if (!empty($categories)) {
+                foreach ($categories as $category) {
+                    $image = get_term_meta($category->term_id, 'category_image', true);
+                    if ($image) {
+                        $banner_image = $image;
+                        break;
+                    }
                 }
             }
-        }
-        if (empty($banner_image)) {
-            $banner_image = get_template_directory_uri() . '/images/default-banner.jpg';
+            // Nếu không có category image, sử dụng featured image
+            if (empty($banner_image)) {
+                $banner_image = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                if (!$banner_image) {
+                    $banner_image = get_template_directory_uri() . '/images/default-banner.jpg';
+                }
+            }
         }
         ?>
         <div class="noidungbaiviet">

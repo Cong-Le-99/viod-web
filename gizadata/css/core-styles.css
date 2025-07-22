@@ -1,4 +1,15 @@
+/* Thiết lập font Montserrat cho toàn bộ trang */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
@@ -12,6 +23,7 @@
 }
 
 .btn-register-outline {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-style: SemiBold;
   font-size: 14px;
@@ -25,14 +37,17 @@
 }
 
 .title.light {
+  font-family: "Montserrat", sans-serif;
   color: #fff !important;
 }
 
 .session-wrap {
+  font-family: "Montserrat", sans-serif;
   padding: 68px 0;
 }
 
 .text-base {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
@@ -65,6 +80,7 @@
 }
 
 .text-base.light {
+  font-family: "Montserrat", sans-serif;
   color: #c3c5c4;
 }
 
@@ -72,25 +88,74 @@
   max-width: 414px;
 }
 
+/* Thêm font cho các element HTML cơ bản */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+div {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  font-family: "Montserrat", sans-serif;
+}
+
+article {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+input,
+textarea,
+select {
+  font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 768px) {
   .title {
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     line-height: 48px;
   }
 
   .session-wrap {
+    font-family: "Montserrat", sans-serif;
     padding: 80px 0;
   }
 
   .text-base {
+    font-family: "Montserrat", sans-serif;
     line-height: 26px;
   }
 
   .btn-register-outline {
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
   }
 
   .post-archive-home .post-subtitle-home {
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: #082136;
   }

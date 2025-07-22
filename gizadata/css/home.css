@@ -185,7 +185,8 @@
   }
 
   .ongoing-training-swiper .swiper-slide-active {
-    width: calc(33.333% + 36px);
+    /* transform: scale(1.12); */
+    transform: scale(1.1) translate(0px, -25px);
   }
 
   .core-values {
