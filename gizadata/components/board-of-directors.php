@@ -266,11 +266,18 @@ document.addEventListener('DOMContentLoaded', function() {
         var modal = new bootstrap.Modal(document.getElementById('lecturerModal'));
         modal.show();
     }
-    document.querySelectorAll('.team-member[data-group="aac"], .team-member[data-group="acac"]').forEach(function(el) {
+    document.querySelectorAll('.team-member[data-group="board"], .team-member[data-group="aac"], .team-member[data-group="acac"]').forEach(function(el) {
         el.addEventListener('click', function() {
             var group = el.getAttribute('data-group');
             var index = parseInt(el.getAttribute('data-index'));
-            var member = (group === 'aac') ? aacMembersData[index] : acacMembersData[index];
+            var member;
+            if (group === 'board') {
+                member = boardMembersData[index];
+            } else if (group === 'aac') {
+                member = aacMembersData[index];
+            } else if (group === 'acac') {
+                member = acacMembersData[index];
+            }
             showLecturerModal(member);
         });
     });

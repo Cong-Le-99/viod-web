@@ -17,7 +17,7 @@ get_template_part('components/ongoing-training');
 get_template_part('trangchu/sukiensapdienra');
 
 /* tài liệu */
-get_template_part('trangchu/tailieu');
+// get_template_part('trangchu/tailieu');
 
 /* tin tức */
 get_template_part('trangchu/tintuc');
