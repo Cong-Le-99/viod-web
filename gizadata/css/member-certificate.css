@@ -283,6 +283,14 @@
   transition: opacity 0.3s ease;
 }
 
+.member-certificate .text-content-about-us.has-read-more:not(.expanded)::after {
+  background: linear-gradient(
+    0deg,
+    #f4faf4 0%,
+    rgba(224, 245, 223, 0) 91.43%
+  ) !important;
+}
+
 /* Fade overlay when text is truncated */
 .member-certificate.blue .text-content.has-read-more:not(.expanded)::after {
   background: linear-gradient(
