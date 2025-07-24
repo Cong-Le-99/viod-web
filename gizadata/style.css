@@ -20,6 +20,7 @@ Text Domain: gizadata
 @import url("css/corporate-governance.css");
 @import url("css/post-archive.css");
 @import url("css/relevant-legal-documents.css");
+@import url("css/member-certificate.css");
 /* Reset CSS */
 
 * {
@@ -34,7 +35,7 @@ body {
   /* font-family: Arial, sans-serif; */
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #082136;
   font-size: 16px;
 }
 
@@ -42,6 +43,7 @@ a:link,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: #3aa735;
 }
 
 .main {
