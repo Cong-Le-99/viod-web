@@ -49,6 +49,34 @@
   box-shadow: 0px 10px 20px 0px #dff4de, 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
+.card-event-session {
+  height: auto !important;
+  box-shadow: none;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-event-session .post-card-readmore {
+  font-size: 16px !important;
+}
+
+.card-event-session .card-event_tag span {
+  color: #fff !important;
+  background-color: #3aa735 !important;
+  padding: 4px 6px !important;
+}
+
+.card-event-session .card-event_content {
+  padding: 16px 24px !important;
+}
+
 .training-programs-swiper .swiper-slide-active .card-event {
   height: 547px;
   border: 2px solid #3aa735;
@@ -116,6 +144,11 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #082136;
+}
+
+.card-event_title-event {
+  -webkit-line-clamp: 1 !important;
 }
 
 .card-event_time {
@@ -125,6 +158,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #082136;
 }
 .card-event_time .a {
   overflow: hidden;
@@ -277,6 +311,10 @@
   text-align: center;
   color: #0c3555;
   margin-bottom: 48px;
+}
+
+.post-card-border {
+  border: 2px solid #a1e09e;
 }
 
 /* Mobile specific adjustments */

@@ -674,7 +674,7 @@
 
 .post-card-readmore:hover {
   color: #3aa735;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Post Archive Tabs */
