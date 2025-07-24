@@ -72,6 +72,10 @@
   background-color: #3aa735 !important;
   padding: 4px 6px !important;
 }
+.card-event-session-list {
+  background: #fff !important;
+  border: 2px solid #e0f5df !important;
+}
 
 .card-event-session .card-event_content {
   padding: 16px 24px !important;

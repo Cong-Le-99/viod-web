@@ -475,6 +475,10 @@
     display: none !important;
   }
 
+  .filter-sidebar-event {
+    display: block !important;
+  }
+
   /* Hiển thị thanh filter bar trên mobile */
   .mobile-filter-btn {
     display: flex !important;
@@ -571,6 +575,7 @@
 .post-card-image {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 16/9;
 }
 
 .post-card.large .post-card-image {
@@ -578,7 +583,7 @@
 }
 
 .post-card:not(.large) .post-card-image {
-  height: 200px;
+  height: auto;
 }
 
 .post-card-image img {
@@ -636,6 +641,7 @@
   line-height: 1.4;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  color: #082136;
 }
 
 .post-card.large .post-card-title {

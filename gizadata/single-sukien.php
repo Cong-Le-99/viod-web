@@ -171,9 +171,16 @@ if (have_posts()) :
                                     ?>
                                     <div class="sukien-card">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php if (has_post_thumbnail()) : ?>
-                                                <div class="sukien-thumb"><?php the_post_thumbnail('medium_large'); ?></div>
-                                            <?php endif; ?>
+                                        <div class="sukien-thumb 2">
+                                        <?php 
+                                            if (has_post_thumbnail()) {
+                                                the_post_thumbnail('medium_large');
+                                            } else {
+                                                $image_url = get_template_directory_uri() . '/images/default.png';
+                                                echo '<img src="' . $image_url . '" alt="' . esc_attr(get_the_title()) . '" style="width: 100%; height: auto; display: block;">';
+                                            }
+                                        ?>
+                                </div>
                                         </a>
 
                                         <div class="sukien-tags">

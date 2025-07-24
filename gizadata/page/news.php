@@ -213,7 +213,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                     <!-- Pagination -->
                     <?php if ($posts_query->max_num_pages > 1) : ?>
                         <div class="pagination-wrapper">
-                            <?php
+                            <!-- <?php
                             echo paginate_links([
                                 'total' => $posts_query->max_num_pages,
                                 'current' => max(1, get_query_var('paged')),
@@ -221,7 +221,8 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                                 'next_text' => __('»', 'viod'),
                                 'type' => 'list'
                             ]);
-                            ?>
+                            ?> -->
+                            <div class="pagination"><?php the_posts_pagination(); ?></div>
                         </div>
                     <?php endif; ?>
                 </div>
