@@ -155,7 +155,7 @@ $acac_members = array(
     <div class="team-header text-center">
         <h2 class="title">Hội đồng quản trị</h2>
     </div>
-    <div class="container position-relative bg-board-of-directors mb-5">
+    <div class="container container-custom position-relative bg-board-of-directors mb-5">
         <div class="row">
             <div class="col-12">
                 <div class="team-members">
@@ -197,7 +197,7 @@ $acac_members = array(
     <div class="container mb-5">
         <div class="row ">
             <div class="col-md-6">
-                <h3 class="title text-center mb-3">Ban cố vấn chuyên môn (AAC)</h3>
+                <h3 class="title text-center mb-3 title-custom-height">Ban cố vấn chuyên môn (AAC)</h3>
                 <div class="team-members mt-5">
                     <div class="team-grid-aac">
                         <?php foreach (

@@ -22,6 +22,10 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
+  .title-custom-height {
+    min-height: 144px;
+  }
 }
 
 .member-certificate .breadcrumb {
