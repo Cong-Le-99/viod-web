@@ -88,10 +88,22 @@
   margin-bottom: 1px;
 }
 
-/* Icon active - sá»­ dá»¥ng left-arrow-active.svg cho item active */
+/* Icon active - sử dụng left-arrow-active.svg cho item active */
 .member-certificate .breadcrumb-item.active + .breadcrumb-item::before,
 .member-certificate .breadcrumb-item + .breadcrumb-item.active::before {
   background-image: url("../images/left-arrow-active.svg");
+}
+
+/* Icon cho breadcrumb dark */
+.member-certificate
+  .breadcrumb.dark
+  .breadcrumb-item
+  + .breadcrumb-item::before {
+  background-image: url("../images/left-arrow-gray.svg");
+}
+
+.member-certificate .breadcrumb.dark .breadcrumb-item.active {
+  color: #082136;
 }
 
 .member-certificate .breadcrumb-item a {
