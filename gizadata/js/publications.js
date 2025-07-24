@@ -46,7 +46,8 @@ function initializePublicationItems(containerSelector = null) {
     item.addEventListener("click", function () {
       const link = this.getAttribute("data-link");
       if (link && link !== "#") {
-        window.open(link, "_blank");
+        // window.open(link, "_blank");
+        window.location.href = link;
       }
     });
   });

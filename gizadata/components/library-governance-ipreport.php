@@ -4,17 +4,17 @@ $publications = [
     [
         'title' => 'Đề cử Thành viên Hội đồng Quản trị',
         'image' => get_template_directory_uri() . '/images/books-2.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ],
     [
         'title' => 'QTCT HIỆN ĐẠI <br class="d-none d-md-block">Bộ công cụ cho Hội đồng Quản trị <br class="d-none d-md-block">thành công vượt trội',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ],
     [
         'title' => 'Quản trị Công ty hiện đại <br class="d-none d-md-block"> Những bài học thực tiễn',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ],
 ];
 ?>
@@ -42,7 +42,7 @@ $publications = [
                     <?php endforeach; ?>
                 </div>
                 </div>
-                <button class="btn-register mt-5">
+                <button class="btn-register mt-5" onclick="window.location.href='/van-ban-phap-luat-lien-quan/'">
                 Xem tất cả
                 </button>
             </div>

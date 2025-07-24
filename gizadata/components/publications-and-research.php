@@ -4,22 +4,22 @@ $publications = [
     [
         'title' => 'QTCT HIỆN ĐẠI<br class="d-none d-md-block">Bộ công cụ cho Hội đồng Quản trị<br class="d-none d-md-block">thành công vượt trội',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ],
     [
         'title' => 'ĐỀ CỬ THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+               'link' => '/van-ban-phap-luat-lien-quan/'
     ],
     [
         'title' => 'QUẢN TRỊ CÔNG TY HIỆN ĐẠI<br class="d-none d-md-block">NHỮNG BÀI HỌC THỰC TIỄN',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ],
     [
         'title' => 'BULLETIN',
         'image' => get_template_directory_uri() . '/images/publications-1.png',
-        'link' => 'https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf'
+        'link' => '/van-ban-phap-luat-lien-quan/'
     ]
 ];
 ?>
@@ -48,7 +48,7 @@ $publications = [
                     <?php endforeach; ?>
                 </div>
                 </div>
-                <button class="btn-register mt-5">
+                <button class="btn-register mt-5" onclick="window.location.href='/van-ban-phap-luat-lien-quan/'">
                     ĐĂNG KÝ NGAY 
                 </button>
             </div>
