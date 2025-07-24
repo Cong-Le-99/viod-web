@@ -3803,6 +3803,7 @@ transition: opacity 0.3s ease;
   position: relative;
   z-index: 10;
   border-radius: 8px;
+  padding-bottom: 56px;
 }
 
 .noidungbaiviet .post-content {
@@ -4087,8 +4088,7 @@ transition: opacity 0.3s ease;
   justify-content: flex-end;
   padding: 40px;
   border-radius: 8px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/wp-content/uploads/2025/06/image_c4622f5256cb634078519075e261d2cc3adac5ec_10Y7.png");
+  background: url("/wp-content/uploads/2025/06/image_c4622f5256cb634078519075e261d2cc3adac5ec_10Y7.png");
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
