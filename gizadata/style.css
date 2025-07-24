@@ -43,7 +43,7 @@ a:link,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #3aa735;
+  /* color: #3aa735; */
 }
 
 .main {
