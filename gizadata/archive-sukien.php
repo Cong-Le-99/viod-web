@@ -198,7 +198,17 @@ get_header(); ?>
                                 </div>
                             <?php endwhile; ?>
                         </div>
-                        <div class="pagination"><?php the_posts_pagination(); ?></div>
+                        <div class="pagination-wrapper">
+                            <?php
+                                echo paginate_links([
+                                    'total' => $query->max_num_pages,
+                                    'current' => max(1, get_query_var('paged')),
+                                    'prev_text' => __('←', 'viod'),
+                                    'next_text' => __('→', 'viod'),
+                                    'type' => 'list'
+                                ]);
+                            ?>
+                        </div>
                         <?php wp_reset_postdata(); ?>
                     <?php else : ?>
                         <p>Không tìm thấy sự kiện phù hợp.</p>

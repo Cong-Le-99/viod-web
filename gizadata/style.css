@@ -4174,11 +4174,11 @@ transition: opacity 0.3s ease;
 }
 
 .nhungsukienkhac .sukien-card {
-  background: #fff;
+  /* background: #fff;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
 
 .nhungsukienkhac .sukien-thumb img {
@@ -4247,7 +4247,7 @@ transition: opacity 0.3s ease;
 }
 
 .sukien-card .sukien-btn {
-  margin: 30px 15px 6px 15px;
+  margin: 30px 16px 16px 0px;
 }
 
 .sukien-card .sukien-btn a {
