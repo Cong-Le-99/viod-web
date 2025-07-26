@@ -57,25 +57,32 @@ get_header();
 
                     <ol class="top-programs">
                         <?php
-                        $top_posts = new WP_Query([
-                            'post_type' => 'training_program',
-                            'posts_per_page' => 5,
-                            'orderby' => 'date',
-                            'order' => 'DESC',
-                        ]);
+                        $top_programs = [
+                            [
+                                'title' => 'Chương trình Chứng nhận Thành viên HĐQT (DCP)',
+                                'url' => '/chuong-trinh-chung-nhan-thanh-vien-hdqt-dcp'
+                            ],
+                            [
+                                'title' => 'Chương trình Chuyên sâu dành cho Thư ký Quản trị Công ty (CSMP)',
+                                'url' => '/chuong-trinh-chuyen-sau-danh-cho-thu-ky-quan-tri-cong-ty-csmp'
+                            ],
+                            [
+                                'title' => 'Chương trình Chuyên sâu về Uỷ ban Kiểm toán (ACMP)',
+                                'url' => 'chuong-trinh-chuyen-sau-ve-uy-ban-kiem-toan-acmp/'
+                            ]
+                        ];
+                        
                         $i = 1;
-                        while ($top_posts->have_posts()) : $top_posts->the_post(); ?>
+                        foreach ($top_programs as $program) : ?>
                             <li>
                                 <div class="top-program-item">
                                     <div class="number"><?php echo $i++; ?></div>
                                     <div class="info">
-                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-                                        <!-- <small><?php echo get_post_meta(get_the_ID(), 'thoi_gian_dao_tao', true); ?></small> -->
-                                         <small><?php echo get_field('ngay'); ?> | <?php echo get_field('gio'); ?></small>
+                                        <a href="<?php echo $program['url']; ?>"><?php echo $program['title']; ?></a>
                                     </div>
                                 </div>
                             </li>
-                        <?php endwhile; wp_reset_postdata(); ?>
+                        <?php endforeach; ?>
                     </ol>
 
                 </div>
