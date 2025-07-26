@@ -1,7 +1,7 @@
 <?php
 // Lấy dữ liệu slider từ ACF
 $home_data = get_field('home'); 
-$slider_items = $home_data['hom_hero']; 
+$slider_items = $home_data['home_hero']; 
 ?>
 
 <div class="slider-trangchu">
