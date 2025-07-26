@@ -1,3 +1,8 @@
+<?php
+/*
+    Template Name: Trang chủ
+*/
+?>
 <?php get_header();
 
 /* slide trang chủ */
