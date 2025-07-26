@@ -13,15 +13,38 @@
 }
 
 .library-governance-img {
-  min-height: 612px;
   max-width: fit-content !important;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hiệu ứng cho publication items */
+.library-governance .publication-item {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hiệu ứng fade cho hình ảnh khi thay đổi */
+.library-governance-img.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.library-governance-img.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hiệu ứng cho icon arrow trong publication items */
+.library-governance .publication-item svg {
+  transition: transform 0.3s ease-in-out;
 }
 
 .viod-directors-bulletin {
   background-image: url("../images/viod-directors-bulletin-bg-mb.png") !important;
 }
 .viod-directors-bulletin-img {
-  min-height: 888px;
   max-width: fit-content !important;
 }
 
@@ -101,6 +124,19 @@
 }
 
 @media (min-width: 768px) {
+  .library-governance-img {
+    height: 612px !important;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .viod-directors-bulletin-img {
+    min-height: 612px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
   .viod-events-carousel-section .swiper-slide {
     width: 50%;
   }

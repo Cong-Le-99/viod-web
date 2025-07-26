@@ -16,6 +16,25 @@ function initializePublicationItems(containerSelector = null) {
   if (!publicationItems || !publicationItems.length || !publicationImage)
     return;
 
+  // Function để thay đổi hình ảnh với hiệu ứng fade
+  function changeImageWithFade(newImageSrc) {
+    // Thêm class fade-out
+    publicationImage.classList.add("fade-out");
+
+    // Đợi animation fade-out hoàn thành rồi thay đổi src
+    setTimeout(() => {
+      publicationImage.src = newImageSrc;
+      // Thêm class fade-in
+      publicationImage.classList.remove("fade-out");
+      publicationImage.classList.add("fade-in");
+
+      // Xóa class fade-in sau khi animation hoàn thành
+      setTimeout(() => {
+        publicationImage.classList.remove("fade-in");
+      }, 400);
+    }, 200);
+  }
+
   // Xử lý hover cho từng item
   publicationItems.forEach((item) => {
     item.addEventListener("mouseenter", function () {
@@ -25,10 +44,10 @@ function initializePublicationItems(containerSelector = null) {
       // Thêm active class cho item hiện tại
       this.classList.add("active");
 
-      // Thay đổi hình ảnh
+      // Thay đổi hình ảnh với hiệu ứng fade
       const imageSrc = this.getAttribute("data-image");
       if (imageSrc) {
-        publicationImage.src = imageSrc;
+        changeImageWithFade(imageSrc);
       }
     });
 
@@ -38,17 +57,22 @@ function initializePublicationItems(containerSelector = null) {
 
       if (!activeItem) {
         publicationItems[0].classList.add("active");
-        publicationImage.src = publicationItems[0].getAttribute("data-image");
+        const firstImageSrc = publicationItems[0].getAttribute("data-image");
+        if (firstImageSrc) {
+          changeImageWithFade(firstImageSrc);
+        }
       }
     });
 
     // Xử lý click để mở URL trong tab mới
     item.addEventListener("click", function () {
       const link = this.getAttribute("data-link");
-      if (link && link !== "#") {
-        // window.open(link, "_blank");
-        window.location.href = link;
+      const hasPdf = this.getAttribute("data-has-pdf") === "true";
+
+      if (link && link !== "#" && hasPdf) {
+        window.open(link, "_blank");
       }
+      // Nếu không có PDF, không làm gì cả
     });
   });
 
