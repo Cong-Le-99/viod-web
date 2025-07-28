@@ -208,7 +208,7 @@
   position: relative;
   background-color: #28a745;
   color: #fff;
-  padding: 14px 24px;
+  padding: 8px 12px;
   border-radius: 8px;
   border: none;
   font-size: 14px;
@@ -227,7 +227,7 @@
 .btn-outline {
   background-color: transparent;
   color: #28a745;
-  padding: 16px 25px;
+  padding: 8px 12px;
   border-radius: 8px;
   border: 2px solid #28a745;
   font-size: 16px;
@@ -258,6 +258,12 @@
 @media (min-width: 768px) {
   .training-program .description {
     font-size: 16px;
+  }
+  .btn-register {
+    padding: 14px 24px;
+  }
+  .btn-outline {
+    padding: 14px 24px;
   }
 
   .training-program .title {
