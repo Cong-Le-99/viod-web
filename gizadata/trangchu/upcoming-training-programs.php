@@ -1,11 +1,11 @@
 <?php
 
 $home_data = get_field('home'); 
-$training_programs = $home_data['home_current_trainings']; 
-$training_programs = array_slice($training_programs, 0, 3);
+$training_programs = $home_data['upcoming_training_programs']; 
 
 // Chuyển đổi dữ liệu ACF thành format phù hợp
 $formatted_programs = [];
+
 if (is_array($training_programs)) {
     foreach ($training_programs as $program) {
         if (is_object($program) && isset($program->ID)) {
@@ -35,40 +35,42 @@ if (is_array($training_programs)) {
 if (empty($formatted_programs)) {
     $formatted_programs = $training_programs;
 }
+
+// Kiểm tra xem có dữ liệu không trước khi hiển thị slider
+$has_programs = !empty($formatted_programs) && is_array($formatted_programs) && count($formatted_programs) > 0;
+
 ?>
 
-<div class="ongoing-training">
-<section class="training-program relative">
+<section class="training-program relative overflow-hidden">
     <div class="container">
-        <h2 class="title">CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA</h2>
+        <h2 class="title">CHƯƠNG TRÌNH ĐÀO TẠO sắp diễn ra</h2>
         <p class="description mb-4">
-            Các khoá đào tạo chất lượng cao về QTCT duy nhất tại Việt Nam.<br class="d-none d-lg-block">
-            Được thiết kế để phục vụ nhu cầu ngày càng tăng về phát triển chuyên môn, kiến ​​thức, nâng cao kỹ<br class="d-none d-lg-block">
-            năng của người làm nghề QTCT
+        Các khoá đào tạo chất lượng cao về QTCT duy nhất tại Việt Nam. Được thiết kế để <br class="d-none d-md-block"> phục vụ nhu cầu ngày càng tăng về phát triển chuyên môn, kiến ​​thức, nâng cao kỹ <br class="d-none d-md-block"> năng của người làm nghề QTCT
         </p>
         <div class="btn-see-more text-center mb-5">
             <a href="/chuong-trinh-dao-tao/">XEM THÊM →</a>
         </div>
+    </div>
 
-    <div class="ongoing-training-swiper" id="training-programs-container">
-        <?php foreach ($formatted_programs as $index => $program): ?>
-            <div class="swiper-slide training-program-item" data-index="<?php echo $index; ?>">
-                <div class="ct<?php echo $index + 1; ?> relative card-event w-100">
-                    <div class="card-event_img">
-                        <img src="<?php echo $program['image']; ?>" alt="<?php echo htmlspecialchars($program['title']); ?>">
-                    </div>
-                    <div class="card-event_content">
-                        <div class="card-event_wrapper">
+    <?php if ($has_programs): ?>
+    <div class="upcoming-training-programs-swiper training-programs-swiper" id="upcoming-training-swiper">
+        <div class="swiper-wrapper">
+            <?php foreach($formatted_programs as $index => $program): ?>
+                <div class="swiper-slide">
+                    <div class="ct<?php echo $index + 1; ?> relative card-event">
+                        <div class="card-event_img">
+                            <img src="<?php echo $program['image']; ?>" alt="<?php echo htmlspecialchars($program['title']); ?>">
+                        </div>
+                        <div class="card-event_content">
+                            <div class="card-event_wrapper">
                             <div class="card-event_tag">
-                                <?php foreach ($program['tags'] as $tag): ?>
+                                <?php foreach($program['tags'] as $tag): ?>
                                     <span><?php echo htmlspecialchars($tag); ?></span>
                                 <?php endforeach; ?>
                             </div>
-
                             <div class="card-event_title">
                                 <?php echo htmlspecialchars($program['title']); ?>
                             </div>
-
                             <div class="card-event_time">
                                 <div class="a">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" >
@@ -76,13 +78,12 @@ if (empty($formatted_programs)) {
                                     </svg>
                                     <?php echo $program['date']; ?> | <?php echo $program['time']; ?>
                                 </div>
-                                <?php if ($program['countdown']): ?>
+                                <?php if($program['countdown']): ?>
                                     <div class="card-event_countdown">
                                         <?php echo $program['countdown']; ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
-
                             <div class="card-event_address d-flex justify-content-between gap-1">
                                 <div class="flex-fill text-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" >
@@ -95,31 +96,91 @@ if (empty($formatted_programs)) {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" >
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70484 5.49369C7.59707 5.1973 7.31538 5 7 5C6.68462 5 6.40293 5.1973 6.29516 5.49369L4.29516 10.9937C4.1536 11.383 4.35442 11.8133 4.74369 11.9548C5.13297 12.0964 5.56329 11.8956 5.70484 11.5063L5.89178 10.9922C5.92711 10.9974 5.96325 11 6 11H8.11104L8.29516 11.5063C8.43671 11.8956 8.86703 12.0964 9.25631 11.9548C9.64558 11.8133 9.8464 11.383 9.70484 10.9937L7.70484 5.49369ZM7 7.94463L7.56559 9.5H6.43441L7 7.94463Z" />
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 8.25L15.1493 8.25C15.1405 8.32198 15.1296 8.40058 15.1161 8.4849C15.049 8.90511 14.9167 9.47895 14.6539 10.0904C14.4652 10.5293 14.2077 10.9892 13.8598 11.4243C14.1545 11.5875 14.491 11.7241 14.8759 11.824C15.2768 11.9281 15.5175 12.3374 15.4135 12.7384C15.3094 13.1393 14.9 13.38 14.4991 13.2759C13.7974 13.0938 13.2099 12.8168 12.7188 12.4826C12.2276 12.8168 11.6401 13.0938 10.9384 13.2759C10.5375 13.38 10.1281 13.1393 10.024 12.7384C9.92 12.3374 10.1607 11.9281 10.5616 11.824C10.9465 11.7241 11.283 11.5875 11.5777 11.4243C11.2298 10.9892 10.9723 10.5293 10.7836 10.0904C10.5208 9.47895 10.3885 8.90511 10.3214 8.4849C10.3079 8.40057 10.297 8.32197 10.2881 8.24999H10.25C9.83576 8.24999 9.49997 7.9142 9.49998 7.49999C9.49998 7.08577 9.83576 6.74999 10.25 6.74999L12 6.74999V6C12 5.58579 12.3358 5.25 12.75 5.25C13.1642 5.25 13.5 5.58579 13.5 6V6.75L15.25 6.75C15.6642 6.75 16 7.08579 16 7.5C16 7.91422 15.6642 8.25 15.25 8.25ZM11.8029 8.24999C11.856 8.58135 11.96 9.02884 12.1617 9.49798C12.2984 9.81595 12.4785 10.1423 12.7188 10.4501C12.959 10.1423 13.1391 9.81595 13.2758 9.49798C13.4775 9.02885 13.5815 8.58136 13.6346 8.25L11.8029 8.24999Z" />
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 15.75H10.6213L9.06066 17.3107C8.63166 17.7397 7.98649 17.868 7.42597 17.6358C6.86546 17.4036 6.5 16.8567 6.5 16.25V15.75H5.5C3.567 15.75 2 14.183 2 12.25V6.25C2 4.317 3.567 2.75 5.5 2.75H14.5C16.433 2.75 18 4.317 18 6.25V12.25C18 14.183 16.433 15.75 14.5 15.75ZM8 16.25L10 14.25H14.5C15.6046 14.25 16.5 13.3546 16.5 12.25V6.25C16.5 5.14543 15.6046 4.25 14.5 4.25H5.5C4.39543 4.25 3.5 5.14543 3.5 6.25V12.25C3.5 13.3546 4.39543 14.25 5.5 14.25H8V16.25Z" />
                                     </svg>
                                     <?php echo $program['language']; ?>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="card-event_button">
-                            <div class="button-group">
-                                <button class="btn-register">
-                                    <?php if ($program['badge']): ?>
-                                        <span class="badge"><?php echo $program['badge']; ?></span>
-                                    <?php endif; ?>
-                                    <?php echo $program['register_text']; ?>
-                                </button>
-                                <button class="btn-outline">GIỚI THIỆU</button>
+                            <div class="card-event_button">
+                                <div class="button-group">
+                                    <a href="<?php echo $program['permalink']; ?>" class="btn-register">
+                                        <?php if($program['badge']): ?>
+                                            <span class="badge"><?php echo $program['badge']; ?></span>
+                                        <?php endif; ?>
+                                        <?php echo $program['register_text']; ?>
+                                    </a>
+                                    <a href="/chuong-trinh-dao-tao/" class="btn-outline">GIỚI THIỆU</a>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+        
+        <!-- Swiper Navigation - Desktop Only -->
+        <div class="swiper-button-next d-none d-lg-block"></div>
+        <div class="swiper-button-prev d-none d-lg-block"></div>
     </div>
+    <?php else: ?>
+    <div class="text-center py-5">
+        <p>Không có chương trình đào tạo sắp diễn ra.</p>
     </div>
+    <?php endif; ?>
 
 </section>
-</div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/ongoing-training.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Kiểm tra xem swiper container có tồn tại không
+    const swiperContainer = document.getElementById('upcoming-training-swiper');
+    if (!swiperContainer) {
+        console.log('Swiper container not found, skipping initialization');
+        return;
+    }
+
+    // Đợi một chút để đảm bảo DOM đã load hoàn toàn
+    setTimeout(function() {
+        // Khởi tạo Swiper cho chương trình đào tạo đang diễn ra
+        const trainingSwiper = new Swiper('.training-programs-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        grabCursor: true,
+        loop: true,
+        
+        autoplay: false,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.training-programs-swiper .swiper-button-next',
+            prevEl: '.training-programs-swiper .swiper-button-prev',
+        },
+        
+        // Responsive breakpoints
+        breakpoints: {
+            // Mobile: 1 slide, 100% width
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+      
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+
+            }
+        },
+        
+        // Thêm event listeners để debug
+        on: {
+            init: function() {
+                console.log('Swiper initialized successfully');
+            },
+            slideChange: function() {
+                console.log('Slide changed to: ' + this.activeIndex);
+            }
+        }
+    });
+    
+    console.log('Swiper initialization completed');
+    }, 100); // Đợi 100ms để đảm bảo DOM đã sẵn sàng
+});
+</script>

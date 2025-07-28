@@ -221,6 +221,7 @@
 
 .btn-register:hover {
   background-color: #218838;
+  color: #fff !important;
 }
 
 .btn-outline {
@@ -238,7 +239,8 @@
 }
 
 .btn-outline:hover {
-  background-color: #e6f7e6;
+  background-color: #e6f7e6 !important;
+  color: #218838 !important;
 }
 
 .badge {
@@ -290,7 +292,7 @@
   transition: all 0.3s ease;
 }
 
-.btn-see-more a:hover {
+.btn-see-more:hover {
   text-decoration: underline;
 }
 

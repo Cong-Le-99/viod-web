@@ -1,5 +1,85 @@
 /* === SWIPER CUSTOM STYLES === */
 
+/* Styles cho upcoming training programs swiper */
+.upcoming-training-programs-swiper {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  min-height: 580px;
+  height: 580px;
+}
+
+.upcoming-training-programs-swiper .swiper-wrapper {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+.upcoming-training-programs-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  align-items: end;
+}
+
+/* Navigation Buttons cho upcoming training programs */
+.upcoming-training-programs-swiper .swiper-button-next,
+.upcoming-training-programs-swiper .swiper-button-prev {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-top: -26px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  background: #3aa735;
+}
+
+.upcoming-training-programs-swiper:hover .swiper-button-next,
+.upcoming-training-programs-swiper:hover .swiper-button-prev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.upcoming-training-programs-swiper .swiper-button-next:after,
+.upcoming-training-programs-swiper .swiper-button-prev:after {
+  font-size: 20px;
+  color: white;
+}
+
+.upcoming-training-programs-swiper .swiper-button-next {
+  right: 20px;
+}
+
+.upcoming-training-programs-swiper .swiper-button-prev {
+  left: 20px;
+}
+
+/* Responsive cho upcoming training programs */
+@media (min-width: 992px) {
+  .upcoming-training-programs-swiper .swiper-slide-active {
+    width: calc(33% + 44px) !important;
+    transition: all 0.3s ease !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .upcoming-training-programs-swiper .swiper-slide {
+    width: 50% !important;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .upcoming-training-programs-swiper .swiper-slide {
+    width: 100% !important;
+    flex-shrink: 0;
+  }
+}
+
+/* Styles cho training programs swiper (existing) */
 .training-programs-swiper {
   position: relative;
   /* padding: 0 50px 50px 50px; */

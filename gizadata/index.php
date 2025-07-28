@@ -18,8 +18,11 @@ get_template_part('components/ongoing-training');
 /* chương trình đào tạo dự kiến */
 // get_template_part('trangchu/daotaodukien');
 
+get_template_part('trangchu/upcoming-training-programs');
 /* sự kiện sắp diễn ra */
 get_template_part('trangchu/sukiensapdienra');
+
+
 
 /* tài liệu */
 // get_template_part('trangchu/tailieu');

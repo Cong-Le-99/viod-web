@@ -94,15 +94,12 @@
 }
 
 .ongoing-training-swiper {
-  /* display: grid;
-  grid-template-columns: 1fr; */
   gap: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+  transition: all 0.3s ease;
 }
 
 .ongoing-training-swiper .swiper-slide {
@@ -128,7 +125,7 @@
 @media (min-width: 768px) {
   .ongoing-training-swiper {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: end;
     position: relative;
     flex-direction: row;

@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name: Sự kiện
+*/
+?>
+<?php
 get_header(); ?>
 
 <div class="noidungbaiviet">
