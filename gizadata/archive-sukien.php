@@ -4,8 +4,65 @@ Template Name: Sự kiện
 */
 ?>
 <?php
-get_header(); ?>
+get_header(); 
 
+
+$category = get_queried_object();
+$page = get_page_by_path('su-kien');
+$page_id = $page->ID ?? null;
+
+$banner_data = get_field('event_banner', $page_id);
+
+// Thiết lập default banner
+$default_desktop = get_template_directory_uri() . '/images/banner-heading.png';
+$default_mobile = get_template_directory_uri() . '/images/banner-heading-mb.png';
+
+$banner_desktop = $default_desktop;
+$banner_mobile = $default_mobile;
+
+if (!empty($banner_data['banner_desktop'])) {
+    if (is_array($banner_data['banner_desktop'])) {
+        $banner_desktop = $banner_data['banner_desktop']['url'];
+    } else {
+        $banner_desktop = $banner_data['banner_desktop'];
+    }
+}
+
+// Xử lý banner mobile
+if (!empty($banner_data['banner_mobile'])) {
+    if (is_array($banner_data['banner_mobile'])) {
+        $banner_mobile = $banner_data['banner_mobile']['url'];
+    } else {
+        $banner_mobile = $banner_data['banner_mobile'];
+    }
+}
+
+?>
+<div class="member-certificate post-archive bg-post-archive">
+    <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
+    <div class="banner" data-desktop="<?php echo esc_url($banner_desktop); ?>" data-mobile="<?php echo esc_url($banner_mobile); ?>">
+        <!-- Breadcrumb chỉ hiện trên desktop -->
+        <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
+                    <a class="d-block d-md-none" href="<?php echo home_url(); ?>" style="width: 20px; height: 20px;">
+                        <img class="w-1 h-1" src="<?php echo get_template_directory_uri(); ?>/images/home.svg" alt="">
+                    </a>
+                </li>
+                <li class="breadcrumb-item active">Sự kiện</li>
+            </ol>
+        </nav>
+        <div class="banner-content px-4">
+            <h2 class="title light">Sự kiện</h2>
+            <p class="text-base light text-center">
+                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp.<br class="d-none d-md-block">Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 
 <div class="noidungbaiviet">
     <div class="single-banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>');">
         <div class="overlay"></div>
@@ -15,11 +72,11 @@ get_header(); ?>
             </div>
             <div class="title-wrapper">
                 <h1 class="post-title">Sự kiện</h1>
-                <div class="mota">Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp.<br>Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)</div>
+                <div class="mota">Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp.<br class="d-none d-md-block">Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)</div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="post-archive-news">
     <section class="sukien-layout session-wrap">

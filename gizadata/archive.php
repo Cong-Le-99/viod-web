@@ -13,17 +13,13 @@ $banner_data = get_field('post_banner', $posts_page_id);
 $default_desktop = get_template_directory_uri() . '/images/banner-heading.png';
 $default_mobile = get_template_directory_uri() . '/images/banner-heading-mb.png';
 
-// Lấy banner từ ACF hoặc sử dụng default
 $banner_desktop = $default_desktop;
 $banner_mobile = $default_mobile;
 
-// Xử lý banner desktop
 if (!empty($banner_data['banner_desktop'])) {
     if (is_array($banner_data['banner_desktop'])) {
-        // Nếu là array (ACF image object)
         $banner_desktop = $banner_data['banner_desktop']['url'];
     } else {
-        // Nếu là string (URL)
         $banner_desktop = $banner_data['banner_desktop'];
     }
 }
@@ -31,10 +27,8 @@ if (!empty($banner_data['banner_desktop'])) {
 // Xử lý banner mobile
 if (!empty($banner_data['banner_mobile'])) {
     if (is_array($banner_data['banner_mobile'])) {
-        // Nếu là array (ACF image object)
         $banner_mobile = $banner_data['banner_mobile']['url'];
     } else {
-        // Nếu là string (URL)
         $banner_mobile = $banner_data['banner_mobile'];
     }
 }
