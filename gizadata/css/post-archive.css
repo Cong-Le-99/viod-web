@@ -1,10 +1,16 @@
 .post-archive .banner {
-  background-image: url("../images/banner-heading-mb.png") !important;
+  background-image: var(
+    --mobile-banner,
+    url("../images/banner-heading-mb.png")
+  ) !important;
 }
 
 @media (min-width: 768px) {
   .post-archive .banner {
-    background-image: url("../images/banner-heading.png") !important;
+    background-image: var(
+      --desktop-banner,
+      url("../images/banner-heading.png")
+    ) !important;
   }
 }
 

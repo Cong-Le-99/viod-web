@@ -3,15 +3,47 @@ get_header();
 
 // Get the current category object
 $category = get_queried_object();
-$banner_image = get_term_meta($category->term_id, 'category_image', true);
-$default_image = get_template_directory_uri() . '/images/default-banner.jpg';
-$banner_image = $banner_image ? $banner_image : $default_image;
-$description = category_description($category->term_id);
+
+$posts_page_id = get_option('page_for_posts');
+
+// Lấy group post_banner từ trang đó
+$banner_data = get_field('post_banner', $posts_page_id);
+
+// Thiết lập default banner
+$default_desktop = get_template_directory_uri() . '/images/banner-heading.png';
+$default_mobile = get_template_directory_uri() . '/images/banner-heading-mb.png';
+
+// Lấy banner từ ACF hoặc sử dụng default
+$banner_desktop = $default_desktop;
+$banner_mobile = $default_mobile;
+
+// Xử lý banner desktop
+if (!empty($banner_data['banner_desktop'])) {
+    if (is_array($banner_data['banner_desktop'])) {
+        // Nếu là array (ACF image object)
+        $banner_desktop = $banner_data['banner_desktop']['url'];
+    } else {
+        // Nếu là string (URL)
+        $banner_desktop = $banner_data['banner_desktop'];
+    }
+}
+
+// Xử lý banner mobile
+if (!empty($banner_data['banner_mobile'])) {
+    if (is_array($banner_data['banner_mobile'])) {
+        // Nếu là array (ACF image object)
+        $banner_mobile = $banner_data['banner_mobile']['url'];
+    } else {
+        // Nếu là string (URL)
+        $banner_mobile = $banner_data['banner_mobile'];
+    }
+}
+
 ?>
 
 <div class="member-certificate post-archive bg-post-archive">
     <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
-    <div class="banner">
+    <div class="banner" data-desktop="<?php echo esc_url($banner_desktop); ?>" data-mobile="<?php echo esc_url($banner_mobile); ?>">
         <!-- Breadcrumb chỉ hiện trên desktop -->
         <nav class="breadcrumb-nav">
             <ol class="breadcrumb">
