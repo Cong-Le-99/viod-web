@@ -104,13 +104,13 @@ if (empty($formatted_programs)) {
                         </div>
                         <div class="card-event_button">
                             <div class="button-group">
-                                <button class="btn-register">
-                                    <?php if ($program['badge']): ?>
-                                        <span class="badge"><?php echo $program['badge']; ?></span>
-                                    <?php endif; ?>
-                                    <?php echo $program['register_text']; ?>
-                                </button>
-                                <button class="btn-outline">GIỚI THIỆU</button>
+                                    <a href="<?php echo $program['permalink']; ?>" class="btn-register">
+                                        <?php if($program['badge']): ?>
+                                            <span class="badge"><?php echo $program['badge']; ?></span>
+                                        <?php endif; ?>
+                                        <?php echo $program['register_text']; ?>
+                                    </a>
+                                    <a href="/chuong-trinh-dao-tao/" class="btn-outline">GIỚI THIỆU</a>
                             </div>
                         </div>
                     </div>

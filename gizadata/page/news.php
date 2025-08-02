@@ -229,7 +229,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
             </div>
         </div>
     </section>
-</div>
+</div> 
 
 <!-- Mobile Filter Drawer - Bootstrap 5 -->
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="mobileFilterDrawer" aria-labelledby="mobileFilterDrawerLabel">

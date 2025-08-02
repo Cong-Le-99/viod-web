@@ -1307,7 +1307,7 @@ a:hover {
 
 .baiviet-daotao article .baivietdaotao .boxdangky {
   width: 440px;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   padding: 24px;
   font-size: 14px;
@@ -4265,10 +4265,10 @@ transition: opacity 0.3s ease;
 }
 
 .psk {
-  max-width: 1200px;
+  /* max-width: 1200px;
   margin: auto;
   width: 90%;
-  padding: 80px 0;
+  padding: 80px 0; */
 }
 
 .psk .sukien-layout {
@@ -4746,9 +4746,9 @@ transition: opacity 0.3s ease;
   background: linear-gradient(to bottom, #ffffff 0%, #f5faf1 50%, #e0f5df 100%);
 }
 .daotao {
-  max-width: 1280px;
-  margin: auto;
-  padding: 80px 20px;
+  /* max-width: 1280px;
+  margin: auto; */
+  /* padding: 80px 20px; */
 }
 
 .daotao .page-title {
@@ -4767,7 +4767,7 @@ transition: opacity 0.3s ease;
 .daotao .training-layout {
   display: flex;
   gap: 30px;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 @media (max-width: 800px) {
@@ -4781,17 +4781,20 @@ transition: opacity 0.3s ease;
 
 .daotao .training-sidebar {
   width: 389px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .daotao .training-sidebar .nda {
-  border-radius: 8px;
-  background: #e0f5df;
-  display: flex;
+  /* border-radius: 8px; */
+  /* background: #e0f5df; */
+  /* display: flex;
   padding: 16px;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
 }
 
 .daotao .training-sidebar .nda a {

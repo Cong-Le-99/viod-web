@@ -140,7 +140,7 @@ if (have_posts()) :
                     </div>
 
                     <div class="box">
-                        <?php echo apply_shortcodes( '[contact-form-7 id="0347dc1" title="đăng ký sự kiện"]' ); ?>  
+                        <?php echo apply_shortcodes( '[contact-form-7 id="387dd06" title="đăng ký sự kiện"]' ); ?>  
                     </div>
                 </div>
             </div>

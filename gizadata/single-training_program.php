@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 
+<?php 
+
+    $event_name = get_field('event_name');
+    $event_bio = get_field('event_bio');
+    $event_avatar_url = get_field('event_avatar_url');
+    $event_link = get_field('link'); // Sử dụng field name 'link' như trong config
+
+    // Đường dẫn đến default image
+    $default_image = get_template_directory_uri() . '/gizadata/images/default.png';
+
+    // Kiểm tra và sử dụng avatar hoặc default image
+    // $avatar_url = $event_avatar_url ? $event_avatar_url : $default_image;
+    $avatar_alt = $event_name ? $event_name : 'Giảng viên';
+?>
 
 <div class="baiviet-daotao">
     <?php while (have_posts()) : the_post(); ?>
@@ -66,40 +80,69 @@
                 <img src="<?php echo esc_url($thumb_url ? $thumb_url : $default_img); ?>" alt="<?php the_title_attribute(); ?>">
             </div>
         </div>
+        <div class="wrap-info-data">
+      
+            <div class="bg">
+                <article id="post-<?php the_ID(); ?>" <?php post_class('training-program-single'); ?>>
+                    <div class="baivietdaotao">
+                        <div class="noidung">
+                            <div class="thongtin">
+                                <?php
+                                the_content();
 
-        <div class="bg">
-            <article id="post-<?php the_ID(); ?>" <?php post_class('training-program-single'); ?>>
-                <div class="baivietdaotao">
-                    <div class="noidung">
-                        <div class="thongtin">
-                            <?php
-                            the_content();
+                                wp_link_pages(array(
+                                    'before' => '<div class="page-links">' . esc_html__('Pages:', 'viod'),
+                                    'after'  => '</div>',
+                                ));
+                                ?>
+                            </div>                    
+                        </div>
+                       
+                        <div class="wrap-info-remember member-certificate">
+                            <div class="info-remember">
+                                <div class="team-member" style="display: block;">
+                                <?php if ($event_avatar_url) : ?>
+                                 <div class="member-image">
+                                     <img src="<?php echo esc_url($event_avatar_url); ?>" alt="<?php echo esc_attr($avatar_alt); ?>" class="member-photo">
+                                 </div>
+                                 <?php endif; ?>
+                                <div class="member-info">
+                                    <?php if ($event_name) : ?>
+                                    <h3 class="member-name"><?php echo esc_html($event_name); ?></h3>
+                                    <?php endif; ?>
 
-                            wp_link_pages(array(
-                                'before' => '<div class="page-links">' . esc_html__('Pages:', 'viod'),
-                                'after'  => '</div>',
-                            ));
-                            ?>
-                        </div>                    
+                                    <?php if ($event_bio) : ?>
+                                    <p class="member-position"><?php echo wp_kses_post($event_bio); ?></p>
+                                    <?php endif; ?>
+
+                                    <?php if ($event_link) : ?>
+                                    <div class="member-link">
+                                        <a href="<?php echo esc_url($event_link); ?>" target="_blank" class="btn btn-primary">Xem thêm</a>
+                                    </div>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="boxdangky ">
+                                <h3>Đăng ký chương trình</h3>
+                                <div class="dk2">
+                                    <a href="">Trở thành thành viên</a> VIOD để có được các ưu đãi !!!
+                                </div>
+
+                                <div class="box">
+                                    <?php echo apply_shortcodes( '[contact-form-7 id="9134801" title="đăng ký chương trình"]' ); ?>
+                                </div>
+
+                                <div class="c">
+                                    <i>* Sau khi hoàn thành phiếu đăng ký. Ông/Bà sẽ nhận được thư xác nhận và hướng dẫn thanh toán chi phí tham dự.</i>
+                                </div>
+                            </div>
+                        <div>
+
+                        </div>
                     </div>
-                    <div class="boxdangky ">
-                        <h3>Đăng ký chương trình</h3>
-                        <div class="dk2">
-                            <a href="">Trở thành thành viên</a> VIOD để có được các ưu đãi !!!
-                        </div>
-
-                        <div class="box">
-                            <?php echo apply_shortcodes( '[contact-form-7 id="9134801" title="đăng ký chương trình"]' ); ?>
-                        </div>
-
-                        <div class="c">
-                            <i>* Sau khi hoàn thành phiếu đăng ký. Ông/Bà sẽ nhận được thư xác nhận và hướng dẫn thanh toán chi phí tham dự.</i>
-                        </div>
-                    </div>
-
-                
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
 
         
@@ -111,19 +154,21 @@
 </div>
 
 
-<div
-class="cacchuongtrinh xemthemformtrangdangky"
-id="other-training-ajax-section">
+<div class="thongtinlienhe">
     <div class="main">
-        <h2 class="tit" >Các khoá đào tạo khác</h2>
-        <div class="mota">
-            Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.
+        <div class="tit">
+            CÁC KHOÁ ĐÀO TẠO KHÁC
         </div>
-        <div class="ajax-loading-overlay">
-            <div class="loader"></div>
-        </div>
-        <div class="other-training-ajax-content ds">
-            <?php if (function_exists('render_other_training_programs')) render_other_training_programs(1, get_the_ID()); ?>
+        
+        <div class="nhungkhoahockhac">
+            <div class="khoahoc-grid">
+                <div class="ajax-loading-overlay">
+                    <div class="loader"></div>
+                </div>
+                <div class="other-training-ajax-content ds">
+                    <?php if (function_exists('render_other_training_programs')) render_other_training_programs(1, get_the_ID()); ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -155,7 +200,7 @@ jQuery(document).ready(function($){
             return;
         }
 
-        var container = $('#other-training-ajax-section');
+        var container = $('.thongtinlienhe');
         var overlay = container.find('.ajax-loading-overlay');
         var content = container.find('.other-training-ajax-content');
         overlay.show();
