@@ -156,7 +156,7 @@ if (have_posts()) :
 
                     
                     <div class="nhungsukienkhac">
-                        <div class="sukien-grid">
+                        <div class="post-archive-grid">
                             <?php
                             $related_events = new WP_Query(array(
                                 'post_type' => 'sukien',

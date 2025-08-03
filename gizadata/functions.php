@@ -306,7 +306,7 @@ function render_other_training_programs($paged = 1, $exclude_id = 0) {
     );
     $query = new WP_Query($args);
     if ($query->have_posts()) : ?>
-        <div class="sukien-grid">
+        <div class="post-archive-grid">
             <?php while ($query->have_posts()) : $query->the_post(); ?>
                 <div class="sukien-card post-card card-event-session-list">
                     <a href="<?php the_permalink(); ?>">

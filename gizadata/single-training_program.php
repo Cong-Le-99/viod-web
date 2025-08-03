@@ -154,22 +154,23 @@
 </div>
 
 
-<div class="thongtinlienhe">
-    <div class="main">
-        <div class="tit">
+<div class="thongtinlienhe session-wrap">
+    <div class="container">
+        <!-- <div class="tit">
             CÁC KHOÁ ĐÀO TẠO KHÁC
+        </div>  -->
+        <h2 class="title">CÁC KHOÁ ĐÀO TẠO KHÁC</h2>
+        <div class="ajax-loading-overlay">
+            <div class="loader"></div>
         </div>
-        
-        <div class="nhungkhoahockhac">
-            <div class="khoahoc-grid">
-                <div class="ajax-loading-overlay">
-                    <div class="loader"></div>
-                </div>
-                <div class="other-training-ajax-content ds">
+        <!-- <div class="post-archive-grid"> -->
+            <!-- <div class="khoahoc-grid"> -->
+                
+                <!-- <div class="other-training-ajax-content ds"> -->
                     <?php if (function_exists('render_other_training_programs')) render_other_training_programs(1, get_the_ID()); ?>
-                </div>
-            </div>
-        </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
 </div>
 
