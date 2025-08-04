@@ -46,18 +46,37 @@ get_header();
                                         </div>
                                         <div class="tit">
                                             <div class="a">Danh mục</div>
+                                            <?php if (!empty($_GET['training_category']) || !empty($_GET['tag']) || !empty($_GET['s'])) : ?>
                                             <div class="b">
                                                 <a href="<?php echo get_post_type_archive_link('training_program'); ?>">Bỏ chọn x</a>
                                             </div>
+                                            <?php endif; ?>
                                         </div>
                                         
-                                        <?php
-                                        $cats = get_terms('training_category');
-                                        foreach ($cats as $cat) {
-                                            $checked = (isset($_GET['training_category']) && $_GET['training_category'] == $cat->slug);
-                                            echo '<div class="dscmdt"><input type="radio" name="training_category" value="' . esc_attr($cat->slug) . '" ' . ($checked ? 'checked' : '') . '> ' . esc_html($cat->name) . '</div>';
-                                        }
-                                        ?>
+                                        <div class="category-options">
+                                            <?php
+                                            $cats = get_terms('training_category');
+                                            foreach ($cats as $cat) {
+                                                $checked = (isset($_GET['training_category']) && $_GET['training_category'] == $cat->slug);
+                                                
+                                                // Tạo URL với các tham số hiện tại
+                                                $current_params = $_GET;
+                                                if ($checked) {
+                                                    unset($current_params['training_category']);
+                                                } else {
+                                                    $current_params['training_category'] = $cat->slug;
+                                                }
+                                                
+                                                $filter_url = add_query_arg($current_params, get_post_type_archive_link('training_program'));
+                                                
+                                                echo '<label class="radio-option">';
+                                                echo '<input type="radio" name="training_category" value="' . esc_attr($cat->slug) . '" ' . ($checked ? 'checked' : '') . '>';
+                                                echo '<span class="radio-custom"></span>';
+                                                echo '<a href="' . esc_url($filter_url) . '" class="radio-label' . ($checked ? ' active' : '') . '">' . esc_html($cat->name) . '</a>';
+                                                echo '</label>';
+                                            }
+                                            ?>
+                                        </div>
 
                                         <div class="tit">
                                             <div class="a">Tags</div>
@@ -68,7 +87,17 @@ get_header();
                                             $tags = get_terms('post_tag');
                                             foreach ($tags as $tag) {
                                                 $active = (isset($_GET['tag']) && $_GET['tag'] == $tag->slug);
-                                                echo '<a class="tag' . ($active ? ' active' : '') . '" href="?tag=' . esc_attr($tag->slug) . '">' . esc_html($tag->name) . '</a>';
+                                                
+                                                // Tạo URL với các tham số hiện tại
+                                                $current_params = $_GET;
+                                                if ($active) {
+                                                    unset($current_params['tag']);
+                                                } else {
+                                                    $current_params['tag'] = $tag->slug;
+                                                }
+                                                
+                                                $filter_url = add_query_arg($current_params, get_post_type_archive_link('training_program'));
+                                                echo '<a class="tag' . ($active ? ' active' : '') . '" href="' . esc_url($filter_url) . '">' . esc_html($tag->name) . '</a>';
                                             }
                                             ?>
                                         </div>
@@ -130,8 +159,10 @@ get_header();
                                 $args['s'] = sanitize_text_field($_GET['s']);
                             }
 
+                            $tax_queries = [];
+                            
                             if (!empty($_GET['training_category'])) {
-                                $args['tax_query'][] = [
+                                $tax_queries[] = [
                                     'taxonomy' => 'training_category',
                                     'field' => 'slug',
                                     'terms' => sanitize_text_field($_GET['training_category']),
@@ -139,14 +170,29 @@ get_header();
                             }
 
                             if (!empty($_GET['tag'])) {
-                                $args['tag'] = sanitize_text_field($_GET['tag']);
+                                $tax_queries[] = [
+                                    'taxonomy' => 'post_tag',
+                                    'field' => 'slug',
+                                    'terms' => sanitize_text_field($_GET['tag']),
+                                ];
+                            }
+                            
+                            if (!empty($tax_queries)) {
+                                if (count($tax_queries) > 1) {
+                                    $args['tax_query'] = [
+                                        'relation' => 'AND',
+                                        $tax_queries
+                                    ];
+                                } else {
+                                    $args['tax_query'] = $tax_queries;
+                                }
                             }
 
                             $query = new WP_Query($args);
                             ?>
 
                             <?php if ($query->have_posts()) : ?>
-                                <div class="post-archive-grid">
+                                <div class="posts-grid">
                                     <?php while ($query->have_posts()) : $query->the_post(); ?>
                                         <div class="sukien-card post-card card-event-session-list">
                                             <a href="<?php the_permalink(); ?>">
@@ -163,10 +209,10 @@ get_header();
                                             <div class="nd post-card-content">
                                                 <div class="sukien-tags post-card-tags">
                                                     <?php
-                                                    $terms = get_the_terms(get_the_ID(), 'training_category');
-                                                    if ($terms && !is_wp_error($terms)) {
-                                                        foreach ($terms as $term) {
-                                                            echo '<span class="post-card-tag">' . esc_html($term->name) . '</span> ';
+                                                    $tags = get_the_tags(get_the_ID());
+                                                    if ($tags && !is_wp_error($tags)) {
+                                                        foreach ($tags as $tag) {
+                                                            echo '<span class="post-card-tag">' . esc_html($tag->name) . '</span> ';
                                                         }
                                                     }
                                                     ?>
