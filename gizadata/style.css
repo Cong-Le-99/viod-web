@@ -656,8 +656,16 @@ a:hover {
 }
 
 .footer-column a {
-  color: #ffff;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
+}
+.footer-column span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-column a.text-white{
+	color:#fff;	
+}
 }
 .footer-column li span {
   color: #b5bcc3;
@@ -1709,8 +1717,8 @@ a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 70px;
+  font-weight: 700;
+  line-height: 100%;
   /* 109.375% */
   margin: 0;
   max-width: 812px;
@@ -1719,10 +1727,10 @@ a:hover {
 .slider-trangchu .slide-content p {
   color: #082136;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
+  font-weight: 600;
+  line-height: 24px;
   margin: 29px 0 32px 0;
   max-width: 812px;
 }

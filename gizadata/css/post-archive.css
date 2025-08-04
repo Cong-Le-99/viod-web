@@ -671,7 +671,7 @@
 }
 
 .post-card.large .post-card-title {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .post-card-title a {
@@ -686,8 +686,8 @@
 
 .post-card-excerpt {
   color: #666;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 100%;
   margin-bottom: 16px;
   font-family: "Montserrat", sans-serif;
 }
@@ -696,7 +696,7 @@
   cursor: pointer;
   color: #3aa735;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;

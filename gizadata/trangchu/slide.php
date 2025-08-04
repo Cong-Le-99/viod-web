@@ -15,7 +15,7 @@ $slider_items = $home_data['home_hero'];
             $opacity = $index === 0 ? '1' : '0';
     ?>
         <div class="ndslide" style="background-image: url('<?php echo esc_url($background_image); ?>'); opacity: <?php echo $opacity; ?>;">
-            <div class="slide-content">
+            <div class="slide-content container">
                 <?php if($title): ?>
                     <h1><?php echo esc_html($title); ?></h1>
                 <?php endif; ?>
@@ -33,7 +33,7 @@ $slider_items = $home_data['home_hero'];
         // Fallback nếu không có dữ liệu ACF
     ?>
         <div class="ndslide" style="background-image: url('https://viod.1994.cloud/wp-content/uploads/2025/07/image_bg-slider-home-page_fc4i.webp');">
-            <div class="slide-content">
+            <div class="slide-content container">
                 <h1>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)</h1>
                 <p>Thành viên của Mạng lưới Thành viên Hội đồng Quản trị Toàn cầu (GNDI), là định chế chuyên nghiệp, độc lập và tiên phong trong lĩnh vực Quản trị công ty & Phát triển bền vững tại Việt Nam.</p>
                 <a href="#" class="button">CHÚNG TÔI LÀ AI</a>

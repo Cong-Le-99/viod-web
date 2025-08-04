@@ -40,8 +40,8 @@
                 <div class="footer-column">
                     <h3>LIÊN HỆ</h3>
                     <ul>
-                        <li><span>Email:</span> <a href="mailto:info@viod.vn">info@viod.vn</a></li>
-                        <li><span>Hotline:</span> <a href="tel:+84936249697">+84 936 249 697</a></li>
+                        <li><span>Email:</span> <a href="mailto:info@viod.vn" class="text-white">info@viod.vn</a></li>
+                        <li><span>Hotline:</span> <a href="tel:+84936249697" class="text-white">+84 936 249 697</a></li>
                         <li>
                             <div class="flex-box">
                                 <span>Social:</span>

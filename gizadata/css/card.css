@@ -149,6 +149,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: #082136;
+  text-transform: uppercase;
 }
 
 .card-event_title-event {

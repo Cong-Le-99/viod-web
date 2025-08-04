@@ -42,8 +42,7 @@ if (empty($formatted_programs)) {
     <div class="container">
         <h2 class="title">CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA</h2>
         <p class="description mb-4">
-            Các khoá đào tạo chất lượng cao về QTCT duy nhất tại Việt Nam.<br class="d-none d-lg-block">
-            Được thiết kế để phục vụ nhu cầu ngày càng tăng về phát triển chuyên môn, kiến ​​thức, nâng cao kỹ<br class="d-none d-lg-block">
+            Các khoá đào tạo chất lượng cao về QTCT duy nhất tại Việt Nam. Được thiết kế để<br class="d-none d-lg-block">phục vụ nhu cầu ngày càng tăng về phát triển chuyên môn, kiến ​​thức, nâng cao kỹ<br class="d-none d-lg-block">
             năng của người làm nghề QTCT
         </p>
         <div class="btn-see-more text-center mb-5">
