@@ -70,9 +70,9 @@ get_header();
                                                 $filter_url = add_query_arg($current_params, get_post_type_archive_link('training_program'));
                                                 
                                                 echo '<label class="radio-option">';
-                                                echo '<input type="radio" name="training_category" value="' . esc_attr($cat->slug) . '" ' . ($checked ? 'checked' : '') . '>';
+                                                echo '<input type="radio" name="training_category" value="' . esc_attr($cat->slug) . '" ' . ($checked ? 'checked' : '') . ' data-url="' . esc_url($filter_url) . '">';
                                                 echo '<span class="radio-custom"></span>';
-                                                echo '<a href="' . esc_url($filter_url) . '" class="radio-label' . ($checked ? ' active' : '') . '">' . esc_html($cat->name) . '</a>';
+                                                echo '<span class="radio-label' . ($checked ? ' active' : '') . '">' . esc_html($cat->name) . '</span>';
                                                 echo '</label>';
                                             }
                                             ?>
@@ -278,6 +278,22 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         document.body.classList.remove('show-filter');
     }
+});
+
+// Xử lý click vào radio button
+document.addEventListener('DOMContentLoaded', function() {
+    const radioButtons = document.querySelectorAll('input[name="training_category"]');
+    
+    radioButtons.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            if (this.checked) {
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            }
+        });
+    });
 });
 </script>
 
