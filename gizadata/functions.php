@@ -333,7 +333,9 @@ function render_other_training_programs($paged = 1, $exclude_id = 0) {
                         </div>
 
                         <h2 class="post-card-title mb-0">
-                            <?php the_title(); ?>
+                            <a href="<?php the_permalink(); ?>" class="post-card-title-link" title="<?php echo esc_attr(get_the_title()); ?>">
+                                <?php the_title(); ?>
+                            </a>
                         </h2>
 
                         <div class="card-event_time">
