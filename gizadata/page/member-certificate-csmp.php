@@ -157,7 +157,7 @@ get_header();
 
     <!-- Content Section program goals - Desktop only -->
     <section class="program-goals program-goals-csmp d-none d-md-block px-custom px-md-0">
-        <div class="container">
+        <div class="container-custom-program-goals">
             <div class="row">
                 <div class="col-12">
                     <h2 class="title">Mục tiêu tham dự chương trình</h2>
@@ -194,7 +194,7 @@ get_header();
                 <div class="desktop-layout">
                 <div class="attendees-desktop-row">
                     <div class="attendees-content-col">
-                    <h2 class="title mt-md-3">Đối tượng tham dự</h2>
+                    <h2 class="title mt-md-3 mb-3">Đối tượng tham dự</h2>
                     <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                     <div class="attendees-items">
                     <div class="attendee-item">Thành viên HĐQT</div>

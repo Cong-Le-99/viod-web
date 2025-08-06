@@ -199,7 +199,7 @@ get_header();
                 <div class="desktop-layout">
                 <div class="attendees-desktop-row">
                     <div class="attendees-content-col">
-                    <h2 class="title mt-md-3">Đối tượng tham dự</h2>
+                    <h2 class="title mt-md-3 mb-3">Đối tượng tham dự</h2>
                     <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                         <div class="attendees-items">
                             <div class="attendee-item">Thành viên hội đồng quản trị</div>

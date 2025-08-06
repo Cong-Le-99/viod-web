@@ -7,10 +7,10 @@ for ($i = 0; $i < 10; $i++) {
 ?>
 <section class="partners-section session-wrap d-none d-md-block">
     <div class="container">
-        <h2 class="title text-center">các nghiên cứu và ấn phẩm</h2>
-        <p class="text-base text-center">
-        Với thế mạnh về nghiên cứu và đào tạo, VIOD là đối tác kỹ thuật của các giải thưởng <br> như Vietnam Listed Company
-Award (VLCA), Asia Corporate <br> Governance Scorecard (ACGS) và đại diện của Thành viên HĐQT đang hành <br> nghề ở
+        <h2 class="title text-center">Đối tác</h2>
+        <p class="text-base text-center partners-section-description">
+        Với thế mạnh về nghiên cứu và đào tạo, VIOD là đối tác kỹ thuật của các giải thưởng <br class="d-none d-md-block"> như Vietnam Listed Company
+Award (VLCA), Asia Corporate <br class="d-none d-md-block"> Governance Scorecard (ACGS) và đại diện của Thành viên HĐQT đang hành <br class="d-none d-md-block" > nghề ở
 Việt Nam trong các diễn đàn quốc tế.
         </p>
     </div>

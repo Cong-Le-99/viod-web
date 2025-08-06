@@ -84,6 +84,10 @@
 
 /* Desktop Styles */
 @media (min-width: 768px) {
+  .partners-section-description {
+    font-size: 18px !important;
+  }
+
   .about-us-session {
     padding: 68px 0;
   }
