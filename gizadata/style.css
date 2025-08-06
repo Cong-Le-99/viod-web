@@ -46,6 +46,12 @@ a:hover {
   /* color: #3aa735; */
 }
 
+#menu-item-wpml-ls-3-vi{
+  display: none;
+}
+#menu-item-wpml-ls-3-en{
+  display: none;
+}
 .main {
   width: 90%;
   max-width: 1200px;
@@ -188,10 +194,12 @@ a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   text-decoration: none;
   transition: color 0.2s;
+  text-transform: uppercase;
+
 }
 
 .main-navigation a:hover {
@@ -4425,6 +4433,7 @@ transition: opacity 0.3s ease;
   gap: 5px;
   flex-direction: row;
   flex-wrap: wrap;
+  font-weight: 500;
 }
 
 .dsnut label {

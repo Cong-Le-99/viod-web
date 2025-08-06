@@ -558,7 +558,11 @@
 
 /* Post Archive Content */
 .post-archive-content {
-  padding: 40px 0;
+  padding: 80px 0;
+}
+
+.post-archive-content.tin-tuc {
+  padding-bottom: 0px;
 }
 
 /* Post Archive Grid */
@@ -663,15 +667,17 @@
 
 .post-card-title {
   margin: 0 0 12px 0;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #082136;
+  text-transform: uppercase;
 }
 
 .post-card.large .post-card-title {
   font-size: 32px;
+  line-height: 40px;
 }
 
 .post-card-title a {
@@ -712,7 +718,6 @@
 /* Post Archive Tabs */
 .post-archive-tabs {
   padding: 40px 0;
-  background: #f8f9fa;
 }
 
 /* Category Tabs */

@@ -39,6 +39,7 @@ body {
 .title.light {
   font-family: "Montserrat", sans-serif;
   color: #fff !important;
+  padding-bottom: 16px;
 }
 
 .session-wrap {
@@ -50,11 +51,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: Medium;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   letter-spacing: 0%;
   text-align: justify;
   color: #082136;
+  padding-bottom: 24px;
 }
 
 .bg-before::before {

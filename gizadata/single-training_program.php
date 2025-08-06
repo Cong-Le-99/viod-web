@@ -130,7 +130,7 @@
                                 </div>
 
                                 <div class="box">
-                                    <?php echo apply_shortcodes( '[contact-form-7 id="9134801" title="đăng ký chương trình"]' ); ?>
+                                    <?php echo apply_shortcodes( '[forminator_form id="847"]' ); ?>
                                 </div>
 
                                 <div class="c">

@@ -48,7 +48,7 @@ $events = [
                             allowfullscreen
                             style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;"></iframe>
                 </div>
-                <h3 style="font-size:1.1rem;margin-top:1rem;"> <?php echo $event['title']; ?> </h3>
+                <h3 class="title-video" style="font-size:1.1rem;margin-top:1rem;"> <?php echo $event['title']; ?> </h3>
               
             </div>
             <?php endforeach; ?>
