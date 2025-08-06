@@ -32,7 +32,7 @@
 }
 
 .about-us-info {
-  background-image: url("../images/bg.png") !important;
+  background-image: url("../images/bg-about.png") !important;
   background-color: transparent !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+  /* background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%); */
 }
 
 .contact-us-wrap {
@@ -71,10 +71,39 @@
   padding-top: 0px !important;
 }
 
+.title-membership-programs {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
 /* Desktop Styles */
 @media (min-width: 768px) {
   .about-us-session {
     padding: 68px 0;
+  }
+
+  .title-membership-programs {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .contact-us-wrap .contact-us-item:last-child {
+    flex: 0 0 464px;
+  }
+
+  .contact-us-wrap .contact-us-item.two {
+    flex: 0 0 228px;
+  }
+
+  .contact-us-item-title {
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
   }
 
   .team-grid-aac {
@@ -102,7 +131,7 @@
     max-width: 414px !important;
   }
   .contact-us-membership-programs-2 img {
-    max-width: 465px !important;
+    max-width: 456px !important;
   }
 }
 
@@ -292,11 +321,15 @@
 .contact-us-item-title {
   font-weight: 600;
   font-style: SemiBold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   letter-spacing: 0%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: #3aa735;
+}
+
+.contact-us-item-box {
+  margin-bottom: 16px;
 }
 
 .contact-us-item-content {
@@ -342,6 +375,9 @@
   .contact-us-wrap {
     flex-direction: row;
     gap: 78px;
+  }
+  .contact-us-item.item-middle {
+    flex: 0 0 228px;
   }
 
   .partnerships-item-title,
@@ -518,7 +554,12 @@
 } */
 
 .contact-us-container-custom {
-  max-width: 1400px !important;
+  max-width: 1430px !important;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -585,6 +626,7 @@
   flex: 1;
   margin-right: 16px;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 .publication-item.dark span {

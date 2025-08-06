@@ -151,101 +151,103 @@ $acac_members = array(
     ),
 );
 ?>
-<section class="team-contact board-of-directors px-custom px-md-0">
-    <div class="team-header text-center">
-        <h2 class="title">Hội đồng quản trị</h2>
-    </div>
-    <div class="container container-custom position-relative bg-board-of-directors mb-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="team-members">
-                    <?php 
-                    $member_count = count($team_members);
-                    $layout_class = '';
-                    if ($member_count == 10) {
-                        $layout_class = 'layout-10';
-                    } elseif ($member_count == 8) {
-                        $layout_class = 'layout-8';
-                    } elseif ($member_count == 7) {
-                        $layout_class = 'layout-7';
-                    } elseif ($member_count == 5) {
-                        $layout_class = 'layout-5';
-                    }
-                    ?>
-                    <div class="team-grid <?php echo $layout_class; ?>">
-                        <?php foreach ($team_members as $index => $member): ?>
-                            <div class="team-member" data-group="board" data-index="<?php echo $index; ?>">
-                                <div class="member-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                         alt="<?php echo $member['name']; ?>" 
-                                         class="member-photo">
+<div class="member-certificate">
+    <section class="team-contact board-of-directors px-custom px-md-0">
+        <div class="team-header text-center">
+            <h2 class="title">Hội đồng quản trị</h2>
+        </div>
+        <div class="container container-custom position-relative bg-board-of-directors mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="team-members">
+                        <?php 
+                        $member_count = count($team_members);
+                        $layout_class = '';
+                        if ($member_count == 10) {
+                            $layout_class = 'layout-10';
+                        } elseif ($member_count == 8) {
+                            $layout_class = 'layout-8';
+                        } elseif ($member_count == 7) {
+                            $layout_class = 'layout-7';
+                        } elseif ($member_count == 5) {
+                            $layout_class = 'layout-5';
+                        }
+                        ?>
+                        <div class="team-grid <?php echo $layout_class; ?>">
+                            <?php foreach ($team_members as $index => $member): ?>
+                                <div class="team-member" data-group="board" data-index="<?php echo $index; ?>">
+                                    <div class="member-image">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                            alt="<?php echo $member['name']; ?>" 
+                                            class="member-photo">
+                                    </div>
+                                    <div class="member-info">
+                                        <h4 class="member-title">
+                                            <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                        </h4>
+                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    </div>
                                 </div>
-                                <div class="member-info">
-                                    <h4 class="member-title">
-                                        <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
-                                    </h4>
-                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                    <p class="member-position"><?php echo $member['position']; ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container mb-5">
-        <div class="row ">
-            <div class="col-md-6">
-                <h3 class="title text-center mb-3 title-custom-height">Ban cố vấn chuyên môn (AAC)</h3>
-                <div class="team-members mt-5">
-                    <div class="team-grid-aac">
-                        <?php foreach (
-                            isset($aac_members) ? $aac_members : array() as $index => $member): ?>
-                            <div class="team-member team-member-not-more" data-group="aac" data-index="<?php echo $index; ?>">
-                                <div class="member-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
-                                         alt="<?php echo $member['name']; ?>"
-                                         class="member-photo">
+        <div class="container mb-5">
+            <div class="row ">
+                <div class="col-md-6">
+                    <h3 class="title text-center mb-3 title-custom-height">Ban cố vấn chuyên môn (AAC)</h3>
+                    <div class="team-members mt-5">
+                        <div class="team-grid-aac">
+                            <?php foreach (
+                                isset($aac_members) ? $aac_members : array() as $index => $member): ?>
+                                <div class="team-member team-member-not-more" data-group="aac" data-index="<?php echo $index; ?>">
+                                    <div class="member-image">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                            alt="<?php echo $member['name']; ?>"
+                                            class="member-photo">
+                                    </div>
+                                    <div class="member-info">
+                                        <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
+                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    </div>
                                 </div>
-                                <div class="member-info">
-                                    <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
-                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                    <p class="member-position"><?php echo $member['position']; ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <h3 class="title text-center mb-3 mt-md-0 mt-5">Hội đồng tư vấn phát triển thực hành UBKT (ACAC)</h3>
-                <div class="team-members mt-5">
-                    <div class="team-grid-acac">
-                        <?php foreach (
-                            isset($acac_members) ? $acac_members : array() as $index => $member): ?>
-                            <div class="team-member team-member-not-more" data-group="acac" data-index="<?php echo $index; ?>">
-                                <div class="member-image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
-                                         alt="<?php echo $member['name']; ?>"
-                                         class="member-photo">
+                <div class="col-md-6">
+                    <h3 class="title text-center mb-3 mt-md-0 mt-5">Hội đồng tư vấn phát triển thực hành UBKT (ACAC)</h3>
+                    <div class="team-members mt-5">
+                        <div class="team-grid-acac">
+                            <?php foreach (
+                                isset($acac_members) ? $acac_members : array() as $index => $member): ?>
+                                <div class="team-member team-member-not-more" data-group="acac" data-index="<?php echo $index; ?>">
+                                    <div class="member-image">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                            alt="<?php echo $member['name']; ?>"
+                                            class="member-photo">
+                                    </div>
+                                    <div class="member-info">
+                                        <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
+                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    </div>
                                 </div>
-                                <div class="member-info">
-                                    <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
-                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                    <p class="member-position"><?php echo $member['position']; ?></p>
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
+                    <p class="text-base mt-5 text-center fw-semibold" style="font-weight: 600;">
+                    *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và các chuyên <br class="d-none d-md-block"> gia đang hành nghề trong Úy ban Kiểm toán của các <br class="d-none d-md-block"> doanh nghiệp niêm yết hàng đầu tại Việt Nam.
+                    </p>
                 </div>
-                <p class="text-base mt-5 text-center fw-semibold" style="font-weight: 600;">
-                *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và các chuyên <br class="d-none d-md-block"> gia đang hành nghề trong Úy ban Kiểm toán của các <br class="d-none d-md-block"> doanh nghiệp niêm yết hàng đầu tại Việt Nam.
-                </p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 <script>
 // Truyền dữ liệu từ PHP sang JavaScript
 var boardMembersData = <?php echo json_encode($team_members); ?>;

@@ -312,6 +312,13 @@
 
 .member-certificate .text-content p {
   margin-bottom: 16px;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #082136;
 }
 
 .member-certificate .text-content {
@@ -513,6 +520,10 @@
   .desktop-layout-program-value {
     flex-direction: row;
     gap: 68px;
+  }
+
+  .member-certificate .text-content p {
+    font-size: 18px;
   }
 
   .member-certificate .mobile-layout {
@@ -877,7 +888,7 @@
   line-height: 26px;
   color: #0c3555;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .member-certificate .member-name {
@@ -885,6 +896,7 @@
   font-size: 16px;
   color: #0c3555;
   margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 .member-certificate .member-position {
@@ -919,6 +931,14 @@
 @media (min-width: 768px) {
   .member-certificate .content-section {
     padding: 80px 0;
+  }
+
+  .global-partnerships-wrap {
+    margin-bottom: 70px;
+  }
+
+  .acgn-box {
+    /* padding: 64px 0px; */
   }
 
   .member-certificate .program-organized .title {

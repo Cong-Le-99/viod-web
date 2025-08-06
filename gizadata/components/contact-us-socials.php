@@ -24,18 +24,18 @@
           </div>
         </div>
       </div>
-      <div class="contact-us-item">
+      <div class="contact-us-item item-middle">
         <h4 class="contact-us-item-title">Văn phòng Thành phố Hồ Chí Minh</h4>
         <div class="contact-us-item-content">
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-center gap-2 mb-2 mb-lg-3">
                 <span class="contact-us-item-title-label">Email:</span>
                 <a class="contact-us-item-content-label" href="mailto:info@gizadata.vn">info@gizadata.vn</a>
             </div>
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-center gap-2 mb-2 mb-lg-3">
                 <span class="contact-us-item-title-label">Hotline:</span>
                 <a class="contact-us-item-content-label" href="tel:+84906000000">+84 906 000 000</a>
             </div>
-            <div class="d-flex align-items-center gap-2 mt-1">
+            <div class="d-flex align-items-center mb-2 mb-lg-3  mt-1" style="gap: 12px;">
                 <a href="#" class="social-icon social-icon-light">
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.20791 0.711059L6.3564 0.708008C4.27629 0.708008 2.93204 2.12473 2.93204 4.31749V5.98171H1.07043C0.909564 5.98171 0.779297 6.11568 0.779297 6.28092V8.69218C0.779297 8.85743 0.909712 8.99124 1.07043 8.99124H2.93204V15.0756C2.93204 15.2409 3.0623 15.3747 3.22317 15.3747H5.65204C5.8129 15.3747 5.94317 15.2407 5.94317 15.0756V8.99124H8.11983C8.28069 8.99124 8.41096 8.85743 8.41096 8.69218L8.41185 6.28092C8.41185 6.20158 8.3811 6.12559 8.32659 6.06944C8.27208 6.01329 8.19781 5.98171 8.12057 5.98171H5.94317V4.57093C5.94317 3.89286 6.10047 3.54863 6.96035 3.54863L8.20761 3.54817C8.36833 3.54817 8.49859 3.41421 8.49859 3.24911V1.01012C8.49859 0.845179 8.36848 0.711365 8.20791 0.711059Z" fill="#082136"/>

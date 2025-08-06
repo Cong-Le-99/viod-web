@@ -86,6 +86,7 @@ body {
 
 .publications-and-research-img {
   max-width: 414px;
+  min-height: 624px;
 }
 
 /* Thêm font cho các element HTML cơ bản */

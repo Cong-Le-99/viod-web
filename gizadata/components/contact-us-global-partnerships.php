@@ -1,5 +1,5 @@
 <section class="contact-us-global-partnerships session-wrap relative">
-    <div class="container contact-us-container-custom">
+    <div class="contact-us-container-custom">
         <div class="row">
             <div class="col-12 mb-3">
                 <h2 class="title">HỢP TÁC QUỐC TẾ | GIA TĂNG NGUỒN LỰC</h2>
@@ -12,7 +12,7 @@
                     <div class="partnerships-item-title mb-3">
                         <h3>Hợp tác với các viện thành viên HĐQT trong ASEAN</h3>
                     </div>
-                    <div class="row w-100 g-2">
+                    <div class="row w-100 g-2 global-partnerships-wrap">
                         <div class="col-6 col-md-4"><img class="w-100 h-auto" src="<?php echo get_template_directory_uri(); ?>/images/partnership-1.png" alt="partnership-1"></div>
                         <div class="col-6 col-md-4"><img class="w-100 h-auto" src="<?php echo get_template_directory_uri(); ?>/images/partnership-2.png" alt="partnership-2"></div>
                         <div class="col-6 col-md-4"><img class="w-100 h-auto" src="<?php echo get_template_directory_uri(); ?>/images/partnership-3.png" alt="partnership-3"></div>
@@ -34,7 +34,7 @@
                     <div class="partnerships-item-content mb-3 d-block d-md-none">
                         <p class="viod-member-content text-center mb-0">VIOD là thành viên của Mạng lưới Viện Thành viên Hội đồng<br>Quản trị toàn cầu (GNDI)</p>
                     </div>
-                    <div class="acgn-box w-100 d-flex align-items-center justify-content-center mt-2">
+                    <div class="acgn-box d-flex align-items-center justify-content-center mt-2">
                         <span class="acgn-text">ASEAN<br>CLIMATE GOVERNANCE NETWORK<br>(ACGN)</span>
                     </div>
                     <div class="partnerships-item-content mb-3 mt-3 d-block d-md-none">
