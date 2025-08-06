@@ -1159,8 +1159,12 @@ a:hover {
   color: white;
 }
 
+.breadcrumb a:first-of-type {
+  color: #839aab; /* hoặc style bạn muốn */
+}
+
 .breadcrumb a {
-  color: gray;
+  color: #fff;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -4709,9 +4713,7 @@ transition: opacity 0.3s ease;
 
 .breadcrumb-wrapper {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
+  top: 18px;
   z-index: 3;
   color: #fff;
   /* Label */
@@ -4721,6 +4723,8 @@ transition: opacity 0.3s ease;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  max-width: 1500px;
+  width: 95%;
 }
 
 .breadcrumb {
