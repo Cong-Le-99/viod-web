@@ -1,154 +1,195 @@
 <?php
+// Dữ liệu Ban Giám đốc (Board of Directors)
 $team_members = array(
     array(
         'gender' => 'male',
-        'name' => 'Phan Đức Hiếu',
-        'position' => 'Ủy viên Thường trực<br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
-        'image' => 'lecturer-2.png',
+        'name' => 'Phạm Hồng Sơn',
+        'position' => 'Chủ tịch Danh dự <br> Nguyên Phó Chủ tịch<br> Uỷ ban Chứng khoán Nhà nước',
+        'image' => 'pham-hong-son.png',
         'position_more' => array(
-            'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
-            'Chủ tịch Ban Cố vấn Cấp cao VIOD',
+            'Update'
         ),
-        'biography' => 'Ông Hiếu nhận bằng Thạc sĩ Luật tại Trường ĐH Maastricht, Hà Lan năm 2004. Là một nhà phân tích và hoạch định chính sách, Ông đã đóng góp cho sự thành công trong dự án về cải cách thủ tục hành chính của Chính phủ với vai trò là Trưởng nhóm đánh giá chính sách đầu tư.<br><br>Ông đã cộng tác và làm việc với Nhóm Ngân hàng Thế giới trên các lĩnh vực Quản trị Công ty, cải cách đổi mới hành chính trong nhiều năm qua và là giảng viên/diễn giả nổi tiếng về Quản trị Công ty.<br><br>Ông Hiếu là người soạn thảo chính của Luật Doanh nghiệp 2014 được biết đến là luật cải cách lớn nhất về tự do kinh doanh. Ông có nhiều kinh nghiệm về các công cụ hoạch định chính sách như đánh giá/dự báo tác động của pháp luật (RIA) và đo lường chi phí tiêu chuẩn (SCM).'
+        'biography' => 'Update'
     ),
     array(
         'gender' => 'female',
-        'name' => 'Nguyễn Linh Giang',
-        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
-        'image' => 'lecturer-3.png',
+        'name' => 'Hà Thu Thanh',
+        'position' => 'Chủ tịch HĐQT Luật sư<br> Đoàn Luật sư TP.<br> Hà Nội',
+        'image' => 'lecturer-1.png',
         'position_more' => array(
-            'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
-            'Thành viên HĐQT, Trưởng Tiểu Ban Kiểm toán & Quản trị rủi ro Tổng công ty Cổ phần Vận tải Dầu khí (PVTrans)',
-            'Chủ tịch HĐQT Công ty Cổ phần Vận tải Nhật Việt',
-            'Giảng viên (thỉnh giảng) Khoa Tài chính, Đại học Kinh tế TP. Hồ Chí Minh'
+            'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
+            'Luật sư hành nghề, Đoàn Luật sư Thành phố Hà Nội'
         ),
-        'biography' => 'Bà Giang có gần 25 năm công tác trong ngành Tài chính – Kế toán – Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm đảm nhận chức danh lãnh đạo quản lý chuyên sâu về Quản trị Công ty qua các chức danh Trưởng Ban kiểm soát, Trưởng Ban Kiểm toán nội bộ, CFO, Thành viên/Chủ tịch HĐQT, Trưởng Tiểu Ban KT&QTRR, Phó Chủ tịch UB ESG tại các Công ty niêm yết lớn trên sàn chứng khoán như Gas Shipping (GSP), PVTrans(PVT), PVOil (OIL) Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM. Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
+        'biography' => 'Bà Hà Thu Thanh là Chủ tịch HĐTV và là một trong những người sáng lập của Deloitte Việt Nam – hãng tư vấn chuyên ngành và kiểm toán lớn nhất trên thế giới và tại Việt Nam, với hơn 40 năm kinh nghiệm, bao gồm 32 năm làm việc tại Deloitte Việt Nam trong đó có 25 năm đảm nhiệm vị trí lãnh đạo. Bên cạnh đó, Bà cũng có 8 năm làm việc tại Bộ Tài Chính trong vai trò là người làm chính sách về kế toán, kiểm toán.
+
+Bà Thanh là Chủ tịch Viện Thành viên Hội đồng Quản trị (VIOD) kể từ khi VIOD được thành lập vào năm 2018. Bên cạnh vai trò lãnh đạo tại VIOD, Bà Thanh được đánh giá cao về những đóng góp to lớn và tiên phong trong việc phát triển nghề kế toán, kiểm toán, thúc đẩy quyền năng phụ nữ và tư duy lãnh đạo thông qua những vai trò chủ chốt trong một số hiệp hội và tổ chức nghề nghiệp. Trong những năm gần đây, Bà Thanh cũng là chuyên gia cao cấp trong lĩnh vực Quản trị Công ty, tư vấn về phát triển bền vững (ESG) cho cộng đồng doanh nghiệp xã hội và doanh nghiệp tư nhân tại Việt Nam.
+
+Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" được bình chọn bởi Forbes và vinh dự nhận giải thưởng "Doanh nhân xuất sắc Châu Á Thái Bình Dương" năm 2017 & 2019 do Enterprise Asia tổ chức.'
+    ),
+    array(
+        'gender' => 'female',
+        'name' => 'Cao Thị Ngọc Dung',
+        'position' => 'Thành viên HĐQT<br> Chủ tịch HĐQT<br> CTCP Vàng bạc Đá quý Phú Nhuận<br> (PNJ)',
+        'image' => 'cao-thi-ngoc-dung.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
     ),
     array(
         'gender' => 'male',
-        'name' => 'Nguyễn Anh Tuấn',
-        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+        'name' => 'Vũ Quang Thịnh',
+        'position' => 'Thành viên HĐQT<br> Giám đốc Điều hành<br> Công ty Quản lý Quỹ Dynam <br> Capital',
+        'image' => 'vu-quang-thinh.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
+        'gender' => 'male',
+        'name' => 'Trần Trọng Kiên',
+        'position' => 'Thành viên HĐQT <br>
+Chủ tịch HĐQT, Tổng Giám<br> đốc, Tập đoàn Thiên Minh',
+        'image' => 'tran-trong-kien.png',
+        'position_more' => array(
+            'Thành viên HĐQT Chủ tịch HĐQT, Tổng Giám đốc, Tập đoàn Thiên Minh'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
+        'gender' => 'female',
+        'name' => 'Đinh Thị Quỳnh Vân',
+        'position' => 'Thành viên HĐQT<br> Chủ tịch, PwC Việt Nam',
+        'image' => 'dinh-thi-quynh-van.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
+        'gender' => 'male',
+        'name' => 'Phan Lê Thành Long',
+        'position' => 'Thành viên HĐQT,<br> Tổng Giám đốc',
+        'image' => 'phan-le-thanh-long.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    )
+);
+
+// Dữ liệu Ban cố vấn chuyên môn (AAC - Academic Advisory Council)
+$aac_members = array(
+    array(
+        'gender' => 'Tiến sĩ',
+        'name' => 'Nguyễn Thu Hiền',
+        'position' => 'Thành viên Chuyên gia Quản trị Công ty ASEAN Chủ nhiệm Bộ môn Tài chính, Trường ĐH Bách khoa, VNU-HCM',
+        'image' => 'nguyen-thu-hien.png',
+        'position_more' => array(
+            'Chuyên gia Quản trị Công ty ASEAN',
+            'Chủ nhiệm Bộ môn Tài chính, Trường ĐH Bách khoa, VNU-HCM'
+        ),
+        'biography' => 'TS. Hiền là thành viên Hội đồng Đánh giá Quản trị Công ty của Dự án Thẻ điểm Quản trị Công ty khu vực ASEAN, một sáng kiến của Diễn đàn thị trường vốn ASEAN (ACMF) từ năm 2012 đến nay. Bà là thành viên của Hội đồng đánh giá Quản trị Công ty của Cuộc Bình chọn Doanh nghiệp Niêm yết Việt Nam từ năm 2018 đến nay cho các giải Quản trị công ty và Báo cáo thường niên tốt nhất. Bà đã thực hiện các dự án Thẻ điểm Quản trị Công ty Việt Nam của IFC-SSC-GCGF trong các năm 2010-2012.
+
+TS. Nguyễn Thu Hiền từng đảm trách vị trí Phó trưởng khoa Quản lý Công nghiệp – Trường Đại Học Bách Khoa VNU-TPHCM từ năm 2009-2013 và Giám Đốc Chương trình MBA Maastricht Việt Nam từ năm 2013. Bà có nhiều kinh nghiệm tư vấn, nghiên cứu, và đào tạo cho lãnh đạo cấp cao và thành viên HĐQT của các công ty về Tài chính doanh nghiệp, Quản trị Công ty, và Mua bán và sáp nhập.
+
+TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Trường Đại học Kinh tế TP HCM; Bằng MBA của Viện Công nghệ Châu Á (Thái Lan); Tiến sĩ Tài chính của Đại Học Old Dominion (USA); và đã được đào tạo từ các khóa Đào tạo Giảng viên chuyên sâu của IFC về QTCT. Bà cũng hoàn thành Chương trình Chứng nhận Thành viên HĐQT 183/2013 (AEC-DCP) của Viện Thành viên HĐQT Thái Lan.'
+    ),
+    array(
+        'gender' => 'Giáo sư',
+        'name' => 'Phillippe Moschetta',
+        'position' => 'Chủ tịch Giảng viên Thực hành, Quản trị Công ty & Tài chính',
+        'image' => 'phillippe-moschetta.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
+        'gender' => 'Tiến sĩ',
+        'name' => 'Nguyễn Huy Tâm',
+        'position' => 'Thành viên Giảng viên Kế toán và Tài chính, Trường Đại học Nottingham Trent',
+        'image' => 'nguyen-huy-tam.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Tiến sĩ Nguyễn Huy Tâm là giảng viên và nhà nghiên cứu về kế toán, tài chính tại Anh quốc.'
+    ),
+    array(
+        'gender' => 'Tiến sĩ',
+        'name' => 'Đinh Toàn Trung',
+        'position' => 'Thành viên Ban Cố vấn Chuyên môn, VIOD Thành viên Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
+        'image' => 'dinh-toan-trung.png',
+        'position_more' => array(
+            'Ban Cố vấn Chuyên môn VIOD​',
+            'Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ'
+        ),
+        'biography' => 'Tiến sĩ Đinh Toàn Trung có nhiều kinh nghiệm làm việc tại các công ty đa quốc gia, như UBS AG, Credit Suisse, Trisa AG, và Holcim Ltd, và cũng là một doanh nhân khởi nghiệp, đồng sáng lập một công ty bao bì hàng đầu Việt Nam, Giám đốc Điều hành của PAT Industry Park. Ông cũng là cố vấn chiến lược cho nhiều công ty ở Việt Nam, như Công ty Xi măng Holcim Việt Nam, Ngân hàng Việt Á, Khu Công nghiệp PAT, Bao bì Thiên Ý.
+
+Ông cũng đã hoạt động nhiều năm trong lĩnh vực giáo dục, là Giáo sư chính môn Chiến lược & Quản lý Quốc tế tại Trường đại học Khoa học Ứng dụng và Nghệ thuật Tây Bắc Thụy Sĩ. Ông cũng là giảng viên môn Quản lý Sự Thay đổi trong một chương trình "Đào tạo Giảng viên" cho lãnh đạo cấp cao của chính phủ ở Bắc Kinh và Sáng lập viên của một Chương trình Cao học Thụy Sĩ chuyên ngành Ngân hàng - Tài chính ở TP. Hồ Chí Minh.
+
+Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels School ở Việt Nam và giảng dạy bộ môn Chiến lược/Quản trị Công ty. Trong nghiên cứu, Tiến sĩ Đinh Toàn Trung là Cố vấn Danh mục của Trung tâm Quốc tế về Quản trị Công ty tại Trường Đại học St. Gallen và là tác giả cũng như dịch giả trong các bộ môn chuyên về chiến lược, Quản trị Công ty. Ông có bằng Tiến sĩ Kinh tế học của Trường Đại học St. Gallen, và bằng Thạc sĩ QTKD của Trường Đại học Fribourg, Thụy Sĩ.'
+    ),
+    array(
+        'gender' => 'female',
+        'name' => 'Trịnh Quỳnh Giao',
+        'position' => 'Thành viên Tổng Giám đốc, CTCP Quản lý Quỹ PVI (PVI AM)',
         'image' => 'lecturer-5.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
+        'gender' => 'male',
+        'name' => 'Simon CY Wong',
+        'position' => 'Thành viên Cố vấn Độc lập, Đồng Trưởng khoa Tài chính Bền vững, Viện Lãnh đạo Phát triển Bền vững Cambridge (CISL)',
+        'image' => 'lecturer-6.png',
+        'position_more' => array(
+            'Cố vấn Độc lập',
+            'Đồng Trưởng nhóm Giảng dạy về Tài chính Bền vững',
+            'Viện Lãnh đạo Phát triển Bền vững Cambridge'
+        ),
+        'biography' => 'Simon là cố vấn độc lập trong lĩnh vực quản trị và phát triển bền vững, đồng thời là Đồng Trưởng nhóm Giảng dạy của khóa học trực tuyến về Tài chính Bền vững tại Viện Lãnh đạo Phát triển Bền vững Cambridge (CISL), Đại học Cambridge. Với vai trò cố vấn, ông hợp tác với nhiều tổ chức như Tổ chức Tài chính Quốc tế (IFC), ClientEarth, và Climate Bonds Initiative.
+
+Trước đây, Simon từng là đối tác tại Tapestry Networks, Cố vấn Cao cấp bên ngoài (và trước đó là tư vấn viên toàn thời gian) tại McKinsey & Company, đối tác tại công ty đầu tư chủ động Governance for Owners, và Trưởng bộ phận Quản trị Công ty tại Barclays Global Investors. Ông bắt đầu sự nghiệp chuyên môn với tư cách là luật sư thị trường vốn tại Linklaters & Paines và Shearman & Sterling ở London, đồng thời từng giữ chức vụ Quản trị viên Chính/Cố vấn pháp lý tại OECD ở Paris.
+
+Ngoài ra, Simon cũng giảng dạy các khóa học sau đại học về quản trị công ty tại Trường Luật Đại học Northwestern và Trường Kinh tế & Khoa học Chính trị London (LSE).
+
+Các bài viết của ông đã xuất hiện trên các tờ báo và tạp chí danh tiếng như Financial Times, Harvard Business Review, McKinsey Quarterly, New York Times, và nhiều ấn phẩm khác. Gần đây, ông tập trung nghiên cứu về chiến lược quản trị giúp đảm bảo lộ trình chuyển đổi sang phát thải ròng bằng không (net-zero) và đã đóng góp vào Hướng dẫn hành động khí hậu cho Hội đồng Quản trị tại Đông Nam Á của ClientEarth.'
+    )
+);
+
+// Dữ liệu Hội đồng tư vấn phát triển thực hành UBKT (ACAC - Audit Committee Advisory Council)
+$acac_members = array(
+    array(
+        'gender' => 'male',
+        'name' => 'Nguyễn Anh Tuấn',
+        'position' => 'Chủ tịch, ACAC Thành viên, AAC Chủ tịch HĐQT, Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+        'image' => 'lecturer-7.png',
         'position_more' => array(
             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
             'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
             'Chủ tịch HĐQT, Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
             'Doanh nhân trẻ Việt Nam tiêu biểu 2022​'
         ),
-        'biography' => 'Ông Tuấn có 20 năm kinh nghiệm trên vai trò là Thư ký HĐQT rồi Trưởng Ban Quản lý Vốn đầu tư, Tổng Công ty Đầu tư và Kinh doanh Vốn nhà nước.<br><br>Đặc biệt, Ông Tuấn đã có thời gian đảm nhiệm các vị trí quan trọng trong Hội đồng Quản trị bao gồm Chủ tịch điều hành, không điều hành, Phó Chủ tịch không điều hành và thành viên Hội đồng Quản trị không điều hành ở nhiều tổ chức như Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam, Cơ quan quốc gia về xe cơ giới quá cảnh ASEAN của Việt Nam, Tổng Công ty Thủy sản Việt Nam, Công ty TNHH Bảo hiểm Samsung Vina, Hiệp hội Bảo hiểm Việt Nam, Công ty Cổ phần nhựa Thiếu niên Tiền Phong, Công ty Cổ phần Traphaco.<br><br>Ông Tuấn tốt nghiệp cử nhân Đại học Ngoại thương Hà Nội và có bằng Thạc Sỹ Luật Kinh doanh Quốc tế của Pháp. Với mong muốn góp phần vào nâng cao nhận thức, hiệu quả của quản trị công ty đối với các doanh nghiệp Việt Nam, Ông đã tham gia nhiều hoạt động do VIOD tổ chức trên cương vị là diễn giả, tham gia các phiên thảo luận, là Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​, Phó Chủ tịch Câu lạc bộ các Chủ tịch HĐQT (Chair Club), thành viên Ban Cố vấn Chuyên môn VIOD và là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP).'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Nguyễn Thế Mạnh',
-        'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
-        'image' => 'lecturer-4.png',
-        'position_more' => array(
-            'Giám đốc Tư vấn, Deloitte Đông Nam Á'
-        ),
-        'biography' => 'Ông Mạnh là một chuyên gia tư vấn quản trị và tái cấu trúc doanh nghiệp với 14 năm kinh nghiệm trong các lĩnh vực: chiến lược & vận hành, quản trị công ty, quản trị rủi ro, kiểm soát nội bộ, kiểm toán nội bộ, quy trình kinh doanh, mô hình hoạt động, hệ thống phát hiện gian lận sớm, hệ thống quản lý tuân thủ và phân tích dữ liệu. Ông đã tích lũy rất nhiều kinh nghiệm thực tiễn trong việc thiết kế và triển khai các nội dung trên cho khách hàng từ nhiều ngành nghề khác nhau như: sản xuất, FMCG, dầu khí, viễn thông, thương mại, các công ty bảo hiểm và các định chế tài chính.<br><br>Ông Mạnh hiện đang giữ chức vụ Giám đốc Tư vấn tại Deloitte Đông Nam Á và đồng thời là giảng viên cho VIOD. Ông có nhiều kinh nghiệm thực tiễn trong việc phục vụ các doanh nghiệp lớn của khối nhà nước, tư nhân và doanh nghiệp gia đình tại Việt Nam.<br><br>Ông Mạnh đã có chứng nhận DCP của Viện Thành Viên HĐQT Việt Nam (VIOD) cùng nhiều chứng chỉ khác như chứng chỉ PSM I – Professional Scrum Master (Agile), chứng chỉ Quản lý rủi ro Tài chính – FRM.'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Phạm Hải Âu',
-        'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
-        'image' => 'lecturer-8.png',
-        'position_more' => array(
-            'Giám đốc Quản trị Rủi ro – Ngân hàng Quốc Dân (NCB)'
-        ),
-        'biography' => 'Ông Phạm Hải Âu là chuyên gia giàu kinh nghiệm trong lĩnh vực Kiểm toán, Kiểm soát Nội bộ và Quản trị Công ty, với hơn 20 năm công tác tại các tổ chức tài chính hàng đầu như PwC, Deutsche Bank, VietinBank, LPBank và VietCredit. Ông từng đảm nhiệm nhiều vị trí cấp cao như Trưởng Ban Kiểm soát, Thành viên HĐQT, Phó Tổng Giám đốc phụ trách Chiến lược và Rủi ro tại các ngân hàng và công ty tài Chính.<br><br>Trong suốt quá trình công tác, ông đã tham gia trực tiếp vào việc thiết kế, triển khai và giám sát hoạt động kiểm soát nội bộ, quản trị rủi ro và cơ chế vận hành của Ủy ban Kiểm toán. Với kiến thức chuyên môn sâu sắc cùng kinh nghiệm thực tiễn phong phú, ông là một trong những chuyên gia có nhiều đóng góp cho việc chuẩn hóa và nâng cao hiệu quả hoạt động UBKT tại Việt Nam, phù hợp với các chuẩn mực quốc tế về Quản trị Công ty.'
-    ),
-    array(
-        'gender' => 'female',
-        'name' => 'Nguyễn Lưu Tuyền',
-        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
-        'image' => 'lecturer-9.png',
-        'position_more' => array(
-            'Chuyên gia Ủy Ban kiểm Toán Tập đoàn Nam Long',
-            'Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)'
-        ),
-        'biography' => 'TS. Nguyễn Lưu Tuyền đã có 20 năm kinh nghiệm làm việc trong lĩnh vực kiểm soát nội bộ, quản trị rủi ro, và kiểm toán khi đảm nhiệm các vị trí kiểm toán viên độc lập tại công ty kiểm toán KPMG, Trưởng kiểm soát nội bộ tại Ngân Hàng Credit Agricole CIB, Trưởng Ban Kiểm Soát, thành viên Ủy ban kiểm toán, và hiện nay là Chuyên gia Ủy ban kiểm toán của tập đoàn đầu tư và bất động sản Nam Long.<br><br>Bà Tuyền cũng có nhiều năm kinh nghiệm hướng dẫn và đào tạo chuyên sâu về hoạt động của UBKT và các chương trình cập nhật kiến thức dành cho kiểm toán viên. Cô đã trực tiếp tham gia nhiều hội nghị quốc tế về kiểm toán tại New York, Sydney, Dubai, và Anaheim – South California US. Bằng kinh nghiệm thực tiễn và kiến thức chuyên môn, cô đã có những đóng góp tích cực vào sự phát triển của nghề nghiệp kiểm toán và hoạt động của UBKT tại Việt Nam.'
-    ),
-    array(
-        'gender' => 'female',
-        'name' => 'Đồng Thị Thu Hương',
-        'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
-        'image' => 'lecturer-12.png',
-        'position_more' => array(
-            'Chuyên gia độc lập',
-            'Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD'
-        ),
-        'biography' => 'Bà Đồng Thu Hương có hơn 15 năm kinh nghiệm trong lĩnh vực Quản trị Rủi ro, Kiểm toán Nội bộ và tư vấn Quản trị Công ty, đặc biệt trong ngành dịch vụ tài chính. Tại Deloitte Việt Nam, bà đảm nhiệm vai trò Giám đốc/Quản lý cấp cao, phụ trách tư vấn các dự án liên quan đến quản trị rủi ro, kiểm soát nội bộ, cấu trúc tổ chức rủi ro, tuân thủ Basel II, tỷ lệ an toàn vốn, và hệ thống đánh giá nội bộ về đầy đủ vốn (ICAAP) cho các ngân hàng thương mại trong nước và tổ chức tài chính quốc tế.<br><br>Bà từng là quản lý cấp trung tại EntroFine Vietnam và chuyên viên tư vấn cao cấp tại KPMG Việt Nam, tham gia nhiều dự án lớn về đánh giá tuân thủ, quản trị doanh nghiệp, phòng chống tội phạm tài chính và tái cấu trúc tổ chức. Khách hàng của bà bao gồm các ngân hàng và tổ chức tài chính lớn như BIDV, Vietcombank, ACB, Sacombank, SMBC, CTBC, JP Morgan Vietnam, cũng như các đơn vị tài trợ phát triển như CIDA, Cowater, BRASS.<br><br>Bà Hương Đông tốt nghiệp Thạc sĩ Tài chính – Ngân hàng tại Đại học Leeds (Vương quốc Anh), Cử nhân Kinh tế Quốc tế tại Đại học Kinh tế Quốc dân Hà Nội, đồng thời sở hữu các chứng chỉ quốc tế chuyên sâu như CIMA (2015) và Financial Risk Manager – FRM (GARP, 2018). Với kiến thức chuyên môn vững vàng và kinh nghiệm triển khai thực tiễn đa dạng, bà có nhiều đóng góp trong việc xây dựng hệ thống kiểm soát rủi ro, kiểm toán nội bộ và chuẩn hóa cơ chế tuân thủ trong các tổ chức tài chính tại Việt Nam.'
-    ),
-);
-// Thêm dữ liệu giả lập cho Ban cố vấn chuyên môn (AAC)
-$aac_members = array(
-    array(
-        'gender' => 'female',
-        'name' => 'Nguyễn Thu Hiền',
-        'position' => 'Tiến sĩ, Thành viên AAC',
-        'image' => 'lecturer-1.png',
-        'position_more' => array('Chuyên gia Quản trị Công ty ASEAN', 'Chủ nhiệm Bộ môn Tài chính, ĐH Bách khoa, VNU-HCM'),
-        'biography' => 'Tiến sĩ Nguyễn Thu Hiền là chuyên gia trong lĩnh vực quản trị công ty và tài chính doanh nghiệp, hiện là giảng viên tại ĐH Bách khoa TP.HCM.'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Phillippe Moschetta',
-        'position' => 'Giáo sư, Thành viên AAC',
-        'image' => 'lecturer-2.png',
-        'position_more' => array('Giảng viên Thực hành', 'Quản trị Công ty & Tài chính'),
-        'biography' => 'Giáo sư Phillippe Moschetta có nhiều năm kinh nghiệm giảng dạy và tư vấn về quản trị công ty tại các trường đại học quốc tế.'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Nguyễn Huy Tâm',
-        'position' => 'Tiến sĩ, Thành viên AAC',
-        'image' => 'lecturer-3.png',
-        'position_more' => array('Giảng viên Kế toán và Tài chính', 'Trường ĐH Nottingham Trent'),
-        'biography' => 'Tiến sĩ Nguyễn Huy Tâm là giảng viên và nhà nghiên cứu về kế toán, tài chính tại Anh quốc.'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Đinh Toàn Trung',
-        'position' => 'Tiến sĩ, Thành viên AAC',
-        'image' => 'lecturer-4.png',
-        'position_more' => array('Thành viên Ban Cố vấn Chuyên môn, VIOD', 'Giảng viên Trường ĐH Quốc tế/Thạc sĩ'),
-        'biography' => 'Tiến sĩ Đinh Toàn Trung có nhiều năm kinh nghiệm trong lĩnh vực quản trị công ty và đào tạo doanh nghiệp.'
-    ),
-    array(
-        'gender' => 'female',
-        'name' => 'Trịnh Quỳnh Giao',
-        'position' => 'Thành viên AAC',
-        'image' => 'lecturer-5.png',
-        'position_more' => array('Tổng Giám đốc, CTCP Quản lý Quỹ PVI (PVI AM)'),
-        'biography' => 'Bà Trịnh Quỳnh Giao là chuyên gia tài chính, hiện là Tổng Giám đốc tại PVI AM.'
-    ),
-    array(
-        'gender' => 'male',
-        'name' => 'Simon CY Wong',
-        'position' => 'Thành viên AAC',
-        'image' => 'lecturer-6.png',
-        'position_more' => array('Cố vấn Độc lập', 'Viện Khoa học Bền vững, ĐH Cambridge'),
-        'biography' => 'Ông Simon CY Wong là cố vấn độc lập về quản trị công ty và phát triển bền vững.'
-    ),
-);
-// Thêm dữ liệu giả lập cho Hội đồng tư vấn phát triển thực hành UBKT (ACAC)
-$acac_members = array(
-    array(
-        'gender' => 'male',
-        'name' => 'Nguyễn Anh Tuấn',
-        'position' => 'Chủ tịch ACAC',
-        'image' => 'lecturer-7.png',
-        'position_more' => array('Chủ tịch, ACAC<br class="d-none d-md-block">Thành viên, AAC<br class="d-none d-md-block">Chủ tịch HĐQT, Tổng CTCP Tái Bảo hiểm Quốc gia Việt <br class="d-none d-md-block"> Nam (VINARE)​'),
-        'biography' => 'Ông Nguyễn Anh Tuấn là Chủ tịch ACAC, đồng thời là Chủ tịch HĐQT Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE).'
+        'biography' => 'Ông Tuấn có 20 năm kinh nghiệm trên vai trò là Thư ký HĐQT rồi Trưởng Ban Quản lý Vốn đầu tư, Tổng Công ty Đầu tư và Kinh doanh Vốn nhà nước.
+
+Đặc biệt, Ông Tuấn đã có thời gian đảm nhiệm các vị trí quan trọng trong Hội đồng Quản trị bao gồm Chủ tịch điều hành, không điều hành, Phó Chủ tịch không điều hành và thành viên Hội đồng Quản trị không điều hành ở nhiều tổ chức như Tổng Công ty Cổ phần Tái Bảo hiểm Quốc gia Việt Nam, Cơ quan quốc gia về xe cơ giới quá cảnh ASEAN của Việt Nam, Tổng Công ty Thủy sản Việt Nam, Công ty TNHH Bảo hiểm Samsung Vina, Hiệp hội Bảo hiểm Việt Nam, Công ty Cổ phần nhựa Thiếu niên Tiền Phong, Công ty Cổ phần Traphaco.
+
+Ông Tuấn tốt nghiệp cử nhân Đại học Ngoại thương Hà Nội và có bằng Thạc Sỹ Luật Kinh doanh Quốc tế của Pháp. Với mong muốn góp phần vào nâng cao nhận thức, hiệu quả của quản trị công ty đối với các doanh nghiệp Việt Nam, Ông đã tham gia nhiều hoạt động do VIOD tổ chức trên cương vị là diễn giả, tham gia các phiên thảo luận, là Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​, Phó Chủ tịch Câu lạc bộ các Chủ tịch HĐQT (Chair Club), thành viên Ban Cố vấn Chuyên môn VIOD và là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP).'
     ),
     array(
         'gender' => 'female',
         'name' => 'Lê Thị Tuyết Nhung',
-        'position' => 'Đồng Chủ tịch Phó Cục <br class="d-none d-md-block"> trưởng, Cục Quản lý Giá, Bộ <br class="d-none d-md-block"> Tài chính Nguyên Phó Cục <br class="d-none d-md-block"> trưởng Cục Quản lý, Giám <br class="d-none d-md-block"> sát  Kế toán, Kiểm toán, Bộ <br class="d-none d-md-block"> Tài chính',
+        'position' => 'Đồng Chủ tịch Phó Cục trưởng, Cục Quản lý Giá, Bộ Tài chính Nguyên Phó Cục trưởng Cục Quản lý, Giám sát Kế toán, Kiểm toán, Bộ Tài chính',
         'image' => 'lecturer-8.png',
-        'position_more' => array('Nguyên Phó Cục trưởng Cục Quản lý, Giám sát Kế toán, Kiểm toán, Bộ Tài chính'),
-        'biography' => 'Bà Lê Thị Tuyết Nhung là chuyên gia cao cấp trong lĩnh vực kiểm toán, kế toán và quản lý tài chính công.'
-    ),
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    )
 );
 ?>
 <div class="member-certificate">
@@ -176,17 +217,21 @@ $acac_members = array(
                         <div class="team-grid <?php echo $layout_class; ?>">
                             <?php foreach ($team_members as $index => $member): ?>
                                 <div class="team-member" data-group="board" data-index="<?php echo $index; ?>">
-                                    <div class="member-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                            alt="<?php echo $member['name']; ?>" 
-                                            class="member-photo">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4 class="member-title">
-                                            <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
-                                        </h4>
-                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    <div class="member-image-wrapper">
+                                        <div class="member-image">
+                                            <div class="member-image-overlay">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                                    alt="<?php echo $member['name']; ?>" 
+                                                    class="member-photo">
+                                            </div>
+                                        </div>
+                                        <div class="member-info">
+                                            <h4 class="member-title ">
+                                                <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                            </h4>
+                                            <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                            <p class="member-position"><?php echo $member['position']; ?></p>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -195,24 +240,29 @@ $acac_members = array(
                 </div>
             </div>
         </div>
-        <div class="container mb-5">
-            <div class="row ">
+        <div class="container-board-director mb-5">
+            <div class="row">
                 <div class="col-md-6">
                     <h3 class="title text-center mb-3 title-custom-height">Ban cố vấn chuyên môn (AAC)</h3>
                     <div class="team-members mt-5">
                         <div class="team-grid-aac">
-                            <?php foreach (
-                                isset($aac_members) ? $aac_members : array() as $index => $member): ?>
+                            <?php foreach ($aac_members as $index => $member): ?>
                                 <div class="team-member team-member-not-more" data-group="aac" data-index="<?php echo $index; ?>">
-                                    <div class="member-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
-                                            alt="<?php echo $member['name']; ?>"
-                                            class="member-photo">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
-                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    <div class="member-image-wrapper">
+                                        <div class="member-image">
+                                            <div class="member-image-overlay">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                                    alt="<?php echo $member['name']; ?>"
+                                                    class="member-photo">
+                                            </div>
+                                        </div>
+                                        <div class="member-info">
+                                            <h4 class="member-title">
+                                                <?php echo ($member['gender']) ?>
+                                            </h4>
+                                            <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                            <p class="member-position"><?php echo $member['position']; ?></p>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -223,36 +273,42 @@ $acac_members = array(
                     <h3 class="title text-center mb-3 mt-md-0 mt-5">Hội đồng tư vấn phát triển thực hành UBKT (ACAC)</h3>
                     <div class="team-members mt-5">
                         <div class="team-grid-acac">
-                            <?php foreach (
-                                isset($acac_members) ? $acac_members : array() as $index => $member): ?>
+                            <?php foreach ($acac_members as $index => $member): ?>
                                 <div class="team-member team-member-not-more" data-group="acac" data-index="<?php echo $index; ?>">
-                                    <div class="member-image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
-                                            alt="<?php echo $member['name']; ?>"
-                                            class="member-photo">
-                                    </div>
-                                    <div class="member-info">
-                                        <h4 class="member-title"><?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?></h4>
-                                        <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                        <p class="member-position"><?php echo $member['position']; ?></p>
+                                    <div class="member-image-wrapper">
+                                        <div class="member-image">
+                                            <div class="member-image-overlay">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                                    alt="<?php echo $member['name']; ?>"
+                                                    class="member-photo">
+                                            </div>
+                                        </div>
+                                        <div class="member-info">
+                                            <h4 class="member-title">
+                                                <?php echo ($member['gender'] == 'male')?>
+                                            </h4>
+                                            <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                            <p class="member-position"><?php echo $member['position']; ?></p>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>
                     </div>
                     <p class="text-base mt-5 text-center fw-semibold" style="font-weight: 600;">
-                    *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và các chuyên <br class="d-none d-md-block"> gia đang hành nghề trong Úy ban Kiểm toán của các <br class="d-none d-md-block"> doanh nghiệp niêm yết hàng đầu tại Việt Nam.
+                        *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và các chuyên <br class="d-none d-md-block"> gia đang hành nghề trong Úy ban Kiểm toán của các <br class="d-none d-md-block"> doanh nghiệp niêm yết hàng đầu tại Việt Nam.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 </div>
+
 <script>
 // Truyền dữ liệu từ PHP sang JavaScript
 var boardMembersData = <?php echo json_encode($team_members); ?>;
-var aacMembersData = <?php echo json_encode(isset($aac_members) ? $aac_members : array()); ?>;
-var acacMembersData = <?php echo json_encode(isset($acac_members) ? $acac_members : array()); ?>;
+var aacMembersData = <?php echo json_encode($aac_members); ?>;
+var acacMembersData = <?php echo json_encode($acac_members); ?>;
 
 document.addEventListener('DOMContentLoaded', function() {
     function showLecturerModal(member) {
@@ -268,6 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var modal = new bootstrap.Modal(document.getElementById('lecturerModal'));
         modal.show();
     }
+    
     document.querySelectorAll('.team-member[data-group="board"], .team-member[data-group="aac"], .team-member[data-group="acac"]').forEach(function(el) {
         el.addEventListener('click', function() {
             var group = el.getAttribute('data-group');
@@ -285,7 +342,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-<!-- Modal thông tin giảng viên giữ nguyên -->
+
+<!-- Modal thông tin giảng viên -->
 <div class="modal fade" id="lecturerModal" tabindex="-1" aria-labelledby="lecturerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered lecturer-modal">
         <div class="modal-content">
@@ -296,12 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="modal-body">
                 <div class="lecturer-info-container">
                     <div class="lecturer-image-section">
-                        <!-- <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image"> -->
                         <div class="member-image" id="lecturerImage">
                             <div class="member-image-overlay">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                alt="<?php echo $member['name']; ?>" 
-                                class="member-photo">
+                                <img src="" alt="Lecturer" class="member-photo">
                             </div>
                         </div>
                     </div>
@@ -311,13 +366,10 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h3 class="lecturer-name" id="lecturerName">NGUYỄN LINH GIANG</h3>
                             <div class="lecturer-positions" id="lecturerPositions">
                             </div>
-
                         </div>
-        
                     </div>
                 </div>
                 <div class="lecturer-biography" id="lecturerBiography">
-                        
                 </div>
             </div>
         </div>
