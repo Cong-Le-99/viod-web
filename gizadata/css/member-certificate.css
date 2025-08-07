@@ -83,8 +83,9 @@
 .member-certificate .breadcrumb-nav {
   position: absolute;
   top: 16px;
-  left: 24px;
   z-index: 10;
+  max-width: 1500px;
+  width: 95%;
 }
 
 .member-certificate .breadcrumb {
@@ -211,7 +212,6 @@
 
   .member-certificate .breadcrumb-nav {
     top: 18px;
-    left: 40px;
   }
   .member-certificate .organized-content-box {
     display: flex;
@@ -225,13 +225,6 @@
   .member-certificate .organized-box-icon {
     left: -26px !important;
     top: calc(50% - 26px) !important;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1200px) {
-  .member-certificate .breadcrumb-nav {
-    left: 40px;
   }
 }
 
