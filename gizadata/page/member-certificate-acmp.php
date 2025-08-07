@@ -348,7 +348,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Nguyễn Thế Mạnh',
                         'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
-                        'image' => 'lecturer-4.png',
+                        'image' => 'lecturer-16.png',
                         'position_more' => array(
                             'Giám đốc Tư vấn, Deloitte Đông Nam Á'
                         ),
@@ -358,7 +358,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Phạm Hải Âu',
                         'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
-                        'image' => 'lecturer-8.png',
+                        'image' => 'lecturer-17.png',
                         'position_more' => array(
                             'Giám đốc Quản trị Rủi ro – Ngân hàng Quốc Dân (NCB)'
                         ),
@@ -368,7 +368,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Nguyễn Lưu Tuyền',
                         'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
-                        'image' => 'lecturer-9.png',
+                        'image' => 'lecturer-18.png',
                         'position_more' => array(
                             'Chuyên gia Ủy Ban kiểm Toán Tập đoàn Nam Long',
                             'Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)'
@@ -379,7 +379,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Đồng Thị Thu Hương',
                         'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
-                        'image' => 'lecturer-12.png',
+                        'image' => 'lecturer-19.png',
                         'position_more' => array(
                             'Chuyên gia độc lập',
                             'Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD'
@@ -479,17 +479,21 @@ get_header();
                     <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
-                            <div class="member-image">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                     alt="<?php echo $member['name']; ?>" 
-                                     class="member-photo">
-                            </div>
-                            <div class="member-info">
-                                <h4 class="member-title">
-                                    <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
-                                </h4>
-                                <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                <p class="member-position"><?php echo $member['position']; ?></p>
+                            <div class="member-image-wrapper">
+                                <div class="member-image">
+                                    <div class="member-image-overlay">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                        alt="<?php echo $member['name']; ?>" 
+                                        class="member-photo">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-title text-uppercase">
+                                        <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                    </h4>
+                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                    <p class="member-position"><?php echo $member['position']; ?></p>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -522,12 +526,9 @@ var teamMembersData = <?php echo json_encode($team_members); ?>;
             <div class="modal-body">
                 <div class="lecturer-info-container">
                     <div class="lecturer-image-section">
-                        <!-- <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image"> -->
-                        <div class="member-image lecturer-modal-image">
+                        <div class="member-image-modal lecturer-modal-image">
                             <div class="member-image-overlay">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                alt="<?php echo $member['name']; ?>" 
-                                class="member-photo">
+                                <img id="lecturerImage" src="" alt="Lecturer" class="member-photo">
                             </div>
                         </div>
                     </div>

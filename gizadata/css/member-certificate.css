@@ -1494,16 +1494,26 @@
   bottom: 30px;
 }
 
+.member-image-modal .member-image-overlay img {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  /* border-radius: 50%; */
+  width: 130px;
+  height: 165px;
+  object-fit: cover;
+}
+
 /* Hover effect for team member images */
 .member-certificate .team-member .member-image {
   cursor: pointer;
   position: relative;
-  width: 192px;
-  height: 210px;
+  width: 131x;
+  height: 187px;
   transition: transform 0.3s ease;
   /* border-radius: 50%; */
   /* overflow: hidden; */
-  background: #e0f5df;
+  /* background: #e0f5df; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1531,8 +1541,8 @@
   /* border-radius: 50%; */
   z-index: 1;
   transition: all 0.3s ease;
-  width: 158px;
-  height: 158px;
+  width: 138px;
+  height: 138px;
 }
 
 .member-certificate .team-member .member-image::before {
@@ -1549,8 +1559,8 @@
   /* border-radius: 50%; */
   z-index: 1;
   transition: all 0.3s ease;
-  width: 158px;
-  height: 158px;
+  width: 138px;
+  height: 138px;
   /* transform: translateY(-15px); */
 }
 
@@ -1562,13 +1572,13 @@
 }
 .member-certificate .team-member .member-image-overlay {
   position: absolute;
-  width: 158px;
+  width: 138px;
   /* height: 158px; */
   /* background: red; */
   overflow: hidden;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-  bottom: 30px;
+  bottom: 27px;
 }
 
 .member-certificate .team-member .member-image img {
@@ -1576,13 +1586,13 @@
   z-index: 2;
   transition: all 0.3s ease;
   /* border-radius: 50%; */
-  width: 140px;
-  height: 180px;
+  width: 130px;
+  height: 165px;
   object-fit: cover;
 }
 
 .member-certificate .team-member:hover .member-image img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .member-certificate .team-member:hover .member-image {
@@ -1605,6 +1615,29 @@
 
 /* Mobile responsive for modal */
 @media (max-width: 768px) {
+  .member-certificate .team-member .member-image-overlay {{
+    width: 158px;
+    bottom: 30px;
+  }
+  .member-certificate .team-member .member-image {
+    width: 192px !important;
+    height: 210px !important;
+  }
+
+  .member-certificate .team-member .member-image::before {
+    width: 158px !important;
+    height: 158px !important;
+  }
+
+  .member-certificate .team-member .member-image img {
+    width: 140px !important;
+    height: 180px !important;
+  }
+  .member-image-modal .member-image-overlay img {
+    width: 140px !important;
+    height: 180px !important;
+  }
+
   .lecturer-modal {
     max-width: 95%;
     margin: 1rem;
