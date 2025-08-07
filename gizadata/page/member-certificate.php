@@ -417,17 +417,21 @@ get_header();
                 <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
-                            <div class="member-image">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                     alt="<?php echo $member['name']; ?>" 
-                                     class="member-photo">
-                            </div>
-                            <div class="member-info">
-                                <h4 class="member-title">
-                                    <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
-                                </h4>
-                                <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                <p class="member-position"><?php echo $member['position']; ?></p>
+                            <div class="member-image-wrapper">
+                                <div class="member-image">
+                                    <div class="member-image-overlay">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                        alt="<?php echo $member['name']; ?>" 
+                                        class="member-photo">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-title text-uppercase">
+                                        <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                    </h4>
+                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                    <p class="member-position"><?php echo $member['position']; ?></p>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -459,7 +463,11 @@ var teamMembersData = <?php echo json_encode($team_members); ?>;
             <div class="modal-body">
                 <div class="lecturer-info-container">
                     <div class="lecturer-image-section">
-                        <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image">
+                        <div class="member-image-modal lecturer-modal-image">
+                            <div class="member-image-overlay">
+                                <img id="lecturerImage" src="" alt="Lecturer" class="member-photo">
+                            </div>
+                        </div>
                     </div>
                     <div class="lecturer-details-section">
                         <div class="lecturer-name-box">

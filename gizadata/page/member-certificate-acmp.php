@@ -522,7 +522,14 @@ var teamMembersData = <?php echo json_encode($team_members); ?>;
             <div class="modal-body">
                 <div class="lecturer-info-container">
                     <div class="lecturer-image-section">
-                        <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image">
+                        <!-- <img id="lecturerImage" src="" alt="Lecturer" class="lecturer-modal-image"> -->
+                        <div class="member-image lecturer-modal-image">
+                            <div class="member-image-overlay">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                alt="<?php echo $member['name']; ?>" 
+                                class="member-photo">
+                            </div>
+                        </div>
                     </div>
                     <div class="lecturer-details-section">
                         <div class="lecturer-name-box">

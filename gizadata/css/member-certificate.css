@@ -893,8 +893,9 @@
 }
 
 .member-certificate .member-photo {
-  width: 170px;
-  height: 194px;
+  /* width: 170px;
+  height: 194px; */
+  /* height: auto; */
   object-fit: cover;
 }
 
@@ -1236,13 +1237,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .member-certificate .member-photo {
-    width: 192px;
-    height: 220px;
-    border-radius: 0;
-    border: none;
-  }
-
   .member-certificate .member-title {
     font-size: 16px;
   }
@@ -1463,22 +1457,157 @@
   margin-bottom: 0;
 }
 
+.member-image-modal {
+  cursor: pointer;
+  position: relative;
+  width: 192px;
+  height: 210px;
+  transition: transform 0.3s ease;
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+  background: #e0f5df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image-modal::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/member.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  z-index: 1;
+  transition: all 0.3s ease;
+  width: 158px;
+  height: 158px;
+  /* transform: translateY(-15px); */
+}
+
+.member-image-modal .member-image-overlay {
+  position: absolute;
+  width: 158px;
+  height: 180px;
+  /* background: red; */
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  bottom: 30px;
+}
+
 /* Hover effect for team member images */
 .member-certificate .team-member .member-image {
   cursor: pointer;
+  position: relative;
+  width: 192px;
+  height: 210px;
   transition: transform 0.3s ease;
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
+  background: #e0f5df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.member-certificate .team-member .member-image:hover {
-  transform: scale(1.05);
+.member-certificate .team-member .member-image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image-modal::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/member.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  z-index: 1;
+  transition: all 0.3s ease;
+  width: 158px;
+  height: 158px;
+}
+
+.member-certificate .team-member .member-image::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/member.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border-radius: 50%; */
+  z-index: 1;
+  transition: all 0.3s ease;
+  width: 158px;
+  height: 158px;
+  /* transform: translateY(-15px); */
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.member-certificate .team-member .member-image-overlay {
+  position: absolute;
+  width: 158px;
+  /* height: 158px; */
+  /* background: red; */
+  overflow: hidden;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  bottom: 30px;
 }
 
 .member-certificate .team-member .member-image img {
-  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+  /* border-radius: 50%; */
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
 }
 
-.member-certificate .team-member .member-image:hover img {
-  opacity: 0.9;
+.member-certificate .team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-certificate .team-member:hover .member-image {
+  /* transform: scale(1.1); */
+}
+
+.member-certificate .team-member:hover .member-image::before {
+  background-image: url("../images/member-active.png");
+}
+
+.member-certificate .team-member:hover .member-info {
+  transform: translateY(-14px);
+  transition: transform 0.3s ease;
+}
+
+.member-certificate .team-member .member-info {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 /* Mobile responsive for modal */
