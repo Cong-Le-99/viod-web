@@ -4,7 +4,7 @@ $team_members = array(
     array(
         'gender' => 'male',
         'name' => 'Phạm Hồng Sơn',
-        'position' => 'Chủ tịch Danh dự <br> Nguyên Phó Chủ tịch<br> Uỷ ban Chứng khoán Nhà nước',
+        'position' => 'Chủ tịch Danh dự <br class="d-none d-md-block"> Nguyên Phó Chủ tịch<br class="d-none d-md-block"> Uỷ ban Chứng khoán Nhà nước',
         'image' => 'pham-hong-son.png',
         'position_more' => array(
             'Update'
@@ -14,7 +14,7 @@ $team_members = array(
     array(
         'gender' => 'female',
         'name' => 'Hà Thu Thanh',
-        'position' => 'Chủ tịch HĐQT Luật sư<br> Đoàn Luật sư TP.<br> Hà Nội',
+        'position' => 'Chủ tịch HĐQT Luật sư<br class="d-none d-md-block"> Đoàn Luật sư TP.<br class="d-none d-md-block"> Hà Nội',
         'image' => 'lecturer-1.png',
         'position_more' => array(
             'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
@@ -29,7 +29,7 @@ Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" đ
     array(
         'gender' => 'female',
         'name' => 'Cao Thị Ngọc Dung',
-        'position' => 'Thành viên HĐQT<br> Chủ tịch HĐQT<br> CTCP Vàng bạc Đá quý Phú Nhuận<br> (PNJ)',
+        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Chủ tịch HĐQT<br class="d-none d-md-block"> CTCP Vàng bạc Đá quý Phú Nhuận<br class="d-none d-md-block"> (PNJ)',
         'image' => 'cao-thi-ngoc-dung.png',
         'position_more' => array(
             'Update'
@@ -39,7 +39,7 @@ Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" đ
     array(
         'gender' => 'male',
         'name' => 'Vũ Quang Thịnh',
-        'position' => 'Thành viên HĐQT<br> Giám đốc Điều hành<br> Công ty Quản lý Quỹ Dynam <br> Capital',
+        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Giám đốc Điều hành<br class="d-none d-md-block"> Công ty Quản lý Quỹ Dynam <br class="d-none d-md-block"> Capital',
         'image' => 'vu-quang-thinh.png',
         'position_more' => array(
             'Update'
@@ -49,8 +49,8 @@ Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" đ
     array(
         'gender' => 'male',
         'name' => 'Trần Trọng Kiên',
-        'position' => 'Thành viên HĐQT <br>
-Chủ tịch HĐQT, Tổng Giám<br> đốc, Tập đoàn Thiên Minh',
+        'position' => 'Thành viên HĐQT <br class="d-none d-md-block">
+Chủ tịch HĐQT, Tổng Giám<br class="d-none d-md-block"> đốc, Tập đoàn Thiên Minh',
         'image' => 'tran-trong-kien.png',
         'position_more' => array(
             'Thành viên HĐQT Chủ tịch HĐQT, Tổng Giám đốc, Tập đoàn Thiên Minh'
@@ -60,7 +60,7 @@ Chủ tịch HĐQT, Tổng Giám<br> đốc, Tập đoàn Thiên Minh',
     array(
         'gender' => 'female',
         'name' => 'Đinh Thị Quỳnh Vân',
-        'position' => 'Thành viên HĐQT<br> Chủ tịch, PwC Việt Nam',
+        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Chủ tịch, PwC Việt Nam',
         'image' => 'dinh-thi-quynh-van.png',
         'position_more' => array(
             'Update'
@@ -70,7 +70,7 @@ Chủ tịch HĐQT, Tổng Giám<br> đốc, Tập đoàn Thiên Minh',
     array(
         'gender' => 'male',
         'name' => 'Phan Lê Thành Long',
-        'position' => 'Thành viên HĐQT,<br> Tổng Giám đốc',
+        'position' => 'Thành viên HĐQT,<br class="d-none d-md-block"> Tổng Giám đốc',
         'image' => 'phan-le-thanh-long.png',
         'position_more' => array(
             'Update'
@@ -84,7 +84,7 @@ $aac_members = array(
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Nguyễn Thu Hiền',
-        'position' => 'Thành viên Chuyên gia Quản trị Công ty ASEAN Chủ nhiệm Bộ môn Tài chính, Trường ĐH Bách khoa, VNU-HCM',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Chuyên gia Quản trị Công<br class="d-none d-md-block"> ty ASEAN Chủ nhiệm Bộ<br class="d-none d-md-block"> môn Tài chính, Trường ĐH<br class="d-none d-md-block"> Bách khoa, VNU-HCM',
         'image' => 'nguyen-thu-hien.png',
         'position_more' => array(
             'Chuyên gia Quản trị Công ty ASEAN',
@@ -109,8 +109,8 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Nguyễn Huy Tâm',
-        'position' => 'Thành viên Giảng viên Kế toán và Tài chính, Trường Đại học Nottingham Trent',
-        'image' => 'nguyen-huy-tam.png',
+        'position' => 'Thành viên Giảng viên Kế toán và Tài <br class="d-none d-md-block"> chính, Trường Đại học <br class="d-none d-md-block"> Nottingham Trent',
+        'image' => 'nguyen-duy-tam.png',
         'position_more' => array(
             'Update'
         ),
@@ -119,7 +119,7 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Đinh Toàn Trung',
-        'position' => 'Thành viên Ban Cố vấn Chuyên môn, VIOD Thành viên Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
+        'position' => 'Thành viên Ban Cố vấn <br class="d-none d-md-block"> Chuyên môn, VIOD <br class="d-none d-md-block"> Thành viên Trung tâm <br class="d-none d-md-block"> Quản trị Công ty Quốc tế/<br class="d-none d-md-block">Thụy Sĩ',
         'image' => 'dinh-toan-trung.png',
         'position_more' => array(
             'Ban Cố vấn Chuyên môn VIOD​',
@@ -132,20 +132,20 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
 Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels School ở Việt Nam và giảng dạy bộ môn Chiến lược/Quản trị Công ty. Trong nghiên cứu, Tiến sĩ Đinh Toàn Trung là Cố vấn Danh mục của Trung tâm Quốc tế về Quản trị Công ty tại Trường Đại học St. Gallen và là tác giả cũng như dịch giả trong các bộ môn chuyên về chiến lược, Quản trị Công ty. Ông có bằng Tiến sĩ Kinh tế học của Trường Đại học St. Gallen, và bằng Thạc sĩ QTKD của Trường Đại học Fribourg, Thụy Sĩ.'
     ),
     array(
-        'gender' => 'female',
+        'gender' => 'Bà',
         'name' => 'Trịnh Quỳnh Giao',
         'position' => 'Thành viên Tổng Giám đốc, CTCP Quản lý Quỹ PVI (PVI AM)',
-        'image' => 'lecturer-5.png',
+        'image' => 'trinh-quynh-giao.png',
         'position_more' => array(
             'Update'
         ),
         'biography' => 'Update'
     ),
     array(
-        'gender' => 'male',
+        'gender' => 'Ông',
         'name' => 'Simon CY Wong',
-        'position' => 'Thành viên Cố vấn Độc lập, Đồng Trưởng khoa Tài chính Bền vững, Viện Lãnh đạo Phát triển Bền vững Cambridge (CISL)',
-        'image' => 'lecturer-6.png',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Cố vấn Độc lập, Đồng<br class="d-none d-md-block"> Trưởng khoa Tài chính Bền<br class="d-none d-md-block"> vững, Viện Lãnh đạo Phát<br class="d-none d-md-block"> triển Bền vững Cambridge<br class="d-none d-md-block"> (CISL)',
+        'image' => 'simon.png',
         'position_more' => array(
             'Cố vấn Độc lập',
             'Đồng Trưởng nhóm Giảng dạy về Tài chính Bền vững',
@@ -166,8 +166,8 @@ $acac_members = array(
     array(
         'gender' => 'male',
         'name' => 'Nguyễn Anh Tuấn',
-        'position' => 'Chủ tịch, ACAC Thành viên, AAC Chủ tịch HĐQT, Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
-        'image' => 'lecturer-7.png',
+        'position' => 'Chủ tịch, ACAC <br class="d-none d-md-block"> Thành viên, AAC <br class="d-none d-md-block"> Chủ tịch HĐQT,Tổng CTCP<br class="d-none d-md-block"> Tái Bảo hiểm Quốc gia Việt<br class="d-none d-md-block"> Nam (VINARE)​',
+        'image' => 'lecturer-5.png',
         'position_more' => array(
             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
             'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
@@ -183,8 +183,8 @@ $acac_members = array(
     array(
         'gender' => 'female',
         'name' => 'Lê Thị Tuyết Nhung',
-        'position' => 'Đồng Chủ tịch Phó Cục trưởng, Cục Quản lý Giá, Bộ Tài chính Nguyên Phó Cục trưởng Cục Quản lý, Giám sát Kế toán, Kiểm toán, Bộ Tài chính',
-        'image' => 'lecturer-8.png',
+        'position' => 'Đồng Chủ tịch Phó Cục<br class="d-none d-md-block"> trưởng, Cục Quản lý Giá, Bộ<br class="d-none d-md-block"> Tài chính Nguyên Phó Cục<br class="d-none d-md-block"> trưởng Cục Quản lý, Giám<br class="d-none d-md-block"> sát Kế toán, Kiểm toán, Bộ Tài chính',
+        'image' => 'le-thi-tuyet-nhung.png',
         'position_more' => array(
             'Update'
         ),
@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="modal-body">
                 <div class="lecturer-info-container">
                     <div class="lecturer-image-section">
-                        <div class="member-image" id="lecturerImage">
+                        <div class="member-image-modal lecturer-modal-image">
                             <div class="member-image-overlay">
-                                <img src="" alt="Lecturer" class="member-photo">
+                                <img id="lecturerImage" src="" alt="Lecturer" class="member-photo">
                             </div>
                         </div>
                     </div>

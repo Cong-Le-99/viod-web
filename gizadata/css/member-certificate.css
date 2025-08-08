@@ -11,7 +11,10 @@
 
 .container-custom-program-goals {
   max-width: 1426px !important;
-  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .wrap-info-remember .member-image {
@@ -24,7 +27,10 @@
 
 .container-board-director {
   max-width: 1426px !important;
-  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .wrap-info-remember .member-image img {
@@ -49,6 +55,28 @@
 }
 
 @media (min-width: 768px) {
+  .member-certificate .team-member .member-image-overlay {
+    width: 158px !important;
+    bottom: 30px !important;
+  }
+  .member-certificate .team-member .member-image {
+    width: 192px !important;
+    height: 210px !important;
+  }
+
+  .member-certificate .team-member .member-image::before {
+    width: 158px !important;
+    height: 158px !important;
+  }
+
+  .member-certificate .team-member .member-image img {
+    width: 140px !important;
+    height: 180px !important;
+  }
+  .member-image-modal .member-image-overlay img {
+    width: 140px !important;
+    height: 180px !important;
+  }
   .px-md-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -1620,29 +1648,6 @@
 
 /* Mobile responsive for modal */
 @media (max-width: 768px) {
-  .member-certificate .team-member .member-image-overlay {
-    width: 158px;
-    bottom: 30px;
-  }
-  .member-certificate .team-member .member-image {
-    width: 192px !important;
-    height: 210px !important;
-  }
-
-  .member-certificate .team-member .member-image::before {
-    width: 158px !important;
-    height: 158px !important;
-  }
-
-  .member-certificate .team-member .member-image img {
-    width: 140px !important;
-    height: 180px !important;
-  }
-  .member-image-modal .member-image-overlay img {
-    width: 140px !important;
-    height: 180px !important;
-  }
-
   .lecturer-modal {
     max-width: 95%;
     margin: 1rem;

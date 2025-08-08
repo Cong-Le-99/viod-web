@@ -310,7 +310,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Phan Đức Hiếu',
-                        'position' => 'Ủy viên Thường trực<br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
+                        'position' => 'Ủy viên Thường trực<br class="d-none d-md-block">Ủy ban Kinh tế của Quốc hội khóa XV<br class="d-none d-md-block">Cố vấn Cao cấp HĐQT VIOD',
                         'image' => 'lecturer-2.png',
                         'position_more' => array(
                             'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
@@ -321,7 +321,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
-                        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
+                        'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
                         'image' => 'lecturer-3.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
@@ -334,7 +334,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Anh Tuấn',
-                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+                        'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn, VIOD​<br class="d-none d-md-block">Chủ tịch HĐQT<br class="d-none d-md-block">Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
                         'image' => 'lecturer-5.png',
                         'position_more' => array(
                             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
@@ -347,7 +347,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Thế Mạnh',
-                        'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
+                        'position' => 'Giám đốc Tư vấn<br class="d-none d-md-block">Deloitte Đông Nam Á',
                         'image' => 'lecturer-16.png',
                         'position_more' => array(
                             'Giám đốc Tư vấn, Deloitte Đông Nam Á'
@@ -389,8 +389,8 @@ get_header();
 
                     array(
                         'gender' => 'male',
-                        'name' => 'Phan Đức Hiếu 1',
-                        'position' => 'Ủy viên Thường trực<br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
+                        'name' => 'Phan Đức Hiếu',
+                        'position' => 'Ủy viên Thường trực<br class="d-none d-md-block">Ủy ban Kinh tế của Quốc hội khóa XV<br class="d-none d-md-block">Cố vấn Cao cấp HĐQT VIOD',
                         'image' => 'lecturer-2.png',
                         'position_more' => array(
                             'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
@@ -400,8 +400,8 @@ get_header();
                     ),
                     array(
                         'gender' => 'female',
-                        'name' => 'Nguyễn Linh Giang 1',
-                        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
+                        'name' => 'Nguyễn Linh Giang',
+                        'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
                         'image' => 'lecturer-3.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
@@ -413,8 +413,8 @@ get_header();
                     ),
                     array(
                         'gender' => 'male',
-                        'name' => 'Nguyễn Anh Tuấn 1',
-                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+                        'name' => 'Nguyễn Anh Tuấn',
+                        'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn, VIOD​<br class="d-none d-md-block">Chủ tịch HĐQT<br class="d-none d-md-block">Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
                         'image' => 'lecturer-5.png',
                         'position_more' => array(
                             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
@@ -426,8 +426,8 @@ get_header();
                     ),
                     array(
                         'gender' => 'male',
-                        'name' => 'Nguyễn Thế Mạnh 1',
-                        'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
+                        'name' => 'Nguyễn Thế Mạnh',
+                        'position' => 'Giám đốc Tư vấn<br class="d-none d-md-block">Deloitte Đông Nam Á',
                         'image' => 'lecturer-4.png',
                         'position_more' => array(
                             'Giám đốc Tư vấn, Deloitte Đông Nam Á'
@@ -436,7 +436,7 @@ get_header();
                     ),
                     array(
                         'gender' => 'male',
-                        'name' => 'Phạm Hải Âu 1',
+                        'name' => 'Phạm Hải Âu ',
                         'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
                         'image' => 'lecturer-8.png',
                         'position_more' => array(
@@ -446,7 +446,7 @@ get_header();
                     ),
                     array(
                         'gender' => 'female',
-                        'name' => 'Nguyễn Lưu Tuyền 1',
+                        'name' => 'Nguyễn Lưu Tuyền',
                         'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
                         'image' => 'lecturer-9.png',
                         'position_more' => array(
@@ -457,7 +457,7 @@ get_header();
                     ),
                     array(
                         'gender' => 'female',
-                        'name' => 'Đồng Thị Thu Hương 1',
+                        'name' => 'Đồng Thị Thu Hương',
                         'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
                         'image' => 'lecturer-12.png',
                         'position_more' => array(

@@ -304,7 +304,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn minh hiền, FCCA',
-                        'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'position' => 'Giám đốc Chuyên môn<br class="d-none d-md-block">Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
                         'image' => 'lecturer-6.png',
                         'position_more' => array(
                             'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
@@ -314,7 +314,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
-                        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
+                        'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
                         'image' => 'lecturer-3.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
@@ -327,8 +327,8 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Hồ Thị Phương Tú',
-                        'position' => 'Giám đốc Phòng Quản lý Niêm yết<br>Sở Giao dịch Chứng khoán Hà Nội (HNX)',
-                        'image' => 'lecturer-13.png',
+                        'position' => 'Giám đốc Phòng Quản lý Niêm yết<br class="d-none d-md-block">Sở Giao dịch Chứng khoán Hà Nội (HNX)',
+                        'image' => 'ho-thi-phuong-tu.png',
                         'position_more' => array(
                             'Giám đốc Phòng Quản lý Niêm yết, Sở Giao dịch Chứng khoán Hà Nội (HNX)',
                         ),
@@ -337,8 +337,8 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Thế Mạnh',
-                        'position' => 'Giám đốc Tư vấn<br>Deloitte Đông Nam Á',
-                        'image' => 'lecturer-14.png',
+                        'position' => 'Giám đốc Tư vấn<br class="d-none d-md-block">Deloitte Đông Nam Á',
+                        'image' => 'nguyen-the-manh.png',
                         'position_more' => array(
                             'Giám đốc Tư vấn, Deloitte Đông Nam Á',
                         ),
@@ -347,8 +347,8 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Phan Mẫu Đơn',
-                        'position' => 'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT<br>Ngân hàng TMCP Quân đội (MB)',
-                        'image' => 'lecturer-15.png',
+                        'position' => 'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT<br class="d-none d-md-block">Ngân hàng TMCP Quân đội (MB)',
+                        'image' => 'phan-mau-don.png',
                         'position_more' => array(
                             'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT, Ngân hàng TMCP Quân đội (MB)',
                         ),
@@ -364,17 +364,21 @@ get_header();
                 <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>
                         <div class="team-member">
-                            <div class="member-image">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                     alt="<?php echo $member['name']; ?>" 
-                                     class="member-photo">
-                            </div>
-                            <div class="member-info">
-                                <h4 class="member-title">
-                                    <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
-                                </h4>
-                                <h3 class="member-name"><?php echo $member['name']; ?></h3>
-                                <p class="member-position"><?php echo $member['position']; ?></p>
+                            <div class="member-image-wrapper">
+                                <div class="member-image">
+                                    <div class="member-image-overlay">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
+                                             alt="<?php echo $member['name']; ?>" 
+                                             class="member-photo">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4 class="member-title text-uppercase">
+                                        <?php echo ($member['gender'] == 'male') ? 'Ông' : 'Bà'; ?>
+                                    </h4>
+                                    <h3 class="member-name"><?php echo $member['name']; ?></h3>
+                                    <p class="member-position"><?php echo $member['position']; ?></p>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>

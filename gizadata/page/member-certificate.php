@@ -311,7 +311,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Hà Thu Thanh',
-                        'position' => 'Chủ tịch HĐQT<br>Viện Thành viên HĐQT Việt Nam (VIOD)',
+                        'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Viện Thành viên HĐQT Việt Nam (VIOD)',
                         'image' => 'lecturer-1.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
@@ -325,7 +325,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Phan Đức Hiếu',
-                        'position' => 'Ủy viên Thường trực <br>Ủy ban Kinh tế của Quốc hội khóa XV<br>Cố vấn Cao cấp HĐQT VIOD',
+                        'position' => 'Ủy viên Thường trực <br class="d-none d-md-block">Ủy ban Kinh tế của Quốc hội khóa XV<br class="d-none d-md-block">Cố vấn Cao cấp HĐQT VIOD',
                         'image' => 'lecturer-2.png',
                         'position_more' => array(
                             'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
@@ -338,7 +338,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
-                        'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
+                        'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
                         'image' => 'lecturer-3.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
@@ -351,7 +351,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Lê Quang Phúc',
-                        'position' => 'Chủ tịch HĐQT<br>Công ty Cổ phần Tư vấn Quản lý BDSC',
+                        'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Công ty Cổ phần Tư vấn Quản lý BDSC',
                         'image' => 'lecturer-4.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
@@ -365,7 +365,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Nguyễn Anh Tuấn',
-                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn, VIOD​<br>Chủ tịch HĐQT<br>Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
+                        'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn, VIOD​<br class="d-none d-md-block">Chủ tịch HĐQT<br class="d-none d-md-block">Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
                         'image' => 'lecturer-5.png',
                         'position_more' => array(
                             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
@@ -378,7 +378,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Minh Hiền, FCCA',
-                        'position' => 'Giám đốc Chuyên môn<br>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
+                        'position' => 'Giám đốc Chuyên môn<br class="d-none d-md-block">Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
                         'image' => 'lecturer-6.png',
                         'position_more' => array(
                             'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)'
@@ -388,7 +388,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Phạm Việt Anh',
-                        'position' => 'Chủ tịch HĐQT<br>Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
+                        'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
                         'image' => 'lecturer-7.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
@@ -399,7 +399,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Đinh Toàn Trung',
-                        'position' => 'Thành viên<br>Ban Cố vấn Chuyên môn VIOD​<br>Thành viên<br>Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
+                        'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn VIOD​<br class="d-none d-md-block">Thành viên<br class="d-none d-md-block">Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
                         'image' => 'lecturer-8.png',
                         'position_more' => array(
                             'Thành viên Ban Cố vấn Chuyên môn VIOD​',
