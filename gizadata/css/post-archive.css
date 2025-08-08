@@ -693,7 +693,7 @@
 .post-card-excerpt {
   color: #666;
   font-size: 16px;
-  line-height: 100%;
+  /* line-height: 100%; */
   margin-bottom: 16px;
   font-family: "Montserrat", sans-serif;
 }
@@ -750,6 +750,7 @@
   white-space: nowrap;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .tab-button:hover {

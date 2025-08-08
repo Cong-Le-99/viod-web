@@ -15,7 +15,7 @@ get_header();
             </ol>
         </nav>
     </div>
-    
+
     <!-- Content Section -->
     <section class="content-section px-custom px-md-0">
         <div class="container">
@@ -23,13 +23,13 @@ get_header();
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="video-container">
-                        <iframe id="certificateVideo" 
-                                src="https://www.youtube.com/embed/sEn-e3oYyQM" 
-                                title="Director Certification Program (DCP)" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
+                        <iframe id="certificateVideo"
+                            src="https://www.youtube.com/embed/sEn-e3oYyQM"
+                            title="Director Certification Program (DCP)"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
                         </iframe>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ get_header();
         </div>
     </section>
 
-     <!-- Content Section program value -->
+    <!-- Content Section program value -->
     <section class="program-value px-custom px-md-0">
         <div class="container">
             <div class="row">
@@ -57,104 +57,104 @@ get_header();
                     <h2 class="title mobile-title d-block">Giá trị chương trình</h2>
                 </div>
             </div>
-            
+
             <?php
-                         $program_values = array(
-                 array(
-                     'title' => 'Uyên thâm',
-                     'sub_title' => 'Người hướng dẫn & Chuyên gia',
-                     'content' => array(
-                         'Cơ hội tiếp cận kiến thức và kinh nghiệm của người hướng dẫn và diễn giả quốc tế và Việt Nam',
-                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
-                     ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
-                 ),
-                 array(
-                     'title' => 'Linh hoạt',
-                     'sub_title' => 'Chương trình giảng dạy & Tình huống nghiên cứu',
-                     'content' => array(
-                         'Chương trình, nội dung và tình huống bám sát diễn biến thị trường',
-                         'Cập nhật theo thông lệ tốt nhất của Việt Nam và quốc tế về QTCT & phát triển bền vững (ESG)',
-                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
-                     ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
-                 ),
-                 array(
-                     'title' => 'Ưu việt',
-                     'sub_title' => 'Mạng lưới người tham dự',
-                     'content' => array(
-                         'Gia nhập cộng đồng các thành viên HĐQT chuyên',
-                         'Trở thành một đại sứ với cam kết cải cách thị trường và quản trị hiệu quả',
-                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
-                     ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
-                 ),
-                 array(
-                     'title' => 'Thịnh vượng',
-                     'sub_title' => 'Phát triển nghề nghiệp',
-                     'content' => array(
-                         'Tham gia lộ trình phát triển nghề nghiệp bài bản của VIOD',
-                         'Được công nhận 30 giờ CPD (Phát triển chuyên môn) của VIOD',
-                         'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
-                     ),
-                     'color' => 'green',
-                     'icon' => 'check-circle.svg'
-                 )
-             );
+            $program_values = array(
+                array(
+                    'title' => 'Uyên thâm',
+                    'sub_title' => 'Người hướng dẫn & Chuyên gia',
+                    'content' => array(
+                        'Cơ hội tiếp cận kiến thức và kinh nghiệm của người hướng dẫn và diễn giả quốc tế và Việt Nam',
+                        'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                    ),
+                    'color' => 'green',
+                    'icon' => 'check-circle.svg'
+                ),
+                array(
+                    'title' => 'Linh hoạt',
+                    'sub_title' => 'Chương trình giảng dạy & Tình huống nghiên cứu',
+                    'content' => array(
+                        'Chương trình, nội dung và tình huống bám sát diễn biến thị trường',
+                        'Cập nhật theo thông lệ tốt nhất của Việt Nam và quốc tế về QTCT & phát triển bền vững (ESG)',
+                        'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                    ),
+                    'color' => 'green',
+                    'icon' => 'check-circle.svg'
+                ),
+                array(
+                    'title' => 'Ưu việt',
+                    'sub_title' => 'Mạng lưới người tham dự',
+                    'content' => array(
+                        'Gia nhập cộng đồng các thành viên HĐQT chuyên',
+                        'Trở thành một đại sứ với cam kết cải cách thị trường và quản trị hiệu quả',
+                        'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                    ),
+                    'color' => 'green',
+                    'icon' => 'check-circle.svg'
+                ),
+                array(
+                    'title' => 'Thịnh vượng',
+                    'sub_title' => 'Phát triển nghề nghiệp',
+                    'content' => array(
+                        'Tham gia lộ trình phát triển nghề nghiệp bài bản của VIOD',
+                        'Được công nhận 30 giờ CPD (Phát triển chuyên môn) của VIOD',
+                        'Cơ hội chia sẻ và học hỏi từ các câu chuyện trải nghiệm thực tế'
+                    ),
+                    'color' => 'green',
+                    'icon' => 'check-circle.svg'
+                )
+            );
             ?>
-            
-             <div class="program-values-content">
-                 <div class="desktop-layout-program-value relative">
-                     <div class="left-column">
-                         <?php for($i = 0; $i < 2; $i++): ?>
-                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
-                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
-                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
-                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
-                                 </div>
-                                 <div class="value-content">
-                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
-                                         <div class="content-item">
-                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
-                                             <p><?php echo $content_item; ?></p>
-                                         </div>
-                                     <?php endforeach; ?>
-                                 </div>
-                             </div>
-                         <?php endfor; ?>
-                     </div>
 
-                     <!-- Center Image -->  
-                     <div class="center-image">
-                         <img src="<?php echo get_template_directory_uri(); ?>/images/value-dcp.png" 
-                              alt="DCP Value Center" 
-                              class="center-value-image">
-                     </div>
+            <div class="program-values-content">
+                <div class="desktop-layout-program-value relative">
+                    <div class="left-column">
+                        <?php for ($i = 0; $i < 2; $i++): ?>
+                            <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                    <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                    <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                </div>
+                                <div class="value-content">
+                                    <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                        <div class="content-item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                            <p><?php echo $content_item; ?></p>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        <?php endfor; ?>
+                    </div>
 
-                     <!-- Right Column -->
-                     <div class="right-column">
-                         <?php for($i = 2; $i < 4; $i++): ?>
-                             <div class="value-item <?php echo $program_values[$i]['color']; ?>">
-                                 <div class="value-title <?php echo $program_values[$i]['color']; ?>">
-                                     <h3><?php echo $program_values[$i]['title']; ?></h3>
-                                     <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
-                                 </div>
-                                 <div class="value-content">
-                                     <?php foreach ($program_values[$i]['content'] as $content_item): ?>
-                                         <div class="content-item">
-                                             <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
-                                             <p><?php echo $content_item; ?></p>
-                                         </div>
-                                     <?php endforeach; ?>
-                                 </div>
-                             </div>
-                         <?php endfor; ?>
-                     </div>
-                 </div>
-             </div>
+                    <!-- Center Image -->
+                    <div class="center-image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/value-dcp.png"
+                            alt="DCP Value Center"
+                            class="center-value-image">
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="right-column">
+                        <?php for ($i = 2; $i < 4; $i++): ?>
+                            <div class="value-item <?php echo $program_values[$i]['color']; ?>">
+                                <div class="value-title <?php echo $program_values[$i]['color']; ?>">
+                                    <h3><?php echo $program_values[$i]['title']; ?></h3>
+                                    <p class="sub-title"><?php echo $program_values[$i]['sub_title']; ?></p>
+                                </div>
+                                <div class="value-content">
+                                    <?php foreach ($program_values[$i]['content'] as $content_item): ?>
+                                        <div class="content-item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $program_values[$i]['icon']; ?>" alt="Check" class="check-icon">
+                                            <p><?php echo $content_item; ?></p>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+                        <?php endfor; ?>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -164,9 +164,9 @@ get_header();
             <div class="row">
                 <div class="col-12">
                     <h2 class="title">Mục tiêu tham dự chương trình</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds.png" 
-                         alt="Program goals Desktop" 
-                         class="program-goals-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/program-golds.png"
+                        alt="Program goals Desktop"
+                        class="program-goals-image">
                 </div>
             </div>
         </div>
@@ -179,41 +179,41 @@ get_header();
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Đối tượng tham dự</h2>
                 <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
-                
+
                 <div class="attendees-items">
                     <div class="attendee-item">Thành viên hội đồng quản trị</div>
                     <div class="attendee-item">Thành viên Ban Điều hành</div>
                     <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái quản trị công ty</div>
                     <div class="attendee-item">Thư ký quản trị công ty</div>
                 </div>
-                
+
                 <div class="attendees-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png" 
-                         alt="Attendees Mobile" 
-                         class="attendees-mobile-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png"
+                        alt="Attendees Mobile"
+                        class="attendees-mobile-image">
                 </div>
             </div>
 
             <!-- Desktop Layout -->
             <div class="d-none d-md-block">
                 <div class="desktop-layout">
-                <div class="attendees-desktop-row">
-                    <div class="attendees-content-col">
-                    <h2 class="title mt-md-3 mb-3">Đối tượng tham dự</h2>
-                    <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
-                        <div class="attendees-items">
-                            <div class="attendee-item">Thành viên hội đồng quản trị</div>
-                            <div class="attendee-item">Thành viên Ban Điều hành</div>
-                            <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái quản trị công ty</div>
-                            <div class="attendee-item">Thư ký quản trị công ty</div>
+                    <div class="attendees-desktop-row">
+                        <div class="attendees-content-col">
+                            <h2 class="title mt-md-3 mb-3">Đối tượng tham dự</h2>
+                            <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
+                            <div class="attendees-items">
+                                <div class="attendee-item">Thành viên hội đồng quản trị</div>
+                                <div class="attendee-item">Thành viên Ban Điều hành</div>
+                                <div class="attendee-item">Thành viên thuộc các phòng ban trong hệ sinh thái quản trị công ty</div>
+                                <div class="attendee-item">Thư ký quản trị công ty</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="attendees-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png" 
-                             alt="Attendees Desktop" 
-                             class="attendees-desktop-image">
-                </div>
+                    <div class="attendees-image-col">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-dk.png"
+                            alt="Attendees Desktop"
+                            class="attendees-desktop-image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,12 +252,12 @@ get_header();
                 )
             );
             ?>
-            
+
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
                 <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
-                
+
                 <div class="organized-content-grid">
                     <?php foreach ($organized_content as $content): ?>
                         <div class="organized-content-box <?php echo $content['color']; ?>">
@@ -290,7 +290,7 @@ get_header();
                                     </div>
                                 <?php endforeach; ?>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -304,7 +304,7 @@ get_header();
                 <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
                 <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
             </div>
-            
+
             <div class="team-members">
                 <?php
                 $team_members = array(
@@ -312,7 +312,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Hà Thu Thanh',
                         'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Viện Thành viên HĐQT Việt Nam (VIOD)',
-                        'image' => 'lecturer-1.png',
+                        'image' => 'ha-thu-thanh.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
                             'Luật sư hành nghề, Đoàn Luật sư Thành phố Hà Nội',
@@ -326,7 +326,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Phan Đức Hiếu',
                         'position' => 'Ủy viên Thường trực <br class="d-none d-md-block">Ủy ban Kinh tế của Quốc hội khóa XV<br class="d-none d-md-block">Cố vấn Cao cấp HĐQT VIOD',
-                        'image' => 'lecturer-2.png',
+                        'image' => 'phan-duc-hieu.png',
                         'position_more' => array(
                             'Ủy viên Thường trực Ủy ban Kinh tế của Quốc hội khóa XV',
                             'Chủ tịch Ban Cố vấn Cấp cao VIOD',
@@ -339,7 +339,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
                         'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
-                        'image' => 'lecturer-3.png',
+                        'image' => 'nguyen-linh-giang.png',
                         'position_more' => array(
                             'Thành viên HĐQT, Tổng Công ty Dầu Việt Nam (PVOIL)',
                             'Thành viên HĐQT, Trưởng Tiểu Ban Kiểm toán & Quản trị rủi ro Tổng công ty Cổ phần Vận tải Dầu khí (PVTrans)',
@@ -352,7 +352,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Lê Quang Phúc',
                         'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Công ty Cổ phần Tư vấn Quản lý BDSC',
-                        'image' => 'lecturer-4.png',
+                        'image' => 'le-quang-phuc.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT, Công ty Cổ phần Tư vấn Quản lý BDSC',
                             'Thành viên HĐQT độc lập, Chủ tịch UBKT, Công ty Cổ phần Vàng bạc đá quý Phú Nhuận (PNJ)',
@@ -366,7 +366,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Nguyễn Anh Tuấn',
                         'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn, VIOD​<br class="d-none d-md-block">Chủ tịch HĐQT<br class="d-none d-md-block">Tổng CTCP Tái Bảo hiểm Quốc gia Việt Nam (VINARE)​',
-                        'image' => 'lecturer-5.png',
+                        'image' => 'Nguyen-Anh-TUAN.png',
                         'position_more' => array(
                             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
                             'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
@@ -379,7 +379,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Nguyễn Minh Hiền, FCCA',
                         'position' => 'Giám đốc Chuyên môn<br class="d-none d-md-block">Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)',
-                        'image' => 'lecturer-6.png',
+                        'image' => 'nguyen-minh-hien.png',
                         'position_more' => array(
                             'Giám đốc Chuyên môn, Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD)'
                         ),
@@ -389,7 +389,7 @@ get_header();
                         'gender' => 'male',
                         'name' => 'Phạm Việt Anh',
                         'position' => 'Chủ tịch HĐQT<br class="d-none d-md-block">Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
-                        'image' => 'lecturer-7.png',
+                        'image' => 'pham-viet-anh.png',
                         'position_more' => array(
                             'Chủ tịch HĐQT Tổng Công ty Cổ phần Vận tải Dầu khí (PVTrans)',
                             'Nguyên Phó Chủ tịch HĐQT Tổng công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí'
@@ -409,8 +409,8 @@ get_header();
                     )
                 );
                 ?>
-                
-                <?php 
+
+                <?php
                 $member_count = count($team_members);
                 $layout_class = 'layout-7'; // Mặc định hiển thị 7 giảng viên
                 ?>
@@ -420,9 +420,9 @@ get_header();
                             <div class="member-image-wrapper">
                                 <div class="member-image">
                                     <div class="member-image-overlay">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                        alt="<?php echo $member['name']; ?>" 
-                                        class="member-photo">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                            alt="<?php echo $member['name']; ?>"
+                                            class="member-photo">
                                     </div>
                                 </div>
                                 <div class="member-info">
@@ -436,20 +436,20 @@ get_header();
                         </div>
                     <?php endforeach; ?>
                 </div>
-                
+
                 <div class="team-button text-center">
                     <a href="#" class="btn-view-more">Xem thêm giảng viên</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
 </div>
 
 <!-- Script để truyền dữ liệu PHP sang JavaScript -->
 <script>
-// Truyền dữ liệu team_members từ PHP sang JavaScript
-var teamMembersData = <?php echo json_encode($team_members); ?>;
+    // Truyền dữ liệu team_members từ PHP sang JavaScript
+    var teamMembersData = <?php echo json_encode($team_members); ?>;
 </script>
 
 <!-- Modal thông tin giảng viên -->
@@ -477,11 +477,11 @@ var teamMembersData = <?php echo json_encode($team_members); ?>;
                             </div>
 
                         </div>
-        
+
                     </div>
                 </div>
                 <div class="lecturer-biography" id="lecturerBiography">
-                        
+
                 </div>
             </div>
         </div>
@@ -494,14 +494,13 @@ var teamMembersData = <?php echo json_encode($team_members); ?>;
 
 <!-- Content Section program organized -->
 <?php
-    get_template_part('trangchu/chuongtrinhdangdienra', null, [
-        'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
-        'description' => "DCP cung cấp các kiến thức về QTCT, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, \n phù hợp với sự phát triển của thị trường tài chính trong nước và thế giới. ",
-    ]);
+get_template_part('trangchu/chuongtrinhdangdienra', null, [
+    'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
+    'description' => "DCP cung cấp các kiến thức về QTCT, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, \n phù hợp với sự phát triển của thị trường tài chính trong nước và thế giới. ",
+]);
 ?>
 <!-- Testimonial Slider Section -->
 <?php get_template_part('trangchu/testimonial-slider'); ?>
-<?php        
+<?php
 get_footer();
 ?>
-

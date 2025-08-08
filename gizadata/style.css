@@ -46,12 +46,14 @@ a:hover {
   /* color: #3aa735; */
 }
 
-#menu-item-wpml-ls-3-vi{
+#menu-item-wpml-ls-3-vi {
   display: none;
 }
-#menu-item-wpml-ls-3-en{
+
+#menu-item-wpml-ls-3-en {
   display: none;
 }
+
 .main {
   width: 90%;
   max-width: 1200px;
@@ -268,6 +270,7 @@ a:hover {
   .main-navigation ul {
     gap: 18px;
   }
+
   button.search-toggle {
     display: none;
   }
@@ -287,20 +290,25 @@ a:hover {
     height: auto;
     padding: 10px 0;
   }
+
   .main-navigation {
     display: none !important;
   }
+
   .main-navigation ul {
     gap: 10px;
   }
+
   .login-btn {
     padding: 10px 18px;
     font-size: 16px;
   }
+
   .header-actions .search-toggle,
   .header-actions .login-btn {
     display: none !important;
   }
+
   .menu-toggle {
     display: flex !important;
     align-items: center;
@@ -313,6 +321,7 @@ a:hover {
     position: static;
     margin-left: auto;
   }
+
   .topbar {
     display: none !important;
   }
@@ -541,6 +550,7 @@ a:hover {
   .category-list {
     flex-direction: column;
   }
+
   .category-list li a {
     display: block;
     text-align: center;
@@ -553,12 +563,15 @@ a:hover {
   .training-programs-grid {
     grid-template-columns: 1fr;
   }
+
   .meta-grid {
     grid-template-columns: 1fr;
   }
+
   .program-cta {
     flex-direction: column;
   }
+
   .button {
     width: 100%;
     text-align: center;
@@ -667,14 +680,16 @@ a:hover {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
+
 .footer-column span {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-column a.text-white{
-	color:#fff;	
+.footer-column a.text-white {
+  color: #fff;
 }
 }
+
 .footer-column li span {
   color: #b5bcc3;
 }
@@ -716,6 +731,7 @@ a:hover {
   justify-content: center;
   color: #eaf6ff;
 }
+
 .footer-bottom p.viod-rights {
   font-weight: 600;
 }
@@ -876,12 +892,12 @@ a:hover {
   padding: 0 0 0 0;
 }
 
-#mobile-primary-menu > li {
+#mobile-primary-menu>li {
   border-bottom: 1px solid #e0e0e0;
   position: relative;
 }
 
-#mobile-primary-menu > li > a {
+#mobile-primary-menu>li>a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -894,11 +910,11 @@ a:hover {
   transition: background 0.2s;
 }
 
-#mobile-primary-menu > li.open > a {
+#mobile-primary-menu>li.open>a {
   background: #e6f7e6;
 }
 
-#mobile-primary-menu .menu-item-has-children > a {
+#mobile-primary-menu .menu-item-has-children>a {
   padding-right: 48px;
 }
 
@@ -935,7 +951,7 @@ a:hover {
   border-top: 1px solid #e0e0e0;
 }
 
-#mobile-primary-menu li.open > ul.sub-menu {
+#mobile-primary-menu li.open>ul.sub-menu {
   display: block;
 }
 
@@ -1023,6 +1039,7 @@ a:hover {
 /* Hide mobile menu on desktop */
 
 @media (min-width: 901px) {
+
   .mobile-menu,
   .mobile-menu-overlay {
     display: none !important;
@@ -1047,18 +1064,22 @@ a:hover {
     visibility: hidden;
     transition: opacity 0.18s, visibility 0.18s;
   }
+
   .main-navigation li.menu-item-has-children {
     position: relative;
   }
-  .main-navigation li.menu-item-has-children:hover > ul.sub-menu,
-  .main-navigation li.menu-item-has-children:focus-within > ul.sub-menu {
+
+  .main-navigation li.menu-item-has-children:hover>ul.sub-menu,
+  .main-navigation li.menu-item-has-children:focus-within>ul.sub-menu {
     display: block;
     opacity: 1;
     visibility: visible;
   }
+
   .main-navigation ul ul.sub-menu li {
     position: relative;
   }
+
   .main-navigation ul ul.sub-menu li a {
     padding: 12px 24px;
     color: #0a2536;
@@ -1070,6 +1091,7 @@ a:hover {
     border-radius: 6px;
     transition: background 0.15s;
   }
+
   .main-navigation ul ul.sub-menu li a:hover {
     background: #e6f7e6;
     color: #007bff;
@@ -1079,16 +1101,18 @@ a:hover {
 /* Submenu mobile: padding, căn trái, không thụt vào quá nhiều, không border thừa */
 
 @media (max-width: 900px) {
-  #mobile-primary-menu > li {
+  #mobile-primary-menu>li {
     position: relative;
   }
-  #mobile-primary-menu > li > a {
+
+  #mobile-primary-menu>li>a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     padding-right: 48px;
   }
+
   #mobile-primary-menu .submenu-toggle {
     position: absolute;
     right: 20px;
@@ -1160,7 +1184,8 @@ a:hover {
 }
 
 .breadcrumb a:first-of-type {
-  color: #839aab; /* hoặc style bạn muốn */
+  color: #839aab;
+  /* hoặc style bạn muốn */
 }
 
 .breadcrumb a {
@@ -1217,11 +1242,12 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  .training-header {
-  }
+  .training-header {}
+
   .category-title {
     font-size: 28px;
   }
+
   .breadcrumb {
     font-size: 14px;
   }
@@ -1229,8 +1255,7 @@ a:hover {
 
 /* css phần đào tạo */
 
-.baiviet-daotao {
-}
+.baiviet-daotao {}
 
 .baiviet-daotao .bannerkhoahoc {
   margin: 0;
@@ -1263,8 +1288,7 @@ a:hover {
   flex: 1;
 }
 
-.baiviet-daotao article .baivietdaotao .noidung .banner {
-}
+.baiviet-daotao article .baivietdaotao .noidung .banner {}
 
 .baiviet-daotao article .baivietdaotao .noidung .banner img {
   width: 100%;
@@ -1684,11 +1708,20 @@ a:hover {
 }
 
 /* slide trang chu */
-
 .slider-trangchu {
   position: relative;
-  height: 726px;
   overflow: hidden;
+}
+@media (min-width: 1512px) {
+  .slider-trangchu {
+    height: 660px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-trangchu {
+    height: 570px;
+  }
 }
 
 .slider-trangchu .ndslide {
@@ -1763,8 +1796,7 @@ a:hover {
   width: max-content;
 }
 
-.slider-trangchu .button:hover {
-}
+.slider-trangchu .button:hover {}
 
 .slider-trangchu .nav-button {
   position: absolute;
@@ -2075,8 +2107,7 @@ a:hover {
   gap: 8px;
 }
 
-.cacchuongtrinhtrangchu .ndct .thoigian .a {
-}
+.cacchuongtrinhtrangchu .ndct .thoigian .a {}
 
 .cacchuongtrinhtrangchu .ndct .diadiem {
   display: flex;
@@ -2092,8 +2123,7 @@ a:hover {
   gap: 8px;
 }
 
-.nuttuongtac {
-}
+.nuttuongtac {}
 
 .nuttuongtac .button-group {
   display: flex;
@@ -2381,8 +2411,7 @@ a:hover {
   fill: #3aa735;
 }
 
-.tailieu .a .nut {
-}
+.tailieu .a .nut {}
 
 .tailieu .a .nut a {
   color: #fff;
@@ -3187,8 +3216,7 @@ transition: opacity 0.3s ease;
   margin-top: 16px;
 }
 
-.chuongtrinhduoctochuc .main .b {
-}
+.chuongtrinhduoctochuc .main .b {}
 
 .chuongtrinhduoctochuc .main .b .c {
   color: white;
@@ -3636,8 +3664,7 @@ transition: opacity 0.3s ease;
   padding: 0 16px;
 }
 
-.dsbaivietchuyenmuc .bvchuyenmuc .anhbia {
-}
+.dsbaivietchuyenmuc .bvchuyenmuc .anhbia {}
 
 .dsbaivietchuyenmuc .bvchuyenmuc .anhbia img {
   width: 100%;
@@ -3844,8 +3871,7 @@ transition: opacity 0.3s ease;
   margin: 32px 0;
 }
 
-.noidungbaiviet .anhbiabaiviet {
-}
+.noidungbaiviet .anhbiabaiviet {}
 
 .noidungbaiviet .anhbiabaiviet img {
   border-radius: 8px;
@@ -3889,6 +3915,7 @@ transition: opacity 0.3s ease;
   position: relative;
   border-radius: 8px;
 }
+
 .noidungbaiviet .faq-question::before {
   content: "";
   position: absolute;
@@ -3929,6 +3956,7 @@ transition: opacity 0.3s ease;
   position: relative;
   padding-left: 24px;
 }
+
 .noidungbaiviet .faq-item .faq-answer p::before {
   content: "";
   position: absolute;
@@ -4351,8 +4379,7 @@ transition: opacity 0.3s ease;
   object-fit: cover;
 }
 
-.psk .sukien-tags {
-}
+.psk .sukien-tags {}
 
 .psk .sukien-tags .tag {
   background: #d1fadf;
@@ -4404,11 +4431,9 @@ transition: opacity 0.3s ease;
   /* 162.5% */
 }
 
-.skw .a {
-}
+.skw .a {}
 
-.skw .b {
-}
+.skw .b {}
 
 .dai-full {
   width: 100%;
@@ -4466,6 +4491,7 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .psk .sukien-sidebar {
     width: 100%;
   }
@@ -4478,11 +4504,13 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .noidungbaiviet .ttsk .a .td2,
   .noidungbaiviet .ttsk .b {
     max-width: 100%;
     width: 100%;
   }
+
   .noidungbaiviet .banner-content {
     padding: 150px 0 30px 0;
   }
@@ -4495,12 +4523,15 @@ transition: opacity 0.3s ease;
     width: 100%;
     border-radius: 0;
   }
+
   .dangkysukien .boxdangkysk {
     border-radius: 0;
   }
+
   .noidungbaiviet .ttsk .a .td2 {
     font-size: 30px;
   }
+
   .breadcrumb .breadcrumb-title {
     display: none;
   }
@@ -4602,14 +4633,11 @@ transition: opacity 0.3s ease;
   margin-top: 48px;
 }
 
-.thongtinlienhe {
-}
+.thongtinlienhe {}
 
-.thongtinlienhe {
-}
+.thongtinlienhe {}
 
-.thongtinlienhe {
-}
+.thongtinlienhe {}
 
 .dscacbaivietxemthem {
   display: flex;
@@ -4626,8 +4654,7 @@ transition: opacity 0.3s ease;
   padding: 0 16px;
 }
 
-.dscacbaivietxemthem .listbv .anhbia {
-}
+.dscacbaivietxemthem .listbv .anhbia {}
 
 .dscacbaivietxemthem .listbv .anhbia img {
   width: 100%;
@@ -4766,6 +4793,7 @@ transition: opacity 0.3s ease;
 .noidungbaiviet {
   background: linear-gradient(to bottom, #ffffff 0%, #f5faf1 50%, #e0f5df 100%);
 }
+
 .daotao {
   /* max-width: 1280px;
   margin: auto; */
@@ -4880,11 +4908,11 @@ transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
-.nda .radio-option input[type="radio"]:checked + .radio-custom {
+.nda .radio-option input[type="radio"]:checked+.radio-custom {
   border-color: #3aa735;
 }
 
-.nda .radio-option input[type="radio"]:checked + .radio-custom::after {
+.nda .radio-option input[type="radio"]:checked+.radio-custom::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -5027,8 +5055,7 @@ transition: opacity 0.3s ease;
   border-top-right-radius: 8px;
 }
 
-.daotao .training-tags {
-}
+.daotao .training-tags {}
 
 .daotao .training-tags .tag {
   background: #d1fadf;
@@ -5277,6 +5304,7 @@ transition: opacity 0.3s ease;
 }
 
 @media (max-width: 800px) {
+
   .ndlienhe .chia .a,
   .ndlienhe .chia .map {
     flex: 100%;
@@ -5324,25 +5352,30 @@ transition: opacity 0.3s ease;
     font-size: 40px;
     line-height: 1.4;
   }
+
   .conso-chuongtrinh .main {
     max-width: 90%;
     width: 90%;
   }
+
   .cacchuongtrinhtrangchu {
     margin: 48px 0 0 0;
     gap: 20px;
   }
+
   .cacchuongtrinhtrangchu .ct1,
   .cacchuongtrinhtrangchu .ct2,
   .cacchuongtrinhtrangchu .ct3 {
     margin-left: 0;
     margin-right: 0;
   }
+
   .cacchuongtrinhtrangchu .ct1 .bn img,
   .cacchuongtrinhtrangchu .ct2 .bn img,
   .cacchuongtrinhtrangchu .ct3 .bn img {
     height: 250px;
   }
+
   .nuttuongtac .btn-register,
   .nuttuongtac .btn-outline {
     padding: 14px 16px;
@@ -5359,10 +5392,12 @@ transition: opacity 0.3s ease;
     flex-wrap: nowrap;
     width: 90%;
   }
+
   .chuongtrinhduoctochuc .main .a,
   .chuongtrinhduoctochuc .main .b {
     width: 100%;
   }
+
   .cacchuongtrinhtrangchu {
     display: flex;
     justify-content: flex-start;
@@ -5371,16 +5406,19 @@ transition: opacity 0.3s ease;
     flex-wrap: nowrap;
     margin: 48px 0 0 0;
   }
+
   .cacchuongtrinhtrangchu .ct1,
   .cacchuongtrinhtrangchu .ct2,
   .cacchuongtrinhtrangchu .ct3 {
     width: 100%;
   }
+
   .cacchuongtrinhtrangchu .ct1 .bn img,
   .cacchuongtrinhtrangchu .ct2 .bn img,
   .cacchuongtrinhtrangchu .ct3 .bn img {
     height: 300px;
   }
+
   .tongquanchuongtrinh .ttt {
     padding-top: 48px;
     display: flex;
@@ -5388,17 +5426,20 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .tongquanchuongtrinh .ttt .vd,
   .tongquanchuongtrinh .ttt .nd {
     width: 90%;
     margin: auto;
   }
+
   .dsfb {
     margin-top: 40px;
     display: flex;
     gap: 24px;
     flex-direction: column;
   }
+
   .baiviet-daotao article .baivietdaotao {
     display: flex;
     flex-direction: row;
@@ -5409,10 +5450,12 @@ transition: opacity 0.3s ease;
     width: 90%;
     margin: auto;
   }
+
   .cacchuongtrinh .ds .other-training-card {
     flex: 1 0 300px;
     max-width: 100%;
   }
+
   .noidungbaiviet .title-wrapper {
     max-width: 90%;
   }
@@ -5424,12 +5467,15 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .baiviet-daotao article .baivietdaotao .boxdangky {
     width: 100%;
   }
+
   .noidungbaiviet .banner-content h1 {
     font-size: 25px;
   }
+
   .noidungbaiviet .post-content-wrapper {
     margin: 0;
   }
@@ -5439,13 +5485,16 @@ transition: opacity 0.3s ease;
   .slider-trangchu .nav-button {
     display: none;
   }
+
   .slider-trangchu .slide-content {
     width: 76%;
     padding: 0px;
   }
+
   .newsletter-form input[type="email"] {
     width: 100%;
   }
+
   .conso-chuongtrinh .highlight-numbers {
     display: flex;
     justify-content: center;
@@ -5454,11 +5503,13 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .sukiensapdienra .main {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .event-details {
     display: flex;
     flex-direction: column;
@@ -5466,14 +5517,17 @@ transition: opacity 0.3s ease;
     align-items: center;
     justify-content: center;
   }
+
   .sukiensapdienra .event-details h2,
   .sukiensapdienra .event-details p,
   .sukiensapdienra .event-cards {
     max-width: 95%;
   }
+
   .sukiensapdienra .event-cards {
     grid-template-columns: auto;
   }
+
   .sukiensapdienra .event-image {
     position: absolute;
     top: 185px;
@@ -5482,6 +5536,7 @@ transition: opacity 0.3s ease;
     height: 45%;
     z-index: 1;
   }
+
   .tailieu .main {
     display: flex;
     justify-content: space-between;
@@ -5489,33 +5544,41 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .tailieu .a,
   .tailieu .b {
     max-width: 90%;
     margin: auto;
   }
+
   .tailieu .b {
     display: none;
   }
+
   .tintuctrangchu .dsbv .bvtt {
     display: flex;
     gap: 24px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .tintuctrangchu .dsbv .bvtt .anh,
   .tintuctrangchu .dsbv .bvtt .ttbv {
     width: 100%;
   }
+
   .tintuctrangchu .dsbv .bvtt.chan .anh {
     order: 1;
   }
+
   .tintuctrangchu .dsbv .bvtt.chan .ttbv {
     order: 2;
   }
+
   .tintuctrangchu .main {
     width: 90%;
   }
+
   .ceo .main {
     display: flex;
     flex-direction: column;
@@ -5524,15 +5587,18 @@ transition: opacity 0.3s ease;
     justify-content: center;
     gap: 30px;
   }
+
   .ceo .main .hinh {
     width: 80%;
     text-align: center;
     padding-top: 40px;
   }
+
   .ceo .main .thongtin {
     width: 90%;
     padding-bottom: 40px;
   }
+
   .footer-links {
     display: flex;
     justify-content: space-around;
@@ -5541,12 +5607,15 @@ transition: opacity 0.3s ease;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .footer-column {
     flex: 1 0 200px;
   }
+
   .muctieuthamdu-chuyenmuc {
     display: none;
   }
+
   .chuyenmuc-thongke .main {
     display: flex;
     align-items: center;
@@ -5555,6 +5624,7 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .chuyenmuc-giatri .thongtinkhac {
     display: flex;
     gap: 40px;
@@ -5562,20 +5632,25 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .chuyenmuc-giatri .thongtinkhac .card-nd {
     max-width: 90%;
     margin: auto;
   }
+
   .chuyenmuc-giatri .thongtinkhac .c {
     margin-top: 50px;
   }
+
   .chuyenmuc-giatri .thongtinkhac .b {
     text-align: center;
   }
+
   .chuyenmuc-giatri .thongtinkhac .b img {
     width: 90%;
     max-width: 500px;
   }
+
   .doituongthamdu-chuyenmuc .doituong-thamdu {
     display: flex;
     gap: 24px;
@@ -5583,10 +5658,12 @@ transition: opacity 0.3s ease;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .doituongthamdu-chuyenmuc .right-panel {
     width: 100%;
     height: 400px;
   }
+
   .site-footer .main {
     width: 90%;
     margin: auto;
@@ -5607,52 +5684,65 @@ transition: opacity 0.3s ease;
     align-items: center;
     width: 100%;
   }
+
   .newsletter-form input[type="email"] {
     padding: 15px 20px;
   }
+
   .cacchuongtrinhtrangchu .ct1 .bn img,
   .cacchuongtrinhtrangchu .ct2 .bn img,
   .cacchuongtrinhtrangchu .ct3 .bn img {
     height: 200px;
   }
+
   .slider-trangchu .slide-content h1 {
     font-size: 25px;
     line-height: 1.4;
   }
+
   /* .conso-chuongtrinh {
         padding: 40px 0;
     } */
   .conso-chuongtrinh .motaconso {
     margin: 15px 0 10px 0;
   }
+
   .conso-chuongtrinh .highlight-numbers span#number1,
   .conso-chuongtrinh .highlight-numbers span#number2,
   .conso-chuongtrinh .highlight-numbers span#number3 {
     font-size: 68px;
   }
+
   .cacchuongtrinhtrangchu .ndct .tensk {
     font-size: 16px;
   }
+
   .cacchuongtrinhtrangchu .ndct .thoigian,
   .cacchuongtrinhtrangchu .ndct .diadiem {
     font-size: 14px;
   }
+
   .sukiensapdienra .event-card h3 {
     font-size: 18px;
   }
+
   .tailieu .a .nut a {
     font-size: 14px;
   }
+
   .tintuctrangchu .dsbv .ttbv .tieude {
     font-size: 18px;
     line-height: 1.4;
   }
+
   .tintuctrangchu .dsbv {
     gap: 35px;
   }
+
   .chuyenmuc-thongke .counter {
     font-size: 68px;
   }
+
   .chuongtrinhduoctochuc .main .b .c {
     display: flex;
     align-items: center;
@@ -5661,9 +5751,11 @@ transition: opacity 0.3s ease;
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
   .chuongtrinhduoctochuc .main .b .dsct {
     gap: 42px;
   }
+
   .chuongtrinhduoctochuc .main .b .dsct .cc {
     display: flex;
     align-items: center;
@@ -5673,9 +5765,11 @@ transition: opacity 0.3s ease;
     flex-wrap: nowrap;
     width: 100%;
   }
+
   .chuongtrinhduoctochuc .main .b .dsct .cc .cc-ic {
     margin: -50px 0 0 0;
   }
+
   .chuongtrinhduoctochuc .main .b .dsct .cc .cc-tit {
     text-align: center;
     border-right: 0;
@@ -5683,15 +5777,19 @@ transition: opacity 0.3s ease;
     padding: 0 0 10px 0;
     width: 100%;
   }
+
   .khungnoidungchuongtrinh .dsnd .a {
     flex: 1 0 250px;
   }
+
   .baivietdaotao .noidung {
     order: 2;
   }
+
   .baivietdaotao .boxdangky {
     order: 1;
   }
+
   /* tit chung */
   /* tit chung */
   /* tit chung */
@@ -5714,6 +5812,7 @@ transition: opacity 0.3s ease;
     font-size: 24px;
     line-height: 1.5;
   }
+
   .conso-chuongtrinh .motaconso,
   .sukiensapdienra .event-details p,
   .tailieu .a .mota,
@@ -5725,43 +5824,54 @@ transition: opacity 0.3s ease;
     font-size: 16px;
     line-height: 1.5;
   }
+
   .khungnoidungchuongtrinh .main,
   .doituongthamdu-chuyenmuc .main,
   .ketnoicacthanhvien .main {
     width: 90%;
   }
+
   .footer-newsletter h2 {
     font-size: 20px;
   }
+
   .cacchuongtrinh.xemthemformtrangdangky {
     display: none;
   }
+
   .noidungbaiviet .banner-content {
     padding: 100px 0 50px 0;
   }
+
   .chuyenmucbaiviet .archive-banner {
     padding: 100px 0;
   }
+
   .footer-bottom p {
     gap: 10px;
   }
+
   .slider-trangchu {
     height: 400px;
   }
+
   .slider-trangchu .slide-content h1 {
     font-size: 24px;
   }
+
   .slider-trangchu .slide-content p {
     font-size: 16px;
     font-weight: 500;
   }
+
   #mobile-primary-menu ul.sub-menu li a {
     font-size: 17px;
     padding: 7px 20px 7px 20px;
   }
+
   #mobile-primary-menu ul.sub-menu {
     padding: 7px 0 !important;
   }
-  #mobile-primary-menu ul.sub-menu li:nth-child(n + 2) a {
-  }
+
+  #mobile-primary-menu ul.sub-menu li:nth-child(n + 2) a {}
 }

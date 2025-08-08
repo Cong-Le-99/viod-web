@@ -931,7 +931,7 @@
   line-height: 26px;
   color: #0c3555;
   margin: 0;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 .member-certificate .member-name {

@@ -167,7 +167,7 @@ $acac_members = array(
         'gender' => 'Ông',
         'name' => 'Nguyễn Anh Tuấn',
         'position' => 'Chủ tịch, ACAC <br class="d-none d-md-block"> Thành viên, AAC <br class="d-none d-md-block"> Chủ tịch HĐQT,Tổng CTCP<br class="d-none d-md-block"> Tái Bảo hiểm Quốc gia Việt<br class="d-none d-md-block"> Nam (VINARE)​',
-        'image' => 'nguyen-anh-tuan.png',
+        'image' => 'Nguyen-Anh-TUAN.png',
         'position_more' => array(
             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
             'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
