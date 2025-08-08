@@ -15,7 +15,7 @@ $team_members = array(
         'gender' => 'female',
         'name' => 'Hà Thu Thanh',
         'position' => 'Chủ tịch HĐQT Luật sư<br class="d-none d-md-block"> Đoàn Luật sư TP.<br class="d-none d-md-block"> Hà Nội',
-        'image' => 'lecturer-1.png',
+        'image' => 'ha-thu-thanh.png',
         'position_more' => array(
             'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
             'Luật sư hành nghề, Đoàn Luật sư Thành phố Hà Nội'
@@ -164,10 +164,10 @@ Các bài viết của ông đã xuất hiện trên các tờ báo và tạp ch
 // Dữ liệu Hội đồng tư vấn phát triển thực hành UBKT (ACAC - Audit Committee Advisory Council)
 $acac_members = array(
     array(
-        'gender' => 'male',
+        'gender' => 'Ông',
         'name' => 'Nguyễn Anh Tuấn',
         'position' => 'Chủ tịch, ACAC <br class="d-none d-md-block"> Thành viên, AAC <br class="d-none d-md-block"> Chủ tịch HĐQT,Tổng CTCP<br class="d-none d-md-block"> Tái Bảo hiểm Quốc gia Việt<br class="d-none d-md-block"> Nam (VINARE)​',
-        'image' => 'lecturer-5.png',
+        'image' => 'nguyen-anh-tuan.png',
         'position_more' => array(
             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
             'Thành viên, Ban Cố vấn Chuyên môn, VIOD​',
@@ -181,7 +181,7 @@ $acac_members = array(
 Ông Tuấn tốt nghiệp cử nhân Đại học Ngoại thương Hà Nội và có bằng Thạc Sỹ Luật Kinh doanh Quốc tế của Pháp. Với mong muốn góp phần vào nâng cao nhận thức, hiệu quả của quản trị công ty đối với các doanh nghiệp Việt Nam, Ông đã tham gia nhiều hoạt động do VIOD tổ chức trên cương vị là diễn giả, tham gia các phiên thảo luận, là Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​, Phó Chủ tịch Câu lạc bộ các Chủ tịch HĐQT (Chair Club), thành viên Ban Cố vấn Chuyên môn VIOD và là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP).'
     ),
     array(
-        'gender' => 'female',
+        'gender' => 'Bà',
         'name' => 'Lê Thị Tuyết Nhung',
         'position' => 'Đồng Chủ tịch Phó Cục<br class="d-none d-md-block"> trưởng, Cục Quản lý Giá, Bộ<br class="d-none d-md-block"> Tài chính Nguyên Phó Cục<br class="d-none d-md-block"> trưởng Cục Quản lý, Giám<br class="d-none d-md-block"> sát Kế toán, Kiểm toán, Bộ Tài chính',
         'image' => 'le-thi-tuyet-nhung.png',
@@ -201,7 +201,7 @@ $acac_members = array(
             <div class="row">
                 <div class="col-12">
                     <div class="team-members">
-                        <?php 
+                        <?php
                         $member_count = count($team_members);
                         $layout_class = '';
                         if ($member_count == 10) {
@@ -220,8 +220,8 @@ $acac_members = array(
                                     <div class="member-image-wrapper">
                                         <div class="member-image">
                                             <div class="member-image-overlay">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>" 
-                                                    alt="<?php echo $member['name']; ?>" 
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/<?php echo $member['image']; ?>"
+                                                    alt="<?php echo $member['name']; ?>"
                                                     class="member-photo">
                                             </div>
                                         </div>
@@ -285,7 +285,7 @@ $acac_members = array(
                                         </div>
                                         <div class="member-info">
                                             <h4 class="member-title">
-                                                <?php echo ($member['gender'] == 'male')?>
+                                                <?php echo ($member['gender']) ?>
                                             </h4>
                                             <h3 class="member-name"><?php echo $member['name']; ?></h3>
                                             <p class="member-position"><?php echo $member['position']; ?></p>
@@ -305,42 +305,44 @@ $acac_members = array(
 </div>
 
 <script>
-// Truyền dữ liệu từ PHP sang JavaScript
-var boardMembersData = <?php echo json_encode($team_members); ?>;
-var aacMembersData = <?php echo json_encode($aac_members); ?>;
-var acacMembersData = <?php echo json_encode($acac_members); ?>;
+    // Truyền dữ liệu từ PHP sang JavaScript
+    var boardMembersData = <?php echo json_encode($team_members); ?>;
+    var aacMembersData = <?php echo json_encode($aac_members); ?>;
+    var acacMembersData = <?php echo json_encode($acac_members); ?>;
 
-document.addEventListener('DOMContentLoaded', function() {
-    function showLecturerModal(member) {
-        document.getElementById('lecturerImage').src = '<?php echo get_template_directory_uri(); ?>/images/' + member.image;
-        document.getElementById('lecturerPrefix').innerText = (member.gender === 'male') ? 'Ông' : 'Bà';
-        document.getElementById('lecturerName').innerText = member.name;
-        var posHtml = '';
-        if (member.position_more && Array.isArray(member.position_more)) {
-            posHtml = member.position_more.map(function(pos) { return '<div>' + pos + '</div>'; }).join('');
-        }
-        document.getElementById('lecturerPositions').innerHTML = posHtml;
-        document.getElementById('lecturerBiography').innerHTML = member.biography;
-        var modal = new bootstrap.Modal(document.getElementById('lecturerModal'));
-        modal.show();
-    }
-    
-    document.querySelectorAll('.team-member[data-group="board"], .team-member[data-group="aac"], .team-member[data-group="acac"]').forEach(function(el) {
-        el.addEventListener('click', function() {
-            var group = el.getAttribute('data-group');
-            var index = parseInt(el.getAttribute('data-index'));
-            var member;
-            if (group === 'board') {
-                member = boardMembersData[index];
-            } else if (group === 'aac') {
-                member = aacMembersData[index];
-            } else if (group === 'acac') {
-                member = acacMembersData[index];
+    document.addEventListener('DOMContentLoaded', function() {
+        function showLecturerModal(member) {
+            document.getElementById('lecturerImage').src = '<?php echo get_template_directory_uri(); ?>/images/' + member.image;
+            document.getElementById('lecturerPrefix').innerText = member.gender;
+            document.getElementById('lecturerName').innerText = member.name;
+            var posHtml = '';
+            if (member.position_more && Array.isArray(member.position_more)) {
+                posHtml = member.position_more.map(function(pos) {
+                    return '<div>' + pos + '</div>';
+                }).join('');
             }
-            showLecturerModal(member);
+            document.getElementById('lecturerPositions').innerHTML = posHtml;
+            document.getElementById('lecturerBiography').innerHTML = member.biography;
+            var modal = new bootstrap.Modal(document.getElementById('lecturerModal'));
+            modal.show();
+        }
+
+        document.querySelectorAll('.team-member[data-group="board"], .team-member[data-group="aac"], .team-member[data-group="acac"]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                var group = el.getAttribute('data-group');
+                var index = parseInt(el.getAttribute('data-index'));
+                var member;
+                if (group === 'board') {
+                    member = boardMembersData[index];
+                } else if (group === 'aac') {
+                    member = aacMembersData[index];
+                } else if (group === 'acac') {
+                    member = acacMembersData[index];
+                }
+                showLecturerModal(member);
+            });
         });
     });
-});
 </script>
 
 <!-- Modal thông tin giảng viên -->
