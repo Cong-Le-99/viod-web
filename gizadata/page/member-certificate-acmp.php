@@ -357,7 +357,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Phạm Hải Âu',
-                        'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
+                        'position' => 'Giám đốc Quản trị Rủi ro<br class="d-none d-md-block">Ngân hàng Quốc Dân (NCB)',
                         'image' => 'lecturer-17.png',
                         'position_more' => array(
                             'Giám đốc Quản trị Rủi ro – Ngân hàng Quốc Dân (NCB)'
@@ -367,7 +367,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Lưu Tuyền',
-                        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
+                        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br class="d-none d-md-block">Tập đoàn Nam Long<br class="d-none d-md-block">Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
                         'image' => 'lecturer-18.png',
                         'position_more' => array(
                             'Chuyên gia Ủy Ban kiểm Toán Tập đoàn Nam Long',
@@ -378,7 +378,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Đồng Thị Thu Hương',
-                        'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
+                        'position' => 'Chuyên gia độc lập<br class="d-none d-md-block">Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
                         'image' => 'lecturer-19.png',
                         'position_more' => array(
                             'Chuyên gia độc lập',
@@ -437,7 +437,7 @@ get_header();
                     array(
                         'gender' => 'male',
                         'name' => 'Phạm Hải Âu ',
-                        'position' => 'Giám đốc Quản trị Rủi ro<br>Ngân hàng Quốc Dân (NCB)',
+                        'position' => 'Giám đốc Quản trị Rủi ro<br class="d-none d-md-block">Ngân hàng Quốc Dân (NCB)',
                         'image' => 'lecturer-8.png',
                         'position_more' => array(
                             'Giám đốc Quản trị Rủi ro – Ngân hàng Quốc Dân (NCB)'
@@ -447,7 +447,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Nguyễn Lưu Tuyền',
-                        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br>Tập đoàn Nam Long<br>Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
+                        'position' => 'Chuyên gia Ủy Ban kiểm Toán<br class="d-none d-md-block">Tập đoàn Nam Long<br class="d-none d-md-block">Thành viên Hội đồng tư vấn phát triển thực hành UBKT (VIOD)',
                         'image' => 'lecturer-9.png',
                         'position_more' => array(
                             'Chuyên gia Ủy Ban kiểm Toán Tập đoàn Nam Long',
@@ -458,7 +458,7 @@ get_header();
                     array(
                         'gender' => 'female',
                         'name' => 'Đồng Thị Thu Hương',
-                        'position' => 'Chuyên gia độc lập<br>Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
+                        'position' => 'Chuyên gia độc lập<br class="d-none d-md-block">Thành viên Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD',
                         'image' => 'lecturer-12.png',
                         'position_more' => array(
                             'Chuyên gia độc lập',
