@@ -60,6 +60,25 @@ a:hover {
   margin: auto;
 }
 
+/* form đăng ký  */
+.team-member.contact-form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.team-member.contact-form .forminator-radio-bullet{
+  width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex: 0 0 16px;
+    background: #fff;
+    border-color: #0C3555;
+}
+.team-member.contact-form .forminator-radio-bullet::before{
+  background-color: #0C3555;
+}
+
 /* --- TOPBAR --- */
 
 .topbar {
@@ -1712,6 +1731,7 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
+
 @media (min-width: 1512px) {
   .slider-trangchu {
     height: 660px;
