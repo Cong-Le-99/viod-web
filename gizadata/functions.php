@@ -642,3 +642,4 @@ function viod_breadcrumb() {
 // post type
 require_once get_stylesheet_directory() . '/post-type/sukien.php';
 require_once get_stylesheet_directory() . '/post-type/chuongtrinhdaotao.php';
+

@@ -665,6 +665,80 @@
   transition: all 0.3s ease;
 }
 
+/* Publication Display Container */
+.publication-display {
+  position: relative;
+  height: 888px;
+}
+
+.publication-display img {
+  width: 100%;
+  height: 432px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Posts Grid trong Publication Display */
+.publication-display .posts-grid-pdf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  height: 100%;
+  padding: 8px;
+}
+
+.publication-display .post-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.publication-display .post-card-image-pdf {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.publication-display .post-card-image-pdf img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.publication-display .pdf-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.publication-display .post-card:hover .pdf-overlay {
+  opacity: 1;
+}
+
+.publication-display .pdf-icon {
+  margin-bottom: 8px;
+}
+
+.publication-display .pdf-text {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
 /* --- Partner Slider Section --- */
 .partners-slider-wrapper {
   overflow: hidden;
