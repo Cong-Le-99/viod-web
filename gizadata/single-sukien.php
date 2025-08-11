@@ -149,12 +149,9 @@ if (have_posts()) :
 
             <div class="thongtinlienhe">
                 <div class="main">
-
-                    <div class="tit">
+                    <h2 class="title">
                         NHỮNG SỰ KIỆN KHÁC
-                    </div>
-
-                    
+                    </h2>
                     <div class="nhungsukienkhac">
                         <div class="post-archive-grid">
                             <?php

@@ -1,39 +1,36 @@
 <?php
-// Mảng dữ liệu sự kiện sắp diễn ra
-$upcoming_events = [
-    [
-        'tags' => ['EVENT', 'NETWORKING'],
-        'title' => '[Event] HỘI THẢO CHUYÊN ĐỀ',
-        'date' => '16 Apr 2025',
-        'time' => '3:00 PM - 6:00 PM',
-        'location' => 'Hanoi',
-        'link' => '#'
-    ],
-    [
-        'tags' => ['EVENT', 'NETWORKING'],
-        'title' => '[Event] DIRECTOR TALK #22',
-        'date' => '16 Apr 2025',
-        'time' => '3:00 PM - 6:00 PM',
-        'location' => 'Hanoi',
-        'link' => '#'
-    ],
-    [
-        'tags' => ['EVENT', 'NETWORKING'],
-        'title' => '[Event] MEMBER NETWORKING: Thuế đối ứng',
-        'date' => '16 Apr 2025',
-        'time' => '3:00 PM - 6:00 PM',
-        'location' => 'Hanoi',
-        'link' => '#'
-    ],
-    [
-        'tags' => ['EVENT', 'NETWORKING'],
-        'title' => '[Event] CHƯƠNG TRÌNH CHỨNG NHẬN THÀNH VIÊN HĐQT',
-        'date' => '16 Apr 2025',
-        'time' => '3:00 PM - 6:00 PM',
-        'location' => 'Hanoi',
-        'link' => '#'
-    ]
-];
+// Lấy dữ liệu từ ACF field "upcoming_events"
+$home_data = get_field('home'); 
+$upcoming_events = $home_data['upcoming_events']; 
+
+// Kiểm tra và giới hạn số lượng events
+if (is_array($upcoming_events)) {
+    $upcoming_events = array_slice($upcoming_events, 0, 4);
+} else {
+    $upcoming_events = [];
+}
+
+// Chuyển đổi dữ liệu ACF thành format phù hợp
+$formatted_events = [];
+if (is_array($upcoming_events) && !empty($upcoming_events)) {
+    foreach ($upcoming_events as $event) {
+        if (is_object($event) && isset($event->ID)) {
+            // Nếu là post object từ ACF
+            $formatted_events[] = [
+                'tags' => wp_get_post_terms($event->ID, 'post_tag', ['fields' => 'names']) ?: ['EVENT', 'NETWORKING'],
+                'title' => $event->post_title,
+                'date' => get_the_date('d M Y', $event->ID),
+                'time' => get_field('event_time', $event->ID) ?: '3:00 PM - 6:00 PM',
+                'location' => get_field('event_location', $event->ID) ?: 'Hanoi',
+                'link' => get_permalink($event->ID)
+            ];
+        } elseif (is_array($event)) {
+            // Nếu đã là array format
+            $formatted_events[] = $event;
+        }
+    }
+}
+
 ?>
 
 <div class="sukiensapdienra">
@@ -43,17 +40,17 @@ $upcoming_events = [
             <p>Được tổ chức thường xuyên nhằm nâng cao nhận thức về các thông lệ QTCT tốt và cập nhật cho các thành viên HĐQT những xu hướng mới nhất trong QTCT.</p>
             <a href="/su-kien/" class="event-link">XEM THÊM →</a>
             <div class="event-cards">
-                <?php foreach ($upcoming_events as $event): ?>
-                    <div class="post-card-border position-relative card-event card-event-session card-hover">
+                <?php foreach ($formatted_events as $event): ?>
+                    <a href="<?php echo $event['link']; ?>" class="post-card-border position-relative card-event card-event-session card-hover" style="text-decoration: none; display: block;">
                       
                         <div class="card-event_content">
                             <div class="card-event_tag">
                                 <?php foreach($event['tags'] as $tag): ?>
-                                    <span><?php echo $tag; ?></span>
+                                    <span><?php echo htmlspecialchars($tag); ?></span>
                                 <?php endforeach; ?>
                             </div>
                             <div class="card-event_title card-event_title-event">
-                                <?php echo $event['title']; ?>
+                                <?php echo htmlspecialchars($event['title']); ?>
                             </div>
                             <div class="card-event_time">
                                 <div class="a">
@@ -73,9 +70,9 @@ $upcoming_events = [
                                 </div>
                                 
                             </div>
-                            <a href="/su-kien/" class="post-card-readmore">ĐỌC THÊM →</a>
+                            <div class="post-card-readmore">ĐỌC THÊM →</div>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>
