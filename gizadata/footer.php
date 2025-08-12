@@ -1,6 +1,6 @@
 
     <footer class="site-footer">
-        <div class="footer-newsletter">
+        <div class="footer-newsletter text-uppercase">
             <h2>Đăng ký nhận tin từ VIOD để xem bài viết mới và tham gia các sự kiện sớm nhất</h2>
             <form action="#" class="newsletter-form">
                 <input type="email" placeholder="Email*" required>

@@ -215,13 +215,13 @@ $acac_members = array(
                         <?php
                         $member_count = count($team_members);
                         $layout_class = '';
-                        if ($member_count == 10) {
+                        if ($member_count === 10) {
                             $layout_class = 'layout-10';
-                        } elseif ($member_count == 8) {
+                        } elseif ($member_count === 8) {
                             $layout_class = 'layout-8';
-                        } elseif ($member_count == 7) {
+                        } elseif ($member_count === 7) {
                             $layout_class = 'layout-7';
-                        } elseif ($member_count == 5) {
+                        } elseif ($member_count === 5) {
                             $layout_class = 'layout-5';
                         }
                         ?>

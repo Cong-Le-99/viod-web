@@ -653,7 +653,7 @@ a:hover {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  max-width: 765px;
+  /* max-width: 765px; */
   margin: 0 auto;
 }
 

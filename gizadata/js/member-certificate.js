@@ -49,6 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(checkTextHeight, 100);
   window.addEventListener("resize", checkTextHeight);
 
+  // Bỏ qua auto-layout trên trang Hội đồng quản trị
+  if (document.querySelector(".board-of-directors")) {
+    return;
+  }
+
   // Logic hiển thị giảng viên - mặc định 7 người (hoặc 5 cho CSMP)
   // Chỉ lấy những team member không có class team-member-not-more
   const allTeamMembers = document.querySelectorAll(".team-member");
