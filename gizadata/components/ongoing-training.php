@@ -7,45 +7,74 @@ $default_image = get_template_directory_uri() . '/images/default.png';
 $current_trainings = (isset($home_data['home_current_trainings']) && is_array($home_data['home_current_trainings']))
     ? $home_data['home_current_trainings']
     : [];
-$upcoming_trainings = (isset($home_data['upcoming_training_programs']) && is_array($home_data['upcoming_training_programs']))
-    ? $home_data['upcoming_training_programs']
-    : [];
+// $upcoming_trainings = (isset($home_data['upcoming_training_programs']) && is_array($home_data['upcoming_training_programs']))
+//     ? $home_data['upcoming_training_programs']
+//     : [];
 
-// Gộp A + B => C, ưu tiên A trước B
-$merged_programs = array_merge($current_trainings, $upcoming_trainings);
 
 // Giới hạn hiển thị còn 3 phần tử
-$training_programs = array_slice($merged_programs, 0, 3);
+$training_programs = array_slice($current_trainings, 0, 3);
 
 // Chuyển đổi dữ liệu ACF thành format phù hợp
 $formatted_programs = [];
 if (is_array($training_programs)) {
     foreach ($training_programs as $program) {
         if (is_object($program) && isset($program->ID)) {
-            // Nếu là post object từ ACF
-            $formatted_programs[] = [
+            // Xác định loại bài viết để map đúng field
+            $post_type = get_post_type($program->ID);
+
+            // Trường chung
+            $item = [
                 'id' => $program->ID,
                 'title' => $program->post_title,
                 'image' => get_the_post_thumbnail_url($program->ID, 'full') ?: $default_image,
                 'tags' => wp_get_post_terms($program->ID, 'post_tag', ['fields' => 'names']) ?: [],
                 'date' => get_field('ngay', $program->ID) ?: get_the_date('d M Y', $program->ID),
-                // Ưu tiên 'gio', sau đó fallback 'event_time'
                 'time' => get_field('gio', $program->ID) ?: '',
+                'location' => get_field('vitri', $program->ID) ?: '',
+                'googlemap' => '',
+                'language' => '',
                 'countdown' => get_field('countdown_text', $program->ID),
-                // Ưu tiên 'vitri', sau đó fallback 'event_location'
-                'location' => get_field('vitri', $program->ID)  ?: '',
-                'googlemap' => get_field('googlemap', $program->ID),
-                'language' => get_field('ngonngu', $program->ID) ?: '',
                 'badge' => get_field('event_badge', $program->ID),
                 'register_text' => get_field('register_text', $program->ID) ?: 'ĐĂNG KÝ NGAY',
-                'permalink' => get_permalink($program->ID)
+                'permalink' => get_permalink($program->ID),
+                'type' => $post_type,
             ];
+
+            // Map riêng theo từng loại
+            if ($post_type === 'sukien') {
+                // Sự kiện: có googlemap, không có ngôn ngữ
+                $item['googlemap'] = get_field('googlemap', $program->ID) ?: '';
+                $item['language'] = '';
+            } elseif ($post_type === 'training_program') {
+                // Chương trình đào tạo: có ngôn ngữ, không có google map
+                $item['language'] = get_field('ngonngu', $program->ID) ?: '';
+                $item['googlemap'] = '';
+            } else {
+                // Loại khác: giữ mặc định rỗng
+            }
+
+            $formatted_programs[] = $item;
         } elseif (is_array($program)) {
             // Nếu đã là array format
             $normalized = $program;
             if (empty($normalized['image'])) {
                 $normalized['image'] = $default_image;
             }
+            // Đảm bảo các key tồn tại để view không lỗi
+            $normalized += [
+                'tags' => [],
+                'date' => '',
+                'time' => '',
+                'location' => '',
+                'googlemap' => '',
+                'language' => '',
+                'countdown' => '',
+                'badge' => '',
+                'register_text' => 'ĐĂNG KÝ NGAY',
+                'permalink' => '#',
+                'type' => '',
+            ];
             $formatted_programs[] = $normalized;
         }
     }
@@ -110,14 +139,16 @@ if (empty($formatted_programs)) {
                                         </svg>
                                         <?php echo $program['location']; ?>
                                     </div>
-                                    <div class="flex-fill text-start">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" >
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70484 5.49369C7.59707 5.1973 7.31538 5 7 5C6.68462 5 6.40293 5.1973 6.29516 5.49369L4.29516 10.9937C4.1536 11.383 4.35442 11.8133 4.74369 11.9548C5.13297 12.0964 5.56329 11.8956 5.70484 11.5063L5.89178 10.9922C5.92711 10.9974 5.96325 11 6 11H8.11104L8.29516 11.5063C8.43671 11.8956 8.86703 12.0964 9.25631 11.9548C9.64558 11.8133 9.8464 11.383 9.70484 10.9937L7.70484 5.49369ZM7 7.94463L7.56559 9.5H6.43441L7 7.94463Z" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 8.25L15.1493 8.25C15.1405 8.32198 15.1296 8.40058 15.1161 8.4849C15.049 8.90511 14.9167 9.47895 14.6539 10.0904C14.4652 10.5293 14.2077 10.9892 13.8598 11.4243C14.1545 11.5875 14.491 11.7241 14.8759 11.824C15.2768 11.9281 15.5175 12.3374 15.4135 12.7384C15.3094 13.1393 14.9 13.38 14.4991 13.2759C13.7974 13.0938 13.2099 12.8168 12.7188 12.4826C12.2276 12.8168 11.6401 13.0938 10.9384 13.2759C10.5375 13.38 10.1281 13.1393 10.024 12.7384C9.92 12.3374 10.1607 11.9281 10.5616 11.824C10.9465 11.7241 11.283 11.5875 11.5777 11.4243C11.2298 10.9892 10.9723 10.5293 10.7836 10.0904C10.5208 9.47895 10.3885 8.90511 10.3214 8.4849C10.3079 8.40057 10.297 8.32197 10.2881 8.24999H10.25C9.83576 8.24999 9.49997 7.9142 9.49998 7.49999C9.49998 7.08577 9.83576 6.74999 10.25 6.74999L12 6.74999V6C12 5.58579 12.3358 5.25 12.75 5.25C13.1642 5.25 13.5 5.58579 13.5 6V6.75L15.25 6.75C15.6642 6.75 16 7.08579 16 7.5C16 7.91422 15.6642 8.25 15.25 8.25ZM11.8029 8.24999C11.856 8.58135 11.96 9.02884 12.1617 9.49798C12.2984 9.81595 12.4785 10.1423 12.7188 10.4501C12.959 10.1423 13.1391 9.81595 13.2758 9.49798C13.4775 9.02885 13.5815 8.58136 13.6346 8.25L11.8029 8.24999Z" />
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 15.75H10.6213L9.06066 17.3107C8.63166 17.7397 7.98649 17.868 7.42597 17.6358C6.86546 17.4036 6.5 16.8567 6.5 16.25V15.75H5.5C3.567 15.75 2 14.183 2 12.25V6.25C2 4.317 3.567 2.75 5.5 2.75H14.5C16.433 2.75 18 4.317 18 6.25V12.25C18 14.183 16.433 15.75 14.5 15.75ZM8 16.25L10 14.25H14.5C15.6046 14.25 16.5 13.3546 16.5 12.25V6.25C16.5 5.14543 15.6046 4.25 14.5 4.25H5.5C4.39543 4.25 3.5 5.14543 3.5 6.25V12.25C3.5 13.3546 4.39543 14.25 5.5 14.25H8V16.25Z" />
-                                        </svg>
-                                        <?php echo $program['language']; ?>
-                                    </div>
+                                    <?php if (!empty($program['language'])): ?>
+                                        <div class="flex-fill text-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" >
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70484 5.49369C7.59707 5.1973 7.31538 5 7 5C6.68462 5 6.40293 5.1973 6.29516 5.49369L4.29516 10.9937C4.1536 11.383 4.35442 11.8133 4.74369 11.9548C5.13297 12.0964 5.56329 11.8956 5.70484 11.5063L5.89178 10.9922C5.92711 10.9974 5.96325 11 6 11H8.11104L8.29516 11.5063C8.43671 11.8956 8.86703 12.0964 9.25631 11.9548C9.64558 11.8133 9.8464 11.383 9.70484 10.9937L7.70484 5.49369ZM7 7.94463L7.56559 9.5H6.43441L7 7.94463Z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 8.25L15.1493 8.25C15.1405 8.32198 15.1296 8.40058 15.1161 8.4849C15.049 8.90511 14.9167 9.47895 14.6539 10.0904C14.4652 10.5293 14.2077 10.9892 13.8598 11.4243C14.1545 11.5875 14.491 11.7241 14.8759 11.824C15.2768 11.9281 15.5175 12.3374 15.4135 12.7384C15.3094 13.1393 14.9 13.38 14.4991 13.2759C13.7974 13.0938 13.2099 12.8168 12.7188 12.4826C12.2276 12.8168 11.6401 13.0938 10.9384 13.2759C10.5375 13.38 10.1281 13.1393 10.024 12.7384C9.92 12.3374 10.1607 11.9281 10.5616 11.824C10.9465 11.7241 11.283 11.5875 11.5777 11.4243C11.2298 10.9892 10.9723 10.5293 10.7836 10.0904C10.5208 9.47895 10.3885 8.90511 10.3214 8.4849C10.3079 8.40057 10.297 8.32197 10.2881 8.24999H10.25C9.83576 8.24999 9.49997 7.9142 9.49998 7.49999C9.49998 7.08577 9.83576 6.74999 10.25 6.74999L12 6.74999V6C12 5.58579 12.3358 5.25 12.75 5.25C13.1642 5.25 13.5 5.58579 13.5 6V6.75L15.25 6.75C15.6642 6.75 16 7.08579 16 7.5C16 7.91422 15.6642 8.25 15.25 8.25ZM11.8029 8.24999C11.856 8.58135 11.96 9.02884 12.1617 9.49798C12.2984 9.81595 12.4785 10.1423 12.7188 10.4501C12.959 10.1423 13.1391 9.81595 13.2758 9.49798C13.4775 9.02885 13.5815 8.58136 13.6346 8.25L11.8029 8.24999Z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 15.75H10.6213L9.06066 17.3107C8.63166 17.7397 7.98649 17.868 7.42597 17.6358C6.86546 17.4036 6.5 16.8567 6.5 16.25V15.75H5.5C3.567 15.75 2 14.183 2 12.25V6.25C2 4.317 3.567 2.75 5.5 2.75H14.5C16.433 2.75 18 4.317 18 6.25V12.25C18 14.183 16.433 15.75 14.5 15.75ZM8 16.25L10 14.25H14.5C15.6046 14.25 16.5 13.3546 16.5 12.25V6.25C16.5 5.14543 15.6046 4.25 14.5 4.25H5.5C4.39543 4.25 3.5 5.14543 3.5 6.25V12.25C3.5 13.3546 4.39543 14.25 5.5 14.25H8V16.25Z" />
+                                            </svg>
+                                            <?php echo $program['language']; ?>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
 
                             </div>
