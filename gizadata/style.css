@@ -1793,7 +1793,7 @@ a:hover {
   color: #fff;
   position: relative;
   z-index: 2;
-  width: 90%;
+  width: 100%;
 }
 
 .slider-trangchu .ndslide::before {
@@ -1818,7 +1818,7 @@ a:hover {
   line-height: 100%;
   /* 109.375% */
   margin: 0;
-  max-width: 812px;
+  /* max-width: 812px; */
 }
 
 .slider-trangchu .slide-content p {
@@ -1828,8 +1828,22 @@ a:hover {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  margin: 29px 0 32px 0;
-  max-width: 812px;
+  margin: 24px 0 32px 0;
+  /* max-width: 812px; */
+}
+
+/* Desktop: giữ xuống dòng theo ký tự \n */
+@media (min-width: 801px) {
+  .slider-trangchu .slide-content p.subtitle {
+    white-space: pre-line;
+  }
+}
+
+/* Mobile: hiển thị bình thường */
+@media (max-width: 800px) {
+  .slider-trangchu .slide-content p.subtitle {
+    white-space: normal;
+  }
 }
 
 .slider-trangchu .button {
@@ -1850,18 +1864,24 @@ a:hover {
 
 .slider-trangchu .button:hover {}
 
+.slider-trangchu .nav-button:hover {
+  background: #3AA735;
+  color: #fff;
+}
+
 .slider-trangchu .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
-  opacity: 0.7;
-  background: #fff;
+  background: #FFFFFF33;
+
   display: flex;
   padding: 12px;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
   gap: 10px;
   color: #3aa735;
   border: 0;
@@ -1885,18 +1905,19 @@ a:hover {
   display: flex;
   gap: 8px;
   z-index: 3;
+  transition: all 0.3s ease;
 }
 
 .slider-trangchu .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  background: #3AA7354D;
   border-radius: 50%;
-  opacity: 0.5;
 }
 
 .slider-trangchu .dot.active {
   opacity: 1;
+  background: #3AA735;
 }
 
 /* con số nổi bật và chương trình */
@@ -5538,10 +5559,10 @@ transition: opacity 0.3s ease;
     display: none;
   }
 
-  .slider-trangchu .slide-content {
+  /* .slider-trangchu .slide-content {
     width: 76%;
     padding: 0px;
-  }
+  } */
 
   .newsletter-form input[type="email"] {
     width: 100%;

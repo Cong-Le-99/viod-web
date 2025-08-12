@@ -20,7 +20,7 @@ get_template_part('components/ongoing-training');
 
 get_template_part('trangchu/upcoming-training-programs');
 /* sự kiện sắp diễn ra */
-get_template_part('trangchu/sukiensapdienra');
+// get_template_part('trangchu/sukiensapdienra');
 
 
 
