@@ -133,6 +133,33 @@
   color: #3aa735;
 }
 
+.btn-wrap {
+  display: none;
+}
+
+.btn-wrap .btn-outline-home {
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3aa735;
+  text-decoration: none;
+  border: 2px solid #3aa735;
+  border-radius: 8px;
+  padding: 16px 24px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: Montserrat;
+  font-size: 14px;
+  background: #fff;
+}
+
+.btn-wrap .btn-outline-home:hover {
+  background-color: #e6f7e6 !important;
+  color: #218838 !important;
+}
+
 @media (max-width: 768px) {
   .ongoing-training-swiper .swiper-slide:nth-child(1) {
     margin-left: 0 !important;
@@ -146,6 +173,13 @@
 
 /* Desktop Styles */
 @media (min-width: 768px) {
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+  }
   .professional-title {
     line-height: 32px;
     font-size: 22px;
