@@ -1,5 +1,5 @@
 <section class="core-values">
-    <div class="main">
+    <div class="core-values-container">
         <div class="core-values-grid">
             <div class="core-value-item">
                 <div class="core-value-icon">
@@ -30,9 +30,10 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/development.svg" alt="Development Icon">
                 </div>
                 <h3 class="core-value-title">Phát triển</h3>
-                <p class="core-value-description">Nghề Quản trị Công ty tại Việt Nam</p>
-                <a href="https://viod.vn/tai-lieu-ve-quan-tri-cong-ty/" class="core-value-link">
-                    <span>Tham gia với chúng tôi</span>
+                <p class="core-value-description">Nâng cao thực hành Quản trị Công ty theo thông lệ tốt và hướng đến
+                Phát triển bền vững.</p>
+                <a href="https://viod.vn/#" class="core-value-link">
+                    <span>tiên phong</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="Arrow Right">
                 </a>
             </div>

@@ -1,4 +1,13 @@
 /* Core Values Section */
+.core-values-container {
+  max-width: 1430px !important;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .core-values {
   background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
   padding: 68px 0;
@@ -15,7 +24,7 @@
   flex-direction: column;
   /* align-items: center;
   text-align: center; */
-  padding: 32px 32px;
+  padding: 24px;
   background: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -27,24 +36,25 @@
 }
 
 .core-value-icon {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .core-value-icon img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
 .core-value-title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #0c3555;
   margin: 0 0 16px 0;
+  text-align: center;
 }
 
 .core-value-description {
@@ -53,8 +63,8 @@
   line-height: 24px;
   letter-spacing: 0%;
   color: #082136;
-  margin: 0 0 32px 0;
-  /* text-align: center; */
+  margin: 0 0 48px 0;
+  text-align: center;
   flex: 1;
 }
 
@@ -72,6 +82,7 @@
   color: #3aa735;
   text-decoration: none;
   transition: all 0.3s ease;
+  justify-content: center;
 }
 
 .core-value-link:hover {
@@ -110,6 +121,18 @@
   transition: all 0.3s ease;
 }
 
+.professional-title {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  margin-bottom: 16px !important;
+  color: #3aa735;
+}
+
 @media (max-width: 768px) {
   .ongoing-training-swiper .swiper-slide:nth-child(1) {
     margin-left: 0 !important;
@@ -123,6 +146,15 @@
 
 /* Desktop Styles */
 @media (min-width: 768px) {
+  .professional-title {
+    line-height: 32px;
+    font-size: 22px;
+    margin-bottom: 24px !important;
+  }
+  .core-value-icon img {
+    width: 100px;
+    height: 100px;
+  }
   .ongoing-training-swiper {
     display: flex;
     justify-content: start;
@@ -196,7 +228,7 @@
   }
 
   .core-value-item {
-    padding: 24px 48px;
+    padding: 32px 42px;
   }
 
   .core-value-title {
@@ -205,6 +237,7 @@
 
   .core-value-description {
     font-size: 18px;
+    margin: 0 0 32px 0;
   }
 
   .core-value-link {
@@ -214,5 +247,8 @@
   .core-value-link img {
     width: 20px;
     height: 20px;
+  }
+  .core-value-icon {
+    margin-bottom: 24px;
   }
 }
