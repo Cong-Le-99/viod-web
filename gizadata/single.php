@@ -84,10 +84,10 @@ if (have_posts()) :
                 <div class="main">
 
                     <div class="tit">
-                        Thông tin liên hệ
+                        Tin tức khác
                     </div>
                     <div class="xemthemlienhe">
-                        <a href="">See more contact info →</a>
+                        <a href="">Xem thêm tin tức →</a>
                     </div>
 
                     

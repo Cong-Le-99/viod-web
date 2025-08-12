@@ -11,7 +11,7 @@ Text Domain: gizadata
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("css/home.css");
-@import url("css/about-us.css");
+@import url("css/about-us.css?v=1");
 @import url("css/core-styles.css");
 @import url("css/testimonial.css");
 @import url("css/about.css");
@@ -45,6 +45,57 @@ a:hover {
   text-decoration: none;
   /* color: #3aa735; */
 }
+.main-navigation ul.sub-menu li.menu-item{
+	padding:0px;
+}
+
+/* form đăng ký  */
+.contact-form{
+  display: flex ;
+  text-align: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.wrap-info-remember.member-certificate .forminator-radio-bullet{
+  width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    flex: 0 0 16px !important;
+    background: #fff !important;
+    border-color: #0C3555 !important;
+}
+.wrap-info-remember.member-certificate .forminator-radio-bullet::before{
+  background-color: #0C3555 !important;
+}
+.wrap-info-remember.member-certificate .forminator-label{
+	font-weight:500 !important;
+	font-size:14px !important;
+}
+.wrap-info-remember.member-certificate .forminator-input{
+	border-radius:8px !important;
+}
+.wrap-info-remember.member-certificate .forminator-checkbox-box{
+	width: 16px !important;
+    height: 16px !important;
+    flex: 0 0 16px !important;
+    background: #fff !important;
+    border-color: #0C3555 !important;
+}
+.wrap-info-remember.member-certificate .forminator-checkbox-box::before{
+  background-color: #0C3555 !important;
+}
+.wrap-info-remember.member-certificate .forminator-button.forminator-button-submit{
+	padding:16px 24px !important;
+	background-color:#3AA735 !important;
+	border-radius:8px !important;
+	font-size:16px !important;
+	font-weight:600 !important;
+	color:#fff;
+}
+.wrap-info-remember.member-certificate .forminator-row{
+	margin-bottom:16px !important;
+}
+
 
 #menu-item-wpml-ls-3-vi {
   display: none;
@@ -1708,6 +1759,7 @@ a:hover {
 }
 
 /* slide trang chu */
+
 .slider-trangchu {
   position: relative;
   overflow: hidden;
