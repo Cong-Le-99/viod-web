@@ -4,7 +4,7 @@ Template Name: About us
 */
 get_header();
 ?>
-<div class="member-certificate">
+<div class="member-certificate about-page">
     <section class="about-us">
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner">
