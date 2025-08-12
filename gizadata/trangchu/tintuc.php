@@ -1,11 +1,11 @@
 <section class="post-archive-home session-wrap">
     <div class="container">
-        <h2 class="title text-center">TIN TỨC MỚI NHẤT về ACGS</h2>
-        <p class="text-base text-center post-subtitle-home">CG ASSESMENT ĐƯỢC THỰC THI BỞI VIOD QUỐC GIA VÀ QUÓC TẾ</p>
+        <h2 class="title text-center text-uppercase">TIN TỨC MỚI NHẤT</h2>
+        <p class="text-base text-center post-subtitle-home">Cập nhật xu hướng, chính sách và hoạt động quản trị nổi bật trong nước và <br class="d-none d-lg-block"> quốc tế, được chọn lọc từ VIOD và cộng đồng chuyên gia.</p>
         <div class="btn-see-more text-center mb-5">
             <a href="<?php echo home_url('/tin-tuc'); ?>">XEM THÊM →</a>
         </div>
-        <div class="post-archive-grid">
+        <div class="post-archive-grid post-archive-home-grid">
             <?php
             // Lấy category ID của "Tin tức"
             $news_category = get_category_by_slug('tin-tuc');

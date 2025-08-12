@@ -780,8 +780,15 @@
 
 /* Responsive Grid */
 @media (min-width: 768px) {
+  .post-card-excerpt {
+    font-size: 18px;
+  }
   .post-archive-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .post-archive-home-grid {
+    row-gap: 80px !important;
   }
 
   .post-card.large {
