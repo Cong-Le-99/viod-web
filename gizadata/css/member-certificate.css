@@ -277,7 +277,7 @@
 
 /* Content Section Styles */
 .member-certificate .content-section {
-  background-color: #e0f5df;
+  background-color: #fff;
   padding: 68px 0;
 }
 
@@ -1162,10 +1162,6 @@
   .member-certificate .team-contact .description {
     font-size: 16px;
     margin-bottom: 48px;
-  }
-
-  .member-certificate .team-header {
-    margin-bottom: 64px;
   }
 
   .member-certificate .team-grid {

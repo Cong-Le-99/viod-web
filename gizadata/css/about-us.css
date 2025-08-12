@@ -1,13 +1,22 @@
 .member-certificate .about-us .banner {
   position: relative;
   height: 300px;
-  background-image: url("../images/about-us-mb.png");
+  /* background-image: url("../images/about-us-mb.png"); */
+  background: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+.box-title.text-center {
+  margin-bottom: 20px;
 }
 
 .about-us-session {
@@ -32,11 +41,11 @@
 }
 
 .about-us-info {
-  background-image: url("../images/bg-about.png") !important;
-  background-color: transparent !important;
+  /* background-image: url("../images/bg-about.png") !important; */
+  /* background-color: transparent !important;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: top; */
 }
 
 .contact-us-socials {
@@ -120,7 +129,8 @@
 
   .member-certificate .about-us .banner {
     height: 400px;
-    background-image: url("../images/about-us-dk.png");
+    /* background-image: url("../images/about-us-dk.png"); */
+    background: #fff;
   }
 
   .member-certificate .about-us .title {

@@ -14,7 +14,7 @@ $team_members = array(
     array(
         'gender' => 'female',
         'name' => 'Hà Thu Thanh',
-        'position' => 'Chủ tịch HĐQT Luật sư<br class="d-none d-md-block"> Đoàn Luật sư TP.<br class="d-none d-md-block"> Hà Nội',
+        'position' => 'Chủ tịch <br class="d-none d-md-block"> Luật sư<br class="d-none d-md-block">Đoàn Luật sư TP. Hà Nội',
         'image' => 'ha-thu-thanh.png',
         'position_more' => array(
             'Chủ tịch HĐQT, Viện Thành viên HĐQT Việt Nam (VIOD)',
@@ -27,9 +27,19 @@ Bà Thanh là Chủ tịch Viện Thành viên Hội đồng Quản trị (VIOD)
 Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" được bình chọn bởi Forbes và vinh dự nhận giải thưởng "Doanh nhân xuất sắc Châu Á Thái Bình Dương" năm 2017 & 2019 do Enterprise Asia tổ chức.'
     ),
     array(
+        'gender' => 'male',
+        'name' => 'Darryl J. Dong',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Nguyên Cán bộ Quốc gia Cao cấp kiêm <br class="d-none d-md-block">Trưởng Đại diện Văn phòng TP. HCM,<br class="d-none d-md-block"> Tổ chức Tài chính Quốc tế (IFC)',
+        'image' => 'Darryl.png',
+        'position_more' => array(
+            'Update'
+        ),
+        'biography' => 'Update'
+    ),
+    array(
         'gender' => 'female',
         'name' => 'Cao Thị Ngọc Dung',
-        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Chủ tịch HĐQT<br class="d-none d-md-block"> CTCP Vàng bạc Đá quý Phú Nhuận<br class="d-none d-md-block"> (PNJ)',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Chủ tịch HĐQT,<br class="d-none d-md-block"> CTCP Vàng bạc Đá quý Phú Nhuận (PNJ)',
         'image' => 'cao-thi-ngoc-dung.png',
         'position_more' => array(
             'Update'
@@ -39,7 +49,8 @@ Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" đ
     array(
         'gender' => 'male',
         'name' => 'Vũ Quang Thịnh',
-        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Giám đốc Điều hành<br class="d-none d-md-block"> Công ty Quản lý Quỹ Dynam <br class="d-none d-md-block"> Capital',
+
+        'position' => 'Thành viên<br class="d-none d-md-block">Tổng Giám đốc, <br class="d-none d-md-block">Công ty Quản lý Quỹ Dynam Capital',
         'image' => 'vu-quang-thinh.png',
         'position_more' => array(
             'Update'
@@ -49,8 +60,8 @@ Bà Thanh là một trong "50 phụ nữ có ảnh hưởng tại Việt Nam" đ
     array(
         'gender' => 'male',
         'name' => 'Trần Trọng Kiên',
-        'position' => 'Thành viên HĐQT <br class="d-none d-md-block">
-Chủ tịch HĐQT, Tổng Giám<br class="d-none d-md-block"> đốc, Tập đoàn Thiên Minh',
+        'position' => 'Thành viên <br class="d-none d-md-block" >
+        Chủ tịch HĐQT, TGĐ,<br class="d-none d-md-block">Tập đoàn Thiên Minh',
         'image' => 'tran-trong-kien.png',
         'position_more' => array(
             'Thành viên HĐQT Chủ tịch HĐQT, Tổng Giám đốc, Tập đoàn Thiên Minh'
@@ -60,7 +71,7 @@ Chủ tịch HĐQT, Tổng Giám<br class="d-none d-md-block"> đốc, Tập đo
     array(
         'gender' => 'female',
         'name' => 'Đinh Thị Quỳnh Vân',
-        'position' => 'Thành viên HĐQT<br class="d-none d-md-block"> Chủ tịch, PwC Việt Nam',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Chủ tịch, PwC Việt Nam',
         'image' => 'dinh-thi-quynh-van.png',
         'position_more' => array(
             'Update'
@@ -70,7 +81,7 @@ Chủ tịch HĐQT, Tổng Giám<br class="d-none d-md-block"> đốc, Tập đo
     array(
         'gender' => 'male',
         'name' => 'Phan Lê Thành Long',
-        'position' => 'Thành viên HĐQT,<br class="d-none d-md-block"> Tổng Giám đốc',
+        'position' => 'Thành viên,<br class="d-none d-md-block"> Tổng Giám đốc',
         'image' => 'phan-le-thanh-long.png',
         'position_more' => array(
             'Update'
@@ -84,7 +95,7 @@ $aac_members = array(
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Nguyễn Thu Hiền',
-        'position' => 'Thành viên<br class="d-none d-md-block"> Chuyên gia Quản trị Công<br class="d-none d-md-block"> ty ASEAN Chủ nhiệm Bộ<br class="d-none d-md-block"> môn Tài chính, Trường ĐH<br class="d-none d-md-block"> Bách khoa, VNU-HCM',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Chuyên gia<br class="d-none d-md-block">Quản trị Công ty ASEAN Chủ nhiệm Bộ môn<br class="d-none d-md-block">Tài chính, Trường ĐH Bách khoa,<br class="d-none d-md-block"> VNU-HCM',
         'image' => 'nguyen-thu-hien.png',
         'position_more' => array(
             'Chuyên gia Quản trị Công ty ASEAN',
@@ -99,7 +110,7 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Giáo sư',
         'name' => 'Phillippe Moschetta',
-        'position' => 'Chủ tịch Giảng viên Thực hành, Quản trị Công ty & Tài chính',
+        'position' => 'Chủ tịch <br class="d-none d-md-block"> Giảng viên Thực hành, Quản trị Công ty & <br class="d-none d-md-block"> Tài chính',
         'image' => 'phillippe-moschetta.png',
         'position_more' => array(
             'Update'
@@ -109,7 +120,7 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Nguyễn Huy Tâm',
-        'position' => 'Thành viên Giảng viên Kế toán và Tài <br class="d-none d-md-block"> chính, Trường Đại học <br class="d-none d-md-block"> Nottingham Trent',
+        'position' => 'Thành viên <br class="d-none d-md-block"> Giảng viên Kế toán và <br class="d-none d-md-block"> Tài chính, Trường Đại học <br class="d-none d-md-block"> Nottingham Trent',
         'image' => 'nguyen-duy-tam.png',
         'position_more' => array(
             'Update'
@@ -119,7 +130,7 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Đinh Toàn Trung',
-        'position' => 'Thành viên Ban Cố vấn <br class="d-none d-md-block"> Chuyên môn, VIOD <br class="d-none d-md-block"> Thành viên Trung tâm <br class="d-none d-md-block"> Quản trị Công ty Quốc tế/<br class="d-none d-md-block">Thụy Sĩ',
+        'position' => 'Thành viên <br class="d-none d-md-block"> Thành viên Trung tâm <br class="d-none d-md-block"> Quản trị Công ty Quốc tế/ <br class="d-none d-md-block"> Thụy Sĩ',
         'image' => 'dinh-toan-trung.png',
         'position_more' => array(
             'Ban Cố vấn Chuyên môn VIOD​',
@@ -134,7 +145,7 @@ Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels Sch
     array(
         'gender' => 'Bà',
         'name' => 'Trịnh Quỳnh Giao',
-        'position' => 'Thành viên Tổng Giám đốc, CTCP Quản lý Quỹ PVI (PVI AM)',
+        'position' => 'Thành viên <br class="d-none d-md-block"> Tổng Giám đốc, <br class="d-none d-md-block"> CTCP Quản lý Quỹ PVI <br class="d-none d-md-block"> (PVIAM)',
         'image' => 'trinh-quynh-giao.png',
         'position_more' => array(
             'Update'
@@ -144,7 +155,7 @@ Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels Sch
     array(
         'gender' => 'Ông',
         'name' => 'Simon CY Wong',
-        'position' => 'Thành viên<br class="d-none d-md-block"> Cố vấn Độc lập, Đồng<br class="d-none d-md-block"> Trưởng khoa Tài chính Bền<br class="d-none d-md-block"> vững, Viện Lãnh đạo Phát<br class="d-none d-md-block"> triển Bền vững Cambridge<br class="d-none d-md-block"> (CISL)',
+        'position' => 'Thành viên <br class="d-none d-md-block"> Cố vấn Độc lập, <br class="d-none d-md-block"> Đồng Trưởng khoa <br class="d-none d-md-block"> Tài chính Bền vững, <br class="d-none d-md-block"> Viện Lãnh đạo <br class="d-none d-md-block"> Phát triển Bền vững <br class="d-none d-md-block"> Cambridge (CISL)',
         'image' => 'simon.png',
         'position_more' => array(
             'Cố vấn Độc lập',
@@ -166,7 +177,7 @@ $acac_members = array(
     array(
         'gender' => 'Ông',
         'name' => 'Nguyễn Anh Tuấn',
-        'position' => 'Chủ tịch, ACAC <br class="d-none d-md-block"> Thành viên, AAC <br class="d-none d-md-block"> Chủ tịch HĐQT,Tổng CTCP<br class="d-none d-md-block"> Tái Bảo hiểm Quốc gia Việt<br class="d-none d-md-block"> Nam (VINARE)​',
+        'position' => 'Chủ tịch, ACAC  <br class="d-none d-md-block"> Thành viên, AAC  <br class="d-none d-md-block">Chủ tịch HĐQT, <br class="d-none d-md-block">Tổng CTCP Tái Bảo hiểm  <br class="d-none d-md-block"> Quốc gia Việt Nam  <br class="d-none d-md-block"> (VINARE)',
         'image' => 'Nguyen-Anh-TUAN.png',
         'position_more' => array(
             'Chủ tịch, Hội đồng Tư vấn Phát triển Thực hành UBKT tại Việt Nam, VIOD​',
@@ -183,7 +194,7 @@ $acac_members = array(
     array(
         'gender' => 'Bà',
         'name' => 'Lê Thị Tuyết Nhung',
-        'position' => 'Đồng Chủ tịch Phó Cục<br class="d-none d-md-block"> trưởng, Cục Quản lý Giá, Bộ<br class="d-none d-md-block"> Tài chính Nguyên Phó Cục<br class="d-none d-md-block"> trưởng Cục Quản lý, Giám<br class="d-none d-md-block"> sát Kế toán, Kiểm toán, Bộ Tài chính',
+        'position' => 'Đồng Chủ tịch <br class="d-none d-md-block"> Phó Cục trưởng <br class="d-none d-md-block"> Cục Quản lý Giá, <br class="d-none d-md-block"> Bộ Tài chính <br class="d-none d-md-block"> Nguyên Phó Cục trưởng <br class="d-none d-md-block"> Cục Quản lý,<br class="d-none d-md-block"> Giám sát Kế toán, <br class="d-none d-md-block">Kiểm toán, Bộ Tài chính',
         'image' => 'le-thi-tuyet-nhung.png',
         'position_more' => array(
             'Update'
@@ -270,7 +281,7 @@ $acac_members = array(
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3 class="title text-center mb-3 mt-md-0 mt-5">Hội đồng tư vấn phát triển thực hành UBKT (ACAC)</h3>
+                    <h3 class="title text-center mb-3 mt-md-0 mt-5">Hội đồng tư vấn phát triển thực hành uỷ ban kiểm toán (ACAC)*</h3>
                     <div class="team-members mt-5">
                         <div class="team-grid-acac">
                             <?php foreach ($acac_members as $index => $member): ?>
@@ -296,7 +307,7 @@ $acac_members = array(
                         </div>
                     </div>
                     <p class="text-base mt-5 text-center fw-semibold" style="font-weight: 600;">
-                        *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và các chuyên <br class="d-none d-md-block"> gia đang hành nghề trong Úy ban Kiểm toán của các <br class="d-none d-md-block"> doanh nghiệp niêm yết hàng đầu tại Việt Nam.
+                        *: Thành viên ACAC bao gồm các chuyên gia từ các công ty <br class="d-none d-md-block"> kiểm toán Big4 (PwC và Deloitte Việt Nam) và <br class="d-none d-md-block"> các chuyên gia đang hành nghề trong Úy ban Kiểm toán <br class="d-none d-md-block">của các doanh nghiệp niêm yết hàng đầu tại Việt Nam.
                     </p>
                 </div>
             </div>
