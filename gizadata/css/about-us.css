@@ -58,7 +58,7 @@
   background-color: #fff;
   padding: 68px 0;
 }
-.member-certificate .breadcrumb-item.active {
+.member-certificate.about-page .breadcrumb-item.active {
   color: #000000;
 }
 .member-certificate .text-content p {
