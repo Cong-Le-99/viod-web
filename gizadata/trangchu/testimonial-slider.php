@@ -28,7 +28,7 @@ $testimonials = array(
 ?>
 
 <section class="testimonial-slider px-custom px-md-0">
-    <div class="container-fluid">
+    <div class="container">
         <!-- Desktop Layout theo tỷ lệ thiết kế -->
         <div class="testimonial-desktop d-none d-md-block">
             <div class="testimonial-layout">
@@ -74,7 +74,7 @@ $testimonials = array(
                 </div>
                 
                 <!-- Khoảng cách phải - 11% -->
-                <div class="testimonial-gap-right"></div>
+                <!-- <div class="testimonial-gap-right"></div> -->
             </div>
         </div>
         
@@ -120,12 +120,18 @@ $testimonials = array(
                     <img src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow-right.svg" alt="Next">
                 </button>
             </div>
+            <div class="testimonial-navigation-top">
+                <div class="testimonial-prev nav-btn-top"></div>
+                <div class="testimonial-next nav-btn-top"></div>
+            </div>
         </div>
     </div>
 </section>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Only run desktop logic on desktop widths
+    if (window.innerWidth < 768) return;
     let currentSlide = 0;
     const totalSlides = <?php echo count($testimonials); ?>;
     
@@ -189,6 +195,19 @@ document.addEventListener('DOMContentLoaded', function() {
         showMobileSlide(mobileCurrentSlide);
     }
     
+    // Init first slide to ensure correct state
+    showMobileSlide(0);
+
+    // Mobile navigation buttons (bottom arrows)
+    const mobileNextButton = document.querySelector('.mobile-nav-next');
+    const mobilePrevButton = document.querySelector('.mobile-nav-prev');
+    mobileNextButton?.addEventListener('click', nextMobileSlide);
+    mobilePrevButton?.addEventListener('click', prevMobileSlide);
+
+    // Mobile top navigation (if present inside mobile layout)
+    document.querySelector('.testimonial-mobile-new .testimonial-next')?.addEventListener('click', nextMobileSlide);
+    document.querySelector('.testimonial-mobile-new .testimonial-prev')?.addEventListener('click', prevMobileSlide);
+
 
     
     // Touch/Swipe support for mobile
