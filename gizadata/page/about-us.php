@@ -45,7 +45,7 @@ get_header();
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="box-title ">
-                        <span class="title mobile-title d-block">chúng tôi là</span>
+                        <span>chúng tôi là</span>
                     </div>
                     <div class="content-text">
                         <div class="description">

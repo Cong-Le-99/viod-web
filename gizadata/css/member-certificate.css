@@ -358,6 +358,16 @@
   transition: max-height 0.3s ease;
   position: relative;
 }
+.member-certificate .text-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, #ffffff 102%);
+}
 
 .member-certificate .text-content.expanded {
   max-height: none;

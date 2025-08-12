@@ -95,7 +95,7 @@ $aac_members = array(
     array(
         'gender' => 'Tiến sĩ',
         'name' => 'Nguyễn Thu Hiền',
-        'position' => 'Thành viên<br class="d-none d-md-block"> Chuyên gia<br class="d-none d-md-block">Quản trị Công ty ASEAN Chủ nhiệm Bộ môn<br class="d-none d-md-block">Tài chính, Trường ĐH Bách khoa,<br class="d-none d-md-block"> VNU-HCM',
+        'position' => 'Thành viên<br class="d-none d-md-block"> Chuyên gia<br class="d-none d-md-block">Quản trị Công ty ASEAN <br class="d-none d-md-block"> Chủ nhiệm Bộ môn<br class="d-none d-md-block">Tài chính, Trường ĐH Bách khoa,<br class="d-none d-md-block"> VNU-HCM',
         'image' => 'nguyen-thu-hien.png',
         'position_more' => array(
             'Chuyên gia Quản trị Công ty ASEAN',
@@ -110,7 +110,7 @@ TS. Nguyễn Thu Hiền có bằng cử nhân Tài chính - Ngân hàng của Tr
     array(
         'gender' => 'Giáo sư',
         'name' => 'Phillippe Moschetta',
-        'position' => 'Chủ tịch <br class="d-none d-md-block"> Giảng viên Thực hành, Quản trị Công ty & <br class="d-none d-md-block"> Tài chính',
+        'position' => 'Chủ tịch <br class="d-none d-md-block"> Giảng viên Thực hành, <br class="d-none d-md-block"> Quản trị Công ty & <br class="d-none d-md-block"> Tài chính',
         'image' => 'phillippe-moschetta.png',
         'position_more' => array(
             'Update'

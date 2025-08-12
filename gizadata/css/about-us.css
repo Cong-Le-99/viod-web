@@ -23,7 +23,12 @@
   background-color: #fff;
   padding: 68px 0;
 }
-
+.member-certificate .breadcrumb-item.active {
+  color: #000000;
+}
+.member-certificate .text-content p {
+  color: rgba(8, 33, 54, 0.7);
+}
 /* Title Styles */
 .member-certificate .about-us .title {
   margin: 0;
@@ -33,7 +38,7 @@
   letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff !important;
+  color: #082136 !important;
 }
 
 .about-us .banner-content {
