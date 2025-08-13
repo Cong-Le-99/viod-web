@@ -4,7 +4,7 @@ Template Name: Tài liệu về quản trị công ty
 */
 get_header();
 ?>
-<div class="member-certificate ">
+<div class="member-certificate custom-banner-bg">
     <section class="corporate-governance">
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner bg-corporate-governance">
@@ -32,7 +32,6 @@ get_header();
 <?php get_template_part('components/legal-docs'); ?>
 <?php get_template_part('components/viod-events-carousel'); ?>
 <?php get_template_part('components/linked-websites-slider'); ?>
-<?php        
+<?php
 get_footer();
 ?>
-

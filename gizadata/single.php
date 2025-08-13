@@ -4,7 +4,7 @@ get_header();
 if (have_posts()) :
     while (have_posts()) : the_post();
         $custom_hero_bg = get_field('post_hero_bg', get_the_ID());
-        
+
         if ($custom_hero_bg) {
             $banner_image = $custom_hero_bg;
         } else {
@@ -28,8 +28,8 @@ if (have_posts()) :
                 }
             }
         }
-        ?>
-        <div class="noidungbaiviet">
+?>
+        <div class="noidungbaiviet custom-banner-bg">
             <div class="single-banner" style="background-image: url('<?php echo esc_url($banner_image); ?>');">
                 <div class="overlay"></div>
                 <div class="banner-content">
@@ -90,7 +90,7 @@ if (have_posts()) :
                         <a href="">Xem thêm tin tức →</a>
                     </div>
 
-                    
+
                     <div class="dscacbaivietxemthem">
                         <?php
                         $recent_posts = new WP_Query(array(
@@ -101,24 +101,24 @@ if (have_posts()) :
                         ));
                         if ($recent_posts->have_posts()) :
                             while ($recent_posts->have_posts()) : $recent_posts->the_post();
-                                ?>
-                                
+                        ?>
+
                                 <div class="listbv">
                                     <div class="anhbia">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php the_post_thumbnail('medium'); ?>
                                         </a>
                                     </div>
-                                    
+
                                     <div class="nd">
                                         <div class="tenchuyenmuc">
                                             <?php
-                                                $categories = get_the_category();
-                                                if (!empty($categories)) {
-                                                    foreach ($categories as $cat) {
-                                                        echo '<a href="' . esc_url(get_category_link($cat->term_id)) . '">' . esc_html($cat->name) . '</a> '; 
-                                                    }
+                                            $categories = get_the_category();
+                                            if (!empty($categories)) {
+                                                foreach ($categories as $cat) {
+                                                    echo '<a href="' . esc_url(get_category_link($cat->term_id)) . '">' . esc_html($cat->name) . '</a> ';
                                                 }
+                                            }
                                             ?>
                                         </div>
                                         <div class="thoigiantacgia">
@@ -135,8 +135,8 @@ if (have_posts()) :
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <?php
+
+                        <?php
                             endwhile;
                             wp_reset_postdata();
                         else :
@@ -149,7 +149,7 @@ if (have_posts()) :
             </div>
 
         </div>
-        <?php
+<?php
     endwhile;
 else :
     echo '<p>No content found.</p>';

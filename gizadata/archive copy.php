@@ -9,7 +9,7 @@ $banner_image = $banner_image ? $banner_image : $default_image;
 $description = category_description($category->term_id);
 ?>
 
-<div class="member-certificate post-archive bg-post-archive">
+<div class="member-certificate post-archive bg-post-archive custom-banner-bg">
     <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
     <div class="banner">
         <!-- Breadcrumb chỉ hiện trên desktop -->
@@ -27,7 +27,7 @@ $description = category_description($category->term_id);
         <div class="banner-content px-4">
             <h2 class="title light">Tin tức</h2>
             <p class="text-base light text-center">
-                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. <br class="d-none d-md-block"> Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP) 
+                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. <br class="d-none d-md-block"> Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)
             </p>
         </div>
     </div>
@@ -40,7 +40,7 @@ $description = category_description($category->term_id);
             // Lấy category ID của "Tin tức"
             $news_category = get_category_by_slug('tin-tuc');
             $news_category_id = $news_category ? $news_category->term_id : 0;
-            
+
             $featured_posts = new WP_Query([
                 'post_type' => 'post',
                 'posts_per_page' => 4,
@@ -72,22 +72,22 @@ $description = category_description($category->term_id);
                 while ($featured_posts->have_posts()) : $featured_posts->the_post();
                     $post_count++;
                     $card_class = 'post-card';
-                    
+
                     if ($post_count === 1) {
                         $card_class .= ' large';
                     }
-                    
+
                     $image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
                     if (!$image_url) {
                         $image_url = get_template_directory_uri() . '/images/default.png';
                     }
-                    
+
                     $categories = get_the_category();
                     $category_names = [];
                     foreach ($categories as $category) {
                         $category_names[] = $category->name;
                     }
-                    ?>
+            ?>
                     <article class="<?php echo $card_class; ?>">
                         <div class="post-card-image">
                             <a href="<?php the_permalink(); ?>">
@@ -110,7 +110,7 @@ $description = category_description($category->term_id);
                             <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM →</a>
                         </div>
                     </article>
-                    <?php
+            <?php
                 endwhile;
                 wp_reset_postdata();
             else :

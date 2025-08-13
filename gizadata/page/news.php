@@ -33,7 +33,7 @@ $sort_by = isset($_GET['sort']) ? sanitize_text_field($_GET['sort']) : '';
 $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : 'all';
 ?>
 
-<div class="member-certificate post-archive bg-post-archive">
+<div class="member-certificate post-archive bg-post-archive custom-banner-bg">
     <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
     <div class="banner">
         <!-- Breadcrumb chỉ hiện trên desktop -->
@@ -51,7 +51,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
         <div class="banner-content px-4">
             <h2 class="title light">Tin tức</h2>
             <p class="text-base light text-center">
-                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. <br class="d-none d-md-block"> Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP) 
+                Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. <br class="d-none d-md-block"> Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)
             </p>
         </div>
     </div>
@@ -65,7 +65,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                 <div class="filter-sidebar d-none d-lg-block">
                     <div class="filter-card">
                         <h3 class="filter-title">BỘ LỌC</h3>
-                        
+
                         <!-- Search -->
                         <div class="filter-section">
                             <div class="search-box">
@@ -97,8 +97,8 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                             <div class="category-options">
                                 <?php foreach ($sub_categories as $category) : ?>
                                     <label class="radio-option">
-                                        <input type="radio" name="desktop-category" value="<?php echo $category->slug; ?>" 
-                                               <?php checked($selected_category, $category->slug); ?>>
+                                        <input type="radio" name="desktop-category" value="<?php echo $category->slug; ?>"
+                                            <?php checked($selected_category, $category->slug); ?>>
                                         <span class="radio-custom"></span>
                                         <span class="radio-label"><?php echo $category->name; ?></span>
                                     </label>
@@ -111,17 +111,17 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                 <!-- Main Content -->
                 <div class="news-content">
                     <!-- Test Button -->
-                    
+
                     <!-- Mobile Filter Button -->
                     <button class="filter-toggle mobile-filter-btn" id="mobile-filter-toggle">
                         <div class="filter-bar">
                             <div class="filter-bar-left">
                                 <div class="hamburger-icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="black"/>
-                                    <path d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z" fill="black"/>
-                                    <path d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z" fill="black"/>
-                                </svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="black" />
+                                        <path d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z" fill="black" />
+                                        <path d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z" fill="black" />
+                                    </svg>
 
                                 </div>
                                 <span class="filter-text">Bộ lọc</span>
@@ -172,13 +172,13 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                                 if (!$image_url) {
                                     $image_url = get_template_directory_uri() . '/images/default.png';
                                 }
-                                
+
                                 $categories = get_the_category();
                                 $category_names = [];
                                 foreach ($categories as $category) {
                                     $category_names[] = $category->name;
                                 }
-                                ?>
+                            ?>
                                 <article class="post-card">
                                     <div class="post-card-image">
                                         <a href="<?php the_permalink(); ?>">
@@ -201,7 +201,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                                         <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM →</a>
                                     </div>
                                 </article>
-                                <?php
+                            <?php
                             endwhile;
                             wp_reset_postdata();
                             ?>
@@ -214,14 +214,14 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                     <?php if ($posts_query->max_num_pages > 1) : ?>
                         <div class="pagination-wrapper">
                             <?php
-                                echo paginate_links([
-                                    'total' => $posts_query->max_num_pages,
-                                    'current' => max(1, get_query_var('paged')),
-                                    'prev_text' => __('←', 'viod'),
-                                    'next_text' => __('→', 'viod'),
-                                    'type' => 'list'
-                                ]);
-                            ?> 
+                            echo paginate_links([
+                                'total' => $posts_query->max_num_pages,
+                                'current' => max(1, get_query_var('paged')),
+                                'prev_text' => __('←', 'viod'),
+                                'next_text' => __('→', 'viod'),
+                                'type' => 'list'
+                            ]);
+                            ?>
                             <!-- <div class="pagination"><?php the_posts_pagination(); ?></div> -->
                         </div>
                     <?php endif; ?>
@@ -229,7 +229,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
             </div>
         </div>
     </section>
-</div> 
+</div>
 
 <!-- Mobile Filter Drawer - Bootstrap 5 -->
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="mobileFilterDrawer" aria-labelledby="mobileFilterDrawerLabel">
@@ -270,8 +270,8 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                 <div class="category-options">
                     <?php foreach ($sub_categories as $category) : ?>
                         <label class="radio-option">
-                            <input type="radio" name="category" value="<?php echo $category->slug; ?>" 
-                                   <?php checked($selected_category, $category->slug); ?>>
+                            <input type="radio" name="category" value="<?php echo $category->slug; ?>"
+                                <?php checked($selected_category, $category->slug); ?>>
                             <span class="radio-custom"></span>
                             <span class="radio-label"><?php echo $category->name; ?></span>
                         </label>
@@ -291,125 +291,124 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded');
-    
-    // Desktop filter functionality
-    const desktopSearch = document.getElementById('desktop-search');
-    const desktopSort = document.getElementById('desktop-sort');
-    const desktopCategories = document.querySelectorAll('input[name="desktop-category"]');
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM loaded');
 
-    function updateDesktopFilters() {
-        const searchValue = desktopSearch.value;
-        const sortValue = desktopSort.value;
-        const categoryValue = document.querySelector('input[name="desktop-category"]:checked')?.value || 'all';
+        // Desktop filter functionality
+        const desktopSearch = document.getElementById('desktop-search');
+        const desktopSort = document.getElementById('desktop-sort');
+        const desktopCategories = document.querySelectorAll('input[name="desktop-category"]');
 
-        const url = new URL(window.location);
-        if (searchValue) url.searchParams.set('search', searchValue);
-        else url.searchParams.delete('search');
-        
-        if (sortValue) url.searchParams.set('sort', sortValue);
-        else url.searchParams.delete('sort');
-        
-        if (categoryValue !== 'all') url.searchParams.set('category', categoryValue);
-        else url.searchParams.delete('category');
+        function updateDesktopFilters() {
+            const searchValue = desktopSearch.value;
+            const sortValue = desktopSort.value;
+            const categoryValue = document.querySelector('input[name="desktop-category"]:checked')?.value || 'all';
 
-        window.location.href = url.toString();
-    }
+            const url = new URL(window.location);
+            if (searchValue) url.searchParams.set('search', searchValue);
+            else url.searchParams.delete('search');
 
-    // Desktop event listeners
-    if (desktopSearch) {
-        desktopSearch.addEventListener('input', debounce(updateDesktopFilters, 500));
-    }
-    if (desktopSort) {
-        desktopSort.addEventListener('change', updateDesktopFilters);
-    }
-    desktopCategories.forEach(radio => {
-        radio.addEventListener('change', updateDesktopFilters);
-    });
+            if (sortValue) url.searchParams.set('sort', sortValue);
+            else url.searchParams.delete('sort');
 
-    // Mobile filter drawer - Bootstrap 5 Offcanvas
-    const filterToggle = document.getElementById('mobile-filter-toggle');
-    const mobileFilterForm = document.getElementById('mobile-filter-form');
-    const offcanvasElement = document.getElementById('mobileFilterDrawer');
+            if (categoryValue !== 'all') url.searchParams.set('category', categoryValue);
+            else url.searchParams.delete('category');
 
-    console.log('Filter toggle:', filterToggle);
-    console.log('Offcanvas element:', offcanvasElement);
-    console.log('Bootstrap available:', typeof bootstrap !== 'undefined');
-
-    if (filterToggle && offcanvasElement) {
-        // Initialize Bootstrap 5 Offcanvas
-        let offcanvas;
-        
-        if (typeof bootstrap !== 'undefined') {
-            offcanvas = new bootstrap.Offcanvas(offcanvasElement);
-            console.log('Bootstrap offcanvas initialized');
-        } else {
-            console.error('Bootstrap not loaded');
-            return;
+            window.location.href = url.toString();
         }
 
-        // Open drawer when filter toggle is clicked
-        filterToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log('Filter toggle clicked');
-            try {
-                offcanvas.show();
-                console.log('Offcanvas show called');
-            } catch (error) {
-                console.error('Error showing offcanvas:', error);
-            }
+        // Desktop event listeners
+        if (desktopSearch) {
+            desktopSearch.addEventListener('input', debounce(updateDesktopFilters, 500));
+        }
+        if (desktopSort) {
+            desktopSort.addEventListener('change', updateDesktopFilters);
+        }
+        desktopCategories.forEach(radio => {
+            radio.addEventListener('change', updateDesktopFilters);
         });
 
-        // Handle form submission
-        if (mobileFilterForm) {
-            mobileFilterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                console.log('Form submitted');
-                
-                const formData = new FormData(mobileFilterForm);
-                const url = new URL(window.location);
-                
-                for (let [key, value] of formData.entries()) {
-                    if (value) {
-                        url.searchParams.set(key, value);
-                    } else {
-                        url.searchParams.delete(key);
-                    }
-                }
-                
-                // Close offcanvas before redirecting
-                try {
-                    offcanvas.hide();
-                    console.log('Offcanvas hide called');
-                } catch (error) {
-                    console.error('Error hiding offcanvas:', error);
-                }
-                
-                // Small delay to allow offcanvas to close
-                setTimeout(() => {
-                    window.location.href = url.toString();
-                }, 300);
-            });
-        }
-    }
+        // Mobile filter drawer - Bootstrap 5 Offcanvas
+        const filterToggle = document.getElementById('mobile-filter-toggle');
+        const mobileFilterForm = document.getElementById('mobile-filter-form');
+        const offcanvasElement = document.getElementById('mobileFilterDrawer');
 
-    // Debounce function
-    function debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
+        console.log('Filter toggle:', filterToggle);
+        console.log('Offcanvas element:', offcanvasElement);
+        console.log('Bootstrap available:', typeof bootstrap !== 'undefined');
+
+        if (filterToggle && offcanvasElement) {
+            // Initialize Bootstrap 5 Offcanvas
+            let offcanvas;
+
+            if (typeof bootstrap !== 'undefined') {
+                offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+                console.log('Bootstrap offcanvas initialized');
+            } else {
+                console.error('Bootstrap not loaded');
+                return;
+            }
+
+            // Open drawer when filter toggle is clicked
+            filterToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Filter toggle clicked');
+                try {
+                    offcanvas.show();
+                    console.log('Offcanvas show called');
+                } catch (error) {
+                    console.error('Error showing offcanvas:', error);
+                }
+            });
+
+            // Handle form submission
+            if (mobileFilterForm) {
+                mobileFilterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Form submitted');
+
+                    const formData = new FormData(mobileFilterForm);
+                    const url = new URL(window.location);
+
+                    for (let [key, value] of formData.entries()) {
+                        if (value) {
+                            url.searchParams.set(key, value);
+                        } else {
+                            url.searchParams.delete(key);
+                        }
+                    }
+
+                    // Close offcanvas before redirecting
+                    try {
+                        offcanvas.hide();
+                        console.log('Offcanvas hide called');
+                    } catch (error) {
+                        console.error('Error hiding offcanvas:', error);
+                    }
+
+                    // Small delay to allow offcanvas to close
+                    setTimeout(() => {
+                        window.location.href = url.toString();
+                    }, 300);
+                });
+            }
+        }
+
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
                 clearTimeout(timeout);
-                func(...args);
+                timeout = setTimeout(later, wait);
             };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    }
-});
+        }
+    });
 </script>
 
-<?php        
+<?php
 get_footer();
 ?>
-

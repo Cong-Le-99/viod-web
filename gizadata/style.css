@@ -30,6 +30,55 @@ Text Domain: gizadata
 }
 
 /* Desktop Overrides */
+/* Custom styled banner */
+
+.noidungbaiviet.custom-banner-bg .single-banner {
+	background-image: unset !important;
+	background:#fff;
+}
+.noidungbaiviet.custom-banner-bg .breadcrumb a:nth-child(2){
+	color:#000000 !important;
+}
+.noidungbaiviet.custom-banner-bg .banner-content h1{
+	 color: #082136 !important;
+}
+.noidungbaiviet.custom-banner-bg .banner-content .mota{
+	display:none;
+}
+.noidungbaiviet.custom-banner-bg .single-banner .overlay{
+	display:none;
+}
+
+.member-certificate.custom-banner-bg .banner {
+  position: relative;
+  height: 300px;
+	background-image: unset !important;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.member-certificate.custom-banner-bg .title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #082136 !important;
+}
+.member-certificate.custom-banner-bg .text-base{
+	display:none !important;
+}
+.member-certificate.custom-banner-bg .breadcrumb-item.active{
+	color:#000000 !important;
+}
+
+/* Custom styled banner */
 
 body {
   /* font-family: Arial, sans-serif; */

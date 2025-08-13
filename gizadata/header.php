@@ -34,7 +34,7 @@
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
                             <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2z" fill="#fff" />
                         </svg>
-                        <a href="tel:19000000">1900 0000</a>
+                        <a href="tel:84936249697">+84 936 249 697</a>
                     </span>
                 </div>
                 <div class="topbar-right">
@@ -95,7 +95,7 @@
                 <div class="main">
                     <div class="site-branding">
                         <a href="/">
-                            <img src="https://viod.1994.cloud/wp-content/uploads/2025/05/image_Screenshot-2025-03-12-at-10.53.38-2_UXQv.webp" alt="">
+                            <img src="https://viod.vn/wp-content/uploads/2025/08/image_logo_MsVr.png" alt="">
                         </a>
                     </div>
                     <nav id="site-navigation" class="main-navigation">
@@ -114,7 +114,7 @@
                                 <path d="M20 20l-3.5-3.5" stroke="#0A2536" stroke-width="2" stroke-linecap="round" />
                             </svg>
                         </button>
-                        
+
                         <!-- <a href="#" class="login-btn">ĐĂNG NHẬP</a> -->
                     </div>
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">

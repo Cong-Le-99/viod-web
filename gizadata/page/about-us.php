@@ -4,7 +4,7 @@ Template Name: About us
 */
 get_header();
 ?>
-<div class="member-certificate about-page">
+<div class="member-certificate about-page custom-banner-bg">
     <section class="about-us">
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner">
@@ -288,8 +288,8 @@ get_header();
                         <?php
                         $founder_imgs = [
                             'partner-3.png',
-                            'partner-4.png',
-                            'partner-5.png',
+                            'csmp9.png',
+                            'ssc.png',
                             'partner-6.png',
                             'partner-7.png'
                         ];
