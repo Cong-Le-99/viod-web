@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name:  Tin tức
+*/
 get_header();
 
 // Get the current category object
