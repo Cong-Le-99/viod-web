@@ -288,8 +288,8 @@ get_header();
                         <?php
                         $founder_imgs = [
                             'partner-3.png',
-                            'csmp9.png',
-                            'ssc.png',
+                            'csmp9-1.png',
+                            'ssc-1.png',
                             'partner-6.png',
                             'partner-7.png'
                         ];

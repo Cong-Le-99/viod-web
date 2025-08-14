@@ -6,6 +6,10 @@
   margin-bottom: 64px;
 }
 
+.publications-and-research .btn-register {
+  color: #000;
+}
+
 .member-certificate.about-page .team-grid.layout-8 > .team-member {
   flex: 0 0 calc((100% / 3) - 32px);
   max-width: calc((100% / 3) - 32px);
@@ -269,12 +273,31 @@
 
 .publications-and-research {
   background-image: url("../images/publications-bg-mb.png") !important;
+  position: relative;
+}
+.publications-and-research::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    #ffffff 100%
+  );
+}
+
+.publications-and-research .row {
+  position: relative;
+  z-index: 1;
 }
 
 /* Desktop Overrides */
 @media (min-width: 768px) {
   .publications-and-research {
-    background-image: url("../images/publications-bg-dk.png") !important;
+    background-image: url("../images/bg-cac-nghien-cuu-an-pham.jpg") !important;
   }
 
   .about-us-overview {
@@ -643,7 +666,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #fff;
+  color: #000;
   flex: 1;
   margin-right: 16px;
   transition: all 0.3s ease;
@@ -660,7 +683,7 @@
 }
 
 .publication-item svg path {
-  fill: #fff;
+  fill: #000;
   transition: all 0.3s ease;
 }
 
