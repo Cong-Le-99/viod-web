@@ -18,6 +18,10 @@ body {
   margin-bottom: 24px;
 }
 
+.title-dark {
+  color: #082136 !important;
+}
+
 .bg-session-dark {
   background-color: #082136;
 }

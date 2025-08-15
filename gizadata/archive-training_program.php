@@ -8,7 +8,7 @@ get_header();
     <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
     <div class="banner">
         <!-- Breadcrumb chỉ hiện trên desktop -->
-        <!-- <nav class="breadcrumb-nav">
+        <nav class="breadcrumb-nav">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
@@ -16,9 +16,9 @@ get_header();
                         <img class="w-1 h-1" src="<?php echo get_template_directory_uri(); ?>/images/home.svg" alt="">
                     </a>
                 </li>
-                <li class="breadcrumb-item active">Tin tức</li>
+                <li class="breadcrumb-item active">Chương trình đào tạo</li>
             </ol>
-        </nav> -->
+        </nav>
         <div class="banner-content px-4">
             <h2 class="title light">CHƯƠNG TRÌNH ĐÀO TẠO</h2>
             <p class="text-base light text-center">

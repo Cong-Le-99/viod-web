@@ -23,10 +23,10 @@ if (have_posts()) :
 
                     <div class="ttsk">
                         <div class="a">
-                            <div class="td1">
+                            <div class="td1 title-dark ">
                                 <?php echo get_field('tieudephu'); ?>
                             </div>
-                            <div class="td2">
+                            <div class="td2 title-dark ">
                                 <?php echo get_field('tieudechinh'); ?>
                             </div>
                         </div>
