@@ -1460,6 +1460,7 @@ a:hover {
   gap: 5px;
   border-radius: 8px;
   background: #e0f5df;
+  position: relative;
 }
 
 .baiviet-daotao article .baivietdaotao .boxdangky h3 {
@@ -1513,6 +1514,7 @@ a:hover {
 
 .baiviet-daotao article .baivietdaotao .boxdangky .box {
   margin-top: 16px;
+  width: 100%;
 }
 
 .baiviet-daotao article .baivietdaotao .boxdangky .box .a {
