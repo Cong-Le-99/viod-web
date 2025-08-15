@@ -87,7 +87,7 @@ if (have_posts()) :
                         Tin tức khác
                     </div>
                     <div class="xemthemlienhe">
-                        <a href="">Xem thêm tin tức →</a>
+                        <a href="<?php echo home_url('/news'); ?>">Xem thêm →</a>
                     </div>
 
 
@@ -97,7 +97,8 @@ if (have_posts()) :
                             'posts_per_page' => 3,
                             'post__not_in' => array(get_the_ID()),
                             'orderby' => 'date',
-                            'order' => 'DESC'
+                            'order' => 'DESC',
+                            'post_type' => 'post'
                         ));
                         if ($recent_posts->have_posts()) :
                             while ($recent_posts->have_posts()) : $recent_posts->the_post();

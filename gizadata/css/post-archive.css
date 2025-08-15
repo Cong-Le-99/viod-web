@@ -353,6 +353,9 @@
   gap: 24px;
   margin-bottom: 40px;
 }
+.posts-grid-event {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
 
 /* No Posts Message */
 .no-posts-message {
