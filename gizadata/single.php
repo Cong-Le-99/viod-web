@@ -101,43 +101,49 @@ if (have_posts()) :
                         ));
                         if ($recent_posts->have_posts()) :
                             while ($recent_posts->have_posts()) : $recent_posts->the_post();
-                        ?>
+                                // Mở grid một lần đầu tiên
+                                static $opened_grid = false;
+                                if (!$opened_grid) {
+                                    echo '<div class="posts-grid" id="posts-container">';
+                                    $opened_grid = true;
+                                }
 
-                                <div class="listbv">
-                                    <div class="anhbia">
+                                $image_url = get_the_post_thumbnail_url(get_the_ID(), 'medium');
+                                if (!$image_url) {
+                                    $image_url = get_template_directory_uri() . '/images/default.png';
+                                }
+
+                                $categories = get_the_category();
+                                $category_names = array();
+                                foreach ($categories as $category) {
+                                    $category_names[] = $category->name;
+                                }
+                        ?>
+                                <article class="post-card">
+                                    <div class="post-card-image">
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php the_post_thumbnail('medium'); ?>
+                                            <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
                                         </a>
                                     </div>
-
-                                    <div class="nd">
-                                        <div class="tenchuyenmuc">
-                                            <?php
-                                            $categories = get_the_category();
-                                            if (!empty($categories)) {
-                                                foreach ($categories as $cat) {
-                                                    echo '<a href="' . esc_url(get_category_link($cat->term_id)) . '">' . esc_html($cat->name) . '</a> ';
-                                                }
-                                            }
-                                            ?>
+                                    <div class="post-card-content">
+                                        <div class="post-card-tags">
+                                            <?php foreach ($category_names as $category_name) { ?>
+                                                <a href="#" class="post-card-tag"><?php echo esc_html($category_name); ?></a>
+                                            <?php } ?>
                                         </div>
-                                        <div class="thoigiantacgia">
-                                            <?php echo get_the_date(); ?> | <?php the_author(); ?>
-                                        </div>
-                                        <div class="tieude">
+                                        <div class="post-card-meta"><?php echo get_the_date('d M Y'); ?> | By <?php the_author(); ?></div>
+                                        <h2 class="post-card-title">
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        </h2>
+                                        <div class="post-card-excerpt">
+                                            <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                                         </div>
-                                        <div class="mota">
-                                            <?php echo wp_trim_words(get_the_content(), 4); ?>
-                                        </div>
-                                        <div class="xemthem">
-                                            <a href="<?php the_permalink(); ?>">ĐỌC THÊM →</a>
-                                        </div>
+                                        <a href="<?php the_permalink(); ?>" class="post-card-readmore">ĐỌC THÊM →</a>
                                     </div>
-                                </div>
-
+                                </article>
                         <?php
                             endwhile;
+                            if (isset($opened_grid) && $opened_grid) { echo '</div>'; }
                             wp_reset_postdata();
                         else :
                             echo '<p>No related posts found.</p>';
