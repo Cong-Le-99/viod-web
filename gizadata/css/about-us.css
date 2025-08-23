@@ -2,35 +2,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
+  gap: 24px;
   margin-bottom: 64px;
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.member-certificate.about-page .team-grid.layout-8 .team-member {
+  flex: 0 0 auto;
+  width: calc(50% - 12px);
+}
+
+.member-certificate.about-page .team-grid.layout-8 .team-member:nth-child(1) {
+  width: calc(100% - 12px);
+}
+.member-certificate.about-page .team-grid.layout-8 .team-member:nth-child(2) {
+  width: calc(100% - 12px);
 }
 
 .publications-and-research .btn-register {
   color: #000;
 }
 
-.member-certificate.about-page .team-grid.layout-8 > .team-member {
-  flex: 0 0 calc((100% / 3) - 32px);
-  max-width: calc((100% / 3) - 32px);
-  box-sizing: border-box;
-}
-
-.member-certificate.about-page .team-grid.layout-8 > .team-member:nth-child(1),
-.member-certificate.about-page .team-grid.layout-8 > .team-member:nth-child(2) {
-  flex: 0 0 calc(50% - 24px);
-  max-width: calc(50% - 24px);
-  margin: 0;
-}
-
-.member-certificate.about-page .team-grid.layout-8 > .team-member:nth-child(1) {
-  margin-right: 0;
-}
-
-.text-center {
+/* .text-center {
   display: flex;
   justify-content: center;
-}
+} */
 .box-title.text-center {
   margin-bottom: 20px;
 }
@@ -158,6 +154,33 @@
   .contact-us-membership-programs-2 img {
     max-width: 456px !important;
   }
+
+  .member-certificate.about-page .team-grid.layout-8 {
+    gap: 48px;
+  }
+
+  .member-certificate.about-page .team-grid.layout-8 > .team-member {
+    flex: 0 0 calc((100% / 3) - 32px);
+    max-width: calc((100% / 3) - 32px);
+    box-sizing: border-box;
+  }
+
+  .member-certificate.about-page
+    .team-grid.layout-8
+    > .team-member:nth-child(1),
+  .member-certificate.about-page
+    .team-grid.layout-8
+    > .team-member:nth-child(2) {
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+    margin: 0;
+  }
+
+  .member-certificate.about-page
+    .team-grid.layout-8
+    > .team-member:nth-child(1) {
+    margin-right: 0;
+  }
 }
 
 /* -------------------------- */
@@ -165,6 +188,7 @@
 /* -------------------------- */
 .about-us-overview {
   padding: 68px 0;
+  padding-top: 0px;
 }
 
 .about-us-overview .title {
@@ -189,7 +213,7 @@
 
 /* Box styles */
 .overview-box {
-  background: #e0f5df;
+  /* background: #e0f5df; */
   border-radius: 24px;
   padding: 24px;
   height: 100%;
@@ -244,7 +268,7 @@
 
 .viod-partner-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   text-transform: uppercase;
   color: #082136;
@@ -275,6 +299,11 @@
   background-image: url("../images/publications-bg-mb.png") !important;
   position: relative;
 }
+
+.publications-and-research .publications-and-research-text {
+  color: #434343;
+}
+
 .publications-and-research::after {
   position: absolute;
   content: "";
@@ -298,6 +327,10 @@
 @media (min-width: 768px) {
   .publications-and-research {
     background-image: url("../images/bg-cac-nghien-cuu-an-pham.jpg") !important;
+  }
+
+  .viod-partner-title {
+    font-size: 24px;
   }
 
   .about-us-overview {
@@ -848,3 +881,53 @@
   align-items: center;
   justify-content: center;
 } */
+
+@media (max-width: 768px) {
+  .customer-banner-about-us .banner {
+    background-image: url("../images/bg-heading-about-us.png") !important;
+  }
+
+  .overview-box {
+    background: #e0f5df;
+  }
+
+  .overview-box-value {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .overview-box-value .box-title {
+    margin-left: 20px;
+  }
+
+  .commit-item .commit-label {
+    white-space: nowrap;
+  }
+
+  .founder-item {
+    min-height: 66px;
+  }
+
+  .roadmap-partners {
+    background-image: url("../images/bg.png") !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background: linear-gradient(180deg, #ffffff 0%, #e0f5df 100%);
+  }
+
+  .contact-us-container-custom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* VIOD Partner Section - mobile: 2 columns with 24px gap */
+  .viod-partner-content {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+}

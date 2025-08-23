@@ -4,13 +4,13 @@ Template Name: About us
 */
 get_header();
 ?>
-<div class="member-certificate about-page custom-banner-bg">
+<div class="member-certificate about-page custom-banner-bg customer-banner-about-us">
     <section class="about-us">
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner">
             <!-- Breadcrumb chỉ hiện trên desktop -->
             <nav class="breadcrumb-nav">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb dark">
                     <li class="breadcrumb-item">
                         <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
                         <a class="d-block d-md-none" href="<?php echo home_url(); ?>" style="width: 20px; height: 20px;">
@@ -32,6 +32,9 @@ get_header();
 
             <div class="row ">
                 <div class="col-12 col-lg-6">
+                    <div class="box-title d-block d-md-none text-uppercase">
+                        <span>chúng tôi là</span>
+                    </div>
                     <div class="video-container">
                         <iframe id="certificateVideo"
                             src="https://www.youtube.com/embed/sEn-e3oYyQM"
@@ -44,12 +47,12 @@ get_header();
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="box-title ">
+                    <div class="box-title  d-none d-md-block text-uppercase">
                         <span>chúng tôi là</span>
                     </div>
-                    <div class="content-text">
+                    <div class="content-text ">
                         <div class="description">
-                            <div class="text-content text-content-about-us"" id=" textContent">
+                            <div class="text-content text-content-about-us"" id="textContent">
                                 <p>Viện Thành viên Hội đồng Quản trị Việt Nam (VIOD) là định chế chuyên nghiệp, độc lập và tiên phong về Quản trị Công ty (QTCT) và Phát triển bền vững tại Việt Nam.
                                     <br class="d-none d-md-block">
                                     <br class="d-none d-md-block">
@@ -69,13 +72,13 @@ get_header();
 
     <section class="about-us-overview session-wrap d-block d-md-none">
         <!-- Tiêu đề (chỉ hiện trên mobile) -->
-        <h2 class="title d-block d-md-none text-start text-md-end px-3">
+        <!-- <h2 class="title d-block d-md-none text-start text-md-end px-3">
             ĐỊNH CHẾ TIÊN PHONG VÀ <br class="d-md-none" />
             CHUYÊN NGHIỆP về QTCT TẠI VIỆT NAM
-        </h2>
+        </h2> -->
 
         <!-- 3 Box icon đầu -->
-        <div class="overview-wrapper">
+        <!-- <div class="overview-wrapper"> -->
             <div class="container">
                 <div class="row gy-4">
                     <!-- Box 1 -->
@@ -118,57 +121,72 @@ get_header();
                             </p>
                         </div>
                     </div>
+
+                                        <!-- Tầm nhìn -->
+                    <div class="col-12 col-lg-6 d-block d-md-none">
+                        <div class="h-md-100 mt-md-5 mt-lg-0 overview-box">
+                            <div class="box-title d-flex align-items-start">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
+                                <span>tầm nhìn</span>
+                            </div>
+                            <p class="box-content">
+                                VIOD là lựa chọn hàng đầu của các HĐQT và lãnh đạo tiên phong nhằm tạo dựng cộng đồng doanh nghiệp vững mạnh, minh bạch và hiệu quả.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="h-md-100 overview-box overview-box-value">
+                            <div class="commitment">
+                                <div class="box-title title-center text-center mb-4 d-flex justify-content-lg-start">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
+                                    <span>giá trị cam kết</span>
+                                </div>
+                                <div class="row g-4 justify-content-center commitment-items text-center">
+                                    <div class="col-4 col-md-2">
+                                        <div class="commit-item d-flex flex-column align-items-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-1.svg" alt="Tuân thủ" class="commit-icon mb-2" />
+                                            <span class="commit-label">tuân thủ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="commit-item d-flex flex-column align-items-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-2.svg" alt="Minh bạch" class="commit-icon mb-2" />
+                                            <span class="commit-label">minh bạch</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-2">
+                                        <div class="commit-item d-flex flex-column align-items-center">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-3.svg" alt="Chính trực" class="commit-icon mb-2" />
+                                            <span class="commit-label">chính trực</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tầm nhìn -->
+                    <div class="col-12 col-lg-6 d-none d-md-block">
+                        <div class="h-md-100 mt-md-5 mt-lg-0 overview-box">
+                            <div class="box-title d-flex align-items-start">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
+                                <span>tầm nhìn</span>
+                            </div>
+                            <p class="box-content">
+                                VIOD là lựa chọn hàng đầu của các HĐQT và lãnh đạo tiên phong nhằm tạo dựng cộng đồng doanh nghiệp vững mạnh, minh bạch và hiệu quả.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
         <!-- Giá trị cam kết & Tầm nhìn -->
         <div class="container">
-            <div class="row">
+            <div class="row gy-4">
                 <!-- Giá trị cam kết -->
-                <div class="col-12 col-lg-6">
-                    <div class="h-100">
-                        <div class="commitment mt-5">
-                            <div class="box-title title-center text-center mb-4 d-flex justify-content-lg-start">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
-                                <span>giá trị cam kết</span>
-                            </div>
-                            <div class="row g-4 justify-content-center commitment-items text-center">
-                                <div class="col-4 col-md-2">
-                                    <div class="commit-item d-flex flex-column align-items-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-1.svg" alt="Tuân thủ" class="commit-icon mb-2" />
-                                        <span class="commit-label">tuân thủ</span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-2">
-                                    <div class="commit-item d-flex flex-column align-items-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-2.svg" alt="Minh bạch" class="commit-icon mb-2" />
-                                        <span class="commit-label">minh bạch</span>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-md-2">
-                                    <div class="commit-item d-flex flex-column align-items-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-icon-3.svg" alt="Chính trực" class="commit-icon mb-2" />
-                                        <span class="commit-label">chính trực</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tầm nhìn -->
-                <div class="col-12 col-lg-6">
-                    <div class="h-100 mt-5 mt-lg-0">
-                        <div class="box-title d-flex align-items-start">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
-                            <span>tầm nhìn</span>
-                        </div>
-                        <p class="box-content">
-                            VIOD là lựa chọn hàng đầu của các HĐQT và lãnh đạo tiên phong nhằm tạo dựng cộng đồng doanh nghiệp vững mạnh, minh bạch và hiệu quả.
-                        </p>
-                    </div>
-                </div>
+              
             </div>
         </div>
     </section>
@@ -191,7 +209,7 @@ get_header();
 
 
                     <div class="col-6">
-                        <div class="overview-box h-100">
+                        <div class="overview-box overview-box-transparent h-100">
                             <div class="box-title d-flex align-items-start">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
                                 <span>sứ mệnh</span>
@@ -250,14 +268,14 @@ get_header();
             </div>
         </div>
     </section>
-    <section class="viod-partner d-md-block d-none">
+    <section class="session-wrap ">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <h2 class="viod-partner-title text-center text-lg-start mb-0">VIOD Là đối tác kỹ thuật đáng tin cậy của Cuộc Bình chọn Doanh nghiệp Niêm yết (VLCA). Đồng thời là Cơ quan tham gia đánh giá Thẻ điểm Quản trị Công ty khu vực ASEAN (ACGS)</h2>
                 </div>
-                <div class="col-6">
-                    <div class="viod-partner-content d-flex justify-content-center align-items-center flex-wrap flex-lg-nowrap">
+                <div class="col-12 col-md-6">
+                    <div class="viod-partner-content mt-4 mt-md-0">
                         <div class="viod-partner-content-item">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/partner-1.png" alt="partner-1" class="partner-img" />
                         </div>
@@ -280,7 +298,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="container mt-5 md-mt-3 px-0">
+        <div class="container mt-5 md-mt-3 px-0 partners-container-custome">
             <div class="row">
                 <div class="col-12">
                     <div class="box-title text-center"><span>Đối tác sáng lập</span></div>
@@ -361,10 +379,10 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="container mt-5 md-mt-3">
-                <div class="row">
+            <!-- <div class="container mt-5 md-mt-3"> -->
+                <div class="row mt-5">
                     <div class="col-12">
-                        <h2 class="title ">Đối tác sáng lập</h2>
+                        <h2 class="title mb-3 mb-md-4">Đối tác sáng lập</h2>
                         <div class="founder-partners">
                             <?php
                             $founder_imgs = [
@@ -381,9 +399,10 @@ get_header();
                             <?php endforeach; ?>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
     </section>
+
     <?php get_template_part('components/board-of-directors'); ?>
     <?php get_template_part('components/partners-section'); ?>
     <?php get_template_part('components/publications-and-research'); ?>

@@ -91,12 +91,12 @@ if (empty($formatted_programs)) {
     <section class="training-program relative">
         <div class="container">
             <h2 class="title text-uppercase">sự kiện và chương trình đào tạo</h2>
-            <p class="description mb-4">
+            <p class="description ">
                 Các Sự kiện và Chương trình Đào tạo chuyên biệt và chất lượng cao về Quản trị <br class="d-none d-lg-block"> Công ty (QTCT). Cơ hội cập nhật kiến thức, nâng cao kỹ năng về QTCT hiện đại và <br class="d-none d-lg-block"> mở rộng mạng lưới của những người đang làm nghề QTCT
             </p>
-            <div class="btn-see-more text-center mb-5">
+            <!-- <div class="btn-see-more text-center mb-5">
                 <a href="/chuong-trinh-dao-tao/">XEM THÊM →</a>
-            </div>
+            </div> -->
 
             <div class="ongoing-training-swiper" id="training-programs-container">
                 <?php foreach ($formatted_programs as $index => $program): ?>

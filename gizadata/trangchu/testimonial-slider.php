@@ -20,7 +20,7 @@ $testimonials = array(
         'name' => 'NGUYỄN LINH GIANG',
         'gender' => 'female',
         'position' => 'Thành viên HĐQT<br>Tổng Công ty Dầu Việt Nam (PVOIL)',
-        'content_desktop' => '“Các khóa học như <strong>DCP, CSMP, ACMP</strong> không chỉ giúp hệ thống hóa kiến thức về Quản trị Công ty (QTCT), mà trên hết còn là cơ hội quý báu để những người hành nghề chia sẻ kinh nghiệm thực tiễn. Quan trọng hơn, các chương trình này góp phần thay đổi nhận thức, đưa QTCT vượt lên trên sự tuân thủ, hướng theo các thông lệ quốc tế – từ đó góp phần thúc đẩy nâng hạng thị trường Chứng khoán Việt Nam, gia tăng uy tín thương hiệu doanh nghiệp và tạo dựng hồ sơ nghề nghiệp chuyên nghiệp cho mỗi cá nhân hành nghề.”',
+        'content_desktop' => '“Các khóa học như <strong>DCP, CSMP, ACMP</strong> không chỉ giúp hệ thống hóa kiến thức về Quản trị Công ty (QTCT), mà trên hết còn là cơ hội quý báu để những người hành nghề chia sẻ kinh nghiệm thực tiễn. <br> Quan trọng hơn, các chương trình này góp phần thay đổi nhận thức, đưa QTCT vượt lên trên sự tuân thủ, hướng theo các thông lệ quốc tế – từ đó góp phần thúc đẩy nâng hạng thị trường Chứng khoán Việt Nam, gia tăng uy tín thương hiệu doanh nghiệp và tạo dựng hồ sơ nghề nghiệp chuyên nghiệp cho mỗi cá nhân hành nghề.”',
         'content_mobile' => '“Các khóa học như <strong>DCP CSMP ACMP</strong> không chỉ giúp hệ thống hóa kiến thức về Quản trị Công ty (QTCT), mà trên hết còn là cơ hội quý báu để những người hành nghề chia sẻ kinh nghiệm thực tiễn.”',
         'image' => 'testimonial-dk-1.png'
     )
@@ -93,7 +93,7 @@ $testimonials = array(
                         <!-- Content mobile -->
                         <div class="testimonial-mobile-content">
                             <div class="testimonial-mobile-quote">
-                                <p><?php echo $testimonial['content_mobile']; ?></p>
+                                <p><?php echo $testimonial['content_desktop']; ?></p>
                             </div>
                             
                             <!-- Gender + Name -->

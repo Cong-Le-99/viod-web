@@ -2,7 +2,7 @@
   <div class="container">
     <h2 class="title text-center">Thông tin liên hệ</h2>
 
-    <div class="btn-see-more text-center mb-5">
+    <div class="btn-see-more text-center mb-5 mt-4">
       <a href="#">XEM THÊM →</a>
     </div>
 

@@ -85,7 +85,7 @@
 /* Phần content - 27% */
 .testimonial-content-section {
   /* width: 38%; */
-  flex: 1;
+  flex: 0 0 579px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,10 +164,14 @@
 }
 
 .testimonial-content .testimonial-quote p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Italic;
   font-size: 16px;
   line-height: 26px;
-  color: #333;
-  font-style: italic;
+  letter-spacing: -0.8px;
+  text-align: justify;
+  vertical-align: middle;
   margin-bottom: 0;
 }
 
@@ -213,10 +217,10 @@
   padding: 40px 0;
 }
 
-.testimonial-mobile-container {
+/* .testimonial-mobile-container {
   position: relative;
   padding: 0 20px;
-}
+} */
 
 .testimonial-mobile-slide {
   opacity: 0;
@@ -308,6 +312,12 @@
   display: none;
 }
 
+@media (min-width: 768px) {
+  .testimonial-image-section {
+    transform: translateX(-30px);
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .testimonial-slider {
@@ -363,12 +373,12 @@
 
   /* Mobile Layout Responsive */
   .testimonial-mobile-new {
-    padding: 30px 0;
+    padding: 0px 0px !important;
   }
-
+  /* 
   .testimonial-mobile-container {
     padding: 0 15px;
-  }
+  } */
 
   .testimonial-mobile-slide {
     left: 15px;
@@ -377,9 +387,9 @@
 }
 
 @media (max-width: 575px) {
-  .testimonial-mobile-new {
+  /* .testimonial-mobile-new {
     padding: 25px 0;
-  }
+  } */
 
   .testimonial-mobile-slide {
     left: 10px;

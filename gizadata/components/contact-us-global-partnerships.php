@@ -1,8 +1,8 @@
 <section class="contact-us-global-partnerships session-wrap relative">
     <div class="contact-us-container-custom">
         <div class="row">
-            <div class="col-12 mb-3">
-                <h2 class="title">HỢP TÁC QUỐC TẾ | GIA TĂNG NGUỒN LỰC</h2>
+            <div class="col-12">
+                <h2 class="title mb-3 mb-md-4">HỢP TÁC QUỐC TẾ | GIA TĂNG NGUỒN LỰC</h2>
             </div>
         </div>
         <div class="row gy-2 md-gy-4">

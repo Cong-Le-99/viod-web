@@ -16,7 +16,7 @@ $slider_items = $home_data['home_hero'];
             $professional = $slide['professional'] ? $slide['professional'] : '';
     ?>
         <div class="ndslide" style="background-image: url('<?php echo esc_url($background_image); ?>'); opacity: <?php echo $opacity; ?>;">
-            <div class="slide-content container">
+            <div class="slide-content container-slider">
                 <?php if($title): ?>
                     <h5 class="professional-title"><?php echo esc_html($professional); ?></h5>
                     <h1><?php echo esc_html($title); ?></h1>
