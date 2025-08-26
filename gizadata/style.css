@@ -13,14 +13,14 @@ Text Domain: gizadata
 @import url("css/home.css");
 @import url("css/about-us.css?v=1");
 @import url("css/core-styles.css");
-@import url("css/testimonial.css");
+@import url("css/testimonial.css?v=1");
 @import url("css/about.css");
 @import url("css/card.css");
 @import url("css/swiper-custom.css");
 @import url("css/corporate-governance.css");
-@import url("css/post-archive.css");
+@import url("css/post-archive.css?v=1");
 @import url("css/relevant-legal-documents.css");
-@import url("css/member-certificate.css");
+@import url("css/member-certificate.css?v=2");
 /* Reset CSS */
 
 * {
@@ -44,6 +44,11 @@ Text Domain: gizadata
 }
 .noidungbaiviet.custom-banner-bg .banner-content .mota{
 	display:none;
+}
+.noidungbaiviet.custom-banner-bg .banner-content .mota.sub-title{
+  display: flex;
+  color: rgba(8, 33, 54, 0.7);
+  font-weight: 500;
 }
 .noidungbaiviet.custom-banner-bg .single-banner .overlay{
 	display:none;
@@ -199,7 +204,6 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -420,6 +424,7 @@ a:hover {
     color: #fff;
     position: static;
     margin-left: auto;
+    font-size: 30px;
   }
 
   .topbar {
@@ -1152,12 +1157,18 @@ a:hover {
   .member-certificate.custom-banner-bg .title {
     font-size: 40px;
   }
+  .main-navigation ul li:nth-child(6) ul.sub-menu{
+    width: 200px;
+    left: unset;
+    right: 0px;
+  }
   .main-navigation ul ul.sub-menu {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
     min-width: 220px;
+    width: 321px;
     background: #fff;
     box-shadow: 0 8px 24px rgba(10, 37, 54, 0.1);
     border-radius: 10px;
@@ -1190,14 +1201,13 @@ a:hover {
     background: none;
     border: none;
     display: block;
-    white-space: nowrap;
     border-radius: 6px;
     transition: background 0.15s;
+    text-transform: unset;
   }
 
   .main-navigation ul ul.sub-menu li a:hover {
-    background: #e6f7e6;
-    color: #007bff;
+    background: #a0df9d;
   }
 }
 
@@ -4927,6 +4937,10 @@ transition: opacity 0.3s ease;
   background: linear-gradient(to bottom, #ffffff 0%, #f5faf1 50%, #e0f5df 100%);
 }
 
+.noidungbaiviet.custom-banner-bg.faq{
+  background:#fff
+}
+
 .daotao {
   /* max-width: 1280px;
   margin: auto; */
@@ -5332,7 +5346,7 @@ transition: opacity 0.3s ease;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 
 .ndlienhe .chia .a {
@@ -6006,5 +6020,28 @@ transition: opacity 0.3s ease;
     padding: 7px 0 !important;
   }
 
-  #mobile-primary-menu ul.sub-menu li:nth-child(n + 2) a {}
+  @media (min-width: 768px) {
+    .legal-docs .van-ban-phap-luat .van-ban p{
+      font-size: 20px;
+    }
+}
+
+  .legal-docs .van-ban-phap-luat{
+    padding-top:40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .legal-docs .van-ban-phap-luat .van-ban{ 
+    border-radius: 8px;
+    background: #E0F5DF;
+  }
+  .legal-docs .van-ban-phap-luat .van-ban p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 24px;
+    line-height: 32px;
+    margin-bottom: 0px; 
+
+  }
 }

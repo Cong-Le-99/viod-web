@@ -162,6 +162,8 @@
   margin-left: 0;
   margin-right: 4px;
   margin-bottom: 1px;
+  filter: invert(50%) sepia(10%) saturate(7490%) hue-rotate(190deg)
+    brightness(92%) contrast(96%);
 }
 
 .archive-training-program .filter-sidebar {
@@ -285,7 +287,7 @@
 
 /* Content Section Styles */
 .member-certificate .content-section {
-  background-color: #fff;
+  background-color: #e0f5df;
   padding: 68px 0;
 }
 
@@ -351,13 +353,13 @@
 
 .member-certificate .text-content p {
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 500;
   font-style: SemiBold;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
   text-align: justify;
-  color: #082136;
+  color: rgba(8, 33, 54, 0.7);
 }
 
 .member-certificate .text-content {
@@ -454,6 +456,10 @@
 /* Mobile Layout - Default */
 .member-certificate .mobile-layout {
   display: block;
+}
+
+.member-certificate .program-organized .mobile-layout .description {
+  font-size: 16px;
 }
 
 .member-certificate .value-title {
@@ -903,7 +909,7 @@
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-  color: #0c3555;
+  color: rgba(12, 53, 85, 0.7);
   margin-bottom: 48px;
 }
 

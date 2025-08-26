@@ -301,8 +301,10 @@ get_header();
     <section class="team-contact px-custom px-md-0">
         <div class="container">
             <div class="team-header text-center">
-                <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
-                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                <div>
+                    <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
+                    <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu. <br class="d-none d-md-inline"><i> *nhấn vào hình của các chuyên gia để xem thêm</i></p>
+                </div>
             </div>
 
             <div class="team-members">
@@ -397,22 +399,27 @@ get_header();
                         'biography' => 'Ông Việt Anh có hơn 30 năm kinh nghiệm làm trong ngành công nghiệp dầu khí tại PetroVietnam và các công ty dầu khí hàng đầu quốc tế như BP, ExxonMobil. Từ năm 2007 đến nay ông đã đảm nhận các vị trí quản lý cấp cao như Tổng Giám đốc, Phó Chủ tịch HĐQT, Chủ tịch HĐQT của các Tổng công ty niêm yết lớn trên sàn chứng khoán như PVGAS (GAS), PTSC (PVS) và PVTrans (PVT).<br><br>Ông là một trong những nhà lãnh đạo tiên phong và dày dạn kinh nghiệm thực tiễn trong thực hành quản trị công ty, quản trị chiến lược và các mô hình tái cấu trúc tại các công ty đại chúng. Ông Việt Anh đã nhiều lần nhận các giải thưởng cao quý về lãnh đạo quản lý của Chính phủ cũng như các giải thưởng uy tín quốc tế như Doanh nhân Xuất sắc Châu Á các năm 2018, 2022 do APEA trao tặng (Master Entrepreneur Award).<br><br>Ông là Kỹ sư cơ khí và có bằng MBA, từng tham dự nhiều khóa học quản trị doanh nghiệp trong và ngoài nước. Ông đã có chứng nhận DCP và hiện là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP) của Viện Thành Viên HĐQT Việt Nam (VIOD).'
                     ),
                     array(
-                        'gender' => 'male',
+                        'gender' => 'Tiến sĩ',
                         'name' => 'Đinh Toàn Trung',
-                        'position' => 'Thành viên<br class="d-none d-md-block">Ban Cố vấn Chuyên môn VIOD​<br class="d-none d-md-block">Thành viên<br class="d-none d-md-block">Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ',
-                        'image' => 'lecturer-8.png',
+                        'position' => 'Thành viên <i><br class="d-none d-md-block"> Thành viên Trung tâm <br class="d-none d-md-block"> Quản trị Công ty Quốc tế/ <br class="d-none d-md-block"> Thụy Sĩ</i>',
+                        'image' => 'dinh-toan-trung.png',
                         'position_more' => array(
-                            'Thành viên Ban Cố vấn Chuyên môn VIOD​',
-                            'Thành viên Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ'
+                            'Ban Cố vấn Chuyên môn VIOD​',
+                            'Trung tâm Quản trị Công ty Quốc tế/Thụy Sĩ'
                         ),
-                        'biography' => 'Tiến sĩ Đinh Toàn Trung có nhiều kinh nghiệm làm việc tại các công ty đa quốc gia, như UBS AG, Credit Suisse, Trisa AG, và Holcim Ltd, và cũng là một doanh nhân khởi nghiệp, đồng sáng lập một công ty bao bì hàng đầu Việt Nam, Giám đốc Điều hành của PAT Industry Park. Ông cũng là cố vấn chiến lược cho nhiều công ty ở Việt Nam, như Công ty Xi măng Holcim Việt Nam, Ngân hàng Việt Á, Khu Công nghiệp PAT, Bao bì Thiên Ý.<br><br>Ông cũng đã hoạt động nhiều năm trong lĩnh vực giáo dục, là Giáo sư chính môn Chiến lược & Quản lý Quốc tế tại Trường đại học Khoa học Ứng dụng và Nghệ thuật Tây Bắc Thụy Sĩ. Ông cũng là giảng viên môn Quản lý Sự Thay đổi trong một chương trình "Đào tạo Giảng viên" cho lãnh đạo cấp cao của chính phủ ở Bắc Kinh và Sáng lập viên của một Chương trình Cao học Thụy Sĩ chuyên ngành Ngân hàng - Tài chính ở TP. Hồ Chí Minh.<br><br>Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels School ở Việt Nam và giảng dạy bộ môn Chiến lược/Quản trị Công ty. Trong nghiên cứu, Tiến sĩ Đinh Toàn Trung là Cố vấn Danh mục của Trung tâm Quốc tế về Quản trị Công ty tại Trường Đại học St. Gallen và là tác giả cũng như dịch giả trong các bộ môn chuyên về chiến lược, Quản trị Công ty. Ông có bằng Tiến sĩ Kinh tế học của Trường Đại học St. Gallen, và bằng Thạc sĩ QTKD của Trường Đại học Fribourg, Thụy Sĩ.'
-                    )
+                        'biography' => 'Tiến sĩ Đinh Toàn Trung có nhiều kinh nghiệm làm việc tại các công ty đa quốc gia, như UBS AG, Credit Suisse, Trisa AG, và Holcim Ltd, và cũng là một doanh nhân khởi nghiệp, đồng sáng lập một công ty bao bì hàng đầu Việt Nam, Giám đốc Điều hành của PAT Industry Park. Ông cũng là cố vấn chiến lược cho nhiều công ty ở Việt Nam, như Công ty Xi măng Holcim Việt Nam, Ngân hàng Việt Á, Khu Công nghiệp PAT, Bao bì Thiên Ý.
+                
+                Ông cũng đã hoạt động nhiều năm trong lĩnh vực giáo dục, là Giáo sư chính môn Chiến lược & Quản lý Quốc tế tại Trường đại học Khoa học Ứng dụng và Nghệ thuật Tây Bắc Thụy Sĩ. Ông cũng là giảng viên môn Quản lý Sự Thay đổi trong một chương trình "Đào tạo Giảng viên" cho lãnh đạo cấp cao của chính phủ ở Bắc Kinh và Sáng lập viên của một Chương trình Cao học Thụy Sĩ chuyên ngành Ngân hàng - Tài chính ở TP. Hồ Chí Minh.
+                
+                Hiện tại, Ông là Giám đốc Khoa học cho trường Solvay Brussels School ở Việt Nam và giảng dạy bộ môn Chiến lược/Quản trị Công ty. Trong nghiên cứu, Tiến sĩ Đinh Toàn Trung là Cố vấn Danh mục của Trung tâm Quốc tế về Quản trị Công ty tại Trường Đại học St. Gallen và là tác giả cũng như dịch giả trong các bộ môn chuyên về chiến lược, Quản trị Công ty. Ông có bằng Tiến sĩ Kinh tế học của Trường Đại học St. Gallen, và bằng Thạc sĩ QTKD của Trường Đại học Fribourg, Thụy Sĩ.'
+                    ),
+
                 );
                 ?>
 
                 <?php
                 $member_count = count($team_members);
-                $layout_class = 'layout-7'; // Mặc định hiển thị 7 giảng viên
+                $layout_class = 'layout-8'; // Mặc định hiển thị 8 giảng viên
                 ?>
                 <div class="team-grid <?php echo $layout_class; ?>">
                     <?php foreach ($team_members as $member): ?>

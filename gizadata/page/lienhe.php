@@ -18,7 +18,7 @@ get_header();
             <div class="title-wrapper">
                 <h1 class="post-title">Liên Hệ</h1>
 
-                <div class="mota">
+                <div class="mota sub-title">
                     Quản trị Công ty tốt là nền tảng vững chắc cho sự thành công cho doanh nghiệp. Chương trình Chứng nhận Thành viên Hội đồng Quản trị (DCP)
                 </div>
             </div>
@@ -47,7 +47,7 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Customer support
+                            Hỗ trợ
                         </div>
                     </div>
                     <div class="tt">
@@ -69,12 +69,12 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Professional department
+                            Bộ phận chuyên môn
                         </div>
                     </div>
                     <div class="tt">
                         <div class="tt1">
-                            info@viod.vn
+                            lms@viod.vn
                         </div>
                     </div>
                 </div>
@@ -97,12 +97,12 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Communications / Media Relations
+                            thương hiệu và truyền thông
                         </div>
                     </div>
                     <div class="tt">
                         <div class="tt1">
-                            info@viod.vn
+                            marcom@viod.vn
                         </div>
                     </div>
                 </div>
@@ -116,12 +116,12 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Membership
+                            chăm sóc thành viên
                         </div>
                     </div>
                     <div class="tt">
                         <div class="tt1">
-                            info@viod.vn
+                            membership@viod.vn
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Our location
+                            văn phòng
                         </div>
                     </div>
                     <div class="tt">
@@ -147,19 +147,21 @@ get_header();
                             Headquartered in Ha Noi (Head Office)
                         </div>
                         <div class="tt2">
-                            7th floor, Vinaconex Tower<br />
-                            Road number 34 Lang Ha street, Lang Ha ward, dong da District, Ha Noi city
+                            Tầng 7, Tòa nhà Vinaconex Tower
+                            <br />
+                            Số 34 đường Láng Hạ, P. Láng, <br />
+                            Thành phố Hà Nội
                         </div>
                         <div class="tt1">
                             Get direction
                         </div>
 
                         <div class="tt3">
-                            Ho Chi Minh Office
+                            Văn phòng Thành phố Hồ Chí Minh
                         </div>
                         <div class="tt2">
-                            21st floor, Vietcombank Tower<br />
-                            Number 5 me Linh square, Ben Nghe Ward, District 1, Ho Chi Minh city
+                            Tầng 21, Tòa nhà Vietcombank Tower<br />
+                            Số 5 Công trường Mê Linh, P. Sài Gòn, Thành phố Hồ Chí Minh
                         </div>
                     </div>
                 </div>
@@ -173,7 +175,7 @@ get_header();
                             </svg>
                         </div>
                         <div class="nd">
-                            Social network
+                            theo dõi chúng tôi
                         </div>
                     </div>
                     <div class="tt">

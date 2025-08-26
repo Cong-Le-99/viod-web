@@ -64,8 +64,6 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
                 <!-- Filter Sidebar - Desktop -->
                 <div class="filter-sidebar d-none d-lg-block">
                     <div class="filter-card">
-                        <h3 class="filter-title">BỘ LỌC</h3>
-
                         <!-- Search -->
                         <div class="filter-section">
                             <div class="search-box">

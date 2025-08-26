@@ -84,7 +84,7 @@ get_header();
                     'title' => 'Ưu việt',
                     'sub_title' => 'Mạng lưới người tham dự',
                     'content' => array(
-                        'Trở thành một phần của Cộng đồng người làm nghê Thư ký QTCT chuyên nghiệp đến từ nhiều ngành nghê, lĩnh vực khác nhau tại Việt Nam.',
+                        'Trở thành một phần của Cộng đồng người làm nghề Thư ký QTCT chuyên nghiệp đến từ nhiều ngành nghề, lĩnh vực khác nhau tại Việt Nam.',
                         'Cơ hội kết nối, học hỏi, cập nhật các thông tin, tư vấn và phát triển quan hệ tốt, giúp tăng cường văn hóá quản trị tốt.',
                     ),
                     'color' => 'blue',
@@ -294,8 +294,10 @@ get_header();
     <section class="team-contact team-contact-csmp px-custom px-md-0">
         <div class="container">
             <div class="team-header text-center">
-                <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
-                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                <div>
+                    <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
+                    <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                </div>
             </div>
 
             <div class="team-members">
@@ -313,6 +315,16 @@ get_header();
                     ),
                     array(
                         'gender' => 'female',
+                        'name' => 'Hồ Thị Phương Tú',
+                        'position' => 'Giám đốc Phòng Quản lý Niêm yết<br class="d-none d-md-block">Sở Giao dịch Chứng khoán Hà Nội (HNX)',
+                        'image' => 'phan-mau-don.png',
+                        'position_more' => array(
+                            'Giám đốc Phòng Quản lý Niêm yết, Sở Giao dịch Chứng khoán Hà Nội (HNX)',
+                        ),
+                        'biography' => 'Bà Tú có hơn 20 năm kinh nghiệm làm việc trên thị trường vốn Việt Nam. Bà từng làm việc tại Vụ Phát triển thị trường Ủy ban Chứng khoán Nhà nước trong 02 năm (1999 – 2000) trước khi chuyển sang Trung tâm Giao dịch Chứng khoán Hà Nội – HaSTC (nay là Sở Giao dịch Chứng khoán Hà Nội – HNX). Bà là một trong những cán bộ đầu tiên của Trung tâm.<br><br>Bà có nhiều năm công tác ở mảng thẩm định và quản lý niêm yết và hiện đang giữ cương vị Giám đốc Phòng Quản lý Niêm yết tại HNX. Bà cũng tham gia nhiều chương trình quản trị công ty tại Việt Nam.<br><br>Bà Tú có bằng cử nhân của Đại học Kinh tế quốc dân và MBA của ĐH Quốc tế Nhật Bản.'
+                    ),
+                    array(
+                        'gender' => 'female',
                         'name' => 'Nguyễn Linh Giang',
                         'position' => 'Thành viên HĐQT<br class="d-none d-md-block">Tổng Công ty Dầu Việt Nam (PVOIL)',
                         'image' => 'nguyen-linh-giang.png',
@@ -323,16 +335,6 @@ get_header();
                             'Giảng viên (thỉnh giảng) Khoa Tài chính, Đại học Kinh tế TP. Hồ Chí Minh'
                         ),
                         'biography' => 'Bà Giang có gần 25 năm công tác trong ngành Tài chính – Kế toán – Ngân hàng tại các Global Bank và Tập đoàn kinh tế Nhà nước với hơn 15 năm đảm nhận chức danh lãnh đạo quản lý chuyên sâu về Quản trị Công ty qua các chức danh Trưởng Ban kiểm soát, Trưởng Ban Kiểm toán nội bộ, CFO, Thành viên/Chủ tịch HĐQT, Trưởng Tiểu Ban KT&QTRR, Phó Chủ tịch UB ESG tại các Công ty niêm yết lớn trên sàn chứng khoán như Gas Shipping (GSP), PVTrans(PVT), PVOil (OIL) Bà Giang có bằng MBA, Đại học Impac Hoa Kỳ (Honour Certificate) & Bằng Cử nhân Kế toán Kiểm toán, Đại học Kinh tế TP HCM. Bà Giang hiện cũng là giảng viên môn Quản trị Công ty tại trường Đại học Kinh tế Thành phố Hồ Chí Minh, bà đã có chứng nhận DCP và hiện là thành viên IMP của Viện Thành viên HĐQT Việt Nam.'
-                    ),
-                    array(
-                        'gender' => 'female',
-                        'name' => 'Hồ Thị Phương Tú',
-                        'position' => 'Giám đốc Phòng Quản lý Niêm yết<br class="d-none d-md-block">Sở Giao dịch Chứng khoán Hà Nội (HNX)',
-                        'image' => 'ho-thi-phuong-tu.png',
-                        'position_more' => array(
-                            'Giám đốc Phòng Quản lý Niêm yết, Sở Giao dịch Chứng khoán Hà Nội (HNX)',
-                        ),
-                        'biography' => 'Bà Tú có hơn 20 năm kinh nghiệm làm việc trên thị trường vốn Việt Nam. Bà từng làm việc tại Vụ Phát triển thị trường Ủy ban Chứng khoán Nhà nước trong 02 năm (1999 – 2000) trước khi chuyển sang Trung tâm Giao dịch Chứng khoán Hà Nội – HaSTC (nay là Sở Giao dịch Chứng khoán Hà Nội – HNX). Bà là một trong những cán bộ đầu tiên của Trung tâm.<br><br>Bà có nhiều năm công tác ở mảng thẩm định và quản lý niêm yết và hiện đang giữ cương vị Giám đốc Phòng Quản lý Niêm yết tại HNX. Bà cũng tham gia nhiều chương trình quản trị công ty tại Việt Nam.<br><br>Bà Tú có bằng cử nhân của Đại học Kinh tế quốc dân và MBA của ĐH Quốc tế Nhật Bản.'
                     ),
                     array(
                         'gender' => 'male',
@@ -348,7 +350,7 @@ get_header();
                         'gender' => 'female',
                         'name' => 'Phan Mẫu Đơn',
                         'position' => 'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT<br class="d-none d-md-block">Ngân hàng TMCP Quân đội (MB)',
-                        'image' => 'phan-mau-don.png',
+                        'image' => 'Phan-Mau-Don-2.png',
                         'position_more' => array(
                             'Phó Phòng Quản trị và CNTT Tập đoàn – Khối CNTT, Ngân hàng TMCP Quân đội (MB)',
                         ),

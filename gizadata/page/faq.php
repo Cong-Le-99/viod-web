@@ -5,7 +5,7 @@ Template Name: faq
 get_header();
 ?>
 
-<div class="noidungbaiviet custom-banner-bg">
+<div class="noidungbaiviet custom-banner-bg faq">
     <div class="single-banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
 ');">
         <div class="overlay"></div>
@@ -18,7 +18,7 @@ get_header();
             <div class="title-wrapper">
                 <h1 class="post-title">FAQ</h1>
 
-                <div class="mota">
+                <div class="mota sub-title">
                     Cần hỗ trợ thêm? Đây là nơi bạn tìm thấy câu trả lời cho những thắc mắc phổ biến nhất
                 </div>
             </div>

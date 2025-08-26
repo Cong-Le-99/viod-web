@@ -87,7 +87,7 @@ body {
 
 .text-base.light {
   font-family: "Montserrat", sans-serif;
-  color: #c3c5c4;
+  color: rgba(8, 33, 54, 0.7);
 }
 
 .publications-and-research-img {

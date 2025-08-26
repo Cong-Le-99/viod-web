@@ -66,11 +66,7 @@ if (!empty($banner_data['banner_mobile'])) {
         <div class="container">
             <div class="d-flex justify-content-between ">
                 <h2 class="title text-start mb-3 mb-md-5">TIN TỨC NỔI BẬT</h2>
-                <div class="d-flex justify-content-start align-items-baseline mt-2">
-                    <a href="<?php echo home_url('/xem-them-tin-tuc/'); ?>" class="post-card-readmore">
-                        Xem tất cả →
-                    </a>
-                </div>
+
             </div>
             <div class="post-archive-grid">
                 <?php

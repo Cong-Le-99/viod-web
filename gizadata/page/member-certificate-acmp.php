@@ -299,8 +299,10 @@ get_header();
     <section class="team-contact px-custom px-md-0">
         <div class="container">
             <div class="team-header text-center">
-                <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
-                <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                <div>
+                    <h2 class="title mb-3">Đội ngũ hướng dẫn</h2>
+                    <p class="description">Đội ngũ chuyên gia giàu kinh nghiệm thực tiễn, tiên phong trong Quản trị Công ty hiện<br class="d-none d-md-inline"> đại, được trang bị kỹ năng và tư duy quản trị tiên tiến từ các chuyên gia quốc tế hàng đầu.</p>
+                </div>
             </div>
 
             <div class="team-members">
