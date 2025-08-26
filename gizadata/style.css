@@ -11,8 +11,8 @@ Text Domain: gizadata
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("css/home.css");
-@import url("css/about-us.css?v=1");
-@import url("css/core-styles.css");
+@import url("css/about-us.css?v=2");
+@import url("css/core-styles.css?v=1");
 @import url("css/testimonial.css?v=1");
 @import url("css/about.css");
 @import url("css/card.css");
@@ -20,7 +20,7 @@ Text Domain: gizadata
 @import url("css/corporate-governance.css");
 @import url("css/post-archive.css?v=1");
 @import url("css/relevant-legal-documents.css");
-@import url("css/member-certificate.css?v=2");
+@import url("css/member-certificate.css?v=3");
 /* Reset CSS */
 
 * {
@@ -32,32 +32,64 @@ Text Domain: gizadata
 /* Desktop Overrides */
 /* Custom styled banner */
 
+@media (min-width: 768px) {
+  .legal-docs .van-ban-phap-luat .van-ban p {
+    font-size: 20px;
+  }
+}
+
 .noidungbaiviet.custom-banner-bg .single-banner {
-	background-image: unset !important;
-	background:#fff;
+  background-image: unset !important;
+  background: #fff;
 }
-.noidungbaiviet.custom-banner-bg .breadcrumb a:nth-child(2){
-	color:#000000 !important;
+
+.legal-docs .van-ban-phap-luat {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.noidungbaiviet.custom-banner-bg .banner-content h1{
-	 color: #082136 !important;
+
+.legal-docs .van-ban-phap-luat .van-ban {
+  border-radius: 8px;
+  background: #E0F5DF;
 }
-.noidungbaiviet.custom-banner-bg .banner-content .mota{
-	display:none;
+
+.legal-docs .van-ban-phap-luat .van-ban p {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 24px;
+  line-height: 32px;
+  margin-bottom: 0px;
+
 }
-.noidungbaiviet.custom-banner-bg .banner-content .mota.sub-title{
+
+.noidungbaiviet.custom-banner-bg .breadcrumb a:nth-child(2) {
+  color: #000000 !important;
+}
+
+.noidungbaiviet.custom-banner-bg .banner-content h1 {
+  color: #082136 !important;
+}
+
+.noidungbaiviet.custom-banner-bg .banner-content .mota {
+  display: none;
+}
+
+.noidungbaiviet.custom-banner-bg .banner-content .mota.sub-title {
   display: flex;
   color: rgba(8, 33, 54, 0.7);
   font-weight: 500;
 }
-.noidungbaiviet.custom-banner-bg .single-banner .overlay{
-	display:none;
+
+.noidungbaiviet.custom-banner-bg .single-banner .overlay {
+  display: none;
 }
 
 .member-certificate.custom-banner-bg .banner {
   position: relative;
   height: 300px;
-	/* background-image: unset !important; */
+  background-image: unset !important;
   background: #fff;
   background-size: cover;
   background-position: center;
@@ -66,6 +98,7 @@ Text Domain: gizadata
   align-items: center;
   justify-content: center;
 }
+
 .member-certificate.custom-banner-bg .title {
   margin: 0;
   font-weight: 700;
@@ -76,11 +109,13 @@ Text Domain: gizadata
   text-transform: uppercase;
   color: #082136 !important;
 }
-.member-certificate.custom-banner-bg .text-base{
-	/* display:none !important; */
+
+.member-certificate.custom-banner-bg .text-base {
+  /* display:none !important; */
 }
-.member-certificate.custom-banner-bg .breadcrumb-item.active{
-	color:#000000 !important;
+
+.member-certificate.custom-banner-bg .breadcrumb-item.active {
+  color: #000000 !important;
 }
 
 /* Custom styled banner */
@@ -99,55 +134,64 @@ a:hover {
   text-decoration: none;
   /* color: #3aa735; */
 }
-.main-navigation ul.sub-menu li.menu-item{
-	padding:0px;
+
+.main-navigation ul.sub-menu li.menu-item {
+  padding: 0px;
 }
 
 /* form đăng ký  */
-.contact-form{
-  display: flex ;
+.contact-form {
+  display: flex;
   text-align: center;
   flex-direction: column;
   gap: 8px;
 }
-.wrap-info-remember.member-certificate .forminator-radio-bullet{
+
+.wrap-info-remember.member-certificate .forminator-radio-bullet {
   width: 16px !important;
-    height: 16px !important;
-    border-radius: 50% !important;
-    flex: 0 0 16px !important;
-    background: #fff !important;
-    border-color: #0C3555 !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  flex: 0 0 16px !important;
+  background: #fff !important;
+  border-color: #0C3555 !important;
 }
-.wrap-info-remember.member-certificate .forminator-radio-bullet::before{
+
+.wrap-info-remember.member-certificate .forminator-radio-bullet::before {
   background-color: #0C3555 !important;
 }
-.wrap-info-remember.member-certificate .forminator-label{
-	font-weight:500 !important;
-	font-size:14px !important;
+
+.wrap-info-remember.member-certificate .forminator-label {
+  font-weight: 500 !important;
+  font-size: 14px !important;
 }
-.wrap-info-remember.member-certificate .forminator-input{
-	border-radius:8px !important;
+
+.wrap-info-remember.member-certificate .forminator-input {
+  border-radius: 8px !important;
 }
-.wrap-info-remember.member-certificate .forminator-checkbox-box{
-	width: 16px !important;
-    height: 16px !important;
-    flex: 0 0 16px !important;
-    background: #fff !important;
-    border-color: #0C3555 !important;
+
+.wrap-info-remember.member-certificate .forminator-checkbox-box {
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 16px !important;
+  background: #fff !important;
+  border-color: #0C3555 !important;
 }
-.wrap-info-remember.member-certificate .forminator-checkbox-box::before{
+
+.wrap-info-remember.member-certificate .forminator-checkbox-box::before {
   background-color: #0C3555 !important;
 }
-.wrap-info-remember.member-certificate .forminator-button.forminator-button-submit{
-	padding:16px 24px !important;
-	background-color:#3AA735 !important;
-	border-radius:8px !important;
-	font-size:16px !important;
-	font-weight:600 !important;
-	color:#fff;
+
+.wrap-info-remember.member-certificate .forminator-button.forminator-button-submit {
+  padding: 16px 24px !important;
+  background-color: #3AA735 !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #fff;
 }
-.wrap-info-remember.member-certificate .forminator-row{
-	margin-bottom:16px !important;
+
+.wrap-info-remember.member-certificate .forminator-row {
+  margin-bottom: 16px !important;
 }
 
 
@@ -394,12 +438,15 @@ a:hover {
     height: auto;
     padding: 10px 0;
   }
+
   .menu-toggle {
     display: flex !important;
   }
+
   .main-navigation {
     display: none !important;
   }
+
   .main-navigation ul {
     gap: 10px;
   }
@@ -1157,11 +1204,13 @@ a:hover {
   .member-certificate.custom-banner-bg .title {
     font-size: 40px;
   }
-  .main-navigation ul li:nth-child(6) ul.sub-menu{
+
+  .main-navigation ul li:nth-child(6) ul.sub-menu {
     width: 200px;
     left: unset;
     right: 0px;
   }
+
   .main-navigation ul ul.sub-menu {
     display: none;
     position: absolute;
@@ -1828,6 +1877,7 @@ a:hover {
   position: relative;
   overflow: hidden;
 }
+
 @media (min-width: 1512px) {
   .slider-trangchu {
     height: 660px;
@@ -1903,6 +1953,7 @@ a:hover {
     white-space: pre-line;
     margin: 24px 0 32px 0;
   }
+
   .slider-trangchu .button {
     padding: 16px 24px;
     font-size: 16px;
@@ -4937,8 +4988,8 @@ transition: opacity 0.3s ease;
   background: linear-gradient(to bottom, #ffffff 0%, #f5faf1 50%, #e0f5df 100%);
 }
 
-.noidungbaiviet.custom-banner-bg.faq{
-  background:#fff
+.noidungbaiviet.custom-banner-bg.faq {
+  background: #fff
 }
 
 .daotao {
@@ -6020,28 +6071,25 @@ transition: opacity 0.3s ease;
     padding: 7px 0 !important;
   }
 
-  @media (min-width: 768px) {
-    .legal-docs .van-ban-phap-luat .van-ban p{
-      font-size: 20px;
-    }
-}
-
-  .legal-docs .van-ban-phap-luat{
-    padding-top:40px;
+  .legal-docs .van-ban-phap-luat {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
-  .legal-docs .van-ban-phap-luat .van-ban{ 
+
+  .legal-docs .van-ban-phap-luat .van-ban {
     border-radius: 8px;
     background: #E0F5DF;
   }
-  .legal-docs .van-ban-phap-luat .van-ban p{
+
+  .legal-docs .van-ban-phap-luat .van-ban p {
     font-size: 16px;
     font-weight: 600;
     padding: 24px;
     line-height: 32px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 
   }
+
 }
