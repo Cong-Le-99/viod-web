@@ -443,9 +443,11 @@ get_header();
 
 <!-- Content Section program organized -->
 <?php
+
 get_template_part('trangchu/chuongtrinhdangdienra', null, [
     'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
-    'description' => "DCP cung cấp các kiến thức về QTCT, hướng đến chuyên nghiệp hóa QTCT tại Việt Nam, \n phù hợp với sự phát triển của thị trường tài chính trong nước và thế giới. ",
+    'description_desktop' => "Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và \n cải thiện chất lượng QTCT",
+    'description_mobile' => "Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT",
 ]);
 ?>
 <!-- Testimonial Slider Section -->

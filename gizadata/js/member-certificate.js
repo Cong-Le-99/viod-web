@@ -61,7 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
     (member) => !member.classList.contains("team-member-not-more")
   );
   const viewMoreBtn = document.querySelector(".btn-view-more");
-  let currentDisplayCount = teamMembers.length >= 7 ? 7 : teamMembers.length;
+  // Xác định số lượng hiển thị ban đầu dựa theo class layout-* trên team-grid (ưu tiên nếu có)
+  const teamGridEl = document.querySelector(".team-grid");
+  let initialLayoutCount = 7;
+  if (teamGridEl) {
+    const layoutClass = Array.from(teamGridEl.classList).find(function (cls) {
+      return /^layout-\d+$/.test(cls);
+    });
+    if (layoutClass) {
+      const parsed = parseInt(layoutClass.split("-")[1], 10);
+      if (!isNaN(parsed)) {
+        initialLayoutCount = parsed;
+      }
+    }
+  }
+  let currentDisplayCount = Math.min(initialLayoutCount, teamMembers.length);
 
   // Ẩn tất cả giảng viên từ vị trí thứ 8 trở đi
   function hideExtraMembers() {

@@ -4,7 +4,7 @@ Template Name: About us
 */
 get_header();
 ?>
-<div class="member-certificate about-page custom-banner-bg customer-banner-about-us">
+<div class="member-certificate about-page customer-banner-about-us">
     <section class="about-us">
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner">
@@ -82,7 +82,7 @@ get_header();
             <div class="container">
                 <div class="row gy-4">
                     <!-- Box 1 -->
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 d-none d-md-block">
                         <div class="overview-box h-100">
                             <div class="box-title d-flex align-items-start">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us-arrow.svg" alt="arrow" class="me-1" />
@@ -272,7 +272,7 @@ get_header();
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-6">
-                    <h2 class="viod-partner-title text-center text-lg-start mb-0">VIOD Là đối tác kỹ thuật đáng tin cậy của Cuộc Bình chọn Doanh nghiệp Niêm yết (VLCA). Đồng thời là Cơ quan tham gia đánh giá Thẻ điểm Quản trị Công ty khu vực ASEAN (ACGS)</h2>
+                    <h2 class="viod-partner-title text-start mb-0">VIOD Là đối tác kỹ thuật đáng tin cậy của Cuộc Bình chọn Doanh nghiệp Niêm yết (VLCA). Đồng thời là Cơ quan tham gia đánh giá Thẻ điểm Quản trị Công ty khu vực ASEAN (ACGS)</h2>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="viod-partner-content mt-4 mt-md-0">
@@ -294,7 +294,7 @@ get_header();
             <div class="row">
                 <div class="col-12">
                     <h2 class="title mb-5">CHẶNG ĐƯỜNG HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/roadmap2.png" alt="roadmap" class="roadmap-image w-100 h-auto mt-1" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/roadmap2.png?v=1" alt="roadmap" class="roadmap-image w-100 h-auto mt-1" />
                 </div>
             </div>
         </div>
@@ -334,22 +334,22 @@ get_header();
                         [
                             'year' => '12/2016',
                             'title' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI)',
-                            'description' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI) hình thành với sự hỗ trợ của <strong>Tổ chức Tài chính quốc tế (IFC)</strong> phối hợp <strong>Sở Giao dịch Chứng khoán TP.HCM (HOSE)</strong> và <strong>Sở Giao dịch Chứng khoán Hà Nội (HNX)</strong> cùng sự hỗ trợ của <strong>Ủy ban Chứng khoán Nhà nước (SSC)</strong>.',
+                            'description' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI) hình thành với sự hỗ trợ của Tổ chức Tài chính quốc tế (IFC) phối hợp Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) và Hà Nội (HNX) cùng sự hỗ trợ của Ủy ban Chứng khoán Nhà nước (SSC).',
                         ],
                         [
                             'year' => '2018',
                             'title' => 'Thành lập VIOD',
-                            'description' => 'VCGI thành lập <strong>Viện Thành viên Hội đồng quản trị Việt Nam (VIOD)</strong> với sự hỗ trợ kỹ thuật của <strong>IFC</strong> và <strong>Cục Kinh tế Liên bang Thụy Sĩ (SECO)</strong>.',
+                            'description' => 'VCGI thành lập <strong>Viện Thành viên Hội đông quản trị Việt Nam (VIOD)</strong> với sự hỗ trợ kỹ thuật của IFC và Cục Kinh tế Liên bang Thụy Sĩ (SECO).',
                         ],
                         [
                             'year' => '2019',
                             'title' => 'Ra đời CMP',
-                            'description' => 'Từ năm 2018–2021, phạm vi phủ sóng của VIOD ngày càng phát triển nhanh chóng trong cộng đồng và mạng lưới quan hệ đối tác với sự ra đời của <strong>Chương trình thành viên Doanh nghiệp (CMP)</strong>.',
+                            'description' => 'Từ năm 2018-2021, phạm vi phủ sóng của VIOD ngày càng phát triển nhanh chóng trong cộng đồng và mạng lưới quan hệ đối tác với sự ra đời của <strong>Chương trình thành viên Doanh nghiệp (CMP)</strong>',
                         ],
                         [
                             'year' => '2022',
                             'title' => 'Kỷ niệm 6 năm',
-                            'description' => '<strong>Nhận Bằng khen của Bộ Tài chính vào tháng 9/2024</strong>.',
+                            'description' => '<strong>Kỷ niệm 6 nămNhận Bằng khen của Bộ Tài chính vào tháng 9/2024</strong>.',
                         ],
                         [
                             'year' => '2023',

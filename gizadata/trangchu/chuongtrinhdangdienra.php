@@ -27,7 +27,7 @@ function get_training_section_content($custom_link = null, $custom_link_text = n
         case is_home():
             return [
                 'title' => 'CHƯƠNG TRÌNH ĐÀO TẠO ĐANG DIỄN RA',
-                'description_desktop' => 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và cải thiện chất lượng QTCT với các khóa học toàn diện',
+                'description_desktop' => 'Chương trình đào tạo chuyên sâu nhằm nâng cao kiến thức và \n cải thiện chất lượng QTCT với các khóa học toàn diện',
                 'description_mobile' => 'Chương trình đào tạo chuyên sâu QTCT',
                 'link' => $custom_link ?? '/dao-tao',
                 'link_text' => $custom_link_text ?? 'XEM THÊM →'
@@ -106,8 +106,8 @@ if (!empty($training_posts) && is_array($training_posts)) {
 <section class="training-program relative overflow-hidden">
     <div class="container">
         <h2 class="title"><?= nl2br($section_content['title']); ?></h2>
-        <p class="description description-desktop d-none d-lg-block"><?= nl2br($section_content['description_desktop']); ?></p>
-        <p class="description description-mobile d-block d-lg-none"><?= nl2br($section_content['description_mobile']); ?></p>
+        <p class="description description-desktop d-none d-md-block"><?= nl2br($section_content['description_desktop']); ?></p>
+        <p class="description description-mobile d-block d-md-none"><?= nl2br($section_content['description_mobile']); ?></p>
 
         <?php if (empty($section_content['hide_button'])): ?>
             <div class="btn-see-more text-center mb-4">
