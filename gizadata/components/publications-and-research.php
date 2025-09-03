@@ -35,7 +35,7 @@ if ($publications_query->have_posts()) {
 
         <div class="row">
             <div class="col-12 col-md-7 ">
-                <h2 class="title text-center text-md-start light text-nowrap-md">các nghiên cứu và ấn phẩm</h2>
+                <h2 class="title-membership-programs text-center text-md-start text-nowrap-md">các nghiên cứu và ấn phẩm</h2>
                 <p class="text-base publications-and-research-text">
                     Cập nhật thông tin mới nhất về Quản trị Công ty <br class="d-none d-md-block"> và những xu hướng nổi bật trong lĩnh vực
                 </p>

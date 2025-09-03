@@ -191,7 +191,7 @@
   }
   .ongoing-training-swiper {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: end;
     position: relative;
     flex-direction: row;
@@ -262,7 +262,7 @@
   }
 
   .core-value-item {
-    padding: 32px 42px;
+    padding: 32px 24px;
   }
 
   .core-value-title {

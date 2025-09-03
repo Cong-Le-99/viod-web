@@ -476,6 +476,13 @@
     align-items: flex-start;
     gap: 16px;
   }
+  .filter-section {
+    display: block;
+  }
+
+  .filter-section .a.filter-label {
+    margin-bottom: 15px;
+  }
 
   .posts-grid {
     grid-template-columns: 1fr;
@@ -506,6 +513,7 @@
 
   .filter-sidebar-event {
     display: block !important;
+    position: relative !important;
   }
 
   /* Hiển thị thanh filter bar trên mobile */

@@ -17,7 +17,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/development.svg" alt="Development Icon">
                 </div>
                 <h3 class="core-value-title">Kết nối</h3>
-                <p class="core-value-description">Thành viên HĐQT và các thành viên trong hệ sinh thái Quản trị Công ty</p>
+                <p class="core-value-description">Thành viên HĐQT và các thành viên <br class="d-none d-md-block"> trong hệ sinh thái Quản trị Công ty</p>
                 <a href="https://viod.vn/su-kien/" class="core-value-link">
                     <span>Tham gia với chúng tôi</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="Arrow Right">
@@ -27,9 +27,10 @@
                 <div class="core-value-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/connection.svg" alt="Connection Icon">
                 </div>
-                <h3 class="core-value-title">Phát triển</h3>
+                <h3 class="core-value-title">PHÁT TRIỂN BỀN VỮNG</h3>
                 <p class="core-value-description">Nâng cao thực hành Quản trị Công ty <br class="d-none d-md-block"> theo thông lệ tốt và hướng đến
-                <br class="d-none d-md-block">Phát triển bền vững.</p>
+                    <br class="d-none d-md-block">Phát triển bền vững.
+                </p>
                 <a href="https://viod.vn/#" class="core-value-link">
                     <span>tiên phong</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="Arrow Right">

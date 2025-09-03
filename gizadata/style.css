@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gizadata
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("css/home.css");
+@import url("css/home.css?v=2");
 @import url("css/about-us.css?v=3");
 @import url("css/core-styles.css?v=1");
 @import url("css/testimonial.css?v=1");
@@ -18,7 +18,7 @@ Text Domain: gizadata
 @import url("css/card.css?v=1");
 @import url("css/swiper-custom.css");
 @import url("css/corporate-governance.css");
-@import url("css/post-archive.css?v=1");
+@import url("css/post-archive.css?v=3");
 @import url("css/relevant-legal-documents.css");
 @import url("css/member-certificate.css?v=4");
 /* Reset CSS */
@@ -54,7 +54,13 @@ Text Domain: gizadata
   border-radius: 8px;
   background: #E0F5DF;
 }
-
+.btn.btn-outline-secondary{
+	padding:11px;
+	flex: 0 0 30%;
+}
+.btn.btn-success{
+	padding:11px;
+}
 .legal-docs .van-ban-phap-luat .van-ban p {
   font-size: 16px;
   font-weight: 600;
@@ -348,7 +354,7 @@ a:hover {
   line-height: 24px;
   text-decoration: none;
   transition: color 0.2s;
-  text-transform: uppercase;
+  text-transform: inherit;
 
 }
 
