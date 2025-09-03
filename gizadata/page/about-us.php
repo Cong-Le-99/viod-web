@@ -9,7 +9,7 @@ get_header();
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner">
             <!-- Breadcrumb chỉ hiện trên desktop -->
-            <nav class="breadcrumb-nav">
+            <nav class="breadcrumb-nav breadcrumb-shadow">
                 <ol class="breadcrumb dark">
                     <li class="breadcrumb-item">
                         <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
@@ -333,33 +333,38 @@ get_header();
                     $roadmap_mobile = [
                         [
                             'year' => '12/2016',
-                            'title' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI)',
+                            'title' => '',
                             'description' => 'Sáng kiến Quản trị Công ty Việt Nam (VCGI) hình thành với sự hỗ trợ của Tổ chức Tài chính quốc tế (IFC) phối hợp Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE) và Hà Nội (HNX) cùng sự hỗ trợ của Ủy ban Chứng khoán Nhà nước (SSC).',
                         ],
                         [
                             'year' => '2018',
-                            'title' => 'Thành lập VIOD',
+                            'title' => '',
                             'description' => 'VCGI thành lập <strong>Viện Thành viên Hội đông quản trị Việt Nam (VIOD)</strong> với sự hỗ trợ kỹ thuật của IFC và Cục Kinh tế Liên bang Thụy Sĩ (SECO).',
                         ],
                         [
                             'year' => '2019',
-                            'title' => 'Ra đời CMP',
-                            'description' => 'Từ năm 2018-2021, phạm vi phủ sóng của VIOD ngày càng phát triển nhanh chóng trong cộng đồng và mạng lưới quan hệ đối tác với sự ra đời của <strong>Chương trình thành viên Doanh nghiệp (CMP)</strong>',
+                            'title' => '',
+                            'description' => 'Từ năm 2018-2021, phạm vi phủ sóng của VIOD ngày càng phát triển nhanh chóng trong cộng đồng và mạng lưới quan hệ đối tác với sự ra đời của <strong> Chương trình thành viên Doanh nghiệp (CMP)</strong>',
                         ],
                         [
                             'year' => '2022',
-                            'title' => 'Kỷ niệm 6 năm',
-                            'description' => '<strong>Kỷ niệm 6 nămNhận Bằng khen của Bộ Tài chính vào tháng 9/2024</strong>.',
+                            'title' => '',
+                            'description' => 'Chính thức là Thành viên của GNDI - Đại diện Việt Nam trong mạng lưới các Viện Thành viên Hội đồng Quản trị toàn cầu. Ra mắt <strong>Chương trình thành viên Cá nhân (IMP)</strong>',
                         ],
                         [
                             'year' => '2023',
-                            'title' => 'Dấu ấn 5 năm',
-                            'description' => '',
+                            'title' => '',
+                            'description' => '<strong>Dấu ấn 5 năm</strong>',
                         ],
                         [
                             'year' => '2024',
-                            'title' => 'Thành viên GNDi & Ra mắt IMP',
-                            'description' => '<strong>Chính thức là Thành viên của GNDi</strong> – Đại diện Việt Nam trong mạng lưới các Viện Thành viên Hội đồng Quản trị toàn cầu. Ra mắt <strong>Chương trình thành viên Cá nhân (IMP)</strong>.',
+                            'title' => '',
+                            'description' => 'Nhận bằng khen của Bộ Tài chính vì những đóng góp cho Thị trường Chứng khoán.</strong>.',
+                        ],
+                        [
+                            'year' => '2025',
+                            'title' => '',
+                            'description' => '<strong>Dấu ấn 7 năm</strong>',
                         ],
                     ];
                     ?>

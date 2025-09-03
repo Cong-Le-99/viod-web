@@ -37,7 +37,7 @@ $selected_category = isset($_GET['category']) ? sanitize_text_field($_GET['categ
     <h1 class="d-none"><?php echo single_cat_title('', false); ?></h1>
     <div class="banner">
         <!-- Breadcrumb chỉ hiện trên desktop -->
-        <nav class="breadcrumb-nav">
+        <nav class="breadcrumb-nav breadcrumb-shadow">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>

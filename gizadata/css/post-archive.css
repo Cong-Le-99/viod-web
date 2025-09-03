@@ -686,8 +686,8 @@
 }
 
 .post-card.large .post-card-title {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .post-card-title a {
@@ -1203,6 +1203,11 @@ hr.filter-hr {
 @media (min-width: 769px) {
   .filter-mobile-bar {
     display: none;
+  }
+
+  .post-card.large .post-card-title {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .filter-sidebar {

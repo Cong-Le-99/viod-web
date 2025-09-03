@@ -63,6 +63,10 @@
 }
 
 @media (min-width: 768px) {
+  .member-certificate .breadcrumb {
+    min-height: 52px !important;
+  }
+
   .member-certificate .team-member .member-image-overlay {
     width: 158px !important;
     bottom: 30px !important;
@@ -111,7 +115,7 @@
 .member-certificate .banner {
   position: relative;
   height: 250px;
-  background-image: url("../images/hero-banner-dcp-mb.png");
+  /* background-image: url("../images/hero-banner-dcp-mb.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,10 +127,13 @@
 /* Breadcrumb Styles */
 .member-certificate .breadcrumb-nav {
   position: absolute;
-  top: 16px;
+  top: 0px;
   z-index: 10;
-  max-width: 1500px;
-  width: 95%;
+  width: 100%;
+}
+
+.breadcrumb-shadow {
+  box-shadow: 0px 2px 8px 0px #0000001a !important;
 }
 
 .member-certificate .breadcrumb {
@@ -140,6 +147,10 @@
   letter-spacing: 0%;
   display: flex;
   align-items: center;
+  min-height: 44px;
+  max-width: 1500px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .member-certificate .breadcrumb-item {
@@ -254,7 +265,7 @@
   }
 
   .member-certificate .breadcrumb-nav {
-    top: 18px;
+    /* top: 18px; */
   }
   .member-certificate .organized-content-box {
     display: flex;
@@ -323,6 +334,10 @@
   text-transform: uppercase;
   color: #082136;
   margin-bottom: 24px;
+}
+
+.member-certificate .banner .title {
+  margin-bottom: 0 !important;
 }
 
 /* Mobile Title - shows above video */
@@ -722,6 +737,23 @@
   cursor: pointer;
 }
 
+.member-certificate .attendee-item .attendee-item-list {
+  list-style: none;
+  margin: 0;
+}
+
+.member-certificate .attendee-item .attendee-item-list li {
+  margin: 6px 0;
+  line-height: 26px;
+}
+
+.member-certificate .attendee-item .attendee-item-list li:before {
+  content: "•";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .member-certificate .attendee-item:hover {
   background-color: #1769ab;
   color: #fff;
@@ -1036,6 +1068,7 @@
 
   .member-certificate .title {
     font-size: 40px !important;
+    margin-bottom: 24px;
   }
 
   .member-certificate .desktop-title {
@@ -1088,6 +1121,8 @@
     flex: 1;
     display: flex;
     align-items: center;
+    align-items: start;
+    flex-direction: column;
   }
 
   .member-certificate .desktop-layout .attendee-item:hover {

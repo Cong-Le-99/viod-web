@@ -256,7 +256,7 @@ get_header();
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
-                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                <!-- <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p> -->
 
                 <div class="organized-content-grid">
                     <?php foreach ($organized_content as $content): ?>
@@ -399,7 +399,7 @@ get_header();
                         'biography' => 'Ông Việt Anh có hơn 30 năm kinh nghiệm làm trong ngành công nghiệp dầu khí tại PetroVietnam và các công ty dầu khí hàng đầu quốc tế như BP, ExxonMobil. Từ năm 2007 đến nay ông đã đảm nhận các vị trí quản lý cấp cao như Tổng Giám đốc, Phó Chủ tịch HĐQT, Chủ tịch HĐQT của các Tổng công ty niêm yết lớn trên sàn chứng khoán như PVGAS (GAS), PTSC (PVS) và PVTrans (PVT).<br><br>Ông là một trong những nhà lãnh đạo tiên phong và dày dạn kinh nghiệm thực tiễn trong thực hành quản trị công ty, quản trị chiến lược và các mô hình tái cấu trúc tại các công ty đại chúng. Ông Việt Anh đã nhiều lần nhận các giải thưởng cao quý về lãnh đạo quản lý của Chính phủ cũng như các giải thưởng uy tín quốc tế như Doanh nhân Xuất sắc Châu Á các năm 2018, 2022 do APEA trao tặng (Master Entrepreneur Award).<br><br>Ông là Kỹ sư cơ khí và có bằng MBA, từng tham dự nhiều khóa học quản trị doanh nghiệp trong và ngoài nước. Ông đã có chứng nhận DCP và hiện là Thành viên Cao cấp, Chương trình Thành viên Cá nhân (IMP) của Viện Thành Viên HĐQT Việt Nam (VIOD).'
                     ),
                     array(
-                        'gender' => 'Tiến sĩ',
+                        'gender' => 'male',
                         'name' => 'Đinh Toàn Trung',
                         'position' => 'Thành viên <i><br class="d-none d-md-block"> Thành viên Trung tâm <br class="d-none d-md-block"> Quản trị Công ty Quốc tế/ <br class="d-none d-md-block"> Thụy Sĩ</i>',
                         'image' => 'dinh-toan-trung.png',

@@ -179,11 +179,20 @@ get_header();
 
                 <div class="attendees-items">
                     <div class="attendee-item">Thành viên HĐQT</div>
-                    <div class="attendee-item">Người làm QTCT: Thư ký Công ty, người phụ trách QTCT, Trợ lý Tổng Giám đốc & Ban Điều hành, Chuyên viên Văn phòng HĐQT, người phụ trách quan hệ nhà đầu tư & các bên hữu quan.</div>
+                    <div class="attendee-item">
+                        <div>Người làm QTCT: </div>
+                        <ul class="attendee-item-list">
+                            <li>Thư ký Công ty</li>
+                            <li>Người phụ trách QTCT</li>
+                            <li>Trợ lý Tổng Giám đốc & Ban Điều hành</li>
+                            <li>Chuyên viên Văn phòng HĐQT</li>
+                            <li>Người phụ trách quan hệ nhà đầu tư & các bên hữu quan</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="attendees-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png"
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png?v=2"
                         alt="Attendees Mobile"
                         class="attendees-mobile-image">
                 </div>
@@ -198,12 +207,21 @@ get_header();
                             <p class="description">Cá nhân mong muốn nâng cao năng lực Quản trị Công ty</p>
                             <div class="attendees-items">
                                 <div class="attendee-item">Thành viên HĐQT</div>
-                                <div class="attendee-item">Người làm QTCT: Thư ký Công ty, người phụ trách QTCT, Trợ lý Tổng Giám đốc & Ban Điều hành, Chuyên viên Văn phòng HĐQT, người phụ trách quan hệ nhà đầu tư & các bên hữu quan.</div>
+                                <div class="attendee-item">
+                                    <div>Người làm QTCT: </div>
+                                    <ul class="attendee-item-list">
+                                        <li>Thư ký Công ty</li>
+                                        <li>Người phụ trách QTCT</li>
+                                        <li>Trợ lý Tổng Giám đốc & Ban Điều hành</li>
+                                        <li>Chuyên viên Văn phòng HĐQT</li>
+                                        <li>Người phụ trách quan hệ nhà đầu tư & các bên hữu quan</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="attendees-image-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png"
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/attendees-csmp.png?v=2"
                             alt="Attendees Desktop"
                             class="attendees-desktop-image">
                     </div>

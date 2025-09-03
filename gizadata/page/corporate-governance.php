@@ -9,7 +9,7 @@ get_header();
         <h1 class="d-none"><?php the_title(); ?></h1>
         <div class="banner bg-corporate-governance">
             <!-- Breadcrumb chỉ hiện trên desktop -->
-            <nav class="breadcrumb-nav">
+            <nav class="breadcrumb-nav breadcrumb-shadow">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a class="d-none d-md-block" href="<?php echo home_url(); ?>">Home</a>
@@ -29,8 +29,10 @@ get_header();
 </div>
 <?php get_template_part('components/library-governance-ipreport'); ?>
 <?php get_template_part('components/viod-directors-bulletin'); ?>
+<?php /*
 <?php get_template_part('components/legal-docs'); ?>
 <?php get_template_part('components/viod-events-carousel'); ?>
+*/ ?>
 <?php get_template_part('components/linked-websites-slider'); ?>
 <?php
 get_footer();

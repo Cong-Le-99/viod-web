@@ -6,7 +6,7 @@ $parent_id = $parent_cat ? $parent_cat->term_id : 0;
 $categories = get_categories([
     'parent'     => $parent_id, // Lấy category con
     'hide_empty' => false,
-    'number'     => 4 // Giới hạn tối đa 4 category
+    'number'     => 4  // Giới hạn tối đa 4 category
 ]);
 
 if (empty($categories)) {
@@ -23,7 +23,7 @@ $category_posts = [];
 foreach ($categories as $category) {
     $posts_query = new WP_Query([
         'post_type'      => 'post',
-        'posts_per_page' => 4,
+        'posts_per_page' =>  2,
         'cat'            => $category->term_id,
         'orderby'        => 'date',
         'order'          => 'DESC'
