@@ -1,0 +1,39 @@
+.post-search-page {
+  min-height: 300px;
+  height: 100%;
+}
+
+/* Dropdown search on desktop */
+.header-search-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 420px;
+  max-width: calc(100vw - 40px);
+  background: #fff;
+  border: 1px solid #e3e8ef;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 8px 24px rgba(8, 33, 54, 0.12);
+  display: none;
+  z-index: 1000;
+}
+.header-search-dropdown.active {
+  display: block;
+}
+.header-search-dropdown input[type="search"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+@media (max-width: 767.98px) {
+  .header-search-dropdown {
+    display: none !important;
+  }
+}
+
+.header-actions {
+  position: relative;
+}

@@ -109,6 +109,22 @@
                             </svg>
                         </button>
 
+                        <?php 
+                        $___search_page = get_page_by_path('search');
+                        $___search_action = $___search_page ? get_permalink($___search_page->ID) : home_url('/search/');
+                        $___search_value = isset($_GET['search']) ? sanitize_text_field( wp_unslash( $_GET['search'] ) ) : '';
+                        ?>
+                        <div class="header-search-dropdown" aria-hidden="true">
+                            <form class="desktop-search-form" action="<?php echo esc_url($___search_action); ?>" method="get">
+                                <div class="search-input-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.097 13.5112C10.8663 14.4456 9.3313 15.0002 7.66683 15.0002C3.61674 15.0002 0.333496 11.7169 0.333496 7.66683C0.333496 3.61674 3.61674 0.333496 7.66683 0.333496C11.7169 0.333496 15.0002 3.61674 15.0002 7.66683C15.0002 9.3313 14.4456 10.8663 13.5112 12.097L17.3739 15.9597C17.7645 16.3502 17.7645 16.9834 17.3739 17.3739C16.9834 17.7645 16.3502 17.7645 15.9597 17.3739L12.097 13.5112ZM13.0002 7.66683C13.0002 10.6123 10.6123 13.0002 7.66683 13.0002C4.72131 13.0002 2.3335 10.6123 2.3335 7.66683C2.3335 4.72131 4.72131 2.3335 7.66683 2.3335C10.6123 2.3335 13.0002 4.72131 13.0002 7.66683Z" fill="#082136" />
+                                    </svg>
+                                    <input type="search" name="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm" value="<?php echo esc_attr($___search_value); ?>">
+                                </div>
+                            </form>
+                        </div>
+
                         <!-- <a href="#" class="login-btn">ĐĂNG NHẬP</a> -->
                     </div>
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -129,12 +145,17 @@
                         <path d="M10.4108 11.5893C10.7363 11.9148 11.2639 11.9148 11.5893 11.5893C11.9148 11.2639 11.9148 10.7363 11.5893 10.4108L7.17859 6.00008L11.5893 1.58934C11.9148 1.2639 11.9148 0.736263 11.5893 0.410826C11.2639 0.0853893 10.7363 0.0853893 10.4108 0.410826L6.00008 4.82157L1.58934 0.410826C1.2639 0.0853888 0.736263 0.0853888 0.410826 0.410826C0.0853888 0.736263 0.0853887 1.2639 0.410826 1.58934L4.82157 6.00008L0.410826 10.4108C0.0853894 10.7363 0.0853894 11.2639 0.410826 11.5893C0.736263 11.9148 1.2639 11.9148 1.58934 11.5893L6.00008 7.17859L10.4108 11.5893Z" fill="white" />
                     </svg></button>
             </div>
-            <form class="mobile-search-form" action="<?php echo esc_url(home_url('/')); ?>" method="get">
+            <?php 
+            $__search_page = get_page_by_path('search');
+            $__search_action = $__search_page ? get_permalink($__search_page->ID) : home_url('/search/');
+            $__search_value = isset($_GET['search']) ? sanitize_text_field( wp_unslash( $_GET['search'] ) ) : '';
+            ?>
+            <form class="mobile-search-form" action="<?php echo esc_url($__search_action); ?>" method="get">
                 <div class="search-input-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.097 13.5112C10.8663 14.4456 9.3313 15.0002 7.66683 15.0002C3.61674 15.0002 0.333496 11.7169 0.333496 7.66683C0.333496 3.61674 3.61674 0.333496 7.66683 0.333496C11.7169 0.333496 15.0002 3.61674 15.0002 7.66683C15.0002 9.3313 14.4456 10.8663 13.5112 12.097L17.3739 15.9597C17.7645 16.3502 17.7645 16.9834 17.3739 17.3739C16.9834 17.7645 16.3502 17.7645 15.9597 17.3739L12.097 13.5112ZM13.0002 7.66683C13.0002 10.6123 10.6123 13.0002 7.66683 13.0002C4.72131 13.0002 2.3335 10.6123 2.3335 7.66683C2.3335 4.72131 4.72131 2.3335 7.66683 2.3335C10.6123 2.3335 13.0002 4.72131 13.0002 7.66683Z" fill="#082136" />
                     </svg>
-                    <input type="search" name="s" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                    <input type="search" name="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm" value="<?php echo esc_attr($__search_value); ?>">
                 </div>
             </form>
             <div class="mobile-menu-content">

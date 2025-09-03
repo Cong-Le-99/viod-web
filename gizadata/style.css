@@ -21,6 +21,7 @@ Text Domain: gizadata
 @import url("css/post-archive.css?v=4");
 @import url("css/relevant-legal-documents.css");
 @import url("css/member-certificate.css?v=5");
+@import url("css/search.css?v=1");
 /* Reset CSS */
 
 * {
