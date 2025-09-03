@@ -267,7 +267,7 @@ get_header();
             <!-- Mobile Layout -->
             <div class="mobile-layout d-block d-md-none">
                 <h2 class="title">Chương trình được tổ chức như thế nào?</h2>
-                <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p>
+                <!-- <p class="description">Trusted partner of Board of Directors, business leaders and experts in the journey to improve governance capacity.</p> -->
 
                 <div class="organized-content-grid">
                     <?php foreach ($organized_content as $content): ?>
