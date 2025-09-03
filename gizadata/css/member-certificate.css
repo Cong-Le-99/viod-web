@@ -124,6 +124,10 @@
   justify-content: center;
 }
 
+.member-certificate .banner-dcp {
+  background-image: url("../images/hero-banner-dcp-mb.png");
+}
+
 /* Breadcrumb Styles */
 .member-certificate .breadcrumb-nav {
   position: absolute;
