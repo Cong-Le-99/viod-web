@@ -7,7 +7,7 @@
                 </div>
                 <h3 class="core-value-title">Giá trị tri thức</h3>
                 <p class="core-value-description">Luôn được cập nhật và chia sẻ</p>
-                <a href="https://viod.vn/chuong-trinh-dao-tao/" class="core-value-link">
+                <a href="https://viod.vn/chuong-trinh/" class="core-value-link">
                     <span>Chương trình đào tạo</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.svg" alt="Arrow Right">
                 </a>

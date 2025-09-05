@@ -62,7 +62,7 @@ function viod_scripts() {
     wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), '11.0.0', true);
     
     // Enqueue navigation script
-    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js', array('bootstrap', 'swiper'), $js_version, true);
+    wp_enqueue_script('viod-navigation', get_template_directory_uri() . '/js/navigation.js?v=2', array('bootstrap', 'swiper'), $js_version, true);
     
     // Enqueue member-certificate script
     $member_cert_js_version = file_exists(get_stylesheet_directory() . '/js/member-certificate.js') 

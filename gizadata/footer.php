@@ -23,7 +23,7 @@
                 <h3>SỰ KIỆN</h3>
                 <ul>
                     <li><a href="https://viod.vn/su-kien/">Sự kiện sắp diễn ra</a></li>
-                    <li><a href="https://viod.vn/su-kien/?s=&orderby=&trang_thai%5B%5D=da-ket-thuc">Sự kiện đã diễn ra</a></li>
+                    <li><a href="https://viod.vn/su-kien/?orderby=&trang_thai%5B%5D=da-ket-thuc">Sự kiện đã diễn ra</a></li>
                     <li><a href="#">Thông cáo Báo chí</a></li>
 
                 </ul>

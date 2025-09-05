@@ -20,12 +20,12 @@ function viod_register_training_program() {
     $args = array(
         'labels'              => $labels,
         'public'              => true,
-        'has_archive'         => true,
+        'has_archive'         => 'chuong-trinh-dao-tao',
         'publicly_queryable'  => true,
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array('slug' => 'chuong-trinh-dao-tao'),
+        'rewrite'            => array('slug' => 'chuong-trinh-dao-tao', 'with_front' => false),
         'capability_type'    => 'post',
         'menu_icon'          => 'dashicons-welcome-learn-more',
         'supports'           => array(

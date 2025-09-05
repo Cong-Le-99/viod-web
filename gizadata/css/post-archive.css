@@ -462,6 +462,9 @@
     flex-direction: column;
     gap: 24px;
   }
+  .posts-grid {
+    grid-template-columns: 2fr !important;
+  }
 
   .filter-sidebar {
     flex: none;
@@ -485,7 +488,7 @@
   }
 
   .posts-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 20px;
   }
 

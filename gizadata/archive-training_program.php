@@ -179,10 +179,7 @@ get_header();
 
                             if (!empty($tax_queries)) {
                                 if (count($tax_queries) > 1) {
-                                    $args['tax_query'] = [
-                                        'relation' => 'AND',
-                                        $tax_queries
-                                    ];
+                                    $args['tax_query'] = array_merge(['relation' => 'AND'], $tax_queries);
                                 } else {
                                     $args['tax_query'] = $tax_queries;
                                 }
@@ -272,7 +269,7 @@ get_header();
                                     <?php
                                     echo paginate_links([
                                         'total' => $query->max_num_pages,
-                                        'current' => $paged,
+                                        'current' =>  max(1, get_query_var('paged')),
                                         'prev_text' => '←',
                                         'next_text' => '→',
                                     ]);

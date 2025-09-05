@@ -18,7 +18,7 @@ Text Domain: gizadata
 @import url("css/card.css?v=1");
 @import url("css/swiper-custom.css");
 @import url("css/corporate-governance.css");
-@import url("css/post-archive.css?v=4");
+@import url("css/post-archive.css?v=6");
 @import url("css/relevant-legal-documents.css");
 @import url("css/member-certificate.css?v=5");
 @import url("css/search.css?v=1");
@@ -425,10 +425,6 @@ a:hover {
   .main-navigation ul {
     gap: 18px;
   }
-
-  button.search-toggle {
-    display: none;
-  }
 }
 
 /* --- Responsive --- */
@@ -484,6 +480,19 @@ a:hover {
   .topbar {
     display: none !important;
   }
+}
+
+@media (max-width: 768px){
+	.bg-corporate-governance{
+		padding-top:70px;
+		height: unset !important;
+	}
+	.banner-content.px-4{
+		padding-top:100px;
+	}
+	.session-wrap{
+		padding-top:30px;
+	}
 }
 
 /* Content */

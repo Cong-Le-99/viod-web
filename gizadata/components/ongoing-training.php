@@ -171,7 +171,7 @@ if (empty($formatted_programs)) {
             </div>
 
             <div class="btn-wrap">
-                <a href="/chuong-trinh-dao-tao/" class="btn-outline-home">chương trình đào tạo Trong năm</a>
+                <a href="/chuong-trinh/" class="btn-outline-home">chương trình đào tạo Trong năm</a>
                 <a href="/su-kien/" class="btn-outline-home">tất cả sự kiện sắp diễn ra</a>
             </div>
         </div>
